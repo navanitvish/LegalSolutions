@@ -19,7 +19,7 @@ function CustomerStores() {
   };
 
   return (
-    <div className="bg-red-50">
+    <div className="bg-black">
       <div className="p-8 mx-auto relative flex mt-10">
         <div className="max-w-4xl">
           <h1 className="lg:text-6xl font-bold mb-6 text-left text-balance">
