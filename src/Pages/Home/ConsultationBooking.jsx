@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Input from "./Input"; // Import your custom Input component
 
@@ -22,7 +22,7 @@ function HeroSection() {
   };
 
   return (
-    <div className="bg-green-100 p-8 flex flex-col lg:flex-row justify-between items-center mt-10">
+    <div className="bg-[#f8f5f3] p-8 flex flex-col lg:flex-row justify-between items-center mt-10">
       <div className="lg:w-1/2 mb-8 lg:mb-0 text-left text-balance">
         <h1 className=" lg:text-6xl font-bold mb-4">
           Streamline Your Document Workflow
@@ -35,14 +35,16 @@ function HeroSection() {
             <li>✔️TailoredNo commitment to buy</li>
           </ul>
         </p>
-        <p className="text-sm text-gray-500">
-          ChiliPiper increased their close rate by 28% after implementing
-          PandaDoc.
-        </p>
+        <div className="bg-red-100 w-2/4 py-8 px-4 rounded-md">
+          <p className="text-md ">
+            ChiliPiper increased their close rate by 28% after implementing
+            PandaDoc.
+          </p>
+        </div>
       </div>
 
       <motion.div
-        className="bg-red-100 rounded-lg p-8 lg:w-1/2 w-full"
+        className="bg-white  p-8 lg:w-1/2 w-full"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
@@ -60,7 +62,7 @@ function HeroSection() {
         <h1 className="text-2xl p-4">Form</h1>
         <form
           onSubmit={handleSubmit}
-          className="grid grid-cols-1 sm:grid-cols-2 gap-4"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left"
         >
           <FormField
             label="First Name"
@@ -100,14 +102,19 @@ function HeroSection() {
           />
           <motion.button
             type="submit"
-            className="col-span-1 sm:col-span-2 bg-blue-500 text-white px-4 py-2 rounded mt-4"
+            className="col-span-1 sm:col-span-2 bg-green-500 text-white px-4 py-2 rounded mt-4"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             Schedule Your Demo
           </motion.button>
         </form>
+        <div className="m-4 text-left">
+        <p>By submitting this form, I agree that the Terms of Service and Privacy Notice will govern the use of services I receive and personal data I provide respectively.</p>
+      </div>
       </motion.div>
+
+     
     </div>
   );
 }

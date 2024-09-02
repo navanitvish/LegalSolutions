@@ -46,26 +46,26 @@ const NavBar = () => {
       <ul className={`hidden md:flex space-x-6`}>
         {NAV_LINKS.map((link, index) => (
           <li key={index} className="relative py-2 md:py-0 transition hover:text-green-500 ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300">
-            <Link
-              to={link.path}
-              className="text-[15px] font-semibold py-2 md:py-0 transition hover:text-green-500 ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"
-            >
-              {link.name}
-            </Link>
-            {link.name === "Services/Agreements" && (
+            {link.name === "Services/Agreements" ? (
               <>
                 <button
                   className="flex items-center space-x-1"
-                  onMouseEnter={toggleServicesDropdown}
-                  onMouseLeave={toggleServicesDropdown}
+                  onClick={toggleServicesDropdown}
                 >
                   <span className="text-[15px] font-semibold hover:text-green-500">
-                    {}
+                    {link.name}
                   </span>
                   <ChevronDownIcon className="h-5 w-5" />
                 </button>
-                <Dropdown isOpen={isServicesOpen} />
+                {isServicesOpen && <Dropdown isOpen={isServicesOpen} />}
               </>
+            ) : (
+              <Link
+                to={link.path}
+                className="text-[15px] font-semibold py-2 md:py-0 transition hover:text-green-500 ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"
+              >
+                {link.name}
+              </Link>
             )}
           </li>
         ))}
@@ -86,26 +86,26 @@ const NavBar = () => {
       <ul className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}>
         {NAV_LINKS.map((link, index) => (
           <li key={index} className="relative py-2 md:py-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300">
-            <Link
-              to={link.path}
-              className="py-2 text-[15px] font-semibold hover:text-green-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"
-            >
-              {link.name}
-            </Link>
-            {link.name === "Services/Agreements" && (
+            {link.name === "Services/Agreements" ? (
               <>
                 <button
                   className="flex items-center space-x-1"
-                  onMouseEnter={toggleServicesDropdown}
-                  onMouseLeave={toggleServicesDropdown}
+                  onClick={toggleServicesDropdown}
                 >
                   <span className="text-[15px] font-semibold hover:text-green-500">
                     {link.name}
                   </span>
                   <ChevronDownIcon className="h-5 w-5" />
                 </button>
-                <Dropdown isOpen={isServicesOpen} />
+                {isServicesOpen && <Dropdown isOpen={isServicesOpen} />}
               </>
+            ) : (
+              <Link
+                to={link.path}
+                className="py-2 text-[15px] font-semibold hover:text-green-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"
+              >
+                {link.name}
+              </Link>
             )}
           </li>
         ))}

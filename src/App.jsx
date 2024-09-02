@@ -1,5 +1,4 @@
-// src/App.js
-import React from 'react';
+
 import './App.css';
 import NavBar from './Components/NavBar/NavBar';
 import CustomPointer from './CustomPointer'; // Import the CustomPointer component

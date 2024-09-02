@@ -8,7 +8,8 @@ function Input({ id, name, value, onChange, type = "text", className = "" }) {
       value={value}
       onChange={onChange}
       type={type}
-      className={`w-full border rounded-md px-3 py-2 ${className}`}
+      placeholder='...'
+      className={`w-full border bg-transparent  px-3 py-3 ${className}`}
     />
   );
 }

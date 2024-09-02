@@ -1,8 +1,8 @@
-import React from "react";
+
 import { ArrowRight } from "lucide-react";
 import { motion } from 'framer-motion';
 import {logos} from "/src/utils/Logo.js"
-function Testimonials() {
+function Features() {
   return (
     <div className="bg-red-50 ">
       <div className=" p-8  mx-auto relative flex mt-10">
@@ -50,4 +50,4 @@ function Testimonials() {
   );
 }
 
-export default Testimonials;
+export default Features;
