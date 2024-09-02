@@ -8,7 +8,7 @@ const FeatureSection = () => {
       description: "Optimized for quick load times and smooth performance.",
       icon: <FiCheckCircle size={24} />,
       bgColor: "bg-gray-100",
-      span: "col-span-2",
+      span: "md:col-span-2", // Update span to apply at medium screens and above
     },
     {
       title: "Responsive Design",
@@ -29,22 +29,22 @@ const FeatureSection = () => {
       description: "Easily scales to handle growing traffic.",
       icon: <FiCheckCircle size={24} />,
       bgColor: "bg-yellow-100",
-      span: "col-span-2",
+      span: "md:col-span-2", // Update span to apply at medium screens and above
     },
   ];
 
   return (
-    <div className="p-6 space-y-8">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="p-6 md:p-12 lg:p-16 space-y-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((feature, index) => (
           <div
             key={index}
-            className={`p-6 rounded-lg shadow-md flex items-center ${feature.bgColor} ${feature.span}`}
+            className={`p-6 rounded-lg shadow-md flex items-start ${feature.bgColor} ${feature.span}`}
           >
             <div className="text-blue-500 mr-4">{feature.icon}</div>
             <div>
-              <h3 className="text-xl font-semibold">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-lg md:text-xl font-semibold">{feature.title}</h3>
+              <p className="text-sm md:text-base text-gray-600">{feature.description}</p>
             </div>
           </div>
         ))}

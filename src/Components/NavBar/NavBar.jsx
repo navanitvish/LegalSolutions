@@ -83,33 +83,37 @@ const NavBar = () => {
       </div>
 
       {/* Mobile Nav Items */}
-      <ul className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}>
-        {NAV_LINKS.map((link, index) => (
-          <li key={index} className="relative py-2 md:py-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300">
-            {link.name === "Services/Agreements" ? (
-              <>
-                <button
-                  className="flex items-center space-x-1"
-                  onClick={toggleServicesDropdown}
-                >
-                  <span className="text-[15px] font-semibold hover:text-green-500">
+      {isMobileMenuOpen && (
+        <div className="absolute top-24 left-1/2 transform -translate-x-1/2 w-11/12 bg-white rounded-lg shadow-lg p-4">
+          <ul className="flex flex-col items-center space-y-4">
+            {NAV_LINKS.map((link, index) => (
+              <li key={index} className="relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300">
+                {link.name === "Services/Agreements" ? (
+                  <>
+                    <button
+                      className="flex items-center space-x-1"
+                      onClick={toggleServicesDropdown}
+                    >
+                      <span className="text-[15px] font-semibold hover:text-green-500">
+                        {link.name}
+                      </span>
+                      <ChevronDownIcon className="h-5 w-5" />
+                    </button>
+                    {isServicesOpen && <Dropdown isOpen={isServicesOpen} />}
+                  </>
+                ) : (
+                  <Link
+                    to={link.path}
+                    className="text-[15px] font-semibold hover:text-green-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"
+                  >
                     {link.name}
-                  </span>
-                  <ChevronDownIcon className="h-5 w-5" />
-                </button>
-                {isServicesOpen && <Dropdown isOpen={isServicesOpen} />}
-              </>
-            ) : (
-              <Link
-                to={link.path}
-                className="py-2 text-[15px] font-semibold hover:text-green-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"
-              >
-                {link.name}
-              </Link>
-            )}
-          </li>
-        ))}
-      </ul>
+                  </Link>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       {/* Login Button */}
       <div className="md:flex justify-end">

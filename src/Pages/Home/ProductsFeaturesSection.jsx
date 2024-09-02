@@ -1,15 +1,13 @@
 import React from "react";
-import { ArrowUpRight } from "lucide-react";
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight, ArrowRight } from "lucide-react";
+
 const features = [
   {
     title: "Impress buyers with automated quotes tailored just for them",
     description:
-      "PandaDoc CPQ software makes it easy to generate error- free quotes that'll close more deals. Pull data directly from your product catalog and implement rules-based pricing strategies to deliver an impressive buyer experience. All with our online CPQ solution.",
+      "PandaDoc CPQ software makes it easy to generate error-free quotes that'll close more deals. Pull data directly from your product catalog and implement rules-based pricing strategies to deliver an impressive buyer experience. All with our online CPQ solution.",
     image:
       "https://cdn.dribbble.com/userupload/11534693/file/original-7ee77af4ceb575b236cedcad65016246.png?resize=1504x1128",
-    width: "1504px",
-    height: "1128px",
   },
   {
     title: "Close deals fast in a digital space that makes collaboration easy",
@@ -39,19 +37,17 @@ const features = [
 
 const FeatureGrid = () => {
   return (
-    <div className="p-4 sm:p-6 md:p-8  mt-20">
+    <div className="p-4 sm:p-6 md:p-8 mt-10">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-6">
-        <h1 className="lg:text-6xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-0 lg:max-w-2xl text-left">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-0 lg:max-w-2xl text-left">
           Designed to make every agreement easier
         </h1>
         <a
           href="#"
-          className="lg:text-2xl flex flex-wrap items-center font-bold hover:border hover:rounded-full hover:border-black px-4 py-2 sm:text-base text-black "
+          className="text-lg sm:text-xl lg:text-2xl font-bold flex items-center hover:border hover:rounded-full hover:border-black px-4 py-2 text-black"
         >
           See all features{" "}
-          <span>
-            <ArrowRight className="ml-2" size={20} />
-          </span>
+          <ArrowRight className="ml-2" size={20} />
         </a>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6">
@@ -64,11 +60,11 @@ const FeatureGrid = () => {
           >
             {index === 0 ? (
               <div className="flex flex-col md:flex-row items-center">
-                <div className="md:w-1/2 pr-0 md:pr-6 mb-4 md:mb-0 space-y-8">
-                  <h3 className="lg:text-5xl sm:text-2xl font-semibold mb-2 text-left text-balance lg:max-w-4xl">
+                <div className="md:w-1/2 pr-0 md:pr-6 mb-4 md:mb-0 space-y-4 sm:space-y-6 md:space-y-8">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-2 text-left text-balance lg:max-w-4xl">
                     {feature.title}
                   </h3>
-                  <p className="lg:text-2xl text-left sm:text-base text-gray-600 mb-3 sm:mb-4">
+                  <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-3 sm:mb-4">
                     {feature.description}
                   </p>
                 </div>
@@ -81,12 +77,12 @@ const FeatureGrid = () => {
                 </div>
               </div>
             ) : (
-              < >
-                <h3 className="lg:text-4xl  space-y-8 text-balance text-left sm:text-xl font-semibold mb-2">
+              <>
+                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-2 text-left text-balance">
                   {feature.title}
                 </h3>
                 {feature.description && (
-                  <p className="lg:text-4xl sm:text-base text-gray-600 mb-3 sm:mb-4">
+                  <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-3 sm:mb-4">
                     {feature.description}
                   </p>
                 )}
@@ -94,7 +90,7 @@ const FeatureGrid = () => {
                   <img
                     src={feature.image}
                     alt={feature.title}
-                    className="w-70 h-70 rounded"
+                    className="w-full h-auto rounded"
                   />
                 )}
               </>
