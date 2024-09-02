@@ -1,0 +1,17 @@
+/* src/Components/CustomPointer.css */
+#custom-pointer {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3498db;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease, background-color 0.3s ease;
+    z-index: 9999; /* Ensure it stays above other content */
+  }
+  
+  #custom-pointer.animating {
+    background-color: #e74c3c; /* Change color on animation */
+  }
+  
