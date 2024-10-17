@@ -9,7 +9,7 @@ const HeroSection = () => {
         {[...Array(6)].map((_, i) => (
           <div
             key={i}
-            className={`absolute w-full h-[500px] bg-gradient-to-r from-green-200 to-transparent opacity-50`}
+            className={`absolute w-full h-[500px] bg-gradient-to-br from-indigo-200 to-purple-600  opacity-50`}
             style={{
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,
@@ -33,7 +33,7 @@ const HeroSection = () => {
           tracking, and eSigning every important document you handle.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button className="w-full sm:w-auto bg-green-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-green-700 transition duration-300 text-base sm:text-lg">
+          <button className="w-full sm:w-auto bg-gradient-to-br from-indigo-500 to-purple-500 text-white font-semibold py-3 px-6 rounded-md hover:bg-green-700 transition duration-300 text-base sm:text-lg">
             Request a demo
           </button>
           <button className="w-full sm:w-auto bg-white text-gray-800 font-semibold py-3 px-6 rounded-md border border-gray-300 hover:bg-gray-100 transition duration-300 text-base sm:text-lg">
@@ -53,7 +53,7 @@ const HeroSection = () => {
           {logos.map((logo, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-32 sm:w-40 lg:w-48 h-12 sm:h-14 lg:h-16 mx-4 sm:mx-6 lg:mx-8 flex items-center justify-center"
+              className="flex-shrink-0 w-32 sm:w-40 lg:w-48 h-16 sm:h-14 lg:h-16 mx-4 sm:mx-6 lg:mx-8 flex items-center justify-center"
             >
               <img
                 src={logo.image}

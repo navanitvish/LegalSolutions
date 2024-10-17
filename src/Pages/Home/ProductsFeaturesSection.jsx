@@ -9,30 +9,30 @@ const features = [
     image:
       "https://cdn.dribbble.com/userupload/11534693/file/original-7ee77af4ceb575b236cedcad65016246.png?resize=1504x1128",
   },
-  {
-    title: "Close deals fast in a digital space that makes collaboration easy",
-    description: "",
-    image:
-      "https://cdn.dribbble.com/userupload/11555404/file/original-b603adcbc82c26429645d143ee550db1.png?resize=1504x1128",
-  },
-  {
-    title: "Eliminate errors with pre-set document creation rules",
-    description: "",
-    image:
-      "https://cdn.dribbble.com/userupload/11012758/file/original-9a489046af009041faa8f65cabda8b7f.png?resize=1504x1128",
-  },
-  {
-    title: "Save time by automating manual and repetitive tasks",
-    description: "",
-    image:
-      "https://cdn.dribbble.com/userupload/13881415/file/original-06b59f92b9f221b574c7ee30081c0622.png?resize=1504x1055",
-  },
-  {
-    title: "Monitor user activity, document performance and more",
-    description: "",
-    image:
-      "https://cdn.dribbble.com/userupload/11634423/file/original-f83aa7acac835efe071aa4d9278012bf.png?resize=1504x1128",
-  },
+  // {
+  //   title: "Close deals fast in a digital space that makes collaboration easy",
+  //   description: "",
+  //   image:
+  //     "https://cdn.dribbble.com/userupload/11555404/file/original-b603adcbc82c26429645d143ee550db1.png?resize=1504x1128",
+  // },
+  // {
+  //   title: "Eliminate errors with pre-set document creation rules",
+  //   description: "",
+  //   image:
+  //     "https://cdn.dribbble.com/userupload/11012758/file/original-9a489046af009041faa8f65cabda8b7f.png?resize=1504x1128",
+  // },
+  // {
+  //   title: "Save time by automating manual and repetitive tasks",
+  //   description: "",
+  //   image:
+  //     "https://cdn.dribbble.com/userupload/13881415/file/original-06b59f92b9f221b574c7ee30081c0622.png?resize=1504x1055",
+  // },
+  // {
+  //   title: "Monitor user activity, document performance and more",
+  //   description: "",
+  //   image:
+  //     "https://cdn.dribbble.com/userupload/11634423/file/original-f83aa7acac835efe071aa4d9278012bf.png?resize=1504x1128",
+  // },
 ];
 
 const FeatureGrid = () => {

@@ -1,8 +1,13 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ChevronDownIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import {
+  ChevronDownIcon,
+  Bars3Icon,
+  XMarkIcon,
+} from "@heroicons/react/24/solid";
 import Dropdown from "./Dropdown";
 import { NAV_LINKS } from "/src/utils/Navcontent.js"; // Import the content
+import Logo from "/src/assets/WhatsApp Image 2024-09-04 at 17.21.56_f63b6f4c.jpg";
 
 const NavBar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -20,7 +25,8 @@ const NavBar = () => {
   useEffect(() => {
     let lastScrollTop = 0;
     const handleScroll = () => {
-      const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const currentScrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
       if (currentScrollTop > lastScrollTop) {
         setIsNavVisible(false); // Scroll down
       } else {
@@ -35,41 +41,53 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`z-50 relative text-black px-4 py-3 flex justify-between items-center border-b bg-white transition-transform duration-300 ${
+      className={`z-50 relative text-black  flex  justify-between items-center border-b bg-white transition-transform duration-300 ${
         isNavVisible ? "translate-y-0" : "-translate-y-20"
       }`}
     >
       {/* Logo */}
-      <div className="text-4xl font-bold">LegalFirm</div>
+      <div className="text-4xl font-bold">
+        <img src={Logo} alt="MyLegal " className="w-12 h-12" />
+      </div>
 
       {/* Nav Items */}
-      <ul className={`hidden md:flex space-x-6`}>
-        {NAV_LINKS.map((link, index) => (
-          <li key={index} className="relative py-2 md:py-0 transition hover:text-green-500 ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300">
-            {link.name === "Services/Agreements" ? (
-              <>
-                <button
-                  className="flex items-center space-x-1"
-                  onClick={toggleServicesDropdown}
+      <div className="flex justify-end gap-6 items-center"> 
+        <ul className={`hidden md:flex  space-x-4 gap-6`}>
+          {NAV_LINKS.map((link, index) => (
+            <li
+              key={index}
+              className="relative py-2 md:py-0 transition hover:text-green-500 ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"
+            >
+              {link.name === "Services/Agreements" ? (
+                <>
+                  <button
+                    className="flex items-center space-x-1"
+                    onClick={toggleServicesDropdown}
+                  >
+                    <span className="text-[15px] font-semibold hover:text-green-500">
+                      {link.name}
+                    </span>
+                    <ChevronDownIcon className="h-5 w-5" />
+                  </button>
+                  {isServicesOpen && <Dropdown isOpen={isServicesOpen} />}
+                </>
+              ) : (
+                <Link
+                  to={link.path}
+                  className="text-[15px] font-semibold py-2 md:py-0 transition hover:text-green-500 ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"
                 >
-                  <span className="text-[15px] font-semibold hover:text-green-500">
-                    {link.name}
-                  </span>
-                  <ChevronDownIcon className="h-5 w-5" />
-                </button>
-                {isServicesOpen && <Dropdown isOpen={isServicesOpen} />}
-              </>
-            ) : (
-              <Link
-                to={link.path}
-                className="text-[15px] font-semibold py-2 md:py-0 transition hover:text-green-500 ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"
-              >
-                {link.name}
-              </Link>
-            )}
-          </li>
-        ))}
-      </ul>
+                  {link.name}
+                </Link>
+              )}
+            </li>
+          ))}
+        </ul>
+        <div className="md:flex ">
+        <button className="border-[1px] border-black hover:text-green-500 text-black font-bold py-2 px-8 rounded hover:animate-bounce">
+          Login
+        </button>
+      </div>
+      </div>
 
       {/* Mobile Menu Toggle */}
       <div className="md:hidden">
@@ -84,10 +102,13 @@ const NavBar = () => {
 
       {/* Mobile Nav Items */}
       {isMobileMenuOpen && (
-        <div className="absolute top-24 left-1/2 transform -translate-x-1/2 w-11/12 bg-white rounded-lg shadow-lg p-4">
-          <ul className="flex flex-col items-center space-y-4">
+        <div className="absolute top-24 left-8/12 transform -translate-x-1/2 w-11/12 bg-white rounded-lg shadow-lg p-4">
+          <ul className="flex flex-col  space-y-4">
             {NAV_LINKS.map((link, index) => (
-              <li key={index} className="relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300">
+              <li
+                key={index}
+                className="relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"
+              >
                 {link.name === "Services/Agreements" ? (
                   <>
                     <button
@@ -116,11 +137,7 @@ const NavBar = () => {
       )}
 
       {/* Login Button */}
-      <div className="md:flex justify-end">
-        <button className="border-[1px] border-black hover:text-green-500 text-black font-bold py-2 px-8 rounded hover:animate-bounce">
-          Login
-        </button>
-      </div>
+      
     </nav>
   );
 };
