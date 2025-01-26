@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
-import Input from "./Input"; // Import your custom Input component
 
 function HeroSection() {
   const [formData, setFormData] = useState({
@@ -9,7 +7,7 @@ function HeroSection() {
     email: "",
     phoneNumber: "",
     companyName: "",
-    companySize: "",
+    companySize: ""
   });
 
   const handleChange = (e) => {
@@ -18,130 +16,211 @@ function HeroSection() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here (e.g., send data to a server)
+    // Handle form submission here
   };
 
   return (
-    <div className="bg-[#f8f5f3] p-4 md:p-8 flex flex-col lg:flex-row justify-between items-center mt-10">
-      <div className="lg:w-1/2 mb-8 lg:mb-0 text-left">
-        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4">
-          Streamline Your Document Workflow
-        </h1>
-        <p className="text-md md:text-lg mb-6">
-          Get personalized 1:1 demo with our product specialist.
-          <ul className="ml-4 mt-2">
-            <li>✔️ Tailored to your needs</li>
-            <li>✔️ Answers all your questions</li>
-            <li>✔️ No commitment to buy</li>
-          </ul>
-        </p>
-        <div className="bg-red-100 w-full md:w-3/4 lg:w-2/4 py-4 px-4 rounded-md">
-          <p className="text-sm md:text-md">
-            ChiliPiper increased their close rate by 28% after implementing
-            PandaDoc.
-          </p>
+    <div className="bg-gradient-to-br from-indigo-50 via-white to-purple-50 py-16 px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row gap-12 items-center">
+          {/* Left Column - Content */}
+          <div className="lg:w-1/2 space-y-8">
+            <div className="inline-flex items-center bg-indigo-50 rounded-full px-4 py-2 text-indigo-600">
+              <span className="text-sm font-medium">🚀 Free Demo Available</span>
+            </div>
+            
+            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              Streamline Your Document Workflow
+            </h1>
+            
+            <p className="text-lg text-gray-600">
+              Get personalized 1:1 demo with our product specialist.
+            </p>
+
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="flex items-center justify-center w-6 h-6 rounded-full bg-green-100">
+                  <svg className="w-4 h-4 text-green-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <span className="text-gray-700">Tailored to your needs</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="flex items-center justify-center w-6 h-6 rounded-full bg-green-100">
+                  <svg className="w-4 h-4 text-green-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <span className="text-gray-700">Answers all your questions</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="flex items-center justify-center w-6 h-6 rounded-full bg-green-100">
+                  <svg className="w-4 h-4 text-green-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <span className="text-gray-700">No commitment to buy</span>
+              </div>
+            </div>
+
+            <div className="bg-white shadow-lg rounded-2xl p-6 border border-indigo-50">
+              <div className="flex items-center gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center">
+                    <svg className="w-6 h-6 text-indigo-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                      <path d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <p className="text-gray-800 font-medium">
+                    ChiliPiper increased their close rate by 28% after implementing PandaDoc
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column - Form */}
+          <div className="lg:w-1/2 w-full">
+            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-2xl font-semibold text-gray-900">
+                    Schedule your free live demo
+                  </h3>
+                  <div className="mt-4 space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 text-sm">
+                        1
+                      </div>
+                      <span className="text-gray-600">Fill out the form</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 text-sm">
+                        2
+                      </div>
+                      <span className="text-gray-600">Book a time slot</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 text-sm">
+                        3
+                      </div>
+                      <span className="text-gray-600">Prepare for your demo</span>
+                    </div>
+                  </div>
+                </div>
+
+                <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <FormField
+                    label="First Name"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    required
+                  />
+                  <FormField
+                    label="Last Name"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    required
+                  />
+                  <FormField
+                    label="Work Email"
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                  <FormField
+                    label="Phone Number"
+                    name="phoneNumber"
+                    type="tel"
+                    value={formData.phoneNumber}
+                    onChange={handleChange}
+                    required
+                  />
+                  <FormField
+                    label="Company Name"
+                    name="companyName"
+                    value={formData.companyName}
+                    onChange={handleChange}
+                    required
+                  />
+                  <FormField
+                    label="Company Size"
+                    name="companySize"
+                    type="select"
+                    value={formData.companySize}
+                    onChange={handleChange}
+                    options={[
+                      { value: "", label: "Select size" },
+                      { value: "1-10", label: "1-10 employees" },
+                      { value: "11-50", label: "11-50 employees" },
+                      { value: "51-200", label: "51-200 employees" },
+                      { value: "201+", label: "201+ employees" }
+                    ]}
+                    required
+                  />
+                  
+                  <button
+                    type="submit"
+                    className="col-span-1 sm:col-span-2 bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors duration-200"
+                  >
+                    Schedule Your Demo
+                  </button>
+                </form>
+
+                <p className="text-sm text-gray-500">
+                  By submitting this form, I agree that the Terms of Service and Privacy Notice
+                  will govern the use of services I receive and personal data I provide respectively.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <motion.div
-        className="bg-white p-4 md:p-8 w-full lg:w-1/2"
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="space-y-4">
-          <h3 className="text-xl md:text-2xl font-normal">
-            Schedule your free live demo
-          </h3>
-          <ul className="list-disc pl-5 md:pl-8 space-y-1">
-            <li>Fill out the form</li>
-            <li>Book a time slot</li>
-            <li>Prepare for your demo</li>
-          </ul>
-        </div>
-        <h2 className="text-xl md:text-2xl font-semibold mt-6 mb-4">
-          Form
-        </h2>
-        <form
-          onSubmit={handleSubmit}
-          className="grid grid-cols-1 sm:grid-cols-2 gap-4"
-        >
-          <FormField
-            label="First Name"
-            name="firstName"
-            value={formData.firstName}
-            onChange={handleChange}
-          />
-          <FormField
-            label="Last Name"
-            name="lastName"
-            value={formData.lastName}
-            onChange={handleChange}
-          />
-          <FormField
-            label="Email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-          <FormField
-            label="Phone Number"
-            name="phoneNumber"
-            value={formData.phoneNumber}
-            onChange={handleChange}
-          />
-          <FormField
-            label="Company Name"
-            name="companyName"
-            value={formData.companyName}
-            onChange={handleChange}
-          />
-          <FormField
-            label="Company Size"
-            name="companySize"
-            value={formData.companySize}
-            onChange={handleChange}
-          />
-          <motion.button
-            type="submit"
-            className="col-span-1 sm:col-span-2 bg-green-500 text-white px-4 py-2 rounded mt-4"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Schedule Your Demo
-          </motion.button>
-        </form>
-        <div className="mt-4 text-sm md:text-md">
-          <p>
-            By submitting this form, I agree that the Terms of Service and
-            Privacy Notice will govern the use of services I receive and
-            personal data I provide respectively.
-          </p>
-        </div>
-      </motion.div>
     </div>
   );
 }
 
-function FormField({ label, name, value, onChange }) {
+function FormField({ label, name, type = "text", value, onChange, options, required }) {
   return (
-    <motion.div
-      className="mb-4"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.3 }}
-    >
-      <label htmlFor={name} className="block text-gray-700 font-bold mb-2">
-        {label}
+    <div className="space-y-2">
+      <label htmlFor={name} className="block text-sm font-medium text-gray-700">
+        {label} {required && <span className="text-red-500">*</span>}
       </label>
-      <Input
-        id={name}
-        name={name}
-        value={value}
-        onChange={onChange}
-        className="w-full border rounded-md px-3 py-2"
-      />
-    </motion.div>
+      
+      {type === "select" ? (
+        <select
+          id={name}
+          name={name}
+          value={value}
+          onChange={onChange}
+          className="w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+          required={required}
+        >
+          {options.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </select>
+      ) : (
+        <input
+          type={type}
+          id={name}
+          name={name}
+          value={value}
+          onChange={onChange}
+          className="w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+          required={required}
+        />
+      )}
+    </div>
   );
 }
 

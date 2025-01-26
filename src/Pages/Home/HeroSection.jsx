@@ -3,13 +3,13 @@ import { logos } from "/src/utils/Logo.js";
 
 const HeroSection = () => {
   return (
-    <div className="hero-section relative w-full bg-white min-h-screen flex flex-col items-center justify-center px-4 py-8 sm:py-16 lg:py-20 overflow-hidden">
+    <div className="hero-section relative w-full bg-white  flex flex-col items-center justify-center px-4 py-16  sm:py-16 lg:py-32 overflow-hidden">
       {/* Background beams */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(6)].map((_, i) => (
           <div
             key={i}
-            className={`absolute w-full h-[500px] bg-gradient-to-br from-indigo-200 to-purple-600  opacity-50`}
+            className={`absolute w-full h-[400px] bg-gradient-to-br from-indigo-200 to-purple-600  opacity-50`}
             style={{
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,
@@ -24,13 +24,18 @@ const HeroSection = () => {
 
       {/* Main Content */}
       <div className="relative z-10 w-full max-w-4xl mx-auto text-center mb-12 sm:mb-16 lg:mb-20">
-        <h1 className="text-4xl sm:text-5xl lg:text-[70px] font-bold mb-4 sm:mb-6 text-gray-900 leading-tight">
-          Make proposals
-          <br className="hidden sm:inline" /> that make impressions
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-gray-900 leading-tight">
+          WELCOME TO THE
+          <br className="hidden sm:inline" /> WORLD OF LEGALINSTANT
         </h1>
-        <p className="text-lg sm:text-xl mb-6 sm:mb-8 text-gray-600 max-w-2xl mx-auto">
-          Stand out with the top-rated solution for creating, managing,
-          tracking, and eSigning every important document you handle.
+        <p className="text-lg sm:text-xl mb-6 sm:mb-8 text-gray-600 max-w-5xl mx-auto">
+          MyLegalInstant.com makes the delivery of legal services easier and
+          faster by providing legal services online. The platform offers a range
+          of legal services, including document preparation, legal advice, and
+          representation, at a fraction of the cost of traditional legal
+          services. The platform also offers a range of features, such as online
+          chat support, document tracking, and secure document storage, to make
+          the legal process more efficient and convenient.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <button className="w-full sm:w-auto bg-gradient-to-br from-indigo-500 to-purple-500 text-white font-semibold py-3 px-6 rounded-md hover:bg-green-700 transition duration-300 text-base sm:text-lg">

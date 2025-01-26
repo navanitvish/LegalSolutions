@@ -5,9 +5,9 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
-import Dropdown from "./Dropdown";
-import { NAV_LINKS } from "/src/utils/Navcontent.js"; // Import the content
+import { NAV_LINKS } from "/src/utils/Navcontent.js";
 import Logo from "/src/assets/WhatsApp Image 2024-09-04 at 17.21.56_f63b6f4c.jpg";
+import ServicesDropdown from "../NavBar/ServicesDropdown";
 
 const NavBar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -28,9 +28,9 @@ const NavBar = () => {
       const currentScrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
       if (currentScrollTop > lastScrollTop) {
-        setIsNavVisible(false); // Scroll down
+        setIsNavVisible(false);
       } else {
-        setIsNavVisible(true); // Scroll up
+        setIsNavVisible(true);
       }
       lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
     };
@@ -41,103 +41,134 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`z-50 relative text-black  flex  justify-between items-center border-b bg-white transition-transform duration-300 ${
+      className={`fixed w-full z-50 transition-all duration-300 ${
         isNavVisible ? "translate-y-0" : "-translate-y-20"
       }`}
     >
-      {/* Logo */}
-      <div className="text-4xl font-bold">
-        <img src={Logo} alt="MyLegal " className="w-12 h-12" />
-      </div>
+      <div className="backdrop-blur-md bg-white/90 p-2 ">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
+          <div className="flex justify-between items-center h-16">
+            {/* Logo */}
+            <div className="flex-shrink-0 transition-transform hover:scale-105 duration-300 ">
+              <img 
+                src={Logo} 
+                alt="MyLegal" 
+                className="w-20 h-20 rounded-xl "
+              />
+            </div>
 
-      {/* Nav Items */}
-      <div className="flex justify-end gap-6 items-center"> 
-        <ul className={`hidden md:flex  space-x-4 gap-6`}>
-          {NAV_LINKS.map((link, index) => (
-            <li
-              key={index}
-              className="relative py-2 md:py-0 transition hover:text-green-500 ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"
-            >
-              {link.name === "Services/Agreements" ? (
-                <>
-                  <button
-                    className="flex items-center space-x-1"
-                    onClick={toggleServicesDropdown}
+            {/* Desktop Nav Items */}
+            <div className="hidden md:flex items-center space-x-8">
+              <ul className="flex space-x-8">
+                <li>
+                  <Link
+                    to="/"
+                    className="text-gray-700 text-lg font-semibold hover:text-purple-600 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-purple-600 after:left-0 after:-bottom-1 after:rounded-full after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
                   >
-                    <span className="text-[15px] font-semibold hover:text-green-500">
-                      {link.name}
-                    </span>
-                    <ChevronDownIcon className="h-5 w-5" />
-                  </button>
-                  {isServicesOpen && <Dropdown isOpen={isServicesOpen} />}
-                </>
-              ) : (
-                <Link
-                  to={link.path}
-                  className="text-[15px] font-semibold py-2 md:py-0 transition hover:text-green-500 ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"
-                >
-                  {link.name}
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/about"
+                    className="text-gray-700 text-lg font-semibold hover:text-purple-600 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-purple-600 after:left-0 after:-bottom-1 after:rounded-full after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+                  >
+                    About
+                  </Link>
+                </li>
+                <li className="relative group">
+                  <Link
+                    to="/Services"
+                    className="text-gray-700 text-lg font-semibold hover:text-purple-600 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-purple-600 after:left-0 after:-bottom-1 after:rounded-full after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+                  >
+                    <ServicesDropdown />
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/products"
+                    className="text-gray-700 text-lg font-semibold hover:text-purple-600 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-purple-600 after:left-0 after:-bottom-1 after:rounded-full after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+                  >
+                    Products
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/lawyer-contact"
+                    className="text-gray-700 text-lg font-semibold hover:text-purple-600 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-purple-600 after:left-0 after:-bottom-1 after:rounded-full after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+                  >
+                    Lawyer Connect
+                  </Link>
+                </li>
+              </ul>
+
+              {/* Login Button */}
+              <div className="flex items-center">
+                <Link to="/login" className="bg-white text-purple-600 font-semibold px-6 py-2 rounded-full border-2 border-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                  Login
                 </Link>
-              )}
-            </li>
-          ))}
-        </ul>
-        <div className="md:flex ">
-        <button className="border-[1px] border-black hover:text-green-500 text-black font-bold py-2 px-8 rounded hover:animate-bounce">
-          Login
-        </button>
-      </div>
-      </div>
+              </div>
+            </div>
 
-      {/* Mobile Menu Toggle */}
-      <div className="md:hidden">
-        <button onClick={toggleMobileMenu} aria-label="Toggle Menu">
-          {isMobileMenuOpen ? (
-            <XMarkIcon className="h-6 w-6" />
-          ) : (
-            <Bars3Icon className="h-6 w-6" />
-          )}
-        </button>
-      </div>
+            {/* Mobile Menu Button */}
+            <div className="md:hidden">
+              <button
+                onClick={toggleMobileMenu}
+                className="p-2 rounded-lg text-gray-600 hover:text-purple-600 hover:bg-purple-50 transition-colors duration-200"
+              >
+                {isMobileMenuOpen ? (
+                  <XMarkIcon className="h-6 w-6" />
+                ) : (
+                  <Bars3Icon className="h-6 w-6" />
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
 
-      {/* Mobile Nav Items */}
-      {isMobileMenuOpen && (
-        <div className="absolute top-24 left-8/12 transform -translate-x-1/2 w-11/12 bg-white rounded-lg shadow-lg p-4">
-          <ul className="flex flex-col  space-y-4">
+        {/* Mobile Menu */}
+        <div
+          className={`md:hidden transition-all duration-300 ease-in-out ${
+            isMobileMenuOpen
+              ? "max-h-screen opacity-100 visible"
+              : "max-h-0 opacity-0 invisible"
+          }`}
+        >
+          <div className="px-4 py-3 space-y-3 bg-white/90 backdrop-blur-md border-t">
             {NAV_LINKS.map((link, index) => (
               <li
                 key={index}
-                className="relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"
+                className="list-none"
               >
                 {link.name === "Services/Agreements" ? (
-                  <>
+                  <div className="relative">
                     <button
-                      className="flex items-center space-x-1"
+                      className="flex items-center w-full px-4 py-2 text-gray-700 rounded-lg hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200"
                       onClick={toggleServicesDropdown}
                     >
-                      <span className="text-[15px] font-semibold hover:text-green-500">
-                        {link.name}
-                      </span>
-                      <ChevronDownIcon className="h-5 w-5" />
+                      <span className="text-sm font-semibold">{link.name}</span>
+                      <ChevronDownIcon className="h-5 w-5 ml-2" />
                     </button>
                     {isServicesOpen && <Dropdown isOpen={isServicesOpen} />}
-                  </>
+                  </div>
                 ) : (
                   <Link
                     to={link.path}
-                    className="text-[15px] font-semibold hover:text-green-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"
+                    className="block px-4 py-2 text-sm font-semibold text-gray-700 rounded-lg hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200"
                   >
                     {link.name}
                   </Link>
                 )}
               </li>
             ))}
-          </ul>
+            <div className="px-4 pt-2">
+              <button className="w-full bg-purple-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors duration-200 shadow-md">
+                Login
+              </button>
+            </div>
+          </div>
         </div>
-      )}
-
-      {/* Login Button */}
-      
+      </div>
     </nav>
   );
 };

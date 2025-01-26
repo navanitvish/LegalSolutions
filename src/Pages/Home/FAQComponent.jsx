@@ -1,27 +1,32 @@
-import  { useState, useEffect } from "react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+import { useState } from "react";
+import { ChevronDown, ChevronUp, HelpCircle, MessageCircle } from 'lucide-react';
 
 const FAQItem = ({ number, question, content, isOpen, onClick }) => (
   <div
-    className={`bg-white  mb-4 overflow-hidden transition-all duration-300 hover:bg-black hover:text-white ${
-      isOpen ? "shadow-lg" : ""
+    className={`border border-purple-100 rounded-xl mb-4 overflow-hidden transition-all duration-300 ${
+      isOpen 
+        ? "bg-purple-50 shadow-lg" 
+        : "bg-white hover:bg-purple-50/50"
     }`}
-    data-aos-duration="500"
   >
     <button
-      className="w-full px-6 py-4 text-left flex justify-between items-center"
+      className="flex items-center justify-between w-full p-6 text-left"
       onClick={onClick}
+      aria-expanded={isOpen}
     >
-      <span className="flex items-center">
-        <span className="text-blue-600 mr-4">{number.padStart(2, "0")}</span>
-        <span className="font-semibold">{question}</span>
+      <span className="flex items-center gap-4">
+        <span className="flex items-center justify-center w-8 h-8 text-sm font-medium text-purple-600 bg-purple-100 rounded-lg">
+          {number.padStart(2, "0")}
+        </span>
+        <span className="font-medium text-gray-900">{question}</span>
       </span>
-      <span className="text-xl">{isOpen ? "−" : "+"}</span>
+      <span className="flex-shrink-0 ml-4 text-purple-600">
+        {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+      </span>
     </button>
     {isOpen && (
-      <div className="px-6 py-4 bg-gray-50 text-black">
-        <p>{content}</p>
+      <div className="px-6 pb-6 pt-2 text-gray-600">
+        <div className="pl-12">{content}</div>
       </div>
     )}
   </div>
@@ -30,77 +35,109 @@ const FAQItem = ({ number, question, content, isOpen, onClick }) => (
 const FAQComponent = () => {
   const [openItem, setOpenItem] = useState(null);
 
-//   useEffect(() => {
-//     AOS.init({
-//       duration: 1000,
-//     });
-//   }, []);
-
   const faqItems = [
     {
-      question: "Choose Our Pricing List",
-      content: `We have various list of pricing that you can choose based on your needs, or if you need don't see any plans that suit to you`,
+      question: "What is E-documentation?",
+      content:
+        "E-documentation refers to the process of creating, executing, and storing legal documents in electronic form, as opposed to physical paper documents."
     },
     {
-      question: "Meet Up With Our Team",
-      content: `Schedule a meeting with our team to discuss your specific needs and requirements.`,
+      question: "Is e-documentation legally valid in India?",
+      content:
+        "Yes, e-documents are legally valid in India under the Information Technology Act, 2000, which grants legal recognition to electronic records and digital signatures."
     },
     {
-      question: "Get A Deal",
-      content: `Once we understand your needs, we'll offer you a customized deal that fits your budget.`,
+      question: "What constitutes an Electronic Record?",
+      content:
+        "An electronic record encompasses any data, document, or information conceived, retained, or transmitted in a digital format. It can involve emails, scanned papers, as well as other digital files."
     },
     {
-      question: "Create Your Task",
-      content: `After finalizing the deal, you can start creating and assigning tasks for our team to work on.`,
+      question: "Can contracts be finalized electronically in India?",
+      content:
+        "Yes, contracts can be executed electronically provided they meet the standards of the Indian Contract Act of 1872. The document must be legally enforceable and involve consent from all parties involved."
     },
     {
-      question: "Done & Ready",
-      content: `We'll complete the tasks and deliver the results to you. Your project will be done and ready for use.`,
+      question: "How secure is e-documentation?",
+      content:
+        "To ensure the authenticity and confidentiality of e-documentation, encryption, access monitoring, and electronic signatures are employed. According to Indian law, digital signatures are mandated for specific legal documents to heighten security."
     },
     {
-      question: "Create Your Task",
-      content: `After finalizing the deal, you can start creating and assigning tasks for our team to work on.`,
-    },
-    {
-      question: "Done & Ready",
-      content: `We'll complete the tasks and deliver the results to you. Your project will be done and ready for use.`,
-    },
-   
+      question: "What is an electronic signature or digital signature?",
+      content:
+        "An electronic signature or digital signature is a form of signature used to authenticate electronic documents. It ensures that the document has not been altered after signing and verifies the identity of the signer."
+    }
   ];
 
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-4 ">
-      <h2 className="text-6xl font-sans text-balance text-center p-10 font-semibold ">
-        Frequently asked questions?
-      </h2>
-      <div className="max-w-6xl w-full flex flex-col md:flex-row gap-8 ">
-        <div className="md:w-1/2" data-aos="fade-right">
-          <div className="bg-green-200 text-white p-6 rounded-[30px]">
-            <div className="bg-gray-800 p-4 ">
-              <img
-                src="https://cdn.dribbble.com/userupload/16253505/file/original-38f3d3681aeb5e8ae370c8fce9001222.png?resize=752x"
-                alt="Pricing graph"
-                className="w-full h-auto rounded-xl "
-              />
-            </div>
-            <h2 className="text-2xl font-bold mb-4">Choose Our Pricing List</h2>
-            <p className="text-gray-300 mb-4">
-              We have various list of pricing that you can choose based on your
-              needs, or if you need don't see any plans that suit to you
-            </p>
+    <div className="min-h-screen bg-gradient-to-b from-white to-purple-50 py-20 px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center justify-center gap-2 bg-purple-100 text-purple-600 px-4 py-2 rounded-full mb-6">
+            <HelpCircle size={20} />
+            <span className="font-medium">FAQ Section</span>
           </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Find answers to common questions about e-documentation and our services
+          </p>
         </div>
-        <div className="md:w-1/2" data-aos="fade-left">
-          {faqItems.map((item, index) => (
-            <FAQItem
-              key={index}
-              number={`${index + 1}`}
-              question={item.question}
-              content={item.content}
-              isOpen={openItem === index}
-              onClick={() => setOpenItem(openItem === index ? null : index)}
-            />
-          ))}
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="bg-white h-[470px] rounded-2xl p-8 shadow-xl border border-purple-100">
+            <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-xl p-6 text-white mb-6 mt-6">
+              <div className="flex items-center gap-3 mb-4">
+                <MessageCircle size={24} />
+                <h3 className="text-xl font-semibold">Need More Help?</h3>
+              </div>
+              <p className="text-purple-100 mb-6">
+                Can't find what you're looking for? Our support team is here to assist you with any questions.
+              </p>
+              <button className="bg-white text-purple-600 px-6 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors">
+                Contact Support
+              </button>
+            </div>
+            
+            <div className="space-y-6">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                  <svg className="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-medium text-gray-900">Quick Resolution</h4>
+                  <p className="text-gray-600 text-sm">Get answers within 24 hours</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                  <svg className="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-medium text-gray-900">Detailed Support</h4>
+                  <p className="text-gray-600 text-sm">Comprehensive documentation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:h-[600px] overflow-y-auto pr-4 space-y-4">
+            {faqItems.map((item, index) => (
+              <FAQItem
+                key={index}
+                number={`${index + 1}`}
+                question={item.question}
+                content={item.content}
+                isOpen={openItem === index}
+                onClick={() => setOpenItem(openItem === index ? null : index)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

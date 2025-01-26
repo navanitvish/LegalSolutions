@@ -1,12 +1,14 @@
 import React from "react";
-import StackedServiceCards from "./CardStack";
-import App from "./Herosection";
+// import StackedServiceCards from "./CardStack";
+// import App from "./Herosection";
+import AboutPage from "./allinone";
 
 function About() {
   return (
     <div>
-        <App/>
-      <StackedServiceCards />
+        {/* <App/>
+      <StackedServiceCards /> */}
+      <AboutPage/>
     </div>
   );
 }

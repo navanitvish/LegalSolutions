@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import CardList from "../CardList";
 
 const LShapeContentWithVideo = () => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
@@ -21,22 +22,10 @@ const LShapeContentWithVideo = () => {
   return (
     <div className="w-full h-screen bg-gray-100 p-4 flex flex-col md:flex-row">
       {/* L-shaped content area */}
-      <div className="flex flex-col w-full md:w-[300px] md:mr-4 mb-4 md:mb-0">
+      <div className="flex flex-col w-full md:w-[500px] md:mr-4 mb-4 md:mb-0 overflow-y-auto custom-scrollbar">
         {/* Top part of L */}
-        <div className="bg-white border border-gray-300 p-4 mb-4 flex-grow">
-          <h2 className="text-xl font-bold mb-4">Main Content</h2>
-          <div className="space-y-2">
-            <div className="h-auto bg-gray-200 rounded p-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna.
-            </div>
-            <div className="h-auto bg-gray-200 rounded p-2">
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-            </div>
-            <div className="h-auto bg-gray-200 rounded p-2">
-              Etiam porta sem malesuada magna mollis euismod.
-            </div>
-          </div>
-        </div>
+
+        <CardList />
       </div>
 
       {/* Main video player taking up the rest of the space */}
