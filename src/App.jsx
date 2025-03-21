@@ -116,6 +116,12 @@ function App() {
         <Route path="/notices/:id" element={<Notice />}/>
         <Route path="/power-of-attorney/:id" element={<Powerofattorney />}/>
         <Route path="/post-contractual/:id" element={<PostContractual />}/>
+        <Route path="/services/:categorySlug/:id" element={<Commercialest />} />
+        <Route path="/services/:categorySlug/:id" element={<EcommerseContract />} />
+        <Route path="/services/:categorySlug/:id" element={<AffidavitsPage />} />
+        <Route path="/services/:categorySlug/:id" element={<EmploymentAgreement />} />
+        <Route path="/services/:categorySlug/:id" element={<RealstateAgre />} />
+        <Route path="/services/:categorySlug/:id" element={<Corporate />} />
         
 
 

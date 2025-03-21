@@ -34,61 +34,7 @@ const iconMap = {
 };
 
 //Enhanced mapping of URLs to content IDs
-const getContentId = (urlParam) => {
-  const urlMappings = {
-    // Sale of House variations
-    'house': 'saleofhouse',
-    'house-sale': 'saleofhouse',
-    'sale-of-house': 'saleofhouse',
-    'saleofhouse': 'saleofhouse',
-    'property-sale': 'saleofhouse',
-    'home-sale': 'saleofhouse',
-    
-    // Sale of Apartment variations
-    'apartment': 'saleofapartment',
-    'apartment-sale': 'saleofapartment',
-    'sale-of-apartment': 'saleofapartment',
-    'saleofapartment': 'saleofapartment',
-    'flat-sale': 'saleofapartment',
-    'condo-sale': 'saleofapartment',
-    
-    // Sale Deed variations
-    'deed': 'saledeed',
-    'sale-deed': 'saledeed',
-    'saledeed': 'saledeed',
-    'property-deed': 'saledeed',
-    'deed-of-sale': 'saledeed',
-    'property-document': 'saledeed',
-    
-    // General Sale variations
-    'sale': 'sale',
-    'general-sale': 'sale',
-    'property-transfer': 'sale',
-    'asset-sale': 'sale',
-    'sale-agreement': 'sale',
-    'sale-contract': 'sale'
-  };
 
-  // Clean the URL parameter and provide default if none provided
-  const cleanUrl = urlParam?.toLowerCase().trim() || 'sale';
-  
-  // Try to find exact match first
-  if (urlMappings[cleanUrl]) {
-    return urlMappings[cleanUrl];
-  }
-  
-  // If no exact match, try to find partial matches
-  const partialMatch = Object.entries(urlMappings).find(([key]) => 
-    cleanUrl.includes(key) || key.includes(cleanUrl)
-  );
-  
-  // Return the matched content ID or default to saleofhouse
-  return partialMatch ? partialMatch[1] : 'saleofhouse';
-};
-
-const validateContent = (content) => {
-  if (!content) return false;
-}
 const SaleDocuments = () => {
   const { id } = useParams();
   const [isOpen, setIsOpen] = useState(null);
@@ -101,10 +47,15 @@ const SaleDocuments = () => {
   useEffect(() => {
     setLoading(true);
     
-    const contentId = getContentId(id);
-    const pageContent = saleDocuments[contentId];
+    // Directly access the content using the id
+    const pageContent = saleDocuments[id]; // Use id directly to get content
+
+    if (pageContent) {
+      setContent(pageContent);
+    } else {
+      setContent(null); // Handle case where content is not found
+    }
     
-    setContent(pageContent);
     setLoading(false);
   }, [id]);
 

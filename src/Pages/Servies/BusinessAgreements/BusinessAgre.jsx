@@ -34,53 +34,7 @@ const iconMap = {
 };
 
 // Enhanced mapping of URLs to content IDs
-const getContentId = (urlParam) => {
-  const urlMappings = {
-    // Partnership variations
-    'partnership': 'Partnership',
-    'partnership-agreement': 'Partnership',
-    'business-partnership': 'Partnership',
-    'partner-deed': 'Partnership',
-    
-    // Office Sharing variations
-    'office': 'OfficeSharing',
-    'office-sharing': 'OfficeSharing',
-    'office-agreement': 'OfficeSharing',
-    'commercial-space': 'OfficeSharing',
-    
-    // NOC Landlord variations
-    'noc': 'NOCLandlord',
-    'noc-landlord': 'NOCLandlord',
-    'landlord-noc': 'NOCLandlord',
-    'after-marriage': 'NOCLandlord',
-    
-    // Memorandum variations
-    'memorandum': 'Memorandum',
-    'mou': 'Memorandum',
-    'understanding': 'Memorandum',
-    'vehicle-lease': 'Memorandum'
-  };
 
-  // Clean the URL parameter
-  const cleanUrl = urlParam?.toLowerCase().trim() || 'partnership';
-  
-  // Try to find exact match first
-  if (urlMappings[cleanUrl]) {
-    return urlMappings[cleanUrl];
-  }
-  
-  // If no exact match, try to find partial matches
-  const partialMatch = Object.entries(urlMappings).find(([key]) => 
-    cleanUrl.includes(key) || key.includes(cleanUrl)
-  );
-  
-  // Return the matched content ID or default to Partnership
-  return partialMatch ? partialMatch[1] : 'Partnership';
-};
-
-const validateContent = (content) => {
-  if (!content) return false;
-}
 const BusinessAgre = () => {
   const { id } = useParams();
   const [isOpen, setIsOpen] = useState(null);
@@ -93,10 +47,15 @@ const BusinessAgre = () => {
   useEffect(() => {
     setLoading(true);
     
-    const contentId = getContentId(id);
-    const pageContent = businessAgre[contentId];
+    // Directly access the content using the id
+    const pageContent = businessAgre[id]; // Use id directly to get content
+
+    if (pageContent) {
+      setContent(pageContent);
+    } else {
+      setContent(null); // Handle case where content is not found
+    }
     
-    setContent(pageContent);
     setLoading(false);
   }, [id]);
 

@@ -13,6 +13,7 @@ import ValueofProducts from "./ValueofProducts";
 import Products10 from "./Products10";
 import ProductCardSlider from "./ProductCardSlider";
 import FAQComponent from "./FAQComponent";
+import QuickReadsBlog from "./QuickReadsBlog";
 
 const Home = () => {
   return (
@@ -33,6 +34,7 @@ const Home = () => {
       <HeroSection />
       <ValueofProducts />
       <CustomerStores />
+      <QuickReadsBlog/>
 
       <FAQComponent/>
     </div>

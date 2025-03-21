@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft,ChevronRight  } from 'lucide-react';
 import { servicesData } from '../../../utils/servicesData';
 import Servicesfill from '../../ServicesContact';
 
@@ -16,8 +16,8 @@ const SubcategoryPage = () => {
   const categoryData = category ? servicesData[category] : null;
 
   const handleSubcategoryClick = (subcategory) => {
-    const subcategorySlug = subcategory.name.toLowerCase().replace(/\s+/g, '-');
-    navigate(`/${categorySlug}/${subcategorySlug}`);
+    console.log("Navigating to:", subcategory.path); // Debugging line
+    navigate(subcategory.path); // Use the path property
   };
 
   if (!categoryData) {
@@ -37,39 +37,35 @@ const SubcategoryPage = () => {
     <div className="min-h-screen bg-gray-50 py-20">
       {/* Hero Section */}
       <div className="relative ">
-      {/* Full-width background image with overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="https://media.istockphoto.com/id/178078864/photo/rental-agreement-form.jpg?s=612x612&w=0&k=20&c=mBmFUpkCu2lckYhUpCOeinXDrQelda8KKeQ-G3sYAUE="
-          alt="Background"
-          className="w-full h-full object-fill"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-100/20 via-purple-200/40 to-blue-900/80" />
-        <div className="absolute inset-0 bg-black/10 backdrop-blur-[2px]" />
-      </div>
+        <div className="absolute inset-0 z-0">
+          <img
+            src={categoryData.image}
+            alt="Background"
+            className="w-full h-full object-cover
+            "
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-100/20 via-purple-200/40 to-blue-900/80" />
+          <div className="absolute inset-0 bg-black/10 backdrop-blur-[2px]" />
+        </div>
 
-      {/* Content */}
-      <div className="relative z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Navigation */}
-          <div className="pt-6">
-            <Link
-              to="/services"
-              className="inline-flex items-center text-white/90 hover:text-white transition-colors"
-            >
-              <ChevronLeft className="w-5 h-5 mr-1" />
-              <span className="font-medium">Back to Categories</span>
-            </Link>
-          </div>
+        {/* Content */}
+        <div className="relative z-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Navigation */}
+            <div className="pt-6">
+              <Link
+                to="/services"
+                className="inline-flex items-center text-white/90 hover:text-white transition-colors"
+              >
+                <ChevronLeft className="w-5 h-5 mr-1" />
+                <span className="font-medium">Back to Categories</span>
+              </Link>
+            </div>
 
-          {/* Main Content Grid */}
-          <div className="mt-8 lg:mt-12 min-h-[calc(100vh-8rem)] flex items-center">
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center py-12">
-              {/* Left Content */}
-              <div className="relative">
-                {/* Decorative element */}
-                <div className="absolute -left-4 -top-4 w-32 h-32 bg-gradient-to-br from-purple-400/30 to-blue-400/30 rounded-full blur-2xl" />
-                
+            {/* Main Content Grid */}
+            <div className="mt-8 lg:mt-12 min-h-[calc(100vh-8rem)] flex items-center">
+              <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center py-12">
+                {/* Left Content */}
                 <div className="relative">
                   <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-black">
                     <span className="block mb-2">{category}</span>
@@ -99,39 +95,10 @@ const SubcategoryPage = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Right Content - Featured Template Preview */}
-              {/* <div className="relative lg:ml-auto">
-                <div className="absolute -right-4 -bottom-4 w-48 h-48 bg-gradient-to-br from-blue-400/30 to-purple-400/30 rounded-full blur-3xl" />
-                
-                <div className="relative">
-                  <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur rounded-2xl p-6 border border-white/10">
-                    <div className="aspect-w-16 aspect-h-12 rounded-lg overflow-hidden">
-                      <img
-                        src="https://media.istockphoto.com/id/178078864/photo/rental-agreement-form.jpg?s=612x612&w=0&k=20&c=mBmFUpkCu2lckYhUpCOeinXDrQelda8KKeQ-G3sYAUE="
-                        alt="Template preview"
-                        className="w-full h-full object-cover rounded-lg transform scale-105 hover:scale-100 transition-transform duration-500"
-                      />
-                    </div>
-                    <div className="mt-4">
-                      <div className="flex items-center justify-between">
-                        <h3 className="text-lg font-semibold text-white">Featured Template</h3>
-                        <span className="px-3 py-1 bg-purple-500/20 rounded-full text-sm text-purple-200">
-                          Premium
-                        </span>
-                      </div>
-                      <p className="mt-2 text-sm text-purple-100/80">
-                        Start with our most popular template for {category.toLowerCase()}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
       </div>
-    </div>
 
       {/* Templates Section */}
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8" id="templates">
@@ -198,7 +165,7 @@ const SubcategoryPage = () => {
         </div>
 
         <div id="contact">
-          <Servicesfill/>
+          <Servicesfill />
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 // EmploymentAgreements
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { rentalContent } from "../../../utils/sevicecontent";
+import { intellectual } from "../../../utils/sevicecontent";
 import {
   Gavel,
   DollarSign,
@@ -47,12 +47,15 @@ const IntellectualAgreement = () => {
   useEffect(() => {
     setLoading(true);
     
-    // Remove '-lease-agreement' or '-rental-agreement' from the URL if present
-    const cleanId = (id || 'residential').replace(/-lease-agreement|-rental-agreement/g, '');
+    // Directly access the content using the id
+    const pageContent = intellectual[id]; // Use id directly to get content
+
+    if (pageContent) {
+      setContent(pageContent);
+    } else {
+      setContent(null); // Handle case where content is not found
+    }
     
-    // Get content for the cleaned ID or fall back to residential
-    const pageContent = rentalContent[cleanId] || rentalContent.residential;
-    setContent(pageContent);
     setLoading(false);
   }, [id]);
 

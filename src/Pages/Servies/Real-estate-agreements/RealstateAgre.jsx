@@ -34,52 +34,7 @@ const iconMap = {
 };
 
 // Enhanced mapping of URLs to content IDs
-const getContentId = (urlParam) => {
-  const urlMappings = {
-   'property-purchase': 'Propertypurchase',
-    'property-purchase-agreement': 'Propertypurchase',
-    'flat-rent': 'Propertypurchase',
-    'rental-agreement': 'Propertypurchase',
 
-    // Property Sale variations
-    'property-sale': 'Propertysale',
-    'commercial-lease': 'Propertysale',
-    'sale-agreement': 'Propertysale',
-    'apartment-sale': 'Propertysale',
-
-    // Development Agreement variations
-    'development-agreement': 'Developmentagreement',
-    'equipment-rental': 'Developmentagreement',
-    'equipment-agreement': 'Developmentagreement',
-
-    // Joint Venture variations
-    'joint-venture': 'Jointventure',
-    'vehicle-lease': 'Jointventure',
-    'car-lease': 'Jointventure',
-    'auto-lease': 'Jointventure',
-
-  };
-
-  // Clean the URL parameter
-  const cleanUrl = urlParam?.toLowerCase().trim() || 'partnership';
-  
-  // Try to find exact match first
-  if (urlMappings[cleanUrl]) {
-    return urlMappings[cleanUrl];
-  }
-  
-  // If no exact match, try to find partial matches
-  const partialMatch = Object.entries(urlMappings).find(([key]) => 
-    cleanUrl.includes(key) || key.includes(cleanUrl)
-  );
-  
-  // Return the matched content ID or default to Partnership
-  return partialMatch ? partialMatch[1] : 'Propertypurchase';
-};
-
-const validateContent = (content) => {
-  if (!content) return false;
-}
 const RealstateAgre = () => {
   const { id } = useParams();
   const [isOpen, setIsOpen] = useState(null);
@@ -92,10 +47,15 @@ const RealstateAgre = () => {
   useEffect(() => {
     setLoading(true);
     
-    const contentId = getContentId(id);
-    const pageContent = realEstate[contentId];
+    // Directly access the content using the id
+    const pageContent = realEstate[id]; // Use id directly to get content
+
+    if (pageContent) {
+      setContent(pageContent);
+    } else {
+      setContent(null); // Handle case where content is not found
+    }
     
-    setContent(pageContent);
     setLoading(false);
   }, [id]);
 

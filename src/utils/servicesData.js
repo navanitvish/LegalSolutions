@@ -1,6 +1,9 @@
+// import image1 from "../assets/images/SW1.png"
+
 export const servicesData = {
   "Rental Agreements": {
     path: "/rental-agreements",
+    image: "/src/assets/images/Rental_agrrement.png", // Image for the entire category
     subcategories: [
       {
         name: "House rent agreement",
@@ -42,164 +45,288 @@ export const servicesData = {
   },
   "Lease Agreements": {
     path: "/lease-agreements",
+    image: "/src/assets/images/undraw_terms_7l7t.png", // Image for the entire category
     subcategories: [
       {
         name: "Residential lease agreement",
-        path: "/lease-agreements/residential-lease",
+        path: "/lease-agreements/residential",
       },
       {
         name: "Commercial lease agreement",
-        path: "/lease-agreements/commercial-lease",
+        path: "/lease-agreements/commercial",
+      },
+      {
+        name: " Shop/outlet lease agreement",
+        path: "/lease-agreements/Shopoutlet",
+      },
+      {
+        name: "Commercial/Institutional Lease deed",
+        path: "/commercial-establishments/CommercialInstitutional",
       },
       {
         name: "Equipment lease agreement",
-        path: "/lease-agreements/equipment-lease",
+        path: "/lease-agreements/equipment",
       },
       {
         name: "Vehicle lease agreement",
-        path: "/lease-agreements/vehicle-lease",
+        path: "/lease-agreements/vehicle",
+      },
+     
+    ],
+  },
+  Affidavits: {
+    path: "/affidavits",
+    image: "/src/assets/images/undraw_book-lover_cmz5.png", // Image for the entire category
+    subcategories: [
+      {
+        name: "Address Proof Affidavit",
+        path: "/Affidavits/AddressAffidavit",
+      },
+      {
+        name: "Affidavit For Change Of Name",
+        path: "/Affidavits/AffidavitNameChange",
+      },
+      {
+        name: "Affidavit For Change Of Name After Marriage",
+        path: "/Affidavits/AfterMarriage",
+      },
+      {
+        name: "Affidavit For Change Of Signature",
+        path: "/Affidavits/AffidavitChangeSignature",
+      },
+      {
+        name: "Affidavit For Claim Settlement In Bank",
+        path: "/Affidavits/ClaimSettlement",
+      },
+      {
+        name: "Affidavit For Duplicate Licence",
+        path: "/Affidavits/DuplicateLicense",
+      },
+      {
+        name: "Affidavit For Duplicate Mark sheet/Certificate",
+        path: "/Affidavits/DuplicatemarkSheet",
+      },
+      { name: "Affidavit For Education Loan", path: "/Affidavits/EducationLoan" },
+      {
+        name: "Affidavit for Marriage Registration by Joint Applicants",
+        path: "/Affidavits/MarriageRegistrationAffidavit",
+      },
+      {
+        name: "Affidavit for Marriage Registration by Single Applicant",
+        path: "/Affidavits/AffidavitForMarriageRegistrationBySingleApplicant",
+      },
+      {
+        name: "Affidavit For One And The Same Person",
+        path: "/Affidavits/AffidavitForOneAndTheSamePerson",
+      },
+      { name: "Affidavit For Proof Of Income", path: "/Affidavits/AffidavitForProofOfIncome" },
+      {
+        name: "Affidavit In Proof Of Date Of Birth",
+        path: "/Affidavits/AffidavitForProofOfDateOfBirth",
+      },
+      {
+        name: "Affidavit PF Cum Indemnity Bond",
+        path: "/Affidavits/AffidavitForPFCumIndemnityBond",
+      },
+    ],
+  },
+  "Commercial Establishments": {
+    path: "/commercial-establishments",
+    image: "/src/assets/images/undraw_business-deal_nx2n.png", // Image for the entire category
+    subcategories: [
+      {
+        name: "Shop/outlet lease agreement",
+        path: "/commercial-establishments/Shopoutlet",
+      },
+      {
+        name: "Shop/outlet leave and Licence agreement",
+        path: "/commercial-establishments/leaveandLicence",
+      },
+      {
+        name: "Office/company/entity leave and license",
+        path: "/commercial-establishments/Officecompany",
+      },
+      {
+        name: "Commercial/Institutional Lease deed",
+        path: "/commercial-establishments/CommercialInstitutional",
+      },
+      {
+        name: "Leave and Licence Agreement- movable property",
+        path: "/commercial-establishments/LeaveandLicence",
+      },
+      {
+        name: "Dealership / Distribution agreement",
+        path: "/commercial-establishments/Dealership",
+      },
+      {
+        name: "Commercial Lease Agreement",
+        path: "/commercial-establishments/Commercial",
+      },
+    ],
+  },
+  Notices: {
+    path: "/notices",
+    image: "/src/assets/images/serveies (4).png", // Image for the entire category
+    subcategories: [
+      { name: "Notice for Dishonour of Cheque", path: "/notices/NoticeDishonour" },
+      {
+        name: "Notice of Dissolution of Partnership",
+        path: "/notices/NoticeDissolution",
+      },
+      { name: "Notice of Clearance of Dues", path: "/notices/NoticeClearance" },
+      { name: "Notice for Faulty Product", path: "/notices/NoticeFaultyProduct" },
+      {
+        name: "Notice for Non-Payment of Bill",
+        path: "/notices/noticenonpayemt",
+      },
+      {
+        name: "Notice for non-payment of salaries",
+        path: "/notices/noticesalaries",
+      },
+      {
+        name: "Notice for Specific Performance Of Contract",
+        path: "/notices/Specificperf",
+      },
+    ],
+  },
+  "Employment Agreements": {
+    path: "/employment-agreements",
+    image: "/src/assets/images/undraw_contract_upwc.png", // Image for the entire category
+    subcategories: [
+      { name: "Offer letter", path: "/employment-agreements/Offerletter" },
+      {
+        name: "Appointment letter",
+        path: "/employment-agreements/Appointmentletter",
+      },
+      {
+        name: "Confirmation letter",
+        path: "/employment-agreements/Confirmationletter",
+      },
+      {
+        name: "Fixed term employment agreement",
+        path: "/employment-agreements/Fixedterm",
+      },
+      {
+        name: "Ad hoc employment agreement",
+        path: "/employment-agreements/Adhocemployment",
+      },
+      {
+        name: "Resignation letter",
+        path: "/employment-agreements/Resignationletter",
+      },
+      {
+        name: "Letter of termination",
+        path: "/employment-agreements/Letteroftermination",
+      },
+      {
+        name: "Consultancy agreement",
+        path: "/employment-agreements/Consultancyagreement",
+      },
+      {
+        name: "Advisors agreement",
+        path: "/employment-agreements/Advisorsagreement",
+      },
+      {
+        name: "Retainer ship agreement",
+        path: "/employment-agreements/Retainershipagreement",
+      },
+      {
+        name: "Employment agreement",
+        path: "/employment-agreements/Employmentagreement",
+      },
+      {
+        name: "Compensation agreement",
+        path: "/employment-agreements/CompensationAgreement",
+      },
+      {
+        name: "Collective bargaining agreement",
+        path: "/employment-agreements/AdhocempCollectivebargaining",
+      },
+      { name: "Wage agreement", path: "/employment-agreements/Wageagreement" },
+      {
+        name: "Agreement to refer disputes to arbitration",
+        path: "/employment-agreements/Agreementreferdisputes",
+      },
+      {
+        name: "Contractor agreement",
+        path: "/employment-agreements/Contractoragreement",
+      },
+      {
+        name: "On the job training agreement",
+        path: "/employment-agreements/jobtrainingagreement",
+      },
+      {
+        name: "Agreement for logistics services",
+        path: "/employment-agreements/logisticsservicesAgreement",
       },
     ],
   },
   "Real Estate Agreements": {
     path: "/real-estate-agreements",
+    image: "/src/assets/images/undraw_building_burz.png", // Image for the entire category
     subcategories: [
       {
         name: "Property purchase agreement",
-        path: "/real-estate/purchase-agreement",
+        path: "/real-estate-agreements/Propertypurchase",
       },
-      { name: "Property sale agreement", path: "/real-estate/sale-agreement" },
+      { name: "Property sale agreement", path: "/real-estate-agreements/Propertysale" },
       {
         name: "Development agreement",
-        path: "/real-estate/development-agreement",
+        path: "/real-estate-agreements/Developmentagreement",
       },
-      { name: "Joint venture agreement", path: "/real-estate/joint-venture" },
+      { name: "Joint venture agreement", path: "/real-estate-agreements/Jointventure" },
     ],
   },
 
   "Business Agreements": {
     path: "/business-agreements",
+    image: "/src/assets/images/undraw_sharing-knowledge_pu0e.png", // Image for the entire category
     subcategories: [
       { name: "Partnership Deed", path: "/business-agreements/Partnership" },
       {
         name: "Office Sharing Agreement",
         path: "/business-agreements/OfficeSharing",
       },
-      { name: "NOC form Landlord", path: "/business-agreements/NOC" },
+      { name: "NOC form Landlord", path: "/business-agreements/NOCLandlord" },
       {
         name: "Memorandum of understanding (property)",
         path: "/business-agreements/Memorandum",
       },
       {
         name: "Recognition letter",
-        path: "/business-agreements/Recognition-letter",
+        path: "/business-agreements/Recognitionletter",
       },
-      { name: "Code of conduct", path: "/business-agreements/Code-of-conduct" },
-      { name: "Exit policy", path: "/business-agreements/Exit-policy" },
+      { name: "Code of conduct", path: "/business-agreements/Codeofconduct" },
+      { name: "Exit policy", path: "/business-agreements/Exitpolicy" },
       {
         name: "Procurement Agreement",
-        path: "/business-agreements/Procurement",
+        path: "/business-agreements/ProcurementAgreement",
       },
-      { name: "Exclusive agreement", path: "/business-agreements/Exclusive" },
-      { name: "Trust deed", path: "/business-agreements/Trust-deed" },
+      { name: "Exclusive agreement", path: "/business-agreements/Exclusiveagreement" },
+      { name: "Trust deed", path: "/business-agreements/Trustdeed" },
     ],
   },
-  "Employment Agreements": {
-    path: "/employment-agreements",
-    subcategories: [
-      { name: "Offer letter", path: "/employment-agreements/Offer-letter" },
-      {
-        name: "Appointment letter",
-        path: "/employment-agreements/Appointment-letter",
-      },
-      {
-        name: "Confirmation letter",
-        path: "/employment-agreements/Confirmation-letter",
-      },
-      {
-        name: "Fixed term employment agreement",
-        path: "/employment-agreements/eviction",
-      },
-      {
-        name: "Ad hoc employment agreement",
-        path: "/employment-agreements/Ad-hoc-employment-agreement",
-      },
-      {
-        name: "Resignation letter",
-        path: "/employment-agreements/Resignation-letter",
-      },
-      {
-        name: "Letter of termination",
-        path: "/employment-agreements/Letter-of-termination",
-      },
-      {
-        name: "Consultancy agreement",
-        path: "/employment-agreements/Consultancy-agreement",
-      },
-      {
-        name: "Advisors agreement",
-        path: "/employment-agreements/Advisors-agreement",
-      },
-      {
-        name: "Retainer ship agreement",
-        path: "/employment-agreements/Retainer-agreement",
-      },
-      {
-        name: "Employment agreement",
-        path: "/employment-agreements/Employment-agreement",
-      },
-      {
-        name: "Compensation agreement",
-        path: "/employment-agreements/Compensation-agreement",
-      },
-      {
-        name: "Collective bargaining agreement",
-        path: "/employment-agreements/Collective-bargaining-agreement",
-      },
-      { name: "Wage agreement", path: "/employment-agreements/Wage-agreement" },
-      {
-        name: "Agreement to refer disputes to arbitration",
-        path: "/employment-agreements/Agreement-to-refer",
-      },
-      {
-        name: "Contractor agreement",
-        path: "/employment-agreements/Contractor-agreement",
-      },
-      {
-        name: "On the job training agreement",
-        path: "/employment-agreements/termination",
-      },
-      {
-        name: "Agreement for logistics services",
-        path: "/employment-agreements/Agreement-for-logistics",
-      },
-    ],
-  },
-  "Corporate Agreement": {
+  
+  "Corporate Agreements": {
     path: "/corporate-agreements",
+    image: "/src/assets/images/c1.png", // Image for the entire category
     subcategories: [
       {
         name: "Shareholders agreement",
-        path: "/corporate-agreements/shareholders-agreement",
+        path: "/corporate-agreements/Shareholdersagreement",
       },
       {
         name: "Share purchase agreement",
-        path: "/corporate-agreements/share-purchase",
+        path: "/corporate-agreements/Sharepurchaseagreement",
       },
       {
         name: "Joint venture agreement",
-        path: "/corporate-agreements/joint-venture",
+        path: "/corporate-agreements/Jointventureagreement",
       },
       {
         name: "Merger agreement",
-        path: "/corporate-agreements/merger-agreement",
+        path: "/corporate-agreements/Mergeragreement",
       },
-    ],
-  },
-
-  "Commercial Documents": {
-    path: "/commercial-documents",
-    subcategories: [
       {
         name: "Supply agreement",
         path: "/commercial-documents/supply-agreement",
@@ -215,98 +342,51 @@ export const servicesData = {
       },
     ],
   },
-  "Sale Documents": {
-    path: "/sale-documents",
-    subcategories: [
-      {
-        name: "Agreement for sale of house",
-        path: "/sale-documents/legal-notice",
-      },
-      {
-        name: "Agreement for sale of apartment in co-operative society",
-        path: "/sale-documents/demand-notice",
-      },
-      { name: "Absolute sale deed", path: "/sale-documents/eviction" },
-      { name: "Agreement of sale", path: "/sale-documents/eviction" },
-    ],
-  },
-  "Commercial Establishments": {
-    path: "/commercial-establishments",
-    subcategories: [
-      {
-        name: "Shop/outlet lease agreement",
-        path: "/commercial-establishments/legal-notice",
-      },
-      {
-        name: "Shop/outlet leave and Licence agreement",
-        path: "/commercial-establishments/demand-notice",
-      },
-      {
-        name: "Office/company/entity leave and license",
-        path: "/commercial-establishments/termination",
-      },
-      {
-        name: "ECommercial/Institutional Lease deed",
-        path: "/commercial-establishments/eviction",
-      },
-      {
-        name: "Leave and Licence Agreement- movable property",
-        path: "/commercial-establishments/legal-notice",
-      },
-      {
-        name: "Dealership / Distribution agreement",
-        path: "/commercial-establishments/demand-notice",
-      },
-      {
-        name: "Commercial Lease Agreement",
-        path: "/commercial-establishments/termination",
-      },
-    ],
-  },
   "E-commerce Agreements": {
     path: "/e-commerce",
+    image: "/src/assets/images/undraw_empty-cart_574u.png", // Image for the entire category
     subcategories: [
       {
         name: "Terms of use/terms of service of e-commerce website",
-        path: "/e-commerce/terms-of-use-terms-of-service-of-e-commerce-website",
+        path: "/e-commerce/Termsofuseterms",
       },
       {
         name: "Privacy Policy",
-        path: "/e-commerce/privacy-policy",
+        path: "/e-commerce/PrivacyPolicy",
       },
       {
         name: "Cookie policy for a website",
-        path: "/e-commerce/cookie-policy-for-a-website",
+        path: "/e-commerce/Cookiepolicy",
       },
       {
         name: "Subscription service agreement",
-        path: "/e-commerce/subscription-service-agreement",
+        path: "/e-commerce/Subscription",
       },
       {
         name: "Cancellation, returns and refund policy",
-        path: "/e-commerce/cancellation-returns-and-refund-policy",
+        path: "/e-commerce/Cancellation",
       },
       {
         name: "E-commerce website development and services agreement",
-        path: "/e-commerce/e-commerce-website-development-and-services-agreement",
+        path: "/e-commerce/Ecommercewebsitedev",
       },
       {
         name: "Terms and conditions of sale",
-        path: "/e-commerce/terms-and-conditions-of-sale",
+        path: "/e-commerce/Termsandconditionsale",
       },
       {
         name: "Internet banking services agreement",
-        path: "/e-commerce/internet-banking-services-agreement",
+        path: "/e-commerce/Internetbanking",
       },
       {
         name: "Domain name assignment agreement",
-        path: "/e-commerce/domain-name-assignment-agreement",
+        path: "/e-commerce/Domainameass",
       },
     ],
   },
-
   "Intellectual Property Agreements": {
     path: "/ip-agreements",
+    image: "/src/assets/images/I3.png", // Image for the entire category
     subcategories: [
       {
         name: "Agreement for Sale of Technical Know-How",
@@ -346,158 +426,111 @@ export const servicesData = {
       },
       {
         name: "Assignment of Trade Mark",
-        path: "/ip-agreements/demand-notice",
+        path: "/ip-agreements/AssignmentTrade",
       },
       {
         name: "Registered User Agreement",
-        path: "/ip-agreements/Registered-Agreement",
+        path: "/ip-agreements/RegisteredAgreement",
       },
       {
         name: "Website Development Agreement",
-        path: "/ip-agreements/Website-Development-Agreement",
+        path: "/ip-agreements/WebsiteDevelopmentAgreement",
       },
     ],
   },
 
-  Affidavits: {
-    path: "/affidavits",
+  // "Commercial Documents": {
+  //   path: "/commercial-documents",
+  //   subcategories: [
+      
+  //   ],
+  // },
+  "Sale Documents": {
+    path: "/sale-documents",
+    image: "/src/assets/images/I2.png", // Image for the entire category
     subcategories: [
       {
-        name: "Address Proof Affidavit",
-        path: "/Affidavits/Address-Proof-Affidavit",
+        name: "Agreement for sale of house",
+        path: "/sale-documents/saleofhouse",
       },
       {
-        name: "Affidavit For Change Of Name",
-        path: "/Affidavits/Affidavits-namechnage",
+        name: "Agreement for sale of apartment in co-operative society",
+        path: "/sale-documents/saleofapartment",
       },
-      {
-        name: "Affidavit For Change Of Name After Marriage",
-        path: "/Affidavits/termination",
-      },
-      {
-        name: "Affidavit For Change Of Signature",
-        path: "/Affidavits/eviction",
-      },
-      {
-        name: "Affidavit For Claim Settlement In Bank",
-        path: "/Affidavits/legal-notice",
-      },
-      {
-        name: "Affidavit For Duplicate Licence",
-        path: "/Affidavits/demand-notice",
-      },
-      {
-        name: "Affidavit For Duplicate Mark sheet/Certificate",
-        path: "/Affidavits/termination",
-      },
-      { name: "Affidavit For Education Loan", path: "/Affidavits/eviction" },
-      {
-        name: "Affidavit for Marriage Registration by Joint Applicants",
-        path: "/Affidavits/legal-notice",
-      },
-      {
-        name: "Affidavit for Marriage Registration by Single Applicant",
-        path: "/Affidavits/demand-notice",
-      },
-      {
-        name: "Affidavit For One And The Same Person",
-        path: "/Affidavits/termination",
-      },
-      { name: "Affidavit For Proof Of Income", path: "/Affidavits/eviction" },
-      {
-        name: "Affidavit In Proof Of Date Of Birth",
-        path: "/Affidavits/legal-notice",
-      },
-      {
-        name: "Affidavit PF Cum Indemnity Bond",
-        path: "/Affidavits/demand-notice",
-      },
+      { name: "Absolute sale deed", path: "/sale-documents/saledeed" },
+      { name: "Agreement of sale", path: "/sale-documents/sale" },
     ],
   },
-  Notices: {
-    path: "/notices",
-    subcategories: [
-      { name: "Notice for Dishonour of Cheque", path: "/notices/legal-notice" },
-      {
-        name: "Notice of Dissolution of Partnership",
-        path: "/notices/demand-notice",
-      },
-      { name: "Notice of Clearance of Dues", path: "/notices/termination" },
-      { name: "Notice for Faulty Product", path: "/notices/eviction" },
-      {
-        name: "Notice for Non- Payment of Bill",
-        path: "/notices/legal-notice-non-payemt",
-      },
-      {
-        name: "Notice for non-payment of salaries",
-        path: "/notices/demand-notice-salaries",
-      },
-      {
-        name: "Notice for Specific Performance Of Contract",
-        path: "/notices/Specific-perf",
-      },
-    ],
-  },
+ 
+ 
+
+ 
+
+ 
+ 
   "Power of Attorney": {
     path: "/power-of-attorney",
+    image: "/src/assets/images/s3.png",
     subcategories: [
       {
         name: "General Power of Attorney",
-        path: "/Power-of-attorney/legal-notice",
+        path: "/Power-of-attorney/GeneralPower",
       },
       {
         name: "Power of Attorney of Property",
-        path: "/Power-of-attorney/demand-notice",
+        path: "/Power-of-attorney/AttorneyProperty",
       },
       {
         name: "Power of Attorney for NRI",
-        path: "/Power-of-attorney/termination",
+        path: "/Power-of-attorney/AttorneyNRI",
       },
       {
         name: "Revocation of Power of Attorney",
-        path: "/Power-of-attorney/eviction",
+        path: "/Power-of-attorney/RevocationPower",
       },
       {
         name: "Special Power of Attorney",
-        path: "/Power-of-attorney/demand-notice",
+        path: "/Power-of-attorney/SpecialPower",
       },
       {
         name: "Power of Attorney for Development of Property",
-        path: "/Power-of-attorney/termination",
+        path: "/Power-of-attorney/DevelopmentProperty",
       },
     ],
   },
 
   "Post Contractual Matters": {
     path: "/post-contractual",
+    image: "/src/assets/images/s5.png",
     subcategories: [
       {
         name: "Variation/Amendment Agreements",
-        path: "/Post-Contractual/legal-notice",
+        path: "/post-contractual/VariationAmendment",
       },
       {
         name: "Termination Agreement",
-        path: "/Post-Contractual/demand-notice",
+        path: "/post-contractual/TerminationAgreement",
       },
-      { name: "Side Letters", path: "/Post-Contractual/termination" },
-      { name: "Interim Agreement", path: "/Post-Contractual/eviction" },
+      { name: "Side Letters", path: "/post-contractual/SideLetters" },
+      { name: "Interim Agreement", path: "/post-contractual/InterimAgreement" },
 
-      { name: "Change Order", path: "/Post-Contractual/demand-notice" },
+      { name: "Change Order", path: "/post-contractual/ChangeOrder" },
       {
         name: "Releases/Contract Cancellation",
-        path: "/Post-Contractual/termination",
+        path: "/post-contractual/ReleasesContract",
       },
       {
         name: "Post incorporation Contract Adoption",
-        path: "/Post-Contractual/eviction",
+        path: "/post-contractual/Postincorporation",
       },
     ],
   },
   Wills: {
     path: "/wills",
+    image: "/src/assets/images/s4.png",
     subcategories: [
-      { name: "general will", path: "/wills/general-will" },
-      { name: "Islamic will", path: "/wills/Islamic-will" },
+      { name: "General will", path: "/wills/generalwill" },
+      { name: "Islamic will", path: "/wills/Islamicwill" },
     ],
   },
 };

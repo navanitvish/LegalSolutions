@@ -34,58 +34,7 @@ const iconMap = {
 };
 
 // Enhanced mapping of URLs to content IDs
-const getContentId = (urlParam) => {
-  const urlMappings = {
-    // Shareholders Agreement variations
-    'shareholders-agreement': 'Shareholdersagreement',
-    'shareholdersagreement': 'Shareholdersagreement',
-    'shareholder-agreement': 'Shareholdersagreement',
-    'shareholderagreement': 'Shareholdersagreement',
-  
-    // Share Purchase Agreement variations
-    'share-purchase-agreement': 'Sharepurchaseagreement',
-    'sharepurchaseagreement': 'Sharepurchaseagreement',
-    'share-purchase': 'Sharepurchaseagreement',
-    'purchase-agreement': 'Sharepurchaseagreement',
-  
-    // Joint Venture Agreement variations
-    'joint-venture-agreement': 'Jointventureagreement',
-    'jointventureagreement': 'Jointventureagreement',
-    'joint-venture': 'Jointventureagreement',
-    'venture-agreement': 'Jointventureagreement',
-  
-    // Merger Agreement variations
-    'merger-agreement': 'Mergeragreement',
-    'mergeragreement': 'Mergeragreement',
-    'merger': 'Mergeragreement',
-    'merger-contract': 'Mergeragreement',
-  
-    // General Agreement variations
-    'corporate-agreement': 'Shareholdersagreement', // Fallback to shareholders agreement
-    'corporate-contract': 'Shareholdersagreement',   // Fallback to shareholders agreement
-    'agreement': 'Shareholdersagreement',             // Fallback to shareholders agreement
-  };
 
-  // Clean the URL parameter
-  const cleanUrl = urlParam?.toLowerCase().trim() || 'Shareholdersagreement';
-  
-  // Try to find exact match first
-  if (urlMappings[cleanUrl]) {
-    return urlMappings[cleanUrl];
-  }
-  
-  // If no exact match, try to find partial matches
-  const partialMatch = Object.entries(urlMappings).find(([key]) => 
-    cleanUrl.includes(key) || key.includes(cleanUrl)
-  );
-  
-  // Return the matched content ID or default to Partnership
-  return partialMatch ? partialMatch[1] : 'Shareholdersagreement';
-};
-
-const validateContent = (content) => {
-  if (!content) return false;
-}
 const Corporate = () => {
   const { id } = useParams();
   const [isOpen, setIsOpen] = useState(null);
@@ -98,12 +47,15 @@ const Corporate = () => {
   useEffect(() => {
     setLoading(true);
     
-    const contentId = getContentId(id);
-    const pageContent = corporate[contentId];
-    console.log("contentId", pageContent);
-    console.log("pageContent", pageContent);
+    // Directly access the content using the id
+    const pageContent = corporate[id]; // Use id directly to get content
+
+    if (pageContent) {
+      setContent(pageContent);
+    } else {
+      setContent(null); // Handle case where content is not found
+    }
     
-    setContent(pageContent);
     setLoading(false);
   }, [id]);
 

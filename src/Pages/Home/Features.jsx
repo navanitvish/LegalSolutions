@@ -22,7 +22,7 @@ function Features() {
         </div>
       </div>
 
-      <div className="relative z-10 w-full overflow-hidden py-4 sm:py-8">
+      {/* <div className="relative z-10 w-full overflow-hidden py-4 sm:py-8">
         <motion.div
           className="flex"
           animate={{ x: ['0%', '-100%'] }}
@@ -45,7 +45,7 @@ function Features() {
             </div>
           ))}
         </motion.div>
-      </div>
+      </div> */}
     </div>
   );
 }

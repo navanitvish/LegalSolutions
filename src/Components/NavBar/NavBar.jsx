@@ -53,7 +53,7 @@ const NavBar = () => {
               <img 
                 src={Logo} 
                 alt="MyLegal" 
-                className="w-20 h-20 rounded-xl "
+                className="w-28 h-24 rounded-xl "
               />
             </div>
 
@@ -63,7 +63,7 @@ const NavBar = () => {
                 <li>
                   <Link
                     to="/"
-                    className="text-gray-700 text-lg font-semibold hover:text-purple-600 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-purple-600 after:left-0 after:-bottom-1 after:rounded-full after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+                    className="text-gray-700 text-lg lg:text-xl font-semibold hover:text-purple-600 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-purple-600 after:left-0 after:-bottom-1 after:rounded-full after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
                   >
                     Home
                   </Link>
@@ -71,7 +71,7 @@ const NavBar = () => {
                 <li>
                   <Link
                     to="/about"
-                    className="text-gray-700 text-lg font-semibold hover:text-purple-600 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-purple-600 after:left-0 after:-bottom-1 after:rounded-full after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+                    className="text-gray-700 text-lg lg:text-xl font-semibold hover:text-purple-600 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-purple-600 after:left-0 after:-bottom-1 after:rounded-full after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
                   >
                     About
                   </Link>
@@ -79,7 +79,7 @@ const NavBar = () => {
                 <li className="relative group">
                   <Link
                     to="/Services"
-                    className="text-gray-700 text-lg font-semibold hover:text-purple-600 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-purple-600 after:left-0 after:-bottom-1 after:rounded-full after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+                    className="text-gray-700 text-lg lg:text-xl font-semibold hover:text-purple-600 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-purple-600 after:left-0 after:-bottom-1 after:rounded-full after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
                   >
                     <ServicesDropdown />
                   </Link>
@@ -87,7 +87,7 @@ const NavBar = () => {
                 <li>
                   <Link
                     to="/products"
-                    className="text-gray-700 text-lg font-semibold hover:text-purple-600 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-purple-600 after:left-0 after:-bottom-1 after:rounded-full after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+                    className="text-gray-700 text-lg lg:text-xl font-semibold hover:text-purple-600 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-purple-600 after:left-0 after:-bottom-1 after:rounded-full after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
                   >
                     Products
                   </Link>
@@ -95,7 +95,7 @@ const NavBar = () => {
                 <li>
                   <Link
                     to="/lawyer-contact"
-                    className="text-gray-700 text-lg font-semibold hover:text-purple-600 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-purple-600 after:left-0 after:-bottom-1 after:rounded-full after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+                    className="text-gray-700 text-lg lg:text-xl font-semibold hover:text-purple-600 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-purple-600 after:left-0 after:-bottom-1 after:rounded-full after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
                   >
                     Lawyer Connect
                   </Link>
@@ -104,7 +104,7 @@ const NavBar = () => {
 
               {/* Login Button */}
               <div className="flex items-center">
-                <Link to="/login" className="bg-white text-purple-600 font-semibold px-6 py-2 rounded-full border-2 border-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                <Link to="/login" className="bg-white  lg:text-xl text-purple-600 font-semibold px-6 py-2 rounded-full border-2 border-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                   Login
                 </Link>
               </div>

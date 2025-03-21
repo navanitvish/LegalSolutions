@@ -14,14 +14,12 @@ import {
   Clock,
   FileText,
 } from "lucide-react";
-
 import HeroSection from "../../RentalAgreement/HeroSection";
 import ChainSteps from "../../RentalAgreement/RentalSteps";
 import Slider from "../../RentalAgreement/WhyChooseUsSlider";
 import FAQItem from "../../RentalAgreement/FAQItem";
 import { FeatureCard } from "../../RentalAgreement/FeatureCard";
 
-// Extended icon map to include all needed icons
 const iconMap = {
   DollarSign,
   Calendar,
@@ -40,62 +38,45 @@ const AffidavitsPage = () => {
   const [currentFeatureSlide, setCurrentFeatureSlide] = useState(0);
   const [content, setContent] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [scrollPosition1, setScrollPosition1] = useState(0);
+  const [scrollPosition2, setScrollPosition2] = useState(0);
 
   useEffect(() => {
     setLoading(true);
     
-    // Debug current URL parameter
-    console.log('Current URL param:', id);
+    // Directly access the content using the id
+    const pageContent = Affidavits[id]; // Use id directly to get content
+
+    if (pageContent) {
+      setContent(pageContent);
+    } else {
+      setContent(null); // Handle case where content is not found
+    }
     
-    // More comprehensive mapping that handles different URL variations
-    const urlToContentId = {
-      'address-proof': 'AddressAffidavit',
-      'address-affidavit': 'AddressAffidavit',
-      'affidavit-for-change': 'AffidavitForChange',
-      'affidavit-for-change-of-name': 'AffidavitForChange',
-      'name-change': 'AffidavitForChange',
-      'after-marriage': 'AfterMarriage',
-      'marriage': 'AfterMarriage',
-      'signature': 'Signature',
-      'signature-verification': 'Signature'
-    };
-    
-    // Function to find the best matching key
-    const findMatchingKey = (param) => {
-      // First try exact match
-      if (urlToContentId[param]) {
-        return urlToContentId[param];
-      }
-  
-      // Then try to match parts of the URL
-      if (param.includes('change')) {
-        return 'AffidavitForChange';
-      } else if (param.includes('address')) {
-        return 'AddressAffidavit';
-      } else if (param.includes('marriage')) {
-        return 'AfterMarriage';
-      } else if (param.includes('signature')) {
-        return 'Signature';
-      }
-  
-      return 'AddressAffidavit'; // Default fallback
-    };
-    
-    // Clean the incoming URL parameter and find matching content
-    const urlParam = id?.toLowerCase().trim() || 'address-proof';
-    const contentId = findMatchingKey(urlParam);
-    
-    console.log('Cleaned URL param:', urlParam);
-    console.log('Selected Content ID:', contentId);
-    
-    // Get the actual content
-    const pageContent = Affidavits[contentId];
-    console.log('Found content:', pageContent ? 'Yes' : 'No');
-    console.log('Content type:', contentId);
-  
-    setContent(pageContent);
     setLoading(false);
   }, [id]);
+
+  useEffect(() => {
+    if (!content?.whyNeedAgreement) return;
+
+    const scrollInterval = setInterval(() => {
+      setScrollPosition1((prev) => {
+        const newPosition = prev + 1;
+        return newPosition >= content.whyNeedAgreement.length * 300
+          ? 0
+          : newPosition;
+      });
+
+      setScrollPosition2((prev) => {
+        const newPosition = prev + 1;
+        return newPosition >= content.whyNeedAgreement.length * 300
+          ? 0
+          : newPosition;
+      });
+    }, 20);
+
+    return () => clearInterval(scrollInterval);
+  }, [content?.whyNeedAgreement]);
 
   if (loading) {
     return (
@@ -105,12 +86,11 @@ const AffidavitsPage = () => {
     );
   }
 
-  // Safeguard: Ensure `content` and `features` exist
   if (!content || !content.features) {
     return (
       <div className="w-full h-screen flex items-center justify-center">
         <div className="text-xl text-red-600">
-          Unable to load page content. Please try again later.
+          Content not found. Please try again.
         </div>
       </div>
     );
@@ -121,6 +101,11 @@ const AffidavitsPage = () => {
     currentFeatureSlide * featuresPerPage,
     currentFeatureSlide * featuresPerPage + featuresPerPage
   );
+
+  const duplicatedItems = [
+    ...content.whyNeedAgreement,
+    ...content.whyNeedAgreement,
+  ];
 
   const nextFeatureSlide = () => {
     if ((currentFeatureSlide + 1) * featuresPerPage < content.features.length) {
@@ -141,7 +126,7 @@ const AffidavitsPage = () => {
   return (
     <div className="w-full">
       <HeroSection {...content.hero} />
-      
+
       {/* What Is Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-gradient-to-b from-white to-purple-50 rounded-3xl p-8 md:p-12 shadow-xl overflow-hidden relative">
@@ -157,7 +142,7 @@ const AffidavitsPage = () => {
             <div className="flex-1 relative">
               {content.whatIs.image && (
                 <img
-                  src={content.whatIs.image}
+                  src={content.whatIs.image || "/placeholder.svg"}
                   alt={content.whatIs.title}
                   className="rounded-lg shadow-xl"
                 />
@@ -209,6 +194,50 @@ const AffidavitsPage = () => {
               />
             );
           })}
+        </div>
+      </div>
+
+      {/* Why Need Agreement Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 overflow-hidden">
+        <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+          Why Do You Need a {content.whatIs.title}?
+        </h2>
+
+        {/* First row - Left to Right */}
+        <div className="relative mb-8 overflow-hidden">
+          <div
+            className="flex"
+            style={{
+              transform: `translateX(-${scrollPosition1}px)`,
+              transition: "transform 0.03s linear",
+              width: `${duplicatedItems.length * 300}px`,
+            }}
+          >
+            {duplicatedItems.map((item, index) => (
+              <div key={`row1-${index}`} className="w-[300px] p-4">
+                <FeatureCard title={item.title} description={item.desc} />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Second row - Right to Left */}
+        <div className="relative overflow-hidden">
+          <div
+            className="flex"
+            style={{
+              transform: `translateX(${scrollPosition2}px)`,
+              transition: "transform 0.03s linear",
+              width: `${duplicatedItems.length * 300}px`,
+              marginLeft: `-${duplicatedItems.length * 300}px`,
+            }}
+          >
+            {duplicatedItems.map((item, index) => (
+              <div key={`row2-${index}`} className="w-[300px] p-4">
+                <FeatureCard title={item.title} description={item.desc} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

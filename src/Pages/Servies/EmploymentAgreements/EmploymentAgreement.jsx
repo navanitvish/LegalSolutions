@@ -34,102 +34,7 @@ const iconMap = {
 };
 
 // Enhanced mapping of URLs to content IDs
-const getContentId = (urlParam) => {
-    const urlMappings = {
-        // Offer Letter variations
-        'offer-letter': 'Offerletter',
-        'offerletter': 'Offerletter',
-        'offer-letter-affidavit': 'Offerletter',
-        'offer-affidavit': 'Offerletter',
-        'flat-rent-agreement': 'Offerletter',
-      
-        // Appointment Letter variations
-        'appointment-letter': 'Appointmentletter',
-        'appointmentletter': 'Appointmentletter',
-        'commercial-lease-agreement': 'Appointmentletter',
-        'affidavit-for-change': 'Appointmentletter',
-      
-        // Development Agreement variations
-        'development-agreement': 'Developmentagreement',
-        'equipment-rental-agreement': 'Developmentagreement',
-        'rental-agreement': 'Developmentagreement',
-      
-        // Confirmation Letter variations
-        'confirmation-letter': 'Confirmationletter',
-        'joint-venture-agreement': 'Confirmationletter',
-        'vehicle-lease-agreement': 'Confirmationletter',
-      
-        // Fixed Term variations
-        'fixed-term': 'Fixedterm',
-        'fixed-term-agreement': 'Fixedterm',
-        'flat-rent-agreement-fixed': 'Fixedterm',
-      
-        // Adhoc Employment variations
-        'adhoc-employment': 'Adhocemployment',
-        'adhoc-employment-agreement': 'Adhocemployment',
-        'commercial-lease-adhoc': 'Adhocemployment',
-      
-        // Resignation Letter variations
-        'resignation-letter': 'Resignationletter',
-        'resignation-agreement': 'Resignationletter',
-      
-        // Letter of Termination variations
-        'letter-of-termination': 'Letteroftermination',
-        'termination-letter': 'Letteroftermination',
-      
-        // Consultancy Agreement variations
-        'consultancy-agreement': 'Consultancyagreement',
-        'consulting-agreement': 'Consultancyagreement',
-      
-        // Advisors Agreement variations
-        'advisors-agreement': 'Advisorsagreement',
-        'advisor-agreement': 'Advisorsagreement',
-      
-        // Retainership Agreement variations
-        'retainership-agreement': 'Retainershipagreement',
-        'retainer-agreement': 'Retainershipagreement',
-      
-        // Employment Agreement variations
-        'employment-agreement': 'Employmentagreement',
-        'employee-agreement': 'Employmentagreement',
-      
-        // Compensation Agreement variations
-        'compensation-agreement': 'Compensationagreemen',
-        'compensation-agreement-fixed': 'Compensationagreemen',
-      
-        // Adhoc Employment Collective Bargaining variations
-        'adhoc-emp-collective-bargaining': 'AdhocempCollectivebargaining',
-        'collective-bargaining-agreement': 'AdhocempCollectivebargaining',
-      
-        // Wage Agreement variations
-        'wage-agreement': 'Wageagreement',
-        'wage-contract': 'Wageagreement',
-      
-        // Agreement Refer Disputes variations
-        'agreement-refer-disputes': 'Agreementreferdisputes',
-        'dispute-agreement': 'Agreementreferdisputes',
-      };
 
-  // Clean the URL parameter
-  const cleanUrl = urlParam?.toLowerCase().trim() || 'partnership';
-  
-  // Try to find exact match first
-  if (urlMappings[cleanUrl]) {
-    return urlMappings[cleanUrl];
-  }
-  
-  // If no exact match, try to find partial matches
-  const partialMatch = Object.entries(urlMappings).find(([key]) => 
-    cleanUrl.includes(key) || key.includes(cleanUrl)
-  );
-  
-  // Return the matched content ID or default to Partnership
-  return partialMatch ? partialMatch[1] : 'Propertypurchase';
-};
-
-const validateContent = (content) => {
-  if (!content) return false;
-}
 const EmploymentAgreement = () => {
   const { id } = useParams();
   const [isOpen, setIsOpen] = useState(null);
@@ -139,16 +44,21 @@ const EmploymentAgreement = () => {
   const [scrollPosition1, setScrollPosition1] = useState(0);
   const [scrollPosition2, setScrollPosition2] = useState(0);
 
+ 
   useEffect(() => {
     setLoading(true);
     
-    const contentId = getContentId(id);
-    const pageContent = Employment[contentId];
+    // Directly access the content using the id
+    const pageContent = Employment[id]; // Use id directly to get content
+
+    if (pageContent) {
+      setContent(pageContent);
+    } else {
+      setContent(null); // Handle case where content is not found
+    }
     
-    setContent(pageContent);
     setLoading(false);
   }, [id]);
-
   // Scrolling animation effect
   useEffect(() => {
     if (!content?.whyNeedAgreement) return;

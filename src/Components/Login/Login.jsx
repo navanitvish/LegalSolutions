@@ -4,6 +4,7 @@ import { ChevronRight,  Mail, Lock, User } from 'lucide-react';
 const LoginPage = () => {
   const [formData, setFormData] = useState({
     name: '',
+    // numbers'',
     email: '',
     password: ''
   });
@@ -85,6 +86,18 @@ const LoginPage = () => {
                   name="name"
                   placeholder="Full Name"
                   value={formData.name}
+                  onChange={handleChange}
+                  className={`w-full pl-10 pr-4 py-3.5 border ${errors.name ? 'border-red-500' : 'border-purple-100'} rounded-2xl focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all`}
+                />
+                {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+              </div>
+              <div className="relative">
+                <User className="w-5 h-5 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
+                <input
+                  type="number"
+                  name="Number"
+                  placeholder="Enter your Number "
+                  value={formData.numbers}
                   onChange={handleChange}
                   className={`w-full pl-10 pr-4 py-3.5 border ${errors.name ? 'border-red-500' : 'border-purple-100'} rounded-2xl focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all`}
                 />

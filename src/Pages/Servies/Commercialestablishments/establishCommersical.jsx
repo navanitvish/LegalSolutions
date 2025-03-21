@@ -14,7 +14,6 @@ import {
   Clock,
   FileText,
 } from "lucide-react";
-
 import HeroSection from "../../RentalAgreement/HeroSection";
 import ChainSteps from "../../RentalAgreement/RentalSteps";
 import Slider from "../../RentalAgreement/WhyChooseUsSlider";
@@ -33,67 +32,6 @@ const iconMap = {
   FileText,
 };
 
-// Enhanced mapping of URLs to content IDs
-const getContentId = (urlParam) => {
-  const urlMappings = {
-    // Shop Outlet Agreement variations
-    'shop-outlet': 'Shopoutlet',
-    'shopoutlet': 'Shopoutlet',
-    'shop-outlet-agreement': 'Shopoutlet',
-    'shop-agreement': 'Shopoutlet',
-  
-    // Leave and Licence Agreement variations
-    'leave-and-licence': 'LeaveandLicence',
-    'leaveandlicence': 'LeaveandLicence',
-    'leave-and-licence-agreement': 'LeaveandLicence',
-    'licence-agreement': 'LeaveandLicence',
-  
-    // Office/Company Agreement variations
-    'office-company': 'Office/company',
-    'officecompany': 'Office/company',
-    'office-agreement': 'Office/company',
-    'company-agreement': 'Office/company',
-  
-    // ECommercial/Institutional Agreement variations
-    'ecommercial-institutional': 'ECommercial/Institutional',
-    'ecommercialinstitutional': 'ECommercial/Institutional',
-    'ecommercial-agreement': 'ECommercial/Institutional',
-    'institutional-agreement': 'ECommercial/Institutional',
-  
-    // Dealership Agreement variations
-    'dealership': 'Dealership',
-    'dealership-agreement': 'Dealership',
-    'dealership-distribution': 'Dealership',
-    'distribution-agreement': 'Dealership',
-  
-    // General Commercial Agreement variations
-    'commercial-agreement': 'Commercial',
-    'commercial': 'Commercial',
-    'commercial-lease': 'Commercial',
-    'commercial-lease-agreement': 'Commercial',
-  };
-
-  // Clean the URL parameter
-  const cleanUrl = urlParam?.toLowerCase().trim() || 'shop-outlet';
-  console.log(cleanUrl);
-  
-  // Try to find exact match first
-  if (urlMappings[cleanUrl]) {
-    return urlMappings[cleanUrl];
-  }
-  
-  // If no exact match, try to find partial matches
-  const partialMatch = Object.entries(urlMappings).find(([key]) => 
-    cleanUrl.includes(key) || key.includes(cleanUrl)
-  );
-  
-  // Return the matched content ID or default to Partnership
-  return partialMatch ? partialMatch[1] : 'Shopoutlet';
-};
-
-const validateContent = (content) => {
-  if (!content) return false;
-}
 const Commercialest = () => {
   const { id } = useParams();
   const [isOpen, setIsOpen] = useState(null);
@@ -106,29 +44,34 @@ const Commercialest = () => {
   useEffect(() => {
     setLoading(true);
     
-    const contentId = getContentId(id);
-    const pageContent = commercialEst[contentId];
+    // Directly access the content using the id
+    const pageContent = commercialEst[id]; // Use id directly to get content
 
-    console.log("contentId", contentId);
-    console.log("pageContent", pageContent);
+    if (pageContent) {
+      setContent(pageContent);
+    } else {
+      setContent(null); // Handle case where content is not found
+    }
     
-    setContent(pageContent);
     setLoading(false);
   }, [id]);
 
-  // Scrolling animation effect
   useEffect(() => {
     if (!content?.whyNeedAgreement) return;
 
     const scrollInterval = setInterval(() => {
       setScrollPosition1((prev) => {
         const newPosition = prev + 1;
-        return newPosition >= content.whyNeedAgreement.length * 300 ? 0 : newPosition;
+        return newPosition >= content.whyNeedAgreement.length * 300
+          ? 0
+          : newPosition;
       });
-      
+
       setScrollPosition2((prev) => {
         const newPosition = prev + 1;
-        return newPosition >= content.whyNeedAgreement.length * 300 ? 0 : newPosition;
+        return newPosition >= content.whyNeedAgreement.length * 300
+          ? 0
+          : newPosition;
       });
     }, 20);
 
@@ -159,7 +102,10 @@ const Commercialest = () => {
     currentFeatureSlide * featuresPerPage + featuresPerPage
   );
 
-  const duplicatedItems = [...content.whyNeedAgreement, ...content.whyNeedAgreement];
+  const duplicatedItems = [
+    ...content.whyNeedAgreement,
+    ...content.whyNeedAgreement,
+  ];
 
   const nextFeatureSlide = () => {
     if ((currentFeatureSlide + 1) * featuresPerPage < content.features.length) {
@@ -180,7 +126,7 @@ const Commercialest = () => {
   return (
     <div className="w-full">
       <HeroSection {...content.hero} />
-      
+
       {/* What Is Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-gradient-to-b from-white to-purple-50 rounded-3xl p-8 md:p-12 shadow-xl overflow-hidden relative">
@@ -196,7 +142,7 @@ const Commercialest = () => {
             <div className="flex-1 relative">
               {content.whatIs.image && (
                 <img
-                  src={content.whatIs.image}
+                  src={content.whatIs.image || "/placeholder.svg"}
                   alt={content.whatIs.title}
                   className="rounded-lg shadow-xl"
                 />
@@ -256,23 +202,20 @@ const Commercialest = () => {
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
           Why Do You Need a {content.whatIs.title}?
         </h2>
-        
+
         {/* First row - Left to Right */}
         <div className="relative mb-8 overflow-hidden">
-          <div 
+          <div
             className="flex"
             style={{
               transform: `translateX(-${scrollPosition1}px)`,
-              transition: 'transform 0.03s linear',
-              width: `${duplicatedItems.length * 300}px`
+              transition: "transform 0.03s linear",
+              width: `${duplicatedItems.length * 300}px`,
             }}
           >
             {duplicatedItems.map((item, index) => (
               <div key={`row1-${index}`} className="w-[300px] p-4">
-                <FeatureCard
-                  title={item.title}
-                  description={item.desc}
-                />
+                <FeatureCard title={item.title} description={item.desc} />
               </div>
             ))}
           </div>
@@ -280,21 +223,18 @@ const Commercialest = () => {
 
         {/* Second row - Right to Left */}
         <div className="relative overflow-hidden">
-          <div 
+          <div
             className="flex"
             style={{
               transform: `translateX(${scrollPosition2}px)`,
-              transition: 'transform 0.03s linear',
+              transition: "transform 0.03s linear",
               width: `${duplicatedItems.length * 300}px`,
-              marginLeft: `-${duplicatedItems.length * 300}px`
+              marginLeft: `-${duplicatedItems.length * 300}px`,
             }}
           >
             {duplicatedItems.map((item, index) => (
               <div key={`row2-${index}`} className="w-[300px] p-4">
-                <FeatureCard
-                  title={item.title}
-                  description={item.desc}
-                />
+                <FeatureCard title={item.title} description={item.desc} />
               </div>
             ))}
           </div>

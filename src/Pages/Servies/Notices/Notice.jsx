@@ -34,65 +34,7 @@ const iconMap = {
 };
 
 // Enhanced mapping of URLs to content IDs
-const getContentId = (urlParam) => {
-  const urlMappings = {
-    // Legal Notice variations
-    'legal-notice': 'legal-notice',
-    'notice-dishonour': 'legal-notice',
-    'dishonour-of-cheque': 'legal-notice',
-    'cheque-dishonour-notice': 'legal-notice',
-  
-    // Demand Notice variations
-    'demand-notice': 'demand-notice',
-    'notice-dissolution-partnership': 'demand-notice',
-    'dissolution-of-partnership': 'demand-notice',
-  
-    // Termination Notice variations
-    'termination': 'termination',
-    'notice-clearance-dues': 'termination',
-    'clearance-of-dues': 'termination',
-  
-    // Eviction Notice variations
-    'eviction': 'eviction',
-    'notice-faulty-product': 'eviction',
-    'faulty-product-notice': 'eviction',
-  
-    // Notice for Non-Payment variations
-    'notice-non-payment': 'notice-non-payemt',
-    'non-payment-of-bill': 'notice-non-payemt',
-    'notice-for-non-payment': 'notice-non-payemt',
-  
-    // Notice for Non-Payment of Salaries variations
-    'notice-salaries': 'notice-salaries',
-    'non-payment-of-salaries': 'notice-salaries',
-    'salaries-notice': 'notice-salaries',
-  
-    // Specific Performance Notice variations
-    'specific-performance': 'Specific-perf',
-    'notice-specific-performance': 'Specific-perf',
-    'specific-performance-of-contract': 'Specific-perf',
-  };
 
-  // Clean the URL parameter
-  const cleanUrl = urlParam?.toLowerCase().trim() || 'legal-notice';
-  
-  // Try to find exact match first
-  if (urlMappings[cleanUrl]) {
-    return urlMappings[cleanUrl];
-  }
-  
-  // If no exact match, try to find partial matches
-  const partialMatch = Object.entries(urlMappings).find(([key]) => 
-    cleanUrl.includes(key) || key.includes(cleanUrl)
-  );
-  
-  // Return the matched content ID or default to Partnership
-  return partialMatch ? partialMatch[1] : 'legal-notice';
-};
-
-const validateContent = (content) => {
-  if (!content) return false;
-}
 const Notice = () => {
   const { id } = useParams();
   const [isOpen, setIsOpen] = useState(null);
@@ -105,10 +47,15 @@ const Notice = () => {
   useEffect(() => {
     setLoading(true);
     
-    const contentId = getContentId(id);
-    const pageContent = Notices[contentId];
+    // Directly access the content using the id
+    const pageContent = Notices[id]; // Use id directly to get content
+  
+    if (pageContent) {
+      setContent(pageContent);
+    } else {
+      setContent(null); // Handle case where content is not found
+    }
     
-    setContent(pageContent);
     setLoading(false);
   }, [id]);
 
