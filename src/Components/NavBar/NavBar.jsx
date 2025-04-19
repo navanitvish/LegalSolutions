@@ -53,7 +53,7 @@ const NavBar = () => {
               <img 
                 src={Logo} 
                 alt="MyLegal" 
-                className="w-28 h-24 rounded-xl "
+                className="w-24 h-20 rounded-xl "
               />
             </div>
 

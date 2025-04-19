@@ -6,19 +6,9 @@ export const footerLinks = [
       links: [
         { name: 'Home', path: '/', description: 'Discover our comprehensive range of legal services.' },
         { name: 'About Us', path: '/about', description: 'Learn more about our firm\'s mission and vision.' },
-        { name: 'Services/Agreement', path: '/services', description: 'Explore our diverse legal services.' },
+        { name: 'Services/Agreement', path: '/Services', description: 'Explore our diverse legal services.' },
         { name: 'Products/Features', path: '/products', description: 'Browse our innovative legal products.' },
-        { name: 'Lawyer’s Connect', path: '/connect', description: 'Connect with the right legal expert for your needs.' },
-      ],
-    },
-    {
-      heading: 'Legal Categories',
-      links: [
-        { name: 'Rental Agreements', path: '/rental-agreements', description: 'Secure your rental transactions.' },
-        { name: 'Lease Agreements', path: '/lease-agreements', description: 'Protect your leasing interests.' },
-        { name: 'Business Agreements', path: '/business-agreements', description: 'Structure your business for success.' },
-        { name: 'Intellectual Property Agreements', path: '/ip-agreements', description: 'Safeguard your intellectual assets.' },
-        { name: 'Wills and Estate Planning', path: '/estate-planning', description: 'Plan your legacy effectively.' },
+        { name: 'Lawyer’s Connect', path: '/lawyer-contact', description: 'Connect with the right legal expert for your needs.' },
       ],
     },
     {

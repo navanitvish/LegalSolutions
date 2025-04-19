@@ -4,8 +4,7 @@ import Herosection from "./HeroSection";
 import ProductsFeaturesSection from "./ProductsFeaturesSection";
 import Video from "./Video";
 import HeroSection from "./ConsultationBooking";
-import SecuritySection from "./SecuritySection";
-import Features from "./Features";
+
 //import Favoratetools from "./Favoratetools";
 import CustomerStores from "./CustomerStores";
 import HowItsworks from "./HowItsworks";
@@ -23,16 +22,16 @@ const Home = () => {
         <Video />
       </div>
       <ProductCardSlider />
-      <SecuritySection />
+  
       <ProductsFeaturesSection />
       <HowItsworks />
 
-      <Features />
+    
 
       {/* <Favoratetools/> */}
       <Products10 />
       <HeroSection />
-      <ValueofProducts />
+      {/* <ValueofProducts /> */}
       <CustomerStores />
       <QuickReadsBlog/>
 

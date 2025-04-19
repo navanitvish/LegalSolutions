@@ -212,9 +212,11 @@ const ServicesMarquee = () => {
   return (
     <div className="w-full overflow-hidden my-16 max-w-7xl mx-auto">
        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-6">
-        <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-0 lg:max-w-2xl text-left">
-        Experience the Future of Legal Services with LegalInstant
-        </h1>
+      <div className=' text-center'> <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-6">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600">
+                Legal services
+              </span>
+            </h1></div>
         <Link to="/Services"
           
           className="text-lg sm:text-xl lg:text-2xl font-bold flex items-center hover:border hover:rounded-full hover:border-purple-500 px-4 py-2 text-black"

@@ -5,6 +5,7 @@
       description: "Transform Your Agreements with Ease",
       image: "https://images.unsplash.com/photo-1641749460561-0e9a55f55342?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fHN0YW1wfGVufDB8fDB8fHww",
       hasSubmenu: true,
+      path: "/products/e-stamp-corner",
       sections: [
         {
           title: "E-Stamp Agreement",
@@ -80,7 +81,69 @@
       description: "Comprehensive Litigation Management",
       image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
       path: "/products/litigation"
-    }
+    },
+    {
+      id: "startup-saathi",
+      title: "Startup Saathi",
+      description: " Comprehensive startup legal services",
+      image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
+      path: "/products/startup-saathi"
+    },
+
+    {
+      id: "risk-medicator",
+      title: "Risk Mitigator",
+      description: "Proactive Risk Management Solutions",
+      image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
+      path: "/products/risk-mitigator"
+    },
+
+    {
+      id: "master-access-subscription",
+      title: "Master Access Subscription",
+      description: "Proactive Generate Stamp Paper  Solutions",
+      image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
+      path: "/products/risk-mitigator"
+    },
+    {
+      id: "strategic-management-services",
+      title: "Strategic Management Services ",
+      description: "Proactive Risk Management Solutions",
+      image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
+      path: "/products/risk-mitigator"
+    },
+    {
+      id: "contract-lifecycle-management",
+      title: "Contract Lifecycle Management",
+      description: "Proactive Risk Management Solutions",
+      image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
+      path: "/products/risk-mitigator"
+    },
+    {
+      id: "litigation-pratice-managemen",
+      title: "Litigation (Pratice) Managemen",
+      description: "comming soon",
+      image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
+      path: "/products/risk-mitigator"
+    },
+    {
+      id: "price-calculator",
+      title: "Price Calculator ",
+      description: "comming soon",
+      image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
+      path: "/products/risk-mitigator"
+    },
+    {
+      id: "litigation-pratice-managemen",
+      title: "Litigation (Pratice) Managemen",
+      description: "comming soon",
+      image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
+      path: "/products/risk-mitigator"
+    },
+  
+ 
+    // 
+
   ];
 
 

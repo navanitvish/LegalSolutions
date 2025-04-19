@@ -1,135 +1,146 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import { footerLinks } from "/src/utils/footerLinks.js";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGooglePlay, faApple } from '@fortawesome/free-brands-svg-icons';
-import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
-const Footer = () => {
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+  
   return (
-    <div className="relative bg-gradient-to-b from-white to-gray-50">
-      {/* Main footer section */}
-      <footer className="pt-16 pb-8">
-        <div className="container mx-auto px-6">
-          {/* Links Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-16">
-            {footerLinks.map((section, index) => (
-              <div key={index} className="space-y-6">
-                <h3 className="text-lg font-bold text-gray-900 tracking-wide">
-                  {section.heading}
-                </h3>
-                <ul className="space-y-4">
-                  {section.links.map((link, idx) => (
-                    <li key={idx} className="group">
-                      <Link
-                        to={link.path}
-                        className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
-                      >
-                        {link.name}
-                      </Link>
-                      <p className="text-sm text-gray-400 mt-1 group-hover:text-blue-500 transition-colors duration-200">
-                        {link.description}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-
-          {/* App Stores & Partners Section */}
-          <div className="mt-16 pt-8 border-t border-gray-200">
-            <div className="flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0">
-              {/* App Store Buttons */}
-              <div className="flex flex-wrap gap-4 justify-center">
-                <button className="flex items-center space-x-3 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition-all duration-300 transform hover:scale-105">
-                  <FontAwesomeIcon icon={faGooglePlay} className="text-xl" />
-                  <div className="flex flex-col items-start">
-                    <span className="text-xs">GET IT ON</span>
-                    <span className="font-medium">Google Play</span>
-                  </div>
-                </button>
-                <button className="flex items-center space-x-3 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition-all duration-300 transform hover:scale-105">
-                  <FontAwesomeIcon icon={faApple} className="text-2xl" />
-                  <div className="flex flex-col items-start">
-                    <span className="text-xs">Download on the</span>
-                    <span className="font-medium">App Store</span>
-                  </div>
-                </button>
-              </div>
-
-              {/* Partner Logos */}
-              <div className="flex items-center space-x-8">
-                <img
-                  src="/api/placeholder/120/60"
-                  alt="Partner 1"
-                  className="h-12 w-auto filter grayscale hover:grayscale-0 transition-all duration-500"
+    <footer className="bg-white text-gray-800">
+      {/* Main Footer Content */}
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Company Info */}
+          <div>
+            <h3 className="text-xl font-bold mb-5 text-purple-800">MyLegalInstant</h3>
+            <p className="text-gray-600 mb-6">
+              Your trusted partner for quick and reliable legal solutions. We make legal assistance accessible to everyone.
+            </p>
+            <div className="flex space-x-4 mb-6">
+              <a href="#" className="text-purple-600 hover:text-purple-800 transition-colors">
+                <Facebook size={22} />
+              </a>
+              <a href="#" className="text-purple-600 hover:text-purple-800 transition-colors">
+                <Twitter size={22} />
+              </a>
+              <a href="#" className="text-purple-600 hover:text-purple-800 transition-colors">
+                <Instagram size={22} />
+              </a>
+              <a href="#" className="text-purple-600 hover:text-purple-800 transition-colors">
+                <Linkedin size={22} />
+              </a>
+            </div>
+            
+            {/* App Store Links with actual images */}
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-3">
+              <a href="#" className="hover:opacity-90 transition duration-300 w-40">
+                <img 
+                  src="https://cdn.pixabay.com/photo/2021/09/22/16/07/google-play-6647242_1280.png" 
+                  alt="Play Store" 
+                  className="h-26 w-full object-contain"
                 />
-                <img
-                  src="/api/placeholder/120/60"
-                  alt="Partner 2"
-                  className="h-12 w-auto filter grayscale hover:grayscale-0 transition-all duration-500"
+              </a>
+              <a href="#" className="hover:opacity-90 transition duration-300 w-40">
+                <img 
+                  src="https://www.svgrepo.com/download/303128/download-on-the-app-store-apple-logo.svg" 
+                  alt="Apple Store" 
+                  className="h-30 w-full object-contain"
                 />
-              </div>
+              </a>
             </div>
           </div>
-        </div>
-
-        {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-gray-200">
-          <div className="container mx-auto px-6">
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              {/* Copyright */}
-              <div className="text-gray-500 text-sm">
-                © 2024 PandaDoc Inc. All rights reserved.
+          
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-xl font-bold mb-5 text-purple-800">Quick Links</h3>
+            <ul className="space-y-3">
+              <li><NavLink to="/" className="text-gray-600 hover:text-purple-700 transition-colors">Home</NavLink></li>
+              <li><NavLink to="/about" className="text-gray-600 hover:text-purple-700 transition-colors">About Us</NavLink></li>
+              <li><NavLink to="/Services" className="text-gray-600 hover:text-purple-700 transition-colors">Services</NavLink></li>
+              <li><NavLink to="/products" className="text-gray-600 hover:text-purple-700 transition-colors">Product</NavLink></li>
+              <li><NavLink to="/lawyer-contact" className="text-gray-600 hover:text-purple-700 transition-colors">lawyer Contact</NavLink></li>
+            </ul>
+          </div>
+          
+          {/* Services */}
+          <div>
+            <h3 className="text-xl font-bold mb-5 text-purple-800">Our Services</h3>
+            <ul className="space-y-3">
+              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Legal Consultation</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Document Review</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Contract Drafting</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Legal Research</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Dispute Resolution</a></li>
+            </ul>
+          </div>
+          
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-xl font-bold mb-5 text-purple-800">Contact Us</h3>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <MapPin size={20} className="text-purple-600 mt-1 flex-shrink-0" />
+                <span className="text-gray-600">123 Legal Avenue, Suite 200<br />New York, NY 10001</span>
               </div>
-
-              {/* Legal Links */}
-              <div className="flex flex-wrap justify-center gap-8">
-                <Link to="/privacy" className="text-sm text-gray-500 hover:text-blue-600 transition-colors duration-200">
-                  Privacy Notice
-                </Link>
-                <Link to="/legal" className="text-sm text-gray-500 hover:text-blue-600 transition-colors duration-200">
-                  Legal
-                </Link>
-                <Link to="/cookie-settings" className="text-sm text-gray-500 hover:text-blue-600 transition-colors duration-200">
-                  Cookie Settings
-                </Link>
+              <div className="flex items-center space-x-3">
+                <Phone size={20} className="text-purple-600 flex-shrink-0" />
+                <a href="tel:+12345678900" className="text-gray-600 hover:text-purple-700">
+                  (123) 456-7890
+                </a>
               </div>
-
-              {/* Social Links */}
-              <div className="flex items-center space-x-6">
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 text-gray-400 hover:text-blue-400 hover:bg-blue-50 rounded-full transition-all duration-300"
-                >
-                  <FontAwesomeIcon icon={faTwitter} className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-all duration-300"
-                >
-                  <FontAwesomeIcon icon={faFacebookF} className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 text-gray-400 hover:text-pink-500 hover:bg-pink-50 rounded-full transition-all duration-300"
-                >
-                  <FontAwesomeIcon icon={faInstagram} className="w-5 h-5" />
+              <div className="flex items-center space-x-3">
+                <Mail size={20} className="text-purple-600 flex-shrink-0" />
+                <a href="mailto:info@mylegalinstant.com" className="text-gray-600 hover:text-purple-700">
+                  info@mylegalinstant.com
                 </a>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+      
+      {/* Newsletter Subscription */}
+      <div className="bg-gray-50 py-8 border-t border-gray-200">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="mb-6 md:mb-0">
+              <h4 className="text-lg font-semibold text-purple-800">Subscribe to Our Newsletter</h4>
+              <p className="text-gray-600">Stay updated with legal tips and our services</p>
+            </div>
+            <div className="w-full md:w-auto">
+              <form className="flex flex-col sm:flex-row gap-2">
+                <input 
+                  type="email" 
+                  placeholder="Enter your email" 
+                  className="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                />
+                <button 
+                  type="submit" 
+                  className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg font-medium transition duration-300"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Copyright */}
+      <div className="bg-white py-6 border-t border-gray-200">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-sm text-gray-500 mb-4 md:mb-0">
+              &copy; {currentYear} MyLegalInstant. All rights reserved.
+            </p>
+            <div className="flex space-x-6">
+              <a href="#" className="text-sm text-gray-500 hover:text-purple-700 transition-colors">Privacy Policy</a>
+              <a href="#" className="text-sm text-gray-500 hover:text-purple-700 transition-colors">Terms of Service</a>
+              <a href="#" className="text-sm text-gray-500 hover:text-purple-700 transition-colors">Cookie Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
-};
-
-export default Footer;
+}

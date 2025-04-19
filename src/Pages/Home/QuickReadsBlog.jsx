@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Clock, ArrowRight, Eye, BookOpen, ChevronLeft, ChevronRight,Calendar } from 'lucide-react';
+import { Clock, ArrowRight, Eye,Handshake, BookOpen, ChevronLeft, ChevronRight,Calendar } from 'lucide-react';
 
 const QuickReadsBlog = () => {
   const blogPosts = [
@@ -245,10 +245,10 @@ const QuickReadsBlog = () => {
               <BookOpen className="w-8 h-8 text-purple-600" />
             </div>
             <h3 className="text-2xl font-bold mb-4 text-gray-900">
-              Subscribe to Our Newsletter
+            Partner with Us
             </h3>
             <p className="text-gray-600 mb-8">
-              Get the latest legal insights and updates delivered straight to your inbox
+            Join our network of legal professionals and grow your practice through collaboration
             </p>
             <div className="flex gap-4 max-w-md mx-auto">
               <input
@@ -261,7 +261,13 @@ const QuickReadsBlog = () => {
               </button>
             </div>
           </div>
+
+
+      
         </div>
+
+
+        {/*  */}
       </div>
     </div>
   );
