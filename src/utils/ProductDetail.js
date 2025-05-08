@@ -17,7 +17,7 @@ import E4 from "../../src/assets/images/E4.png";
 import I1 from "../../src/assets/images/I1.png";
 import I2 from "../../src/assets/images/I2.png";
 import I3 from "../../src/assets/images/I3.png";
-import C1 from "../../src/assets/images/C1.png";
+// import C1 from "../../src/assets/images/C1.png";
 import C2 from "../../src/assets/images/C2.png";
 import C3 from "../../src/assets/images/C3.png";
 import A1 from "../../src/assets/images/A1.png";
