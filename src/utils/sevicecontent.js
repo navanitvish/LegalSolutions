@@ -4221,7 +4221,7 @@ export const realEstate = {
       trustIndicators: ["Legally Verified", "Instant Download", "24/7 Support"],
     },
     whatIs: {
-      title: "What is a Propertypurchase Affidavit lease agreement?",
+      title: "What is a Property Purchase Affidavit lease agreement?",
       description:
         "A Address Affidavit  is a legally binding document between a landlord (flat owner) and a tenant that outlines the terms and conditions for renting a residential flat. It protects the interests of both parties by defining their roles, rights, and responsibilities while ensuring compliance with applicable laws.",
       image: "/api/placeholder/400/300",

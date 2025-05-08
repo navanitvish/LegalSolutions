@@ -20,7 +20,7 @@ const FeatureCard = ({ icon: Icon, title, description }) => (
   <div className="relative group">
     <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300" />
     
-    <div className="relative  bg-white rounded-2xl p-8 pt-12 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 h-full flex flex-col hover:border-transparent">
+    <div className="relative  bg-white rounded-2xl p-8 pt-12 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 h-[200px] flex flex-col hover:border-transparent">
       {Icon && (
         <div className="flex justify-end">
           <div className="relative ">
@@ -400,7 +400,7 @@ const flatRentalPage = () => {
       </h2>
       
       {/* First row - Left to Right */}
-      <div className="relative mb-8 overflow-hidden">
+      <div className="relative mb-8 overflow-hidden" >
         <div 
           className="flex"
           style={{

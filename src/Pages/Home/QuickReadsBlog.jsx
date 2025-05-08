@@ -257,7 +257,7 @@ const QuickReadsBlog = () => {
                 className="flex-1 px-4 py-3 rounded-xl border border-purple-100 focus:outline-none focus:border-purple-500 bg-white"
               />
               <button className="px-8 py-3 bg-purple-600 text-white rounded-xl hover:bg-purple-700 transition-colors font-medium">
-                Subscribe
+              join now
               </button>
             </div>
           </div>

@@ -8,7 +8,7 @@ function CustomerStories() {
       clientName: "Sarah Johnson",
       position: "General Counsel",
       company: "TechStart Inc.",
-      quote: "MyLegalSolutions transformed our contract management process. We've reduced review time by 65% while improving compliance.",
+      quote: "MyLegalInstant transformed our contract management process. We've reduced review time by 65% while improving compliance.",
       metric: "65%",
       description: "Reduction in contract review time"
     },
@@ -24,7 +24,7 @@ function CustomerStories() {
       clientName: "Priya Patel",
       position: "Chief Compliance Officer",
       company: "HealthTech Solutions",
-      quote: "Working with MyLegalSolutions helped us navigate HIPAA compliance with confidence. Their expertise is unmatched.",
+      quote: "Working with MyLegalInstant helped us navigate HIPAA compliance with confidence. Their expertise is unmatched.",
       metric: "100%",
       description: "Compliance with regulatory requirements"
     },
@@ -40,7 +40,7 @@ function CustomerStories() {
       clientName: "Emma Williams",
       position: "IP Strategy Lead",
       company: "CreativeWorks Agency",
-      quote: "MyLegalSolutions helped us protect our intellectual property across multiple projects and client engagements.",
+      quote: "MyLegalInstant helped us protect our intellectual property across multiple projects and client engagements.",
       metric: "90%",
       description: "Reduction in IP-related disputes"
     },
@@ -66,7 +66,7 @@ function CustomerStories() {
               </span>
             </h1>
             <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover how MyLegalSolutions is transforming legal operations for 500+ professionals worldwide
+              Discover how MyLegalInstant is transforming legal operations for 500+ professionals worldwide
             </p>
             
             <div className="mt-8 flex items-center justify-center gap-1">

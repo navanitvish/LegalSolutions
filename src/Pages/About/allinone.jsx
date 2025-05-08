@@ -23,6 +23,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import WelcomeLegalSection from "./WelcomeLegalSection";
+import AskQuestionForm from "../AskQuestionForm";
 
 const pageContent = {
   hero: {
@@ -219,6 +220,7 @@ const features = [
 
 const AboutPage = () => {
   const [expandedFaq, setExpandedFaq] = useState(null);
+  const [showQuestionForm, setShowQuestionForm] = useState(false);
 
   return (
     <div className=" bg-gradient-to-b from-white to-purple-50 ">
@@ -269,11 +271,6 @@ const AboutPage = () => {
                   </div>
                 ))}
               </div>
-
-              {/* CTA Button */}
-              <button className="mt-8 px-8 py-4 bg-purple-600 text-white rounded-lg font-medium text-lg hover:bg-purple-700 transition-colors duration-300 shadow-lg hover:shadow-xl">
-                Get Started Now
-              </button>
             </div>
 
             {/* Right Image */}
@@ -603,12 +600,20 @@ const AboutPage = () => {
           {/* Optional: Add a CTA section at the bottom */}
           <div className="mt-12 text-center">
             <p className="text-gray-600 mb-4">Still have questions?</p>
-            <button className="inline-flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition-colors">
+            <button 
+              onClick={() => setShowQuestionForm(true)}
+              className="inline-flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition-colors"
+            >
               <Plus size={20} />
               Ask a Question
             </button>
           </div>
         </div>
+
+        <AskQuestionForm 
+          isOpen={showQuestionForm}
+          onClose={() => setShowQuestionForm(false)}
+        />
       </section>
     </div>
   );

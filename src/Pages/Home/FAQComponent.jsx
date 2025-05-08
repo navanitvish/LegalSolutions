@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp, HelpCircle, MessageCircle } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const FAQItem = ({ number, question, content, isOpen, onClick }) => (
   <div
@@ -131,7 +132,7 @@ const FAQComponent = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-medium text-gray-900">Join Our Community</h4>
+                  <Link to="https://x.com/mylegalinstant" className="font-medium text-gray-900">Join Our Community</Link>
                   <p className="text-gray-600 text-sm">Connect with our community</p>
                 </div>
               </div>

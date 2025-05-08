@@ -11,6 +11,7 @@ import {
   Clock,
   Sparkles
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HowItWorks = () => {
   return (
@@ -109,10 +110,10 @@ const HowItWorks = () => {
               <h3 className="text-xl font-bold text-gray-900 mb-4">Instant Access</h3>
               <p className="text-gray-600 mb-8">Connect with qualified legal experts instantly through our secure platform.</p>
               <button className="mt-auto w-full bg-purple-600 text-white py-4 rounded-xl hover:bg-purple-700 transition-all duration-300 group">
-                <span className="flex items-center justify-center gap-2">
+                <Link to="/lawyer-contact" className="flex items-center justify-center gap-2">
                   Get Started 
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
-                </span>
+                </Link>
               </button>
             </div>
           </div>

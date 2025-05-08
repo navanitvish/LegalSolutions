@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { productsData } from "../../utils/ProductDetail";
 import {
   CheckCircle2,
-  ChevronRight,
   Loader2,
   Star,
   Award,
@@ -97,17 +96,6 @@ const HeroSection = ({ title, tagLine }) => {
             </div>
           ))}
         </div>
-
-        {/* Call to action */}
-        {/* <div className="mt-12 flex items-center justify-center gap-4">
-          <button className="px-8 py-4 bg-purple-600 text-white rounded-full font-medium hover:bg-purple-700 transition-colors duration-300 flex items-center gap-2">
-            Get Started
-            <ArrowRight className="w-4 h-4" />
-          </button>
-          <button className="px-8 py-4 bg-white text-purple-600 rounded-full font-medium hover:bg-purple-50 transition-colors duration-300 shadow-lg">
-            Learn More
-          </button>
-        </div> */}
       </div>
 
       {/* Decorative bottom wave */}

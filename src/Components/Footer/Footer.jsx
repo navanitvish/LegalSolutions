@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -17,18 +17,18 @@ export default function Footer() {
               Your trusted partner for quick and reliable legal solutions. We make legal assistance accessible to everyone.
             </p>
             <div className="flex space-x-4 mb-6">
-              <a href="#" className="text-purple-600 hover:text-purple-800 transition-colors">
+              <Link to="https://www.facebook.com/profile.php?id=100091639333112" className="text-purple-600 hover:text-purple-800 transition-colors">
                 <Facebook size={22} />
-              </a>
-              <a href="#" className="text-purple-600 hover:text-purple-800 transition-colors">
+              </Link>
+              <Link href="https://x.com/mylegalinstant" className="text-purple-600 hover:text-purple-800 transition-colors">
                 <Twitter size={22} />
-              </a>
-              <a href="#" className="text-purple-600 hover:text-purple-800 transition-colors">
+              </Link>
+              <Link href="https://www.instagram.com/mylegalinstant?igsh=emU2ZWpncmdpNTNq" className="text-purple-600 hover:text-purple-800 transition-colors">
                 <Instagram size={22} />
-              </a>
-              <a href="#" className="text-purple-600 hover:text-purple-800 transition-colors">
+              </Link>
+              <Link href="https://www.linkedin.com/in/my-legal-instant-a220a8204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="text-purple-600 hover:text-purple-800 transition-colors">
                 <Linkedin size={22} />
-              </a>
+              </Link>
             </div>
             
             {/* App Store Links with actual images */}
@@ -80,7 +80,7 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin size={20} className="text-purple-600 mt-1 flex-shrink-0" />
-                <span className="text-gray-600">123 Legal Avenue, Suite 200<br />New York, NY 10001</span>
+                <span className="text-gray-600">MIG, Mayuri Nagar, Miyapur, Hyderabad, <br />Telangana 500049</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={20} className="text-purple-600 flex-shrink-0" />
