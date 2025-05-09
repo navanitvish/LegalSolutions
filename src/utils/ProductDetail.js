@@ -17,7 +17,7 @@ import E4 from "../../src/assets/images/E4.png";
 import I1 from "../../src/assets/images/I1.png";
 import I2 from "../../src/assets/images/I2.png";
 import I3 from "../../src/assets/images/I3.png";
-// import C1 from "../../src/assets/images/C1.png";
+import C1 from "../../src/assets/images/C1.png";
 import C2 from "../../src/assets/images/C2.png";
 import C3 from "../../src/assets/images/C3.png";
 import A1 from "../../src/assets/images/A1.png";
@@ -849,16 +849,15 @@ export const productsData = {
     title: "Grow Instant",
     renderSubscriptionDetails: false,
     tagLine:
-      "Streamline your entire contract process, from drafting and negotiation to compliance and renewal, ensuring your organization operates efficiently, effectively and risk-free.",
-    description: "Your ultimate partner in Contract Lifecycle Management (CLM)",
+      "Grow Instant is our innovative service desiour gned to seamlessly integrate legal documentation solutions into your business, empowering you to expand your offerings and enhance client retention.",
+    description: "Welcome to Grow Instant: Elevate Your Business with MyLegalInstant",
     overview:
-      "Contract Lifecycle Management (CLM) refers to the systematic management of contracts from initiation through execution, performance, and renewal. Our platform is designed to streamline the entire contract process, from creation to renewal, ensuring that your organization operates efficiently and effectively. By centralizing contract data and automating workflows, CLM helps organizations reduce risks, improve compliance, and enhance visibility into contractual obligations.",
+      "Grow Instant is our innovative service designed to seamlessly integrate legal documentation solutions into your business, empowering you to expand your offerings and enhance client retention.",
     whyChoose: [
-      "Draft contracts effortlessly with ready-made templates and custom clauses",
-      "Collaborate with ease on terms and conditions",
-      "Obtain signatures and finalize agreements swiftly",
-      "Stay compliant and monitor contract performance",
-      "Proactively manage expirations and renegotiations",
+      "Expand Your Service Portfolio: Provide your clients with a comprehensive suite of services that goes beyond your traditional offerings. With Grow Instant, you can easily incorporate legal documentation services tailored to your industry.",
+      "Retain Clients with All-Round Solutions: Stand out in a competitive market by offering an all-in-one solution. By integrating our services, you can meet your clients' legal needs while strengthening your business relationships.",
+      "Tailored for Your Sector: We understand that every business is unique. Our team will work closely with you to identify specific legal documentation needs within your sector, ensuring that you can provide relevant and valuable services to your clients.",
+   
     ],
     features: [
       "Automated Contract Creation with pre-approved templates and standardized clauses",
@@ -874,34 +873,22 @@ export const productsData = {
     ],
     steps: [
       {
-        title: "Initiation",
+        title: "Consultation",
         description:
-          "Start by selecting a template that fits your needs. Customize it as necessary using our intuitive editing tools.",
+          "Reach out to us for an initial consultation where we assess your business needs and identify opportunities for integration.",
         image: CM1,
       },
       {
-        title: "Approval Workflow",
+        title: "Customized Integratio",
         description:
-          "Route the contract through predefined approval stages automatically, ensuring that all necessary stakeholders review it promptly.",
+          "We’ll provide a tailored plan that outlines how our legal documentation services can be seamlessly integrated into your existing operations.",
         image: CM2,
       },
       {
-        title: "Execution",
+        title: "Flexible Pricing",
         description:
-          "Once approved, send the contract for electronic signatures, eliminating the need for physical paperwork.",
+          "Costing will be determined on an individual basis, ensuring that you receive a solution that fits your budget and requirements.",
         image: CM3,
-      },
-      {
-        title: "Post-execution Monitoring",
-        description:
-          "After execution, the system will monitor compliance with contract terms and notify you of important milestones such as renewals or audits.",
-        image: CM4,
-      },
-      {
-        title: "Analytics & Reporting",
-        description:
-          "Utilize built-in analytics tools to generate reports on contract performance, helping you make informed decisions moving forward.",
-        image: CM5,
       },
     ],
     benefits: [
@@ -911,65 +898,51 @@ export const productsData = {
       "Enhance visibility into contract terms and obligations, reducing the likelihood of missed deadlines or compliance issues",
     ],
     getStarted:
-      "Transform your contracting process with our comprehensive Contract Lifecycle Management solution. Experience streamlined workflows, enhanced compliance, and significant cost savings.\n\nRequest a demo today to see how our CLM can revolutionize your contract management!",
+      "With Grow Instant, you'll not only enhance your service offerings but also create lasting value for your clients. Stay tuned for our official launch and discover how we can help you grow your business like never before!",
     faqs: [
-      {
-        question: "What is E-documentation?",
-        answer:
-          "E-documentation refers to the process of creating, executing, and storing legal documents in electronic form, as opposed to physical paper documents.",
-      },
-      {
-        question: "Is e-documentation legally valid in India?",
-        answer:
-          "Yes, e-documents are legally valid in India under the Information Technology Act, 2000, which grants legal recognition to electronic records and digital signatures",
-      },
-      {
-        question: "What constitutes an Electronic Record?",
-        answer:
-          "An electronic record encompasses any data, document, or information conceived, retained, or transmitted in a digital format. It can involve emails, scanned papers, as well as other digital files.",
-      },
-      {
-        question: "Can contracts be finalized electronically in India?",
-        answer:
-          "Yes, contracts can be executed electronically provided they meet the standards of the Indian Contract Act of 1872. The document must be legally enforceable and involve consent from all parties involved.",
-      },
-      {
-        question: "How secure is e-documentation?",
-        answer:
-          "To ensure the authenticity and confidentiality of e-documentation, encryption, access monitoring, and electronic signatures are employed. According to Indian law, digital signatures are mandated for specific legal documents to heighten security.",
-      },
-      {
-        question: "What is an electronic signature or digital signature?",
-        answer:
-          "An electronic signature or digital signature is a form of signature used to authenticate electronic documents. It ensures that the document has not been altered after signing and verifies the identity of the signer.",
-      },
-      {
-        question: "What are the Benefits of E- documentation?",
-        answer:
-          "Cost and time efficiency\nReduced paperwork\nEasy storage and retrieval\nEnvironmentally friendly\nEnhanced safety and compliance\nImproved Accessibility and Better Convenience",
-      },
-      {
-        question: "What laws govern e-documentation in India?",
-        answer:
-          "Information Technology Act, 2000: Provides the legal framework for electronic records and digital signatures.\nIndian Evidence Act, 1872: Recognizes electronic records as admissible evidence.\nIndian Contract Act, 1872: Governs the legality of contracts executed electronically.",
-      },
-      {
-        question: "Are e-documents admissible as evidence in courts of law?",
-        answer:
-          "Indeed, the Indian Evidence Act of 1872 stipulates that electronic records may be admitted as evidence in legal proceedings, provided certain stringent conditions are satisfied. Namely, the authenticity of any corresponding digital signature and integrity of the electronic document must be demonstrable.",
-      },
-      {
-        question: "How does E-documentation impact businesses in India?",
-        answer:
-          "E-documentation facilitates faster execution of agreements, reduces operational costs, and improves compliance. It is particularly useful in sectors such as banking, finance, and corporate governance.",
-      },
-      {
-        question:
-          "What distinguishes an electronic document from one that has been scanned?",
-        answer:
-          "A document existing natively in a digital format such as a PDF or Microsoft Word file constitutes an electronic document. Conversely, a scanned document refers to a physical document that has been converted into electronic form through scanning. However, the legal standing of scanned documents may depend more on contextual specifics.",
-      },
-    ],
+  {
+    question: "What is Grow Instant?",
+    answer:
+      "Grow Instant is an innovative service from MyLegalInstant that allows businesses to integrate our legal documentation solutions into their existing offerings. This enables you to provide a broader range of services to your clients, enhancing your value proposition and client retention.",
+  },
+  {
+    question: "How does Grow Instant benefit my business?",
+    answer:
+      "By integrating Grow Instant into your operations, you can:\n- Expand your service portfolio with legal documentation services.\n- Retain clients by offering comprehensive solutions tailored to their needs.\n- Differentiate your business in a competitive market.",
+  },
+  {
+    question: "Is Grow Instant suitable for all types of businesses?",
+    answer:
+      "Yes! Grow Instant is designed to be sector-specific, meaning we tailor our services to meet the unique needs of your industry. Whether you're in real estate, finance, healthcare, or any other sector, we can help identify the legal documentation services that will benefit your clients.",
+  },
+  {
+    question: "How do I get started with Grow Instant?",
+    answer:
+      "Getting started is easy! Simply reach out to us for an initial consultation. We will assess your business needs and develop a customized integration plan that aligns with your goals.",
+  },
+  {
+    question: "What are the costs associated with Grow Instant?",
+    answer:
+      "Costing for Grow Instant services will be determined on an individual basis. We aim to provide flexible pricing options that fit your budget while delivering maximum value.",
+  },
+  {
+    question: "Will I receive support during the integration process?",
+    answer:
+      "Absolutely! Our team is dedicated to providing ongoing support throughout the integration process and beyond. We’ll ensure that you have all the resources you need for a smooth transition.",
+  },
+  {
+    question: "Can I customize the services offered through Grow Instant?",
+    answer:
+      "Yes! We understand that every business has unique needs. Our team will work closely with you to customize the legal documentation services we provide, ensuring they align perfectly with your business model and client requirements.",
+  },
+  {
+    question: "How can I stay updated on the launch of Grow Instant?",
+    answer:
+      "To stay informed about the official launch and any updates regarding Grow Instant, sign up for our newsletter or follow us on our social media channels. We’ll keep you posted on all the exciting developments!",
+  },
+ 
+],
+
     images: {
       whyChoose: SW1,
       benefits: Benefits,
@@ -979,19 +952,19 @@ export const productsData = {
 
   compliance: {
     id: "compliance",
-    title: "Compliance Suite",
+    title: "Compliance comming soon",
     renderSubscriptionDetails: false,
     tagLine:
-      "Streamline your entire contract process, from drafting and negotiation to compliance and renewal, ensuring your organization operates efficiently, effectively and risk-free.",
+      "Streamlined Processes: Easily navigate compliance regulations with our intuitive platform that simplifies the complexities of legal requirements.",
     description: "Your ultimate partner in Contract Lifecycle Management (CLM)",
     overview:
-      "Contract Lifecycle Management (CLM) refers to the systematic management of contracts from initiation through execution, performance, and renewal. Our platform is designed to streamline the entire contract process, from creation to renewal, ensuring that your organization operates efficiently and effectively. By centralizing contract data and automating workflows, CLM helps organizations reduce risks, improve compliance, and enhance visibility into contractual obligations.",
+      "Something incredible is on the way! Compliance is our upcoming solution designed to simplify your journey through the complex world of regulatory requirements.",
     whyChoose: [
-      "Draft contracts effortlessly with ready-made templates and custom clauses",
-      "Collaborate with ease on terms and conditions",
-      "Obtain signatures and finalize agreements swiftly",
-      "Stay compliant and monitor contract performance",
-      "Proactively manage expirations and renegotiations",
+      // "Draft contracts effortlessly with ready-made templates and custom clauses",
+      // "Collaborate with ease on terms and conditions",
+      // "Obtain signatures and finalize agreements swiftly",
+      // "Stay compliant and monitor contract performance",
+      // "Proactively manage expirations and renegotiations",
     ],
     features: [
       "Automated Contract Creation with pre-approved templates and standardized clauses",
@@ -1006,102 +979,102 @@ export const productsData = {
       "Mobile Accessibility for remote contract management",
     ],
     steps: [
-      {
-        title: "Initiation",
-        description:
-          "Start by selecting a template that fits your needs. Customize it as necessary using our intuitive editing tools.",
+       {
+        title: "",
+       description:
+          "comming soon",
         image: CM1,
-      },
-      {
-        title: "Approval Workflow",
-        description:
-          "Route the contract through predefined approval stages automatically, ensuring that all necessary stakeholders review it promptly.",
-        image: CM2,
-      },
-      {
-        title: "Execution",
-        description:
-          "Once approved, send the contract for electronic signatures, eliminating the need for physical paperwork.",
-        image: CM3,
-      },
-      {
-        title: "Post-execution Monitoring",
-        description:
-          "After execution, the system will monitor compliance with contract terms and notify you of important milestones such as renewals or audits.",
-        image: CM4,
-      },
-      {
-        title: "Analytics & Reporting",
-        description:
-          "Utilize built-in analytics tools to generate reports on contract performance, helping you make informed decisions moving forward.",
-        image: CM5,
-      },
+       },
+      // {
+      //   title: "Approval Workflow",
+      //   description:
+      //     "Route the contract through predefined approval stages automatically, ensuring that all necessary stakeholders review it promptly.",
+      //   image: CM2,
+      // },
+      // {
+      //   title: "Execution",
+      //   description:
+      //     "Once approved, send the contract for electronic signatures, eliminating the need for physical paperwork.",
+      //   image: CM3,
+      // },
+      // {
+      //   title: "Post-execution Monitoring",
+      //   description:
+      //     "After execution, the system will monitor compliance with contract terms and notify you of important milestones such as renewals or audits.",
+      //   image: CM4,
+      // },
+      // {
+      //   title: "Analytics & Reporting",
+      //   description:
+      //     "Utilize built-in analytics tools to generate reports on contract performance, helping you make informed decisions moving forward.",
+      //   image: CM5,
+      // },
     ],
     benefits: [
-      "Reduce administrative costs by automating manual processes and minimizing errors",
-      "Strengthen adherence to contractual obligations through automated tracking and alerts",
-      "Expedite contract cycles, streamline approval processes with automated routine, enabling quicker decision-making, reducing turnaround times by up to 50%",
-      "Enhance visibility into contract terms and obligations, reducing the likelihood of missed deadlines or compliance issues",
+      // "Reduce administrative costs by automating manual processes and minimizing errors",
+      // "Strengthen adherence to contractual obligations through automated tracking and alerts",
+      // "Expedite contract cycles, streamline approval processes with automated routine, enabling quicker decision-making, reducing turnaround times by up to 50%",
+      // "Enhance visibility into contract terms and obligations, reducing the likelihood of missed deadlines or compliance issues",
     ],
     getStarted:
-      "Transform your contracting process with our comprehensive Contract Lifecycle Management solution. Experience streamlined workflows, enhanced compliance, and significant cost savings.\n\nRequest a demo today to see how our CLM can revolutionize your contract management!",
+      "Exciting times are ahead! With Compliance, you’ll have the tools you need to protect your business and build trust with your clients. Stay tuned for our launch and be among the first to experience a smarter way to manage compliance. Something remarkable is coming your way!",
     faqs: [
-      {
-        question: "What is E-documentation?",
-        answer:
-          "E-documentation refers to the process of creating, executing, and storing legal documents in electronic form, as opposed to physical paper documents.",
-      },
-      {
-        question: "Is e-documentation legally valid in India?",
-        answer:
-          "Yes, e-documents are legally valid in India under the Information Technology Act, 2000, which grants legal recognition to electronic records and digital signatures",
-      },
-      {
-        question: "What constitutes an Electronic Record?",
-        answer:
-          "An electronic record encompasses any data, document, or information conceived, retained, or transmitted in a digital format. It can involve emails, scanned papers, as well as other digital files.",
-      },
-      {
-        question: "Can contracts be finalized electronically in India?",
-        answer:
-          "Yes, contracts can be executed electronically provided they meet the standards of the Indian Contract Act of 1872. The document must be legally enforceable and involve consent from all parties involved.",
-      },
-      {
-        question: "How secure is e-documentation?",
-        answer:
-          "To ensure the authenticity and confidentiality of e-documentation, encryption, access monitoring, and electronic signatures are employed. According to Indian law, digital signatures are mandated for specific legal documents to heighten security.",
-      },
-      {
-        question: "What is an electronic signature or digital signature?",
-        answer:
-          "An electronic signature or digital signature is a form of signature used to authenticate electronic documents. It ensures that the document has not been altered after signing and verifies the identity of the signer.",
-      },
-      {
-        question: "What are the Benefits of E- documentation?",
-        answer:
-          "Cost and time efficiency\nReduced paperwork\nEasy storage and retrieval\nEnvironmentally friendly\nEnhanced safety and compliance\nImproved Accessibility and Better Convenience",
-      },
-      {
-        question: "What laws govern e-documentation in India?",
-        answer:
-          "Information Technology Act, 2000: Provides the legal framework for electronic records and digital signatures.\nIndian Evidence Act, 1872: Recognizes electronic records as admissible evidence.\nIndian Contract Act, 1872: Governs the legality of contracts executed electronically.",
-      },
-      {
-        question: "Are e-documents admissible as evidence in courts of law?",
-        answer:
-          "Indeed, the Indian Evidence Act of 1872 stipulates that electronic records may be admitted as evidence in legal proceedings, provided certain stringent conditions are satisfied. Namely, the authenticity of any corresponding digital signature and integrity of the electronic document must be demonstrable.",
-      },
-      {
-        question: "How does E-documentation impact businesses in India?",
-        answer:
-          "E-documentation facilitates faster execution of agreements, reduces operational costs, and improves compliance. It is particularly useful in sectors such as banking, finance, and corporate governance.",
-      },
-      {
-        question:
-          "What distinguishes an electronic document from one that has been scanned?",
-        answer:
-          "A document existing natively in a digital format such as a PDF or Microsoft Word file constitutes an electronic document. Conversely, a scanned document refers to a physical document that has been converted into electronic form through scanning. However, the legal standing of scanned documents may depend more on contextual specifics.",
-      },
+      // {
+      //   question: "What is E-documentation?",
+      //   answer:
+      //     "E-documentation refers to the process of creating, executing, and storing legal documents in electronic form, as opposed to physical paper documents.",
+      // },
+      // {
+      //   question: "Is e-documentation legally valid in India?",
+      //   answer:
+      //     "Yes, e-documents are legally valid in India under the Information Technology Act, 2000, which grants legal recognition to electronic records and digital signatures",
+      // },
+      // {
+      //   question: "What constitutes an Electronic Record?",
+      //   answer:
+      //     "An electronic record encompasses any data, document, or information conceived, retained, or transmitted in a digital format. It can involve emails, scanned papers, as well as other digital files.",
+      // },
+      // {
+      //   question: "Can contracts be finalized electronically in India?",
+      //   answer:
+      //     "Yes, contracts can be executed electronically provided they meet the standards of the Indian Contract Act of 1872. The document must be legally enforceable and involve consent from all parties involved.",
+      // },
+      // {
+      //   question: "How secure is e-documentation?",
+      //   answer:
+      //     "To ensure the authenticity and confidentiality of e-documentation, encryption, access monitoring, and electronic signatures are employed. According to Indian law, digital signatures are mandated for specific legal documents to heighten security.",
+      // },
+      // {
+      //   question: "What is an electronic signature or digital signature?",
+      //   answer:
+      //     "An electronic signature or digital signature is a form of signature used to authenticate electronic documents. It ensures that the document has not been altered after signing and verifies the identity of the signer.",
+      // },
+      // {
+      //   question: "What are the Benefits of E- documentation?",
+      //   answer:
+      //     "Cost and time efficiency\nReduced paperwork\nEasy storage and retrieval\nEnvironmentally friendly\nEnhanced safety and compliance\nImproved Accessibility and Better Convenience",
+      // },
+      // {
+      //   question: "What laws govern e-documentation in India?",
+      //   answer:
+      //     "Information Technology Act, 2000: Provides the legal framework for electronic records and digital signatures.\nIndian Evidence Act, 1872: Recognizes electronic records as admissible evidence.\nIndian Contract Act, 1872: Governs the legality of contracts executed electronically.",
+      // },
+      // {
+      //   question: "Are e-documents admissible as evidence in courts of law?",
+      //   answer:
+      //     "Indeed, the Indian Evidence Act of 1872 stipulates that electronic records may be admitted as evidence in legal proceedings, provided certain stringent conditions are satisfied. Namely, the authenticity of any corresponding digital signature and integrity of the electronic document must be demonstrable.",
+      // },
+      // {
+      //   question: "How does E-documentation impact businesses in India?",
+      //   answer:
+      //     "E-documentation facilitates faster execution of agreements, reduces operational costs, and improves compliance. It is particularly useful in sectors such as banking, finance, and corporate governance.",
+      // },
+      // {
+      //   question:
+      //     "What distinguishes an electronic document from one that has been scanned?",
+      //   answer:
+      //     "A document existing natively in a digital format such as a PDF or Microsoft Word file constitutes an electronic document. Conversely, a scanned document refers to a physical document that has been converted into electronic form through scanning. However, the legal standing of scanned documents may depend more on contextual specifics.",
+      // },
     ],
     images: {
       whyChoose: SW1,
@@ -1444,6 +1417,129 @@ export const productsData = {
     ],
     getStarted:
       "Transform your contracting process with our comprehensive Contract Lifecycle Management solution. Experience streamlined workflows, enhanced compliance, and significant cost savings.\n\nRequest a demo today to see how our CLM can revolutionize your contract management!",
+    faqs: [
+      {
+        question: "What is E-documentation?",
+        answer:
+          "E-documentation refers to the process of creating, executing, and storing legal documents in electronic form, as opposed to physical paper documents.",
+      },
+      {
+        question: "Is e-documentation legally valid in India?",
+        answer:
+          "Yes, e-documents are legally valid in India under the Information Technology Act, 2000, which grants legal recognition to electronic records and digital signatures",
+      },
+      {
+        question: "What constitutes an Electronic Record?",
+        answer:
+          "An electronic record encompasses any data, document, or information conceived, retained, or transmitted in a digital format. It can involve emails, scanned papers, as well as other digital files.",
+      },
+      {
+        question: "Can contracts be finalized electronically in India?",
+        answer:
+          "Yes, contracts can be executed electronically provided they meet the standards of the Indian Contract Act of 1872. The document must be legally enforceable and involve consent from all parties involved.",
+      },
+      {
+        question: "How secure is e-documentation?",
+        answer:
+          "To ensure the authenticity and confidentiality of e-documentation, encryption, access monitoring, and electronic signatures are employed. According to Indian law, digital signatures are mandated for specific legal documents to heighten security.",
+      },
+      {
+        question: "What is an electronic signature or digital signature?",
+        answer:
+          "An electronic signature or digital signature is a form of signature used to authenticate electronic documents. It ensures that the document has not been altered after signing and verifies the identity of the signer.",
+      },
+      {
+        question: "What are the Benefits of E- documentation?",
+        answer:
+          "Cost and time efficiency\nReduced paperwork\nEasy storage and retrieval\nEnvironmentally friendly\nEnhanced safety and compliance\nImproved Accessibility and Better Convenience",
+      },
+      {
+        question: "What laws govern e-documentation in India?",
+        answer:
+          "Information Technology Act, 2000: Provides the legal framework for electronic records and digital signatures.\nIndian Evidence Act, 1872: Recognizes electronic records as admissible evidence.\nIndian Contract Act, 1872: Governs the legality of contracts executed electronically.",
+      },
+      {
+        question: "Are e-documents admissible as evidence in courts of law?",
+        answer:
+          "Indeed, the Indian Evidence Act of 1872 stipulates that electronic records may be admitted as evidence in legal proceedings, provided certain stringent conditions are satisfied. Namely, the authenticity of any corresponding digital signature and integrity of the electronic document must be demonstrable.",
+      },
+      {
+        question: "How does E-documentation impact businesses in India?",
+        answer:
+          "E-documentation facilitates faster execution of agreements, reduces operational costs, and improves compliance. It is particularly useful in sectors such as banking, finance, and corporate governance.",
+      },
+      {
+        question:
+          "What distinguishes an electronic document from one that has been scanned?",
+        answer:
+          "A document existing natively in a digital format such as a PDF or Microsoft Word file constitutes an electronic document. Conversely, a scanned document refers to a physical document that has been converted into electronic form through scanning. However, the legal standing of scanned documents may depend more on contextual specifics.",
+      },
+    ],
+    images: {
+      whyChoose: SW1,
+      benefits: Benefits,
+      howItWorks: HoWImage,
+    },
+  },
+
+  // Add more products as needed
+  //price calculator
+  "price-calculator": {
+    id: "price-calculator",
+    title: "Price Calculator",
+    renderSubscriptionDetails: false,
+    tagLine:
+      "Welcome to the Price Calculator tool at MyLegalInstant.com! Our user-friendly tool is designed to help you quickly and accurately calculate the costs associated with document creation. Whether you’re preparing legal documents, contracts, or any other paperwork, understanding the total expenses is crucial for effective budgeting.",
+    description: "Price Calculator Tool at MyLegalInstant.com",
+    overview:
+      "The Price Calculator is a straightforward online tool that allows you to estimate the costs incurred in document making, including:",
+    whyChoose: [
+      "Simplicity: The intuitive interface makes it easy for anyone to use, regardless of their technical expertise.",
+      "Accuracy: Get precise estimates to help you make informed decisions about your document-related expenses.",
+      "Time-Saving: Quickly calculate costs without having to manually research fees or rates.",
+
+    ],
+    features: [
+      "Automated Contract Creation with pre-approved templates and standardized clauses",
+      "Advanced Workflow Management with configurable stages and real-time tracking",
+      "Centralized Contract Repository with secure, cloud-based storage",
+      "Compliance Tracking with automated alerts and regulatory monitoring",
+      "Analytics and Reporting with customizable dashboards",
+      "Electronic Signatures support with audit trails",
+      "Alerts & Notifications for crucial dates and deadlines",
+      "Integration Capabilities with CRMs, ERPs, and GRC platforms",
+      "Advanced Data Extraction and Analysis tools",
+      "Mobile Accessibility for remote contract management",
+    ],
+    steps: [
+      {
+        title: "Input Your Data",
+        description:
+          "Enter the relevant details about your document and associated fees.",
+        image: CM1,
+      },
+      {
+        title: "Calculate Costs",
+        description:
+          "Click the calculate button to see a breakdown of your estimated costs.",
+        image: CM2,
+      },
+      {
+        title: "Plan Accordingly",
+        description:
+          "Use the results to budget effectively for your document creation process.",
+        image: CM3,
+      },
+   
+    ],
+    benefits: [
+      "Reduce administrative costs by automating manual processes and minimizing errors",
+      "Strengthen adherence to contractual obligations through automated tracking and alerts",
+      "Expedite contract cycles, streamline approval processes with automated routine, enabling quicker decision-making, reducing turnaround times by up to 50%",
+      "Enhance visibility into contract terms and obligations, reducing the likelihood of missed deadlines or compliance issues",
+    ],
+    getStarted:
+      "Don’t let unexpected costs catch you off guard. Use our Price Calculator to gain clarity on your document-making expenses and streamline your budgeting process.",
     faqs: [
       {
         question: "What is E-documentation?",
