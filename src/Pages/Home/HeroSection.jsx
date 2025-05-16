@@ -7,12 +7,22 @@ const HeroSection = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     email: "",
+    countryCode: "+1", // Default country code
     phoneNumber: "",
     companyName: "",
     service: "",
     otherService: ""
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  // Country codes with labels
+  const countryCodes = [
+    { code: "+1", country: "USA" },
+    { code: "+44", country: "UK" },
+    { code: "+91", country: "India" },
+    { code: "+61", country: "Australia" },
+    { code: "+86", country: "China" }
+  ];
 
   const serviceOptions = [
     "Document Preparation",
@@ -35,7 +45,13 @@ const HeroSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    // Combine country code and phone number for complete phone information
+    const completePhoneNumber = formData.countryCode + " " + formData.phoneNumber;
+    const submissionData = {
+      ...formData,
+      fullPhoneNumber: completePhoneNumber
+    };
+    console.log("Form submitted:", submissionData);
     setIsSubmitted(true);
     
     // In a real application, you would send this data to your backend
@@ -47,6 +63,7 @@ const HeroSection = () => {
       setFormData({
         firstName: "",
         email: "",
+        countryCode: "+1",
         phoneNumber: "",
         companyName: "",
         service: "",
@@ -156,15 +173,30 @@ const HeroSection = () => {
                 
                 <div>
                   <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
-                  <input
-                    type="tel"
-                    id="phoneNumber"
-                    name="phoneNumber"
-                    value={formData.phoneNumber}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                    placeholder="(123) 456-7890"
-                  />
+                  <div className="flex">
+                    <select
+                      id="countryCode"
+                      name="countryCode"
+                      value={formData.countryCode}
+                      onChange={handleInputChange}
+                      className="w-24 px-2 py-2 border border-gray-300 rounded-l-md focus:ring-indigo-500 focus:border-indigo-500"
+                    >
+                      {countryCodes.map(country => (
+                        <option key={country.code} value={country.code}>
+                          {country.code} {country.country}
+                        </option>
+                      ))}
+                    </select>
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      value={formData.phoneNumber}
+                      onChange={handleInputChange}
+                      className="flex-1 px-4 py-2 border border-gray-300 rounded-r-md focus:ring-indigo-500 focus:border-indigo-500"
+                      placeholder="123-456-7890"
+                    />
+                  </div>
                 </div>
                 
                 <div>

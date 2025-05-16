@@ -70,7 +70,7 @@ const Products = () => {
               <span className="text-sm text-purple-700 font-medium">Discover Our Suite of Solutions</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-700 via-purple-600 to-purple-800 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold py-4 bg-gradient-to-r from-purple-700 via-purple-600 to-purple-800 bg-clip-text text-transparent">
               Transform Your Legal Practice
             </h1>
             

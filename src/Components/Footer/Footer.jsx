@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
+import { BsTwitterX } from "react-icons/bs";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -17,18 +18,18 @@ export default function Footer() {
               Your trusted partner for quick and reliable legal solutions. We make legal assistance accessible to everyone.
             </p>
             <div className="flex space-x-4 mb-6">
-              <Link to="https://www.facebook.com/profile.php?id=100091639333112" className="text-purple-600 hover:text-purple-800 transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=100091639333112" target="_blank" className="text-purple-600 hover:text-purple-800 transition-colors">
                 <Facebook size={22} />
-              </Link>
-              <Link href="https://x.com/mylegalinstant" className="text-purple-600 hover:text-purple-800 transition-colors">
-                <Twitter size={22} />
-              </Link>
-              <Link href="https://www.instagram.com/mylegalinstant?igsh=emU2ZWpncmdpNTNq" className="text-purple-600 hover:text-purple-800 transition-colors">
+              </a>
+              <a href="https://x.com/mylegalinstant"  target="_blank" className="text-purple-600 hover:text-purple-800 transition-colors">
+                <BsTwitterX size={22} />
+              </a>
+              <a href="https://www.instagram.com/mylegalinstant?igsh=emU2ZWpncmdpNTNq" target="_blank" className="text-purple-600 hover:text-purple-800 transition-colors">
                 <Instagram size={22} />
-              </Link>
-              <Link href="https://www.linkedin.com/in/my-legal-instant-a220a8204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="text-purple-600 hover:text-purple-800 transition-colors">
+              </a>
+              <a href="https://www.linkedin.com/in/my-legal-instant-a220a8204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="text-purple-600 hover:text-purple-800 transition-colors">
                 <Linkedin size={22} />
-              </Link>
+              </a>
             </div>
             
             {/* App Store Links with actual images */}
@@ -80,12 +81,12 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin size={20} className="text-purple-600 mt-1 flex-shrink-0" />
-                <span className="text-gray-600">MIG, Mayuri Nagar, Miyapur, Hyderabad, <br />Telangana 500049</span>
+                <span className="text-gray-600">MIG, Mayuri Nagar, Hyderabad, <br />Telangana,500049</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={20} className="text-purple-600 flex-shrink-0" />
                 <a href="tel:+12345678900" className="text-gray-600 hover:text-purple-700">
-                  (123) 456-7890
+                 +91 986-456-7890
                 </a>
               </div>
               <div className="flex items-center space-x-3">

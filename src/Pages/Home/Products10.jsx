@@ -14,7 +14,7 @@ const Products10 = () => {
       title: "Startup Saathi",
       description: "Comprehensive startup legal services",
       image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
-      path: "/products/startup-saathi",
+      // path: "/products/startup-saathi",
       heading: "Startup Saathi",
       badge: "Featured"
     },
@@ -44,34 +44,25 @@ const Products10 = () => {
       title: "Instant Review",
       description: "Fast, Reliable Legal Agreement Review",
       image: "https://plus.unsplash.com/premium_photo-1661540409860-fe00bb21a51c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
-      path: "/products/instant-review",
+      // path: "/products/instant-review",
       heading: "Instant Review",
       badge: "Popular"
-    },
-    {
-      id: "legal-manager",
-      title: "Legal Manager",
-      description: "Elevate Your Firm's Legal Efficiency with dedicated Support",
-      image: "https://plus.unsplash.com/premium_photo-1683141511225-1d9e52099f56?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
-      path: "/products/your-legal-manager",
-      heading: "Legal Manager",
-      badge: "Premium"
     },
     {
       id: "notice-lifecycle-management",
       title: "Notice Lifecycle Management",
       description: "Streamline Your Notice Management Process",
       image: "https://plus.unsplash.com/premium_photo-1661342406509-064b58299ca5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM5fHxsYXd5ZXJ8ZW58MHx8MHx8fDA%3D",
-      path: "/products/notice-lifecycle-management",
+      // path: "/products/notice-lifecycle-management",
       heading: "Notice Lifecycle Management",
       badge: "New"
     },
     {
-      id: "risk-mitigator",
+      // id: "risk-mitigator",
       title: "Risk Mitigator",
-      description: "Proactive Risk Management Solutions",
+      description: "Comming Soon",
       image: "https://plus.unsplash.com/premium_photo-1694476607281-d110c2a1ade1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTN8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
-      path: "/products/risk-mitigator",
+      // path: "/products/risk-mitigator",
       heading: "Risk Mitigator",
       badge: "Essential"
     },

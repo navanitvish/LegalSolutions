@@ -1,6 +1,6 @@
 import "./App.css";
 import NavBar from "./Components/NavBar/NavBar";
-import CustomPointer from "./CustomPointer"; // Import the CustomPointer component
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
@@ -45,7 +45,7 @@ function App() {
   return (
     <Router>
       <NavBar />
-      <CustomPointer /> {/* Add the CustomPointer component */}
+     
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/" element={<Home />} />

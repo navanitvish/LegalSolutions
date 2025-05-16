@@ -4,11 +4,10 @@ import { Link } from "react-router-dom";
 
 const FAQItem = ({ number, question, content, isOpen, onClick }) => (
   <div
-    className={`border border-purple-100 rounded-xl mb-4 overflow-hidden transition-all duration-300 ${
-      isOpen 
-        ? "bg-purple-50 shadow-lg" 
-        : "bg-white hover:bg-purple-50/50"
-    }`}
+    className={`border border-purple-100 rounded-xl mb-4 overflow-hidden transition-all duration-300 ${isOpen
+      ? "bg-purple-50 shadow-lg"
+      : "bg-white hover:bg-purple-50/50"
+      }`}
   >
     <button
       className="flex items-center justify-between w-full p-6 text-left"
@@ -66,8 +65,74 @@ const FAQComponent = () => {
       question: "What is an electronic signature or digital signature?",
       content:
         "An electronic signature or digital signature is a form of signature used to authenticate electronic documents. It ensures that the document has not been altered after signing and verifies the identity of the signer."
-    }
+    },
+    {
+      question: "What are the Benefits of E- documentation?",
+      content: [
+        "Cost and time efficiency",
+        "Reduced paperwork",
+        "Easy storage and retrieval",
+        "Environmentally friendly",
+        "Enhanced safety and compliance",
+        "Improved Accessibility and Better Convenience",
+      ],
+    },
+    {
+      question: "What are the limitations of E-documentation?",
+      content: [
+        "Dependence on technology",
+        "Potential for cyber threats",
+        "Legal complexities in certain jurisdictions",
+        "Need for digital literacy",
+        "Limited acceptance in some sectors"
+      ],
+    },
+    {
+      question: "What laws govern e-documentation in India ?",
+      content:
+        [
+          "Information Technology Act, 2000: Provides the legal framework for electronic recordsand digital signatures.",
+          "Indian Evidence Act, 1872: Recognizes electronic records as admissible evidence.",
+          "Indian Contract Act, 1872: Governs the legality of contracts executed electronically."
+
+        ],
+    },
+    {
+      question: "Are e - documents admissible as evidence in courts of law ?",
+      content:
+        "Indeed, the Indian Evidence Act of 1872 stipulates that electronic records may be admitted as evidence in legal proceedings, provided certain stringent conditions are satisfied.Namely, the authenticity of any corresponding digital signature and integrity of the electronic document must be demonstrable.",
+
+    },
+
+    {
+      question: "How does E - documentation impact businesses in India ?",
+      content:
+        " E - documentation facilitates faster execution of agreements, reduces operational costs, and improves compliance.It is particularly useful in sectors such as banking, finance, and corporate governance.",
+    },
+
+    {
+      question: "What distinguishes an electronic document from one that has been scanned ?",
+      content:
+        "A document existing natively in a digital format such as a PDF or Microsoft Word file constitutes an electronic document.Conversely, a scanned document refers to a physical document that has been converted into electronic form through scanning.However, the legal standing of scanned documents may depend more on contextual specifics.",
+
+    },
+
+
   ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-purple-50 py-20 px-4">
@@ -99,8 +164,8 @@ const FAQComponent = () => {
                 Contact Support
               </button>
             </div>
-            
-            <div className="space-y-6">
+
+            <div className="space-y-6 h-auto  w-full">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
                   <svg className="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -112,7 +177,7 @@ const FAQComponent = () => {
                   <p className="text-gray-600 text-sm">Get answers within 24 hours</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
                   <svg className="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -125,10 +190,10 @@ const FAQComponent = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 ">
                 <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
                   <svg className="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div>

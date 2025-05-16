@@ -74,7 +74,7 @@ function HeroSection() {
                   </div>
                 </div>
                 <div>
-                  <p className="text-gray-800 font-medium">
+                  <p className="text-gray-800 font-medium text-justify">
                   MyLegalInstant makes legal services simple and affordable, offering trusted documents and expert support to help businesses grow confidently without the stress of high legal costs.
                   </p>
                 </div>

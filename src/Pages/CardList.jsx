@@ -11,7 +11,7 @@ const CardList = () => {
         >
           <h2 className="mb-4 text-lg font-bold">{item.heading}</h2>
           <div className="space-y-2">
-            <div className="h-auto p-2 bg-gray-200 rounded text-start">
+            <div className="h-auto p-2 bg-gray-200 rounded text-justify">
               {item.content}
             </div>
           </div>

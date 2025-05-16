@@ -1,7 +1,10 @@
 import React from 'react';
 import { Shield, ArrowRight, Sparkles } from 'lucide-react';
+import { nav } from 'framer-motion/client';
+import { useNavigate } from 'react-router-dom';
 
 const WelcomeLegalSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-purple-50 to-white">
       {/* Animated Background Elements */}
@@ -78,7 +81,7 @@ const WelcomeLegalSection = () => {
                 Welcome to the world of Legal Instant!!
               </h2>
               
-              <button className="group relative inline-flex items-center px-8 py-4 bg-white text-purple-600 rounded-full font-semibold overflow-hidden transition-all hover:shadow-lg">
+              <button onClick={navigate('/Services')} className="group relative inline-flex items-center px-8 py-4 bg-white text-purple-600 rounded-full font-semibold overflow-hidden transition-all hover:shadow-lg">
                 <span className="relative z-10 flex items-center">
                   Get Started Now
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />

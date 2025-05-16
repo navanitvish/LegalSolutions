@@ -428,7 +428,7 @@ const LawyerPortal = () => {
       </section>
 
       {/* Leadership Section */}
-      <section className="py-24 bg-white">
+      {/* <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Our Leadership</h2>
@@ -468,7 +468,7 @@ const LawyerPortal = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

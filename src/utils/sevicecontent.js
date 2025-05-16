@@ -425,7 +425,7 @@ export const Affidavits = {
       title: "What is an Address Proof Affidavit?",
       description:
         "An Address Proof Affidavit is a legal declaration sworn before an authorized authority, affirming your current residential address. This document is often required in situations where traditional address proofs, such as utility bills or government IDs, are unavailable or insufficient.",
-      image: "https://i.ytimg.com/vi/Rw7Wofbqfak/maxresdefault.jpg",
+      image: "https://plus.unsplash.com/premium_photo-1661540409860-fe00bb21a51c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
     },
     features: [
       {
@@ -615,7 +615,7 @@ export const Affidavits = {
       description:
         "An Affidavit for Change of Name is a legal declaration that officially documents your decision to change your name. It serves as a sworn statement to be used for updating records across various platforms, ensuring your new name is recognized legally.",
       image:
-        "https://i.ytimg.com/vi/5bGVCwKmeZE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCfAiWDtH4AqtXTyP2FT2FcQinPEA",
+        "https://plus.unsplash.com/premium_photo-1661333820879-517c5e808bfe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bGF3eWVyfGVufDB8fDB8fHww",
     },
     features: [
       {
@@ -787,7 +787,7 @@ export const Affidavits = {
       title: " What is an Affidavit for Change of Name after Marriage?",
       description:
         "An Affidavit for Change of Name after Marriage is a legal declaration that formalizes your decision to change your name after marriage. This document is often required for updating records and ensuring that your new name is legally recognized across various platforms.",
-      image: "/api/placeholder/400/300",
+      image: "https://images.unsplash.com/photo-1459499362902-55a20553e082?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
     },
     features: [
       {
@@ -952,7 +952,7 @@ export const Affidavits = {
       title: " What is an Affidavit For Change Of Signature?",
       description:
         "An Affidavit for Change of   Signature is a legal declaration that formalizes your decision to change your name after marriage. This document is often required for updating records and ensuring that your new name is legally recognized across various platforms.",
-      image: "/api/placeholder/400/300",
+      image: "https://images.unsplash.com/photo-1649653084130-06638e40ca25?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
     },
     features: [
       {
@@ -1117,7 +1117,7 @@ export const Affidavits = {
       title: "What is an Affidavit for Duplicate License?",
       description:
         "An Affidavit for Duplicate License is a legal declaration that confirms the loss, theft, or damage of your original license. This affidavit is often required by government authorities or licensing agencies to issue a duplicate license.",
-      image: "/src/assets/images/C2.png",
+      image: "https://images.unsplash.com/photo-1674919768570-076927525118?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
     },
     features: [
       {
@@ -1289,7 +1289,7 @@ export const Affidavits = {
       title: "What is an Affidavit for Claim Settlement in Bank?",
       description:
         "An Affidavit for Claim Settlement in Bank is a legal document used to declare and affirm your right to claim funds, assets, or benefits from a bank account, often in the event of the account holder’s demise or other specific situations. This affidavit serves as a formal declaration of your entitlement and facilitates the settlement process.",
-      image: "/api/placeholder/400/300",
+      image: "https://plus.unsplash.com/premium_photo-1694088516834-6fa55faab454?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
     },
     features: [
       {
@@ -1463,7 +1463,7 @@ export const Affidavits = {
       title: "What is an Affidavit for Duplicate Mark Sheet/Certificate?",
       description:
         "An Affidavit for Duplicate Mark Sheet/Certificate is a legal declaration that confirms the loss, theft, or damage of your original educational documents. This affidavit is often required by educational institutions or examination boards to issue duplicate certificates or mark sheets.",
-      image: "/api/placeholder/400/300",
+      image: "https://plus.unsplash.com/premium_photo-1661559051049-f9e147c7a90b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
     },
     features: [
       {
@@ -1647,7 +1647,7 @@ export const Affidavits = {
       title: "What is an Affidavit for Education Loan?",
       description:
         "An Affidavit for Education Loan is a legal declaration that certifies specific details about the applicant, such as financial status, family income, and intent to utilize the loan exclusively for educational purposes. This affidavit is often required by banks or financial institutions during the loan application process.",
-      image: "/src/images/C3.png",
+      image: "https://plus.unsplash.com/premium_photo-1661315458660-6aa08c1ddf38?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
     },
     features: [
       {
@@ -1824,7 +1824,7 @@ export const Affidavits = {
         "What is an Affidavit for Marriage Registration by Joint Applicants?",
       description:
         "An Affidavit for Marriage Registration by Joint Applicants is a legal declaration jointly made by both parties of the marriage. It certifies the authenticity of their marriage and includes essential details such as names, dates, and consent. This affidavit is required by marriage registration authorities to validate the application.",
-      image: "/api/placeholder/400/300",
+      image: "https://plus.unsplash.com/premium_photo-1694476607274-003dd175d073?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
     },
     features: [
       {
@@ -2002,7 +2002,7 @@ export const Affidavits = {
         "What is an Affidavit for Marriage Registration by Single Applicant?",
       description:
         "An Affidavit for Marriage Registration by Single Applicant is a legal declaration made by one party to a marriage, certifying the authenticity of the marriage and providing all necessary details like the spouse's name, date of marriage, and location. It's often required when only one spouse can apply for registration.",
-      image: "/api/placeholder/400/300",
+      image: "https://plus.unsplash.com/premium_photo-1661371722601-649566b65add?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
     },
     features: [
       {
@@ -2163,7 +2163,7 @@ export const Affidavits = {
       title: "What is an Affidavit for Proof of Date of Birth?",
       description:
         "An Affidavit for Proof of Date of Birth is a sworn legal statement affirming an individual's date of birth. This document is often required when conventional birth certificates or other official records are missing, lost, or contain errors.",
-      image: "/api/placeholder/400/300",
+      image: "https://plus.unsplash.com/premium_photo-1664301588974-e45a48b06a7a?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
     },
     features: [
       {
@@ -2346,7 +2346,7 @@ export const Affidavits = {
       title: "What is an Affidavit for Proof of Income?",
       description:
         "An Affidavit for Proof of Income is a legal declaration made by an individual affirming their income details. This document is often required when traditional income proofs like salary slips or income certificates are unavailable or insufficient.",
-      image: "/api/placeholder/400/300",
+      image: "https://plus.unsplash.com/premium_photo-1661508962936-29c949feb569?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE2fHxsYXd5ZXJ8ZW58MHx8MHx8fDA%3D",
     },
     features: [
       {
@@ -2519,7 +2519,7 @@ export const Affidavits = {
       title: "What is an Affidavit for PF cum Indemnity Bond?",
       description:
         "A PF cum Indemnity Bond is a legal document affirming your claim to a Provident Fund amount. It serves as a guarantee to indemnify the PF authority or employer against any future disputes or claims related to the withdrawal of the PF amount.",
-      image: "/api/placeholder/400/300",
+      image: "https://plus.unsplash.com/premium_photo-1661342406509-064b58299ca5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI4fHxsYXd5ZXJ8ZW58MHx8MHx8fDA%3D",
     },
     features: [
       {
@@ -2697,7 +2697,7 @@ export const Affidavits = {
       title: "What is an Affidavit for One and the Same Person?",
       description:
         "An Affidavit for One and the Same Person is a legal declaration affirming that different names or variations of a name appearing on different documents belong to the same individual. This affidavit is essential for rectifying identity issues in official records.",
-      image: "/api/placeholder/400/300",
+      image: "https://images.unsplash.com/photo-1604783125462-37d81c7385e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU0fHxsYXd5ZXJ8ZW58MHx8MHx8fDA%3D",
     },
     features: [
       {
@@ -2883,7 +2883,7 @@ export const businessAgre = {
       title: "What is a Partnership Affidavit lease agreement?",
       description:
         "A Address Affidavit  is a legally binding document between a landlord (flat owner) and a tenant that outlines the terms and conditions for renting a residential flat. It protects the interests of both parties by defining their roles, rights, and responsibilities while ensuring compliance with applicable laws.",
-      image: "/api/placeholder/400/300",
+      image: "https://images.unsplash.com/photo-1549923746-c502d488b3ea?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     features: [
       {
@@ -2977,20 +2977,20 @@ export const businessAgre = {
     whatIs: {
       title: "Affidavit For Change Of Name?",
       description:
-        "A Commercial Lease Agreement is a legally binding contract between a property owner and a business tenant that outlines the terms for renting commercial space. It includes specific provisions for business use while protecting both parties' interests.",
-      image: "/api/placeholder/400/300",
+        "A Affidavit For Change Of Name is a legally binding contract between a property owner and a business tenant that outlines the terms for renting commercial space. It includes specific provisions for business use while protecting both parties' interests.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0sX2wBCIDQnBb_pQJvdTnDyJqhAKu2UulFrc0OLD97MNTsC9EZcYtqCKI3E74N_sgyNY&usqp=CAU",
     },
     features: [
       {
         icon: "DollarSign",
         title: "Commercial Terms",
-        description: "Detailed commercial rent and security deposit structure.",
+        description: "Detailed Affidavit For Change Of Name  and security deposit structure.",
       },
       {
         icon: "Calendar",
         title: "Business Usage",
         description:
-          "Specific terms for commercial property usage and modifications.",
+          "Specific terms for Affidavit For Change Of Name usage and modifications.",
       },
       {
         icon: "FileText",
@@ -3048,9 +3048,9 @@ export const businessAgre = {
     ],
     faqs: [
       {
-        question: "What makes commercial leases different?",
+        question: "What makes Affidavit For Change Of Name?",
         answer:
-          "Commercial leases include specific provisions for business operations, modifications, and commercial use of the property.",
+          "Affidavit For Change Of Name include specific provisions for business operations, modifications, and commercial use of the property.",
       },
       {
         question: "Are commercial terms negotiable?",
@@ -3074,7 +3074,7 @@ export const businessAgre = {
       title: "What is an Equipment rental agreement?",
       description:
         "An Equipment Rental Agreement is a contract that outlines the terms for renting machinery, tools, or other equipment. It specifies usage conditions, maintenance responsibilities, and return requirements.",
-      image: "/api/placeholder/400/300",
+      image: "https://plus.unsplash.com/premium_photo-1698084059393-103cb8b86253?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYwfHxsYXd5ZXJ8ZW58MHx8MHx8fDA%3D",
     },
     features: [
       {
@@ -3169,7 +3169,7 @@ export const businessAgre = {
       title: "What is a Vehicle lease agreement?",
       description:
         "A Vehicle Lease Agreement is a contract that details the terms for leasing a vehicle, including usage rights, maintenance responsibilities, and return conditions.",
-      image: "/api/placeholder/400/300",
+      image: "https://plus.unsplash.com/premium_photo-1661398676566-cdbcc67cba04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcyfHxsYXd5ZXJ8ZW58MHx8MHx8fDA%3D",
     },
     features: [
       {
@@ -3265,7 +3265,7 @@ export const businessAgre = {
       title: "What is a Partnership Affidavit lease agreement?",
       description:
         "A Address Affidavit  is a legally binding document between a landlord (flat owner) and a tenant that outlines the terms and conditions for renting a residential flat. It protects the interests of both parties by defining their roles, rights, and responsibilities while ensuring compliance with applicable laws.",
-      image: "/api/placeholder/400/300",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRySDMQnhfFomvno0J8TGQkUmCUlpGgsfkxFA&s",
     },
     features: [
       {
@@ -3456,7 +3456,7 @@ export const businessAgre = {
       title: "Affidavit For Change Of Name?",
       description:
         "A Commercial Lease Agreement is a legally binding contract between a property owner and a business tenant that outlines the terms for renting commercial space. It includes specific provisions for business use while protecting both parties' interests.",
-      image: "/api/placeholder/400/300",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp5sKlKmGX1yx22IVY5IUEqeD1cp4ni1WYdA&s",
     },
     features: [
       {

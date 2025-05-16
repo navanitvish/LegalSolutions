@@ -1,7 +1,9 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { productsData } from "../../utils/ProductDetail";
+import { useNavigate } from 'react-router-dom'
 import {
+
   CheckCircle2,
   Loader2,
   Star,
@@ -33,15 +35,13 @@ const FAQItem = ({ faq, index }) => {
             {faq.question}
           </h3>
           <ChevronDown
-            className={`w-6 h-6 text-purple-600 transition-transform duration-300 flex-shrink-0 ${
-              isOpen ? "transform rotate-180" : ""
-            }`}
+            className={`w-6 h-6 text-purple-600 transition-transform duration-300 flex-shrink-0 ${isOpen ? "transform rotate-180" : ""
+              }`}
           />
         </div>
         <div
-          className={`ml-11 mt-2 text-gray-600 overflow-hidden transition-all duration-300 ${
-            isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-          }`}
+          className={`ml-11 mt-2 text-gray-600 overflow-hidden transition-all duration-300 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+            }`}
         >
           <div className="py-2">{faq.answer}</div>
         </div>
@@ -50,7 +50,7 @@ const FAQItem = ({ faq, index }) => {
   );
 };
 
-const HeroSection = ({ title, tagLine }) => {
+const HeroSection = ({ title, tagLine,description }) => {
   return (
     <div className="relative  flex flex-col items-center justify-center ">
       {/* Background decorative elements */}
@@ -75,8 +75,11 @@ const HeroSection = ({ title, tagLine }) => {
           <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-purple-500 to-purple-400 bg-clip-text text-transparent">
             {title}
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-5xl mx-auto leading-relaxed text-balance">
             {tagLine}
+          </p>
+          <p>
+            {description}
           </p>
         </div>
 
@@ -116,6 +119,13 @@ const HeroSection = ({ title, tagLine }) => {
 const ProductDetail = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    //navigate to 
+    navigate('/products');
+
+  } 
 
   useEffect(() => {
     setProduct(productsData[productId]);
@@ -136,10 +146,10 @@ const ProductDetail = () => {
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         {/* Previous sections remain unchanged */}
 
-        
+
 
         {/* Hero Section */}
-        <HeroSection title={product.title} tagLine={product.tagLine} />
+        <HeroSection title={product.title} tagLine={product.tagLine} description={product.description} />
 
         {/* Overview Section */}
         <div className=" p-8 mb-12">
@@ -147,7 +157,7 @@ const ProductDetail = () => {
             <LayoutDashboard className="w-8 h-8 text-purple-600 mr-4" />
             <h2 className="text-3xl font-bold">Overview</h2>
           </div>
-          <p className="text-lg leading-relaxed text-gray-600">
+          <p className="text-lg leading-relaxed text-gray-600 text-justify">
             {product.overview}
           </p>
         </div>
@@ -246,6 +256,13 @@ const ProductDetail = () => {
           <p className="text-white text-xl font-semibold relative z-10">
             {product.getStarted}
           </p>
+
+          <button onClick={handleClick}  className="group mt-2 relative inline-flex items-center px-8 py-4 bg-white text-purple-600 rounded-full font-semibold overflow-hidden transition-all hover:shadow-lg">
+            <span className="relative z-10 flex items-center">
+              Get Started Now
+              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+            </span>
+          </button>
         </div>
       </div>
     </div>

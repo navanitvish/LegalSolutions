@@ -394,7 +394,7 @@ Are you a homeowner or tenant looking to formalize a house rental arrangement? L
       {/* Why Need Agreement */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 overflow-hidden">
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-          Why Do You Need a Flat Rent Agreement?
+          Why Do You Need a House Rental Agreement?
         </h2>
 
         

@@ -37,7 +37,7 @@ const pageContent = {
       { number: "24/7", label: "Customer Support" },
     ],
     imageUrl:
-      "/src/assets/images/CM!.png",
+      "https://images.unsplash.com/photo-1573164574511-73c773193279?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 
   vision: {
@@ -105,23 +105,23 @@ const pageContent = {
       {
         icon: <CheckCircle className="w-6 h-6" />,
         title: "Quality Assurance",
-        description: "Every document undergoes rigorous quality checks.",
+        description: "Every document is reviewed for accuracy and compliance.",
       },
       {
         icon: <MessageSquare className="w-6 h-6" />,
         title: "24/7 Support",
-        description: "Round-the-clock assistance for all your queries.",
+        description: "Get assistance anytime, anywhere with our dedicated support team.",
       },
       {
         icon: <Clock className="w-6 h-6" />,
         title: "Timely Delivery",
-        description: "Receive your documents on or before the promised time.",
+        description: "Receive your documents in a timely manner.",
       },
       {
         icon: <Shield className="w-6 h-6" />,
         title: "Data Security",
         description:
-          "We prioritize the confidentiality and security of your data.",
+          "Your information is protected with state-of-the-art encryption and security measures.",
       },
     ],
   },
@@ -383,7 +383,7 @@ const AboutPage = () => {
             {/* Main image */}
             <div className="  rounded-3xl overflow-hidden">
               <img
-                src="https://plus.unsplash.com/premium_photo-1664298752878-f13307b9334b?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGFkdm9jYXRlfGVufDB8fDB8fHww"
+                src="https://plus.unsplash.com/premium_photo-1661749606223-21bc0e512f0d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Commitment Illustration"
                 className="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-500"
               />

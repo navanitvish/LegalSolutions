@@ -34,7 +34,10 @@ const LShapeContentWithVideo = () => {
           <video
             ref={videoRef}
             className="w-full h-full rounded-lg"
-            controls
+            autoPlay
+            loop
+            muted
+            
           >
             <source
               src={videos[currentVideoIndex]}

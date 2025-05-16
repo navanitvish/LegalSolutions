@@ -56,80 +56,81 @@
     },
     {
       id: "compliance",
-      title: "Compliance Suite",
-      description: "comming soon",
+      title: "Compliance ",
+      description: "Coming soon",
       image: "https://images.unsplash.com/photo-1736881805287-663862fa0d1e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
       // path: "/products/compliance"
     },
+  
     {
-      id: "risk-mitigator",
-      title: "Risk Mitigator",
-      description: "Proactive Risk Management Solutions",
-      image: "https://plus.unsplash.com/premium_photo-1694476607281-d110c2a1ade1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTN8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
-      // path: "/products/risk-mitigator"
-    },
-    {
-      id: "strategic",
-      title: "Strategic Solutions",
-      description: "Strategic Legal Planning Tools",
+      // id: "strategic",
+      title: "Strategic Management Services ",
+      description: "Coming soon ",
       image: "https://media.licdn.com/dms/image/v2/D5612AQH4_3nWITdbVQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1705594724404?e=2147483647&v=beta&t=rZosYwcZ4FcS8uuVM_8p-Hj7XNwN5eD79XhQifssiaE",
       // path: "/products/strategic"
     },
     {
-      id: "litigation",
+      // id: "litigation",
       title: "Litigation Manager",
-      description: "Comprehensive Litigation Management",
-      image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
+      description: "Coming soon ",
+      image: "https://images.unsplash.com/photo-1698047682129-c3e217ac08b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       // path: "/products/litigation"
     },
     {
       id: "startup-saathi",
       title: "Startup Saathi",
       description: " Comprehensive startup legal services",
-      image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
+      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       // path: "/products/startup-saathi"
     },
 
     {
       id: "master-access-subscription",
       title: "Master Access Subscription",
-      description: "Proactive Generate Stamp Paper  Solutions",
-      image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
+      description: " Unlock the full potential of MyLegalInstant",
+      image: "https://images.pexels.com/photos/4427549/pexels-photo-4427549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       // path: "/products/risk-mitigator"
     },
     {
-      id: "strategic-management-services",
+      // id: "strategic-management-services",
       title: "Strategic Management Services ",
-      description: "Proactive Risk Management Solutions",
-      image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
+      description: "Coming soon ",
+      image: "https://images.pexels.com/photos/5668807/pexels-photo-5668807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       // path: "/products/risk-mitigator"
     },
     {
       id: "contract-lifecycle-management",
       title: "Contract Lifecycle Management",
       description: "Proactive Risk Management Solutions",
-      image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
+      image: "https://images.pexels.com/photos/7875842/pexels-photo-7875842.jpeg?auto=compress&cs=tinysrgb&w=600",
       // path: "/products/risk-mitigator"
     },
     {
-      id: "litigation-pratice-managemen",
-      title: "Litigation (Pratice) Managemen",
-      description: "comming soon",
-      image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
+      // id: "litigation-pratice-managemen",
+      title: "Litigation Practice Management",
+      description: "Coming soon",
+      image: "https://images.pexels.com/photos/8112000/pexels-photo-8112000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       // path: "/products/risk-mitigator"
     },
     {
       id: "price-calculator",
       title: "Price Calculator ",
-      description: "comming soon",
-      image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
+      description: "Price Calculator Tool at MyLegalInstant.com",
+      image: "https://images.pexels.com/photos/7841819/pexels-photo-7841819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       // path: "/products/risk-mitigator"
     },
-    {
-      id: "litigation-pratice-managemen",
-      title: "Litigation (Pratice) Managemen",
-      description: "comming soon",
-      image: "https://careyandleisure.com/wp-content/uploads/2021/10/featured-law-advice-and-legal-services-concept-2021-08-29-01-18-08-utc-1.jpg",
+      {
+      // id: "risk-mitigator",
+      title: "Risk Mitigator",
+      description: "Coming soon",
+      image: "https://images.pexels.com/photos/8112153/pexels-photo-8112153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      // path: "/products/risk-mitigator"
+    },
+     {
+      id: "lawyers-connect",
+      title: "Lawyers Connect",
+      description: "Your Legal Ally, Anytime, Anywhere",
+      image: "https://images.pexels.com/photos/4427556/pexels-photo-4427556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       // path: "/products/risk-mitigator"
     },
   

@@ -99,6 +99,31 @@ export const productsData = {
         answer:
           "Delivery of the physical stamped document typically takes three to four business days, depending on your location.",
       },
+      {
+        question:
+          "What types of stamp paper are available for selection?",
+        answer:
+          "We offer a variety of non-judicial stamp paper options, with denominations based on your document's legal requirements.",
+      },
+
+      {
+        question: ". What payment methods do you accept?",
+        answer:
+          "We accept all major credit and debit cards, as well as other secure online payment options to make the transaction process smooth and hassle-free.",
+      },
+      {
+        question: "Can I track the delivery of my physical stamped document?",
+        answer:
+          "Yes, once your order is processed, we will provide you with a tracking number so you can monitor the delivery status of your stamped document.",
+      },
+      {
+        question: "Is there customer support available if I need help with the process?",
+        answer:
+          "Absolutely! Our customer support team is available to assist you with any questions or issues you may have regarding your order or the stamping process.",
+      },
+      
+
+
     ],
     images: {
       whyChoose: E11,
@@ -110,7 +135,7 @@ export const productsData = {
 
     id: "instant-review",
 
-    title: "Instant Review",  
+    title: "Instant Review",
     tagLine: "Fast, Reliable Legal Agreement Review and Stamp Paper Printing",
     description:
       "Fast, Reliable Legal Agreement Review and Stamp Paper Printing",
@@ -128,6 +153,13 @@ export const productsData = {
       "Customized Review Report – Receive a report outlining any adjustments or legal insights to strengthen your agreement.",
       "Convenient Stamp Paper Printing – Skip the hassle of sourcing stamp paper; we take care of it and send it directly to you.",
       "Fast Turnaround – Get your reviewed and printed agreement quickly, so you can move forward without delay.",
+    ],
+      benefits: [
+      "Comprehensive legal oversight without the cost of full-time counsel",
+      "Proactive compliance management and updates",
+      "Professional document preparation and review",
+      "Expert litigation support (subject to agreement)",
+      "Continuous adaptation to your evolving needs",
     ],
     steps: [
       {
@@ -232,7 +264,7 @@ export const productsData = {
       "Continuous adaptation to your evolving needs",
     ],
     getStarted:
-      "Transform the way you manage your firm's legal affairs with Your Legal Manager. Contact us today for a consultation and take the first step towards streamlined legal management!",
+      "Ready to Streamline Your Legal Management Transform the way you manage your firm's legal affairs with Your Legal Manager. Contact us today for a consultation and take the first step towards streamlined legal management!",
     faqs: [
       {
         question: "What services does Your Legal Manager provide?",
@@ -270,10 +302,10 @@ export const productsData = {
     id: "rent-receipt-services",
     title: "Rent Receipt Services",
     tagLine: "Streamline Your Rental Process",
-    description: "Simplifying Your Rental Transactions",
+    description: "Welcome to Rent Receipt Services, your go-to solution for hassle-free rent management. Whether you’re a tenant, landlord, professional, or student, we’re here to simplify your rental transactions and enhance your record-keeping.",
     renderSubscriptionDetails: false,
     overview:
-      "Welcome to Rent Receipt Services, your go-to solution for hassle-free rent management. Whether you're a tenant, landlord, professional, or student, we're here to simplify your rental transactions and enhance your record-keeping.",
+      "Automated Monthly Receipts: Say goodbye to manual tracking! Once you set up an agreement through our platform, monthly rent receipts are automatically generated and sent to both parties. Simple, efficient,and stress-free.Direct Communication: Stay in the loop! We send rent payment updates directly to your email, keeping both tenants and landlords informed. You’ll never miss an important date again! E-Signature Convenience: Add an extra layer of security and convenience with our e-signature feature.Sign documents digitally and keep everything safely organized and stored in one place.Timely Rent Reminders: Never miss a payment again! Our automatic monthly reminders help ensure rent is paid and collected on time, every time.",
     whyChoose: [
       "Automated Monthly Receipts: Say goodbye to manual tracking! Once you set up an agreement through our platform, monthly rent receipts are automatically generated and sent to both parties.",
       "Direct Communication: Stay in the loop! We send rent payment updates directly to your email, keeping both tenants and landlords informed.",
@@ -444,166 +476,166 @@ export const productsData = {
     },
   },
   "startup-saathi": {
-      id: "startup-saathi",
-      title: "Startup Saathi",
-      tagLine: "Your Trusted Partner for Legal Documentation",
-      description: `Starting a business is challenging. From ideation to execution, each stage demands precision, passion and a partner who truly grasps the intricacies of your business. Startup Saathi is here to ease your path by handling the complexities of the legal landscape, offering a comprehensive, reliable legal documentation solution tailored specifically to meet the needs of startups.
+    id: "startup-saathi",
+    title: "Startup Saathi",
+    tagLine: "Your Trusted Partner for Legal Documentation",
+    description: `Starting a business is challenging. From ideation to execution, each stage demands precision, passion and a partner who truly grasps the intricacies of your business. Startup Saathi is here to ease your path by handling the complexities of the legal landscape, offering a comprehensive, reliable legal documentation solution tailored specifically to meet the needs of startups.
   
   Recognizing the unique challenges faced by new businesses, our service ensures that you have all the necessary legal documents in place to operate smoothly and comply with regulations. We guide you through every step of your startup journey, ensuring that your legal needs are met efficiently.
   
   Whether you're setting up a new venture, scaling an existing one, or preparing for investment rounds, our solution covers every legal document and process you need, backed by dedicated experts to guide you.`,
-      overview: `At Startup Saathi, we understand that navigating the legal landscape can be daunting for entrepreneurs. Our platform adds value by:
+    overview: `At Startup Saathi, we understand that navigating the legal landscape can be daunting for entrepreneurs. Our platform adds value by:
   
   - Streamlining Legal Processes: We simplify the creation and management of essential legal documents, allowing you to focus on growing your business.
   - Expert Guidance: With a dedicated Legal Manager, you have an expert in your corner, providing you with customized legal solutions and strategies.
   - Cost-Effective Solutions: By offering comprehensive packages, we help you avoid the high costs associated with hiring multiple legal professionals.
   - Seamless Communication: Your User Relationship Manager is available to answer questions, troubleshoot, and provide updates on every aspect of your service.
   - Scalability: As your startup grows, so do your legal needs. Startup Saathi grows with you, adapting and expanding to meet your changing requirements.`,
-      whyChoose: [
-        "Streamlining Legal Processes: We simplify the creation and management of essential legal documents, allowing you to focus on growing your business",
-        "Expert Guidance: With a dedicated Legal Manager, you have an expert in your corner, providing you with customized legal solutions and strategies",
-        "Cost-Effective Solutions: By offering comprehensive packages, we help you avoid the high costs associated with hiring multiple legal professionals",
-        "Seamless Communication: Your User Relationship Manager is available to answer questions, troubleshoot, and provide updates on every aspect of your service",
-        "Scalability: As your startup grows, so do your legal needs. Startup Saathi grows with you, adapting and expanding to meet your changing requirements",
-      ],
-      features: [
-        "Comprehensive Document Library: Access a wide range of essential legal documents required for your Startup, such as MOAs, NDAs, Employment contracts, Incorporation documents and many more",
-        "Dedicated Legal and Relationship Managers: Our team is always available to assist you with any queries or concerns regarding your legal documents, providing tailored legal support and advice throughout the process",
-        "Customizable Templates: Tailor documents to fit your specific business needs, ensuring legal compliance",
-        "Automated Document Generation: Quickly generate standard legal documents using our user-friendly platform, saving you time and effort",
-        "Periodic Compliance Checks: Ensuring your startup stays up-to-date with legal requirements",
-        "Data Security: All your sensitive data is stored securely, with complete privacy guaranteed",
-        "Ongoing Support: Enjoy continuous access to legal advice as your startup evolves and grows",
-        "Scan Services: Option to get scan copies of documents with customer upload capability",
-        "Law Books Access: Available through subscription plans",
-        "Master Access Subscription: Category-wise access to documents with flexible plans",
-      ],
-      steps: [
-        {
-          title: "Sign Up",
-          description: "Create an account on our platform",
-          image: S1,
-        },
-        {
-          title: "Choose Flexible Plans",
-          description:
-            "Choose the plan that best suits your startup's current stage and goals",
-            image: S2,
-        },
-        {
-          title: "Onboarding Call",
-          description:
-            "Meet your dedicated Legal Manager and User Relationship Manager",
-            image: S3,
-        },
-        {
-          title: "Consultation",
-          description:
-            "Schedule a consultation with your dedicated Legal Manager to discuss your startup's specific needs",
-            image: S4,
-        },
-        {
-          title: "Document Preparation",
-          description:
-            "Our team will prepare the necessary legal documents tailored to your requirements",
-            image: S5,
-        },
-        {
-          title: "Review & Approval",
-          description:
-            "Review the drafted documents with your Legal Manager and make any necessary adjustments",
-            image: S6,
-        },
-        {
-          title: "Finalization",
-          description:
-            "Once approved, receive finalized copies of your documents for use",
-            image: S6,
-        },
-      ],
-      benefits: [
-        "Access to comprehensive document library with essential legal documents",
-        "Dedicated support from Legal and Relationship Managers",
-        "Customizable templates for specific business needs",
-        "Automated document generation saving time and effort",
-        "Regular compliance checks",
-        "Secure data storage and privacy",
-        "Continuous legal advice and support",
-        "Scan services for document digitization",
-        "Access to law books through subscription",
-        "Flexible subscription plans (quarterly, semi-annually, annual)",
-        "Special 'Instant Benefits' for subscribers including 24/7 support",
-        "Prime user status with dedicated executive support",
-      ],
-      renderSubscriptionDetails: false,
-      subscriptionDetails: {
-        plans: [
-          "Master Access (Subscription for specific document category)",
-          "Category-wise access plans",
-          "Quarterly plans",
-          "Semi-annual plans",
-          "Annual plans",
-        ],
-        pricing: [
-          "Subscription plan costs",
-          "Stamp paper costs per agreement",
-          "Shipping charges (inclusive of printing and convenience fees)",
-          "Scanning charges where applicable",
-        ],
+    whyChoose: [
+      "Streamlining Legal Processes: We simplify the creation and management of essential legal documents, allowing you to focus on growing your business",
+      "Expert Guidance: With a dedicated Legal Manager, you have an expert in your corner, providing you with customized legal solutions and strategies",
+      "Cost-Effective Solutions: By offering comprehensive packages, we help you avoid the high costs associated with hiring multiple legal professionals",
+      "Seamless Communication: Your User Relationship Manager is available to answer questions, troubleshoot, and provide updates on every aspect of your service",
+      "Scalability: As your startup grows, so do your legal needs. Startup Saathi grows with you, adapting and expanding to meet your changing requirements",
+    ],
+    features: [
+      "Comprehensive Document Library: Access a wide range of essential legal documents required for your Startup, such as MOAs, NDAs, Employment contracts, Incorporation documents and many more",
+      "Dedicated Legal and Relationship Managers: Our team is always available to assist you with any queries or concerns regarding your legal documents, providing tailored legal support and advice throughout the process",
+      "Customizable Templates: Tailor documents to fit your specific business needs, ensuring legal compliance",
+      "Automated Document Generation: Quickly generate standard legal documents using our user-friendly platform, saving you time and effort",
+      "Periodic Compliance Checks: Ensuring your startup stays up-to-date with legal requirements",
+      "Data Security: All your sensitive data is stored securely, with complete privacy guaranteed",
+      "Ongoing Support: Enjoy continuous access to legal advice as your startup evolves and grows",
+      "Scan Services: Option to get scan copies of documents with customer upload capability",
+      "Law Books Access: Available through subscription plans",
+      "Master Access Subscription: Category-wise access to documents with flexible plans",
+    ],
+    steps: [
+      {
+        title: "Sign Up",
+        description: "Create an account on our platform",
+        image: S1,
       },
-      getStarted: `With Startup Saathi, you're not just getting legal documentation, you're getting a partner committed to protecting, supporting, and growing with your business. Sign up today and take the first step toward a legally sound, scalable, and successful startup journey!
+      {
+        title: "Choose Flexible Plans",
+        description:
+          "Choose the plan that best suits your startup's current stage and goals",
+        image: S2,
+      },
+      {
+        title: "Onboarding Call",
+        description:
+          "Meet your dedicated Legal Manager and User Relationship Manager",
+        image: S3,
+      },
+      {
+        title: "Consultation",
+        description:
+          "Schedule a consultation with your dedicated Legal Manager to discuss your startup's specific needs",
+        image: S4,
+      },
+      {
+        title: "Document Preparation",
+        description:
+          "Our team will prepare the necessary legal documents tailored to your requirements",
+        image: S5,
+      },
+      {
+        title: "Review & Approval",
+        description:
+          "Review the drafted documents with your Legal Manager and make any necessary adjustments",
+        image: S6,
+      },
+      {
+        title: "Finalization",
+        description:
+          "Once approved, receive finalized copies of your documents for use",
+        image: S6,
+      },
+    ],
+    benefits: [
+      "Access to comprehensive document library with essential legal documents",
+      "Dedicated support from Legal and Relationship Managers",
+      "Customizable templates for specific business needs",
+      "Automated document generation saving time and effort",
+      "Regular compliance checks",
+      "Secure data storage and privacy",
+      "Continuous legal advice and support",
+      "Scan services for document digitization",
+      "Access to law books through subscription",
+      "Flexible subscription plans (quarterly, semi-annually, annual)",
+      "Special 'Instant Benefits' for subscribers including 24/7 support",
+      "Prime user status with dedicated executive support",
+    ],
+    renderSubscriptionDetails: false,
+    subscriptionDetails: {
+      plans: [
+        "Master Access (Subscription for specific document category)",
+        "Category-wise access plans",
+        "Quarterly plans",
+        "Semi-annual plans",
+        "Annual plans",
+      ],
+      pricing: [
+        "Subscription plan costs",
+        "Stamp paper costs per agreement",
+        "Shipping charges (inclusive of printing and convenience fees)",
+        "Scanning charges where applicable",
+      ],
+    },
+    getStarted: `With Startup Saathi, you're not just getting legal documentation, you're getting a partner committed to protecting, supporting, and growing with your business. Sign up today and take the first step toward a legally sound, scalable, and successful startup journey!
   
   Our platform is intuitive, easy to navigate, and always up-to-date with the latest legal standards, so you can focus on what you do best: growing your business.
   
   Join Startup Saathi Today and Secure Your Startup's Future`,
-      faqs: [
-        {
-          question: "What types of businesses can benefit from Startup Saathi?",
-          answer:
-            "Startup Saathi is designed for all types of Startups, including tech companies, e-commerce platforms, service providers, and more.",
-        },
-        {
-          question: "Do I need legal experience to use Startup Saathi?",
-          answer:
-            "Not at all! Our User Relationship Manager is here to guide you every step of the way, ensuring you're supported throughout the process.",
-        },
-        {
-          question: "What types of documents does Startup Saathi offer?",
-          answer:
-            "We offer a broad range of legal documents, including founder agreements, NDAs, employee contracts, IP rights documents, partnership agreements, and more.",
-        },
-        {
-          question: "How long does it take to prepare the legal documents?",
-          answer:
-            "The preparation time varies depending on the complexity of the documents but typically ranges from one to five business days.",
-        },
-        {
-          question: "Are the legal documents compliant with local laws?",
-          answer:
-            "Yes, all documents are prepared in accordance with current local laws and regulations to ensure compliance.",
-        },
-        {
-          question: "Can I customize the documents to fit my startup's needs?",
-          answer:
-            "Absolutely, our templates are customizable, allowing you to tailor each document to your specific requirements.",
-        },
-        {
-          question: "Is my data secure with Startup Saathi?",
-          answer:
-            "Absolutely. We prioritize your data security and employ advanced encryption to keep all information safe and private.",
-        },
-        {
-          question: "What if I need additional legal assistance later?",
-          answer:
-            "You can always reach out to your Legal Manager for ongoing support as your business grows and evolves.",
-        },
-      ],
-      images: {
-        whyChoose: SW1,
-        benefits: Benefits,
-        howItWorks: HoWImage,
+    faqs: [
+      {
+        question: "What types of businesses can benefit from Startup Saathi?",
+        answer:
+          "Startup Saathi is designed for all types of Startups, including tech companies, e-commerce platforms, service providers, and more.",
       },
+      {
+        question: "Do I need legal experience to use Startup Saathi?",
+        answer:
+          "Not at all! Our User Relationship Manager is here to guide you every step of the way, ensuring you're supported throughout the process.",
+      },
+      {
+        question: "What types of documents does Startup Saathi offer?",
+        answer:
+          "We offer a broad range of legal documents, including founder agreements, NDAs, employee contracts, IP rights documents, partnership agreements, and more.",
+      },
+      {
+        question: "How long does it take to prepare the legal documents?",
+        answer:
+          "The preparation time varies depending on the complexity of the documents but typically ranges from one to five business days.",
+      },
+      {
+        question: "Are the legal documents compliant with local laws?",
+        answer:
+          "Yes, all documents are prepared in accordance with current local laws and regulations to ensure compliance.",
+      },
+      {
+        question: "Can I customize the documents to fit my startup's needs?",
+        answer:
+          "Absolutely, our templates are customizable, allowing you to tailor each document to your specific requirements.",
+      },
+      {
+        question: "Is my data secure with Startup Saathi?",
+        answer:
+          "Absolutely. We prioritize your data security and employ advanced encryption to keep all information safe and private.",
+      },
+      {
+        question: "What if I need additional legal assistance later?",
+        answer:
+          "You can always reach out to your Legal Manager for ongoing support as your business grows and evolves.",
+      },
+    ],
+    images: {
+      whyChoose: SW1,
+      benefits: Benefits,
+      howItWorks: HoWImage,
     },
+  },
   "contract-lifecycle-management": {
     id: "contract-lifecycle-management",
     title: "Contract Lifecycle Management",
@@ -747,8 +779,7 @@ export const productsData = {
       "Welcome to MyLegalInstant.com, where we introduce our innovative Notice Lifecycle Management (NLM) solution. This platform is designed to streamline the management of notices throughout their lifecycle, ensuring that your organization remains compliant, efficient, and organized at every step of the way.",
     description: "Your ultimate partner in Contract Lifecycle Management (CLM)",
     overview: [
-      "What is Notice Lifecycle Management?",
-      "Notice Lifecycle Management (NLM) refers to the systematic process of managing notices from their creation to their expiration or renewal. Our platform streamlines each stage of the notice process:",
+      "Notice Lifecycle Management (NLM) refers to the systematic process of managing notices from their creation to their expiration or renewal. Our platform streamlines each stage of the notice process:Creation: Use our customizable templates to draft compliant notices effortlesslyDistribution: Ensuring that notices reach the intended recipients quickly and securely.Tracking and Monitoring: Stay informed on recipient responses and ensure notices are acknowledged.Review and Renewal: Get prompts for timely reviews and updates to keep notices current and compliant.This organized approach to managing notices helps minimize risk, ensures regulatory compliance, and improves communication both within and beyond your organization.",
     ],
     whyChoose: [
       "Draft contracts effortlessly with ready-made templates and custom clauses",
@@ -852,12 +883,12 @@ export const productsData = {
       "Grow Instant is our innovative service desiour gned to seamlessly integrate legal documentation solutions into your business, empowering you to expand your offerings and enhance client retention.",
     description: "Welcome to Grow Instant: Elevate Your Business with MyLegalInstant",
     overview:
-      "Grow Instant is our innovative service designed to seamlessly integrate legal documentation solutions into your business, empowering you to expand your offerings and enhance client retention.",
+      "Expand Your Service Portfolio: Provide your clients with a comprehensive suite of services that goes beyond your traditional offerings. With Grow Instant, you can easily incorporate legal documentation services tailored to your industry.Retain Clients with All-Round Solutions: Stand out in a competitive market by offering an all-in-one solution. By integrating our services, you can meet your clients' legal needs while strengthening your business relationships.",
     whyChoose: [
       "Expand Your Service Portfolio: Provide your clients with a comprehensive suite of services that goes beyond your traditional offerings. With Grow Instant, you can easily incorporate legal documentation services tailored to your industry.",
       "Retain Clients with All-Round Solutions: Stand out in a competitive market by offering an all-in-one solution. By integrating our services, you can meet your clients' legal needs while strengthening your business relationships.",
       "Tailored for Your Sector: We understand that every business is unique. Our team will work closely with you to identify specific legal documentation needs within your sector, ensuring that you can provide relevant and valuable services to your clients.",
-   
+
     ],
     features: [
       "Automated Contract Creation with pre-approved templates and standardized clauses",
@@ -900,48 +931,48 @@ export const productsData = {
     getStarted:
       "With Grow Instant, you'll not only enhance your service offerings but also create lasting value for your clients. Stay tuned for our official launch and discover how we can help you grow your business like never before!",
     faqs: [
-  {
-    question: "What is Grow Instant?",
-    answer:
-      "Grow Instant is an innovative service from MyLegalInstant that allows businesses to integrate our legal documentation solutions into their existing offerings. This enables you to provide a broader range of services to your clients, enhancing your value proposition and client retention.",
-  },
-  {
-    question: "How does Grow Instant benefit my business?",
-    answer:
-      "By integrating Grow Instant into your operations, you can:\n- Expand your service portfolio with legal documentation services.\n- Retain clients by offering comprehensive solutions tailored to their needs.\n- Differentiate your business in a competitive market.",
-  },
-  {
-    question: "Is Grow Instant suitable for all types of businesses?",
-    answer:
-      "Yes! Grow Instant is designed to be sector-specific, meaning we tailor our services to meet the unique needs of your industry. Whether you're in real estate, finance, healthcare, or any other sector, we can help identify the legal documentation services that will benefit your clients.",
-  },
-  {
-    question: "How do I get started with Grow Instant?",
-    answer:
-      "Getting started is easy! Simply reach out to us for an initial consultation. We will assess your business needs and develop a customized integration plan that aligns with your goals.",
-  },
-  {
-    question: "What are the costs associated with Grow Instant?",
-    answer:
-      "Costing for Grow Instant services will be determined on an individual basis. We aim to provide flexible pricing options that fit your budget while delivering maximum value.",
-  },
-  {
-    question: "Will I receive support during the integration process?",
-    answer:
-      "Absolutely! Our team is dedicated to providing ongoing support throughout the integration process and beyond. We’ll ensure that you have all the resources you need for a smooth transition.",
-  },
-  {
-    question: "Can I customize the services offered through Grow Instant?",
-    answer:
-      "Yes! We understand that every business has unique needs. Our team will work closely with you to customize the legal documentation services we provide, ensuring they align perfectly with your business model and client requirements.",
-  },
-  {
-    question: "How can I stay updated on the launch of Grow Instant?",
-    answer:
-      "To stay informed about the official launch and any updates regarding Grow Instant, sign up for our newsletter or follow us on our social media channels. We’ll keep you posted on all the exciting developments!",
-  },
- 
-],
+      {
+        question: "What is Grow Instant?",
+        answer:
+          "Grow Instant is an innovative service from MyLegalInstant that allows businesses to integrate our legal documentation solutions into their existing offerings. This enables you to provide a broader range of services to your clients, enhancing your value proposition and client retention.",
+      },
+      {
+        question: "How does Grow Instant benefit my business?",
+        answer:
+          "By integrating Grow Instant into your operations, you can:\n- Expand your service portfolio with legal documentation services.\n- Retain clients by offering comprehensive solutions tailored to their needs.\n- Differentiate your business in a competitive market.",
+      },
+      {
+        question: "Is Grow Instant suitable for all types of businesses?",
+        answer:
+          "Yes! Grow Instant is designed to be sector-specific, meaning we tailor our services to meet the unique needs of your industry. Whether you're in real estate, finance, healthcare, or any other sector, we can help identify the legal documentation services that will benefit your clients.",
+      },
+      {
+        question: "How do I get started with Grow Instant?",
+        answer:
+          "Getting started is easy! Simply reach out to us for an initial consultation. We will assess your business needs and develop a customized integration plan that aligns with your goals.",
+      },
+      {
+        question: "What are the costs associated with Grow Instant?",
+        answer:
+          "Costing for Grow Instant services will be determined on an individual basis. We aim to provide flexible pricing options that fit your budget while delivering maximum value.",
+      },
+      {
+        question: "Will I receive support during the integration process?",
+        answer:
+          "Absolutely! Our team is dedicated to providing ongoing support throughout the integration process and beyond. We’ll ensure that you have all the resources you need for a smooth transition.",
+      },
+      {
+        question: "Can I customize the services offered through Grow Instant?",
+        answer:
+          "Yes! We understand that every business has unique needs. Our team will work closely with you to customize the legal documentation services we provide, ensuring they align perfectly with your business model and client requirements.",
+      },
+      {
+        question: "How can I stay updated on the launch of Grow Instant?",
+        answer:
+          "To stay informed about the official launch and any updates regarding Grow Instant, sign up for our newsletter or follow us on our social media channels. We’ll keep you posted on all the exciting developments!",
+      },
+
+    ],
 
     images: {
       whyChoose: SW1,
@@ -979,12 +1010,12 @@ export const productsData = {
       "Mobile Accessibility for remote contract management",
     ],
     steps: [
-       {
+      {
         title: "",
-       description:
+        description:
           "comming soon",
         image: CM1,
-       },
+      },
       // {
       //   title: "Approval Workflow",
       //   description:
@@ -1349,6 +1380,100 @@ export const productsData = {
     },
   },
 
+  "master-access-subscription": {
+    id: "master-access-subscription",
+    title: "Master-access-subscription",
+    renderSubscriptionDetails: false,
+    tagLine:
+      "Unlock the full potential of legal documentation with Master Access, our exclusive subscription plan designed for individuals and businesses seeking comprehensive access to a wide range of documents.",
+    description: "Your ultimate partner in Contract Lifecycle Management (CLM)",
+    overview:
+      "Master Access Subscription refers to a centralized and systematic solution for managing contracts from initiation through execution, performance, and renewal. Our platform streamlines the entire contract lifecycle—improving efficiency, reducing risk, enhancing compliance, and providing full visibility into contractual obligations through automated workflows and centralized data management.",
+    whyChoose: [
+      "Quickly generate and customize documents without the hassle of traditional legal processes.",
+      "Our knowledgeable team is here to help you navigate through any complexities, ensuring you make the most of your subscription.",
+      "With various subscription plans, you can choose the option that best fits your budget while gaining maximum benefits.",
+
+    ],
+    features: [
+      "Automated Contract Creation with pre-approved templates and standardized clauses",
+      "Advanced Workflow Management with configurable stages and real-time tracking",
+      "Centralized Contract Repository with secure, cloud-based storage",
+      "Compliance Tracking with automated alerts and regulatory monitoring",
+      "Analytics and Reporting with customizable dashboards",
+      "Electronic Signatures support with audit trails",
+      "Alerts & Notifications for crucial dates and deadlines",
+      "Integration Capabilities with CRMs, ERPs, and GRC platforms",
+      "Advanced Data Extraction and Analysis tools",
+      "Mobile Accessibility for remote contract management",
+    ],
+    steps: [
+      {
+        title: "Select Your Plan",
+        description:
+          "Choose between our Quarterly, Semi-Annual, or Annual subscription options based on your needs and preferences.",
+        image: CM1,
+      },
+      {
+        title: "Create Your Account",
+        description: [
+          "Route the contract through predefined approval stages automatically, ensuring that all necessary stakeholders review it promptly.",
+
+        ],
+
+        image: CM2,
+      },
+      {
+        title: "Instant Access to Benefits",
+        description: [
+          "Once your subscription is confirmed, you will have immediate access to our entire library of legal documents and agreements, ensuring you have the resources you need at your fingertips.",
+          "Enjoy 24/7 user support. If you have any questions or need assistance, our team is here to help you at any time",
+          "As a Master Access subscriber, you will be assigned a special dedicated executive who will provide personalized assistance and guidance tailored to your specific needs.",
+        ],
+        image: CM3,
+      },
+
+    ],
+    benefits: [
+      "Centralize all contracts under one Master Access Subscription for improved organization and reduced administrative complexity",
+      "Automate contract workflows to ensure timely execution, compliance, and reduced manual intervention",
+      "Accelerate contract lifecycle processes with streamlined approvals, reducing turnaround times by up to 50%",
+      "Enhance visibility into all contractual obligations, key dates, and renewal terms through a unified dashboard",
+      "Minimize legal and operational risks by standardizing contract templates and enforcing policy adherence across departments"
+    ],
+
+    getStarted:
+      "Join thousands of satisfied customers who trust MyLegalInstant for their legal documentation needs. Subscribe now to Master Access and take advantage of our exclusive benefits!",
+    faqs: [
+      {
+        question: "What is Master Access Subscription?",
+        answer:
+          "Master Access Subscription is a centralized platform that enables organizations to manage the complete contract lifecycle—from creation and execution to renewal—through automation, standardized processes, and real-time visibility.",
+      },
+      {
+        question: "How does Master Access Subscription improve contract management?",
+        answer:
+          "It streamlines workflows, reduces manual tasks, automates alerts for key dates, ensures compliance with legal standards, and centralizes all contract data for easy access and oversight.",
+      },
+      {
+        question: "Is Master Access Subscription secure and compliant?",
+        answer:
+          "Yes, it adheres to industry-standard security protocols and supports compliance with legal frameworks such as the Information Technology Act, 2000, including digital signatures and electronic records.",
+      },
+      {
+        question: "Can I customize workflows and approval processes?",
+        answer:
+          "Absolutely. Master Access Subscription allows users to define and automate custom workflows, approval hierarchies, and contract templates tailored to your organization's needs.",
+      }
+    ],
+
+    images: {
+      whyChoose: SW1,
+      benefits: Benefits,
+      howItWorks: HoWImage,
+    },
+  },
+
   litigation: {
     id: "litigation",
     title: "Litigation Manager",
@@ -1492,7 +1617,7 @@ export const productsData = {
       "Welcome to the Price Calculator tool at MyLegalInstant.com! Our user-friendly tool is designed to help you quickly and accurately calculate the costs associated with document creation. Whether you’re preparing legal documents, contracts, or any other paperwork, understanding the total expenses is crucial for effective budgeting.",
     description: "Price Calculator Tool at MyLegalInstant.com",
     overview:
-      "The Price Calculator is a straightforward online tool that allows you to estimate the costs incurred in document making, including:",
+      "The Price Calculator is a straightforward online tool that allows you to estimate the costs incurred in document making, including:Stamp Fees: Calculate the necessary fees for official stamps required on your documents.Document Fees: Determine the costs associated with drafting and processing various types of documents.Additional Charges: Include any other relevant fees that may apply to your specific documentation needs.",
     whyChoose: [
       "Simplicity: The intuitive interface makes it easy for anyone to use, regardless of their technical expertise.",
       "Accuracy: Get precise estimates to help you make informed decisions about your document-related expenses.",
@@ -1530,7 +1655,7 @@ export const productsData = {
           "Use the results to budget effectively for your document creation process.",
         image: CM3,
       },
-   
+
     ],
     benefits: [
       "Reduce administrative costs by automating manual processes and minimizing errors",
@@ -1540,6 +1665,146 @@ export const productsData = {
     ],
     getStarted:
       "Don’t let unexpected costs catch you off guard. Use our Price Calculator to gain clarity on your document-making expenses and streamline your budgeting process.",
+    faqs: [
+      {
+        question: "What is E-documentation?",
+        answer:
+          "E-documentation refers to the process of creating, executing, and storing legal documents in electronic form, as opposed to physical paper documents.",
+      },
+      {
+        question: "Is e-documentation legally valid in India?",
+        answer:
+          "Yes, e-documents are legally valid in India under the Information Technology Act, 2000, which grants legal recognition to electronic records and digital signatures",
+      },
+      {
+        question: "What constitutes an Electronic Record?",
+        answer:
+          "An electronic record encompasses any data, document, or information conceived, retained, or transmitted in a digital format. It can involve emails, scanned papers, as well as other digital files.",
+      },
+      {
+        question: "Can contracts be finalized electronically in India?",
+        answer:
+          "Yes, contracts can be executed electronically provided they meet the standards of the Indian Contract Act of 1872. The document must be legally enforceable and involve consent from all parties involved.",
+      },
+      {
+        question: "How secure is e-documentation?",
+        answer:
+          "To ensure the authenticity and confidentiality of e-documentation, encryption, access monitoring, and electronic signatures are employed. According to Indian law, digital signatures are mandated for specific legal documents to heighten security.",
+      },
+      {
+        question: "What is an electronic signature or digital signature?",
+        answer:
+          "An electronic signature or digital signature is a form of signature used to authenticate electronic documents. It ensures that the document has not been altered after signing and verifies the identity of the signer.",
+      },
+      {
+        question: "What are the Benefits of E- documentation?",
+        answer:
+          "Cost and time efficiency\nReduced paperwork\nEasy storage and retrieval\nEnvironmentally friendly\nEnhanced safety and compliance\nImproved Accessibility and Better Convenience",
+      },
+      {
+        question: "What laws govern e-documentation in India?",
+        answer:
+          "Information Technology Act, 2000: Provides the legal framework for electronic records and digital signatures.\nIndian Evidence Act, 1872: Recognizes electronic records as admissible evidence.\nIndian Contract Act, 1872: Governs the legality of contracts executed electronically.",
+      },
+      {
+        question: "Are e-documents admissible as evidence in courts of law?",
+        answer:
+          "Indeed, the Indian Evidence Act of 1872 stipulates that electronic records may be admitted as evidence in legal proceedings, provided certain stringent conditions are satisfied. Namely, the authenticity of any corresponding digital signature and integrity of the electronic document must be demonstrable.",
+      },
+      {
+        question: "How does E-documentation impact businesses in India?",
+        answer:
+          "E-documentation facilitates faster execution of agreements, reduces operational costs, and improves compliance. It is particularly useful in sectors such as banking, finance, and corporate governance.",
+      },
+      {
+        question:
+          "What distinguishes an electronic document from one that has been scanned?",
+        answer:
+          "A document existing natively in a digital format such as a PDF or Microsoft Word file constitutes an electronic document. Conversely, a scanned document refers to a physical document that has been converted into electronic form through scanning. However, the legal standing of scanned documents may depend more on contextual specifics.",
+      },
+    ],
+    images: {
+      whyChoose: SW1,
+      benefits: Benefits,
+      howItWorks: HoWImage,
+    },
+  },
+  "lawyers-connect": {
+    id: "lawyers-connect",
+    title: "Lawyers Connect",
+    renderSubscriptionDetails: false,
+    tagLine:
+      "Legal challenges can feel overwhelming, but you don’t have to face them alone. With Lawyers Connect, you can find experienced legal professionals across India, tailored to your specific needs—right when you need them. Our platform is designed to help you navigate your legal concerns efficiently and affordably.",
+    description: "Price Calculator Tool at MyLegalInstant.com",
+    overview:
+      "Lawyers Connect is an innovative platform that bridges the gap between individuals and qualified lawyers. Whether it’s personal, corporate, or specialized legal advice, our network spans across all jurisdictions in India, ensuring you get the right guidance whenever you need it.From legal consultations to resolving complex disputes, Lawyers Connect simplifies the process, saving you time, money, and effort.",
+    whyChoose: [
+      "Instant Access: Get connected with a lawyer within minutes, 24x7 access.",
+      "Quick Response: Share your concern and get connected with a lawyer in minutes.",
+      "Wide Network: Access a diverse pool of experienced lawyers across various jurisdictions in India.",
+      "Cost-Effective: Avoid exorbitant legal fees, our services are available at a fraction of traditional costs.",
+      "Reliability: Trusted and experienced legal professionals at your service.",
+      "User-Friendly: Our platform is designed for ease of use, ensuring you can find the help you need without hassle.",
+
+    ],
+    features: [
+      "Automated Contract Creation with pre-approved templates and standardized clauses",
+      "Advanced Workflow Management with configurable stages and real-time tracking",
+      "Centralized Contract Repository with secure, cloud-based storage",
+      "Compliance Tracking with automated alerts and regulatory monitoring",
+      "Analytics and Reporting with customizable dashboards",
+      "Electronic Signatures support with audit trails",
+      "Alerts & Notifications for crucial dates and deadlines",
+      "Integration Capabilities with CRMs, ERPs, and GRC platforms",
+      "Advanced Data Extraction and Analysis tools",
+      "Mobile Accessibility for remote contract management",
+    ],
+    steps: [
+      {
+        title: "Share Your Concern",
+        description:
+          "Describe your issue or query using our simple submission form.",
+        image: CM1,
+      },
+      {
+        title: "Get Matched",
+        description:
+          "Our system will identify and connect you with lawyers who specialize in your area of concern and jurisdiction.",
+        image: CM2,
+      },
+      {
+        title: "Consultation begins",
+        description:
+          "Choose a lawyer and schedule a consultation at your convenience—via phone, video call.",
+        image: CM3,
+      },
+      {
+        title: "Resolve Your Issue",
+        description:
+          "Work with your lawyer to address your legal needs effectively and efficiently.",
+        image: CM4,
+      },
+      {
+        title: "Follow Up",
+        description:
+          "You can continue to consult with the lawyer as needed, ensuring you have ongoing support for your legal matters.",
+        image: CM5,
+      }
+
+    ],
+    benefits: [
+      "Expertise at Your Fingertips: Receive advice from seasoned professionals who understand your legal challenges.",
+      "Save time: Skip the long search for the right lawyer; we match you with the best fit based on your needs.",
+      "Reliable Support: You are not alone in your legal journey; we are here to guide you every step of the way.",
+      "Versatility: Whether personal disputes, corporate matters, or specialized fields like IP law or taxation, we have experts for every need.",
+
+      "Cost-Efficient: Transparent pricing ensures you only pay for what you need.",
+      "Confidential Consultations: Your privacy is our priority, all communications are secure and confidential.",
+      
+      "Ease of Use: A user-friendly interface makes legal help just a few clicks away",
+    ],
+    getStarted:
+      "Take the first step towards resolving your legal issues with confidence! We are here for you—let us help you navigate the complexities of law effortlessly.",
     faqs: [
       {
         question: "What is E-documentation?",
