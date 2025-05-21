@@ -57,7 +57,7 @@ const flatRentalPage = () => {
     },
     {
       icon: Calendar,
-      title: "furniture Duration",
+      title: "Common Duration",
       description:
         "Defines responsibilities for utilities, maintenance, and common areas.",
     },
@@ -124,37 +124,40 @@ const flatRentalPage = () => {
   ];
 
   const faqs = [
-    {
-      question: "What is a Room Rental Agreement? ",
-      answer:
-        "It is a legally binding document that outlines the terms and conditions for renting a room in a property, ensuring clarity and legal protection for both landlord and tenant. ",
-    },
-    {
-      question: "Is the Room Rental Agreement legally valid in India? ",
-      answer:
-        "Yes, our agreements are legally compliant and include e-stamping and Aadhaar-based e-signatures for validity",
-    },
-    {
-      question: "Can I customize the agreement?",
-      answer:
-        " Absolutely! You can add specific clauses such as house rules, guest policies, or shared space usage.",
-    },
-    {
-      question: "How does the inventory list work?",
-      answer:
-        "The agreement includes a detailed inventory list of all furnishings and their conditions, ensuring transparency.",
-    },
-    {
-      question: "How soon can I receive my rental agreement?",
-      answer:
-        "Digital copies are available instantly after creation, while hard copies are typically delivered within a few working days.",
-    },
-    {
-      question: "What happens if I do not pay rent on time?",
-      answer:
-        "The rental agreement will outline the consequences of late payment, which may include late fees or potential eviction procedures as per the terms agreed upon.",
-    },
-  ];
+  {
+    question: "What is a Room Rental Agreement?",
+    answer: "It is a legally binding document that outlines the terms and conditions for renting a room in a property, ensuring clarity and legal protection for both landlord and tenant.",
+  },
+  {
+    question: "Is the Room Rental Agreement legally valid in India?",
+    answer: "Yes, our agreements are legally compliant and include e-stamping and Aadhaar-based e-signatures for validity.",
+  },
+  {
+    question: "Can I customize the agreement?",
+    answer: "Absolutely! You can add specific clauses such as house rules, guest policies, or shared space usage.",
+  },
+  {
+    question: "How soon can I get my agreement?",
+    answer: "Digital copies are available instantly after creation, and hard copies are delivered within a few working days.",
+  },
+  {
+    question: "Does the agreement cover shared accommodation rules?",
+    answer: "Yes, you can include provisions for shared space usage, utility contributions, and other shared accommodation details.",
+  },
+  {
+    question: "Can I include early termination or renewal clauses?",
+    answer: "Yes, the agreement can be customized to include termination and renewal terms.",
+  },
+  {
+    question: "What if there are damages to the room or property?",
+    answer: "The agreement can specify responsibilities for damages and deductions from the security deposit.",
+  },
+  {
+    question: "Do you offer legal consultation?",
+    answer: "Yes, our legal experts are available to assist you throughout the process.",
+  },
+];
+
 
   const RoomRental  = [
     {
@@ -295,7 +298,8 @@ const flatRentalPage = () => {
       <HeroSection
         title="Welcome to"
         subtitle="MyLegalInstant.com"
-        description="Are you a landlord renting out a room or a tenant looking for a secure rental arrangement? MyLegalinstant.com provides a seamless way to create a customized Room Rental Agreement that is legally sound, quick to draft, and easy to execute. Protect your rights and ensure a smooth rental experience with our professional services."
+        question={"Are you a landlord renting out a room or a tenant looking for a secure rental arrangement?"}
+        description=" At MyLegalinstant.com provides a seamless way to create a customized Room Rental Agreement that is legally sound, quick to draft, and easy to execute. Protect your rights and ensure a smooth rental experience with our professional services."
         buttonText="Create Agreement Now"
         buttonLink="/create-agreement"
         trustIndicators={[
@@ -447,7 +451,7 @@ const flatRentalPage = () => {
 
       {/* steps */}
       <ChainSteps
-        title="How to Create a Flat Rent Agreement"
+        title="How to Create a Room Rental Agreement?"
         steps={RoomRental}
       />
 
@@ -465,9 +469,7 @@ const flatRentalPage = () => {
             Get Started Today!
           </h2>
           <p className="text-purple-100 mb-8 text-lg max-w-3xl mx-auto">
-            Secure your house rental arrangement with a professionally drafted
-            agreement tailored to your needs. Simplify the process today and
-            ensure peace of mind!
+           Secure your room rental arrangement with a professionally drafted Room Rental Agreement tailored to your needs.Simplify the process today and ensure peace of mind!
           </p>
           <button className="bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-50 transition-all transform hover:scale-105 shadow-lg">
             Create Agreement Now
@@ -478,7 +480,7 @@ const flatRentalPage = () => {
       {/* FAQ Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-          Benefits of E-Contracts
+          Frequently Asked Questions
         </h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (

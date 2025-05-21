@@ -7,7 +7,7 @@ const FAQItem = ({ question, answer, isOpen, onToggle }) => (
       className="w-full px-6 py-4 text-left flex justify-between items-center group"
       onClick={onToggle}
     >
-      <span className="text-gray-900 font-semibold group-hover:text-purple-600 transition-colors duration-300">
+      <span className="text-gray-900 text-sm lg:text-lg font-semibold group-hover:text-purple-600 transition-colors duration-300">
         {question}
       </span>
       <ChevronDown

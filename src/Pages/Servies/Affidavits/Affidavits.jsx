@@ -19,6 +19,7 @@ import ChainSteps from "../../RentalAgreement/RentalSteps";
 import Slider from "../../RentalAgreement/WhyChooseUsSlider";
 import FAQItem from "../../RentalAgreement/FAQItem";
 import { FeatureCard } from "../../RentalAgreement/FeatureCard";
+import { sub } from 'framer-motion/client';
 
 const iconMap = {
   DollarSign,
@@ -125,7 +126,7 @@ const AffidavitsPage = () => {
 
   return (
     <div className="w-full">
-      <HeroSection {...content.hero} />
+      <HeroSection {...content.hero}/>
 
       {/* What Is Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -155,7 +156,7 @@ const AffidavitsPage = () => {
       {/* Features Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex justify-between items-center mb-8">
-          <h2 className="text-4xl font-bold">Key Features</h2>
+          <h2 className="text-4xl font-bold">Uses of an {content.whatIs.subtitle}</h2>
           <div className="flex gap-2">
             <button
               onClick={prevFeatureSlide}
@@ -190,7 +191,7 @@ const AffidavitsPage = () => {
                 key={index}
                 icon={IconComponent}
                 title={feature.title}
-                description={feature.description}
+                description={feature.desc}
               />
             );
           })}
@@ -200,7 +201,7 @@ const AffidavitsPage = () => {
       {/* Why Need Agreement Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 overflow-hidden">
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-          Why Do You Need a {content.whatIs.title}?
+         Why is an {content.whatIs.subtitle} 
         </h2>
 
         {/* First row - Left to Right */}
@@ -242,7 +243,7 @@ const AffidavitsPage = () => {
       </div>
 
       {/* Legal Framework Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
           Legal Framework
         </h2>
@@ -256,7 +257,7 @@ const AffidavitsPage = () => {
             />
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Steps Section */}
       <ChainSteps

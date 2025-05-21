@@ -155,7 +155,7 @@ const Commercialest = () => {
       {/* Features Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex justify-between items-center mb-8">
-          <h2 className="text-4xl font-bold">Key Features</h2>
+          <h2 className="text-4xl font-bold">Why is a {content.whatIs.subtitle} ?</h2>
           <div className="flex gap-2">
             <button
               onClick={prevFeatureSlide}
@@ -190,7 +190,7 @@ const Commercialest = () => {
                 key={index}
                 icon={IconComponent}
                 title={feature.title}
-                description={feature.description}
+                description={feature.desc}
               />
             );
           })}
@@ -200,7 +200,7 @@ const Commercialest = () => {
       {/* Why Need Agreement Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 overflow-hidden">
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-          Why Do You Need a {content.whatIs.title}?
+          Why Do You Need a {content.whatIs.subtitle}?
         </h2>
 
         {/* First row - Left to Right */}

@@ -124,42 +124,43 @@ const quickRentalPage = () => {
   ];
 
   const faqs = [
-    {
-      question: "How fast can I get my Quick Rental Agreement?",
-      answer:
-        "Digital copies are available instantly after completion, while hard copies are delivered within a few working days.",
-    },
-    {
-      question: "Is the Quick Rental Agreement legally valid?",
-      answer:
-        "Yes, all agreements are compliant with Indian laws and include e-stamping and e-signature options for validity.",
-    },
-    {
-      question: "Can I customize the agreement?",
-      answer:
-        "Absolutely! You can include clauses specific to your needs, such as subletting, maintenance, or termination terms.",
-    },
-    {
-      question: "Are e-stamped and e-signed agreements recognized in India?",
-      answer:
-        "Yes, e-stamped and Aadhaar-based e-signed agreements are legally valid and binding under Indian law.",
-    },
-    {
-      question: " Can I renew the agreement later?",
-      answer:
-        "Yes, you can include renewal terms in your Quick Rental Agreement for seamless extensions.",
-    },
-    {
-      question: "What happens if I make an error in the agreement? ",
-      answer:
-        "You can review and edit the agreement before finalizing it to ensure accuracy. ",
-    },
-    {
-      question: "Do you provide legal consultation?",
-      answer:
-        "Yes, our legal experts are available to assist you throughout the process.",
-    },
-  ];
+  {
+    question: "How fast can I get my Quick Rental Agreement?",
+    answer:
+      "Digital copies are available instantly after completion, while hard copies are delivered within a few working days.",
+  },
+  {
+    question: "Is the Quick Rental Agreement legally valid?",
+    answer:
+      "Yes, all agreements are compliant with Indian laws and include e-stamping and e-signature options for validity.",
+  },
+  {
+    question: "Can I customize the agreement?",
+    answer:
+      "Absolutely! You can include clauses specific to your needs, such as subletting, maintenance, or termination terms.",
+  },
+  {
+    question: "Are e-stamped and e-signed agreements recognized in India?",
+    answer:
+      "Yes, e-stamped and Aadhaar-based e-signed agreements are legally valid and binding under Indian law.",
+  },
+  {
+    question: "Can I renew the agreement later?",
+    answer:
+      "Yes, you can include renewal terms in your Quick Rental Agreement for seamless extensions.",
+  },
+  {
+    question: "What happens if I make an error in the agreement?",
+    answer:
+      "You can review and edit the agreement before finalizing it to ensure accuracy.",
+  },
+  {
+    question: "Do you provide legal consultation?",
+    answer:
+      "Yes, our legal experts are available to assist you throughout the process.",
+  },
+];
+
 
   const QuickRental = [
     {
@@ -280,7 +281,8 @@ const quickRentalPage = () => {
       <HeroSection
         title="Welcome to"
         subtitle="MyLegalInstant.com"
-        description="Are you a landlord or tenant in need of a swift and efficient way to formalize a rental arrangement? Look no further! At MyLegalInstant.com, we specialize in providing expertly crafted Quick Rental Agreements designed to meet your immediate needs. Our platform ensures that your agreements are legally sound, customizable, and easy to execute, allowing you to focus on what matters most."
+        question={"Are you a landlord or tenant in need of a swift and efficient way to formalize a rental arrangement? "}
+        description="Look no further! At MyLegalInstant.com, we specialize in providing expertly crafted Quick Rental Agreements designed to meet your immediate needs. Our platform ensures that your agreements are legally sound, customizable, and easy to execute, allowing you to focus on what matters most."
         buttonText="Create Agreement Now"
         buttonLink="/create-agreement"
         trustIndicators={[
@@ -462,7 +464,7 @@ const quickRentalPage = () => {
       {/* FAQ Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-          Benefits of E-Contracts
+          Frequently Asked Questions
         </h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (

@@ -479,18 +479,12 @@ export const productsData = {
     id: "startup-saathi",
     title: "Startup Saathi",
     tagLine: "Your Trusted Partner for Legal Documentation",
-    description: `Starting a business is challenging. From ideation to execution, each stage demands precision, passion and a partner who truly grasps the intricacies of your business. Startup Saathi is here to ease your path by handling the complexities of the legal landscape, offering a comprehensive, reliable legal documentation solution tailored specifically to meet the needs of startups.
+    description: ``,
+    overview: `Starting a business is challenging. From ideation to execution, each stage demands precision, passion and a partner who truly grasps the intricacies of your business. Startup Saathi is here to ease your path by handling the complexities of the legal landscape, offering a comprehensive, reliable legal documentation solution tailored specifically to meet the needs of startups.
   
   Recognizing the unique challenges faced by new businesses, our service ensures that you have all the necessary legal documents in place to operate smoothly and comply with regulations. We guide you through every step of your startup journey, ensuring that your legal needs are met efficiently.
   
   Whether you're setting up a new venture, scaling an existing one, or preparing for investment rounds, our solution covers every legal document and process you need, backed by dedicated experts to guide you.`,
-    overview: `At Startup Saathi, we understand that navigating the legal landscape can be daunting for entrepreneurs. Our platform adds value by:
-  
-  - Streamlining Legal Processes: We simplify the creation and management of essential legal documents, allowing you to focus on growing your business.
-  - Expert Guidance: With a dedicated Legal Manager, you have an expert in your corner, providing you with customized legal solutions and strategies.
-  - Cost-Effective Solutions: By offering comprehensive packages, we help you avoid the high costs associated with hiring multiple legal professionals.
-  - Seamless Communication: Your User Relationship Manager is available to answer questions, troubleshoot, and provide updates on every aspect of your service.
-  - Scalability: As your startup grows, so do your legal needs. Startup Saathi grows with you, adapting and expanding to meet your changing requirements.`,
     whyChoose: [
       "Streamlining Legal Processes: We simplify the creation and management of essential legal documents, allowing you to focus on growing your business",
       "Expert Guidance: With a dedicated Legal Manager, you have an expert in your corner, providing you with customized legal solutions and strategies",

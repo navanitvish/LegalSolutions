@@ -20,30 +20,24 @@ const FeatureCard = ({ icon: Icon, title, description }) => (
   <div className="relative group">
     <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300" />
 
-    <div className="relative  bg-white rounded-2xl p-8 pt-12 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 h-full flex flex-col hover:border-transparent">
+    <div className="relative bg-white rounded-2xl p-8 pt-12 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 h-64 flex flex-col hover:border-transparent overflow-hidden">
       {Icon && (
         <div className="flex justify-end">
-          <div className="relative ">
-            <div className="absolute  inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl blur group-hover:blur-md transition-all duration-300 opacity-20" />
-            <div className="relative  w-14 h-14 flex items-center justify-center bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl group-hover:scale-110 transition-all duration-300">
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl blur group-hover:blur-md transition-all duration-300 opacity-20" />
+            <div className="relative w-14 h-14 flex items-center justify-center bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl group-hover:scale-110 transition-all duration-300">
               <Icon className="w-7 h-7 text-purple-600 group-hover:text-indigo-600 transition-colors duration-300" />
             </div>
           </div>
         </div>
       )}
 
-      <div className="mt-6 text-left">
+      <div className="mt-6 text-left overflow-y-auto pr-1 flex-grow">
         <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 mb-3">
           {title}
         </h3>
-        <p className="text-gray-600 leading-relaxed">{description}</p>
+        <p className="text-gray-600 leading-relaxed line-clamp-4">{description}</p>
       </div>
-
-      {/* <div className="mt-6">
-        <a href="#" className="text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors duration-300">
-          Learn More
-        </a>
-      </div> */}
 
       <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 w-0 group-hover:w-full transition-all duration-500 rounded-b-2xl" />
     </div>
@@ -64,7 +58,7 @@ const flatRentalPage = () => {
     },
     {
       icon: Calendar,
-      title: "Furniture Duration",
+      title: "Rental period",
       description:
         "Defines the duration of the rental period.",
     },
@@ -148,12 +142,12 @@ const flatRentalPage = () => {
     {
       question: "What is a security deposit, and how is it handled?",
       answer:
-        " Yes, they are legally recognized and enforceable under Indian law.",
+        "A security deposit is an amount paid by the tenant to cover potential damages or unpaid rent.The terms regarding its amount, usage, and return should be clearly outlined in the rental agreement.",
     },
     {
-      question: " Can I customize my rental agreement?",
+      question: "Can I customize my rental agreement?",
       answer:
-        "The agreement includes a detailed inventory list of all furnishings and their conditions, ensuring transparency.",
+        "Absolutely! Our platform allows you to include specific clauses tailored to your unique needs.",
     },
     {
       question: "How soon can I receive my rental agreement?",
@@ -165,6 +159,48 @@ const flatRentalPage = () => {
       answer:
         "The rental agreement will outline the consequences of late payment, which may include late fees or potential eviction procedures as per the terms agreed upon.",
     },
+    {
+      question: "Can a tenant sublet the property?",
+      answer:
+        "Subletting terms can be included in the rental agreement. If you wish to allow subletting, it should be clearly stated in the document.",
+    },
+    {
+      question: "How do I terminate a rental agreement?",
+      answer:
+        "The process for termination will be specified in the rental agreement. Typically, it involves providing written notice to the other party within the notice period defined in the agreement.",
+    },
+    {
+      question: "Can I include an early termination clause?",
+      answer:
+        "Yes, you can customize your agreement to include terms regarding early termination.",
+    },
+    {
+      question: "What if there are damages to the property?",
+      answer:
+        "The rental agreement should specify the responsibilities for repairs and maintenance. Generally, tenants are responsible for any damages caused by their negligence.",
+    },
+    {
+      question: "Does the agreement cover pet policies or restrictions?",
+      answer:
+        "Yes, you can specify any pet-related clauses in your rental agreement.",
+    },
+    {
+      question: "Can I renew my rental agreement?",
+      answer:
+        "Yes, renewal terms can be included in the rental agreement. It is advisable to discuss renewal options well before the duration of rent ends.",
+    },
+    {
+      question: "Are there any specific laws governing house rentals in different states?",
+      answer:
+        "Yes, each state in India may have its own rent control laws and regulations. It's important to ensure that your rental agreement complies with local laws applicable to your area.",
+    },
+    {
+      question: " Is legal consultation included in your services?",
+      answer:
+        "Yes, our legal experts are available to provide guidance throughout the process.",
+    }
+
+
   ];
 
   const rentalSteps = [
@@ -300,18 +336,19 @@ const flatRentalPage = () => {
     <div className=" w-full">
       {/* Hero Section */}
       <HeroSection
-        title="Welcome to"
-        subtitle="MyLegalInstant.com"
-        description="Your Trusted Solution for Rental Agreements
-Are you a homeowner or tenant looking to formalize a house rental arrangement? Look no further! At MyLegalInstant.com, we provide expertly crafted House Rental Agreements tailored to your specific needs. Our platform ensures that your agreements are legally sound, customizable, and easy to execute, giving you peace of mind and a hassle-free experience.
-"
-        buttonText="Create Agreement Now"
-        buttonLink="/create-agreement"
-        trustIndicators={[
-          "Legally Verified",
-          "Instant Download",
-          "24/7 Support",
-        ]}
+      title="Welcome to"
+      subtitle="MyLegalInstant.com"
+      question="Are you a homeowner or tenant looking to formalize a house rental arrangement?"
+      description="Look no further! At MyLegalInstant.com, we provide expertly crafted House Rental Agreements
+      tailored to your specific needs. Our platform ensures that your agreements are legally sound,
+      customizable, and easy to execute, giving you peace of mind and a hassle-free experience."
+      buttonText="Create Agreement Now"
+      buttonLink="/create-agreement"
+      trustIndicators={[
+        "Legally Verified",
+        "Instant Download",
+        "24/7 Support",
+      ]}
       />
 
       {/* What is Section */}
@@ -361,22 +398,20 @@ Are you a homeowner or tenant looking to formalize a house rental arrangement? L
           <div className="flex gap-2">
             <button
               onClick={prevFeatureSlide}
-              className={`p-3 rounded-full transition-colors ${
-                isFeaturesAtStart
-                  ? "border border-gray-200 hover:bg-gray-50"
-                  : " bg-gray-900 text-white hover:bg-gray-800"
-              }`}
+              className={`p-3 rounded-full transition-colors ${isFeaturesAtStart
+                ? "border border-gray-200 hover:bg-gray-50"
+                : " bg-gray-900 text-white hover:bg-gray-800"
+                }`}
               disabled={isFeaturesAtStart}
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={nextFeatureSlide}
-              className={`p-3 rounded-full transition-colors flex items-center gap-2 ${
-                isFeaturesAtEnd
-                  ? "border border-gray-200 hover:bg-gray-50"
-                  : " bg-gray-900 text-white hover:bg-gray-800"
-              }`}
+              className={`p-3 rounded-full transition-colors flex items-center gap-2 ${isFeaturesAtEnd
+                ? "border border-gray-200 hover:bg-gray-50"
+                : " bg-gray-900 text-white hover:bg-gray-800"
+                }`}
               disabled={isFeaturesAtEnd}
             >
               <ChevronRight className="w-5 h-5" />
@@ -397,7 +432,7 @@ Are you a homeowner or tenant looking to formalize a house rental arrangement? L
           Why Do You Need a House Rental Agreement?
         </h2>
 
-        
+
 
         {/* First row - Left to Right */}
         <div className="relative mb-8 overflow-hidden">
@@ -473,12 +508,12 @@ Are you a homeowner or tenant looking to formalize a house rental arrangement? L
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Get Started Today!
           </h2>
-          <p className="text-purple-100 mb-8 text-lg max-w-3xl mx-auto">
+          <p className="text-purple-100 mb-8 text-lg lg:text-xl max-w-3xl mx-auto">
             Secure your house rental arrangement with a professionally drafted
             agreement tailored to your needs. Simplify the process today and
             ensure peace of mind!
           </p>
-          <button className="bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-50 transition-all transform hover:scale-105 shadow-lg">
+          <button className="bg-white text-purple-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-purple-50 transition-all transform hover:scale-105 shadow-lg">
             Create Agreement Now
           </button>
         </div>
@@ -487,7 +522,7 @@ Are you a homeowner or tenant looking to formalize a house rental arrangement? L
       {/* FAQ Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-        Frequently Asked Questions 
+          Frequently Asked Questions
         </h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (

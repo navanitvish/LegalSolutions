@@ -1,3 +1,5 @@
+import { sub } from "framer-motion/client";
+
 // content.js
 export const Leaseagreement = {
   residential: {
@@ -416,13 +418,14 @@ export const Affidavits = {
       title: "Welcome to",
       subtitle: "MyLegalInstant.com",
       description:
-        "Under our Affidavits segment, we offer a seamless and efficient service for creating Address Proof Affidavits – a critical document for verifying your residential address with legal credibility.",
+        " We offer a seamless and efficient service for creating Address Proof Affidavits – a critical document for verifying your residential address with legal credibility.",
       buttonText: "Create Agreement Now",
       buttonLink: "/create-agreement",
       trustIndicators: ["Legally Verified", "Instant Download", "24/7 Support"],
     },
     whatIs: {
       title: "What is an Address Proof Affidavit?",
+      subtitel: "Address Proof Affidavit",
       description:
         "An Address Proof Affidavit is a legal declaration sworn before an authorized authority, affirming your current residential address. This document is often required in situations where traditional address proofs, such as utility bills or government IDs, are unavailable or insufficient.",
       image: "https://plus.unsplash.com/premium_photo-1661540409860-fe00bb21a51c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
@@ -465,16 +468,16 @@ export const Affidavits = {
         desc: "Ensures that your declared address is legally validated.",
       },
     ],
-    legalFramework: [
-      {
-        title: "The Indian Contract Act, 1872",
-        desc: "Establishes the legality of contracts and obligations between parties.",
-      },
-      {
-        title: "Rent Control Act",
-        desc: "Governs the relationship between landlords and tenants.",
-      },
-    ],
+    // legalFramework: [
+    //   {
+    //     title: "The Indian Contract Act, 1872",
+    //     desc: "Establishes the legality of contracts and obligations between parties.",
+    //   },
+    //   {
+    //     title: "Rent Control Act",
+    //     desc: "Governs the relationship between landlords and tenants.",
+    //   },
+    // ],
     steps: [
       {
         title: "Click on 'Create Now'",
@@ -599,7 +602,7 @@ export const Affidavits = {
       },
     ],
   },
-  AffidavitForChange: {
+  AffidavitNameChange: {
     id: "AffidavitNameChange",
     hero: {
       title: "Welcome to",
@@ -611,7 +614,8 @@ export const Affidavits = {
       trustIndicators: ["Legally Verified", "Instant Download", "24/7 Support"],
     },
     whatIs: {
-      title: "What is an Affidavit for Change of Name?",
+      title: "What is an Affidavit for Change of Name",
+      subtitle: "Affidavit for Change of Name",
       description:
         "An Affidavit for Change of Name is a legal declaration that officially documents your decision to change your name. It serves as a sworn statement to be used for updating records across various platforms, ensuring your new name is recognized legally.",
       image:
@@ -621,24 +625,24 @@ export const Affidavits = {
       {
         icon: "GovernmentBuilding",
         title: "Government Applications",
-        description:
+        desc:
           "For updating your name in passports, Aadhaar, PAN, and voter IDs.",
       },
       {
         icon: "Bank",
         title: "Banking and Financial Transactions",
-        description:
+        desc:
           "Required for updating bank records, loans, and other financial documents.",
       },
       {
         icon: "GraduationCap",
         title: "Educational Records",
-        description: "To reflect your new name on certificates and degrees.",
+        desc: "To reflect your new name on certificates and degrees.",
       },
       {
         icon: "UserCheck",
         title: "Personal and Professional Use",
-        description: "Ensures consistency in personal and employment records.",
+        desc: "Ensures consistency in personal and employment records.",
       },
     ],
     whyNeedAgreement: [
@@ -785,6 +789,7 @@ export const Affidavits = {
     },
     whatIs: {
       title: " What is an Affidavit for Change of Name after Marriage?",
+      subtitle: "Affidavit for Change of Name after Marriage",
       description:
         "An Affidavit for Change of Name after Marriage is a legal declaration that formalizes your decision to change your name after marriage. This document is often required for updating records and ensuring that your new name is legally recognized across various platforms.",
       image: "https://images.unsplash.com/photo-1459499362902-55a20553e082?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
@@ -793,18 +798,18 @@ export const Affidavits = {
       {
         icon: "DollarSign",
         title: "Legal Recognition",
-        description: "Establishes your new name legally.",
+        desc: "Establishes your new name legally.",
       },
       {
         icon: "Calendar",
         title: "Document Updates",
-        description:
+        desc:
           "Ensures your name is updated on IDs, bank accounts, and other official records.",
       },
       {
         icon: "Shield",
         title: "Avoiding Discrepancies",
-        description:
+        desc:
           "Prevents inconsistencies across personal and professional documentation.",
       },
     ],
@@ -839,63 +844,39 @@ export const Affidavits = {
     steps: [
       {
         title: "Click on 'Create Now'",
-        desc: "Begin by clicking the 'Create Now' button.",
+        description: "Start by clicking the 'Create Now' button on our website.",
       },
       {
         title: "Select Affidavit Type",
-        desc: "Choose the 'Affidavit for Change of Name' option.",
+        description: "Choose the 'Affidavit for Change of Name after Marriage' option.",
       },
       {
         title: "Provide Details",
-        desc: "Fill in your current name, new name, and other relevant information.",
+        description: "Fill in your current name, new name, and marriage details.",
       },
       {
         title: "Customization Options",
-        desc: "Enjoy our extensive customization features to tailor the affidavit to your needs.",
+        description: "Tailor your affidavit with our extensive customization features.",
       },
       {
         title: "Review & Finalize",
-        desc: "Carefully review your affidavit and finalize it.",
+        description: "Carefully review your affidavit and finalize it.",
       },
       {
         title: "Choose Stamp Paper",
-        desc: "Select the appropriate stamp paper; we’ll attach an e-stamp for you.",
+        description: "Select the appropriate stamp paper; we’ll attach an e-stamp for you.",
       },
       {
         title: "E-Sign",
-        desc: "Opt for an e-signature for convenience.",
+        description: "Opt for an Aadhaar-based e-signature for convenience and validity.",
       },
       {
         title: "Legal Consultation",
-        desc: "Get expert legal guidance throughout the process.",
+        description: "Benefit from expert legal guidance throughout the process.",
       },
       {
         title: "Delivery",
-        desc: "Receive your affidavit digitally within minutes and get physical copies delivered to your doorstep within a few working days.",
-      },
-      {
-        title: "Extensive Customization Options",
-        desc: "Personalize your affidavit to meet specific requirements.",
-      },
-      {
-        title: "E-Stamping",
-        desc: "We provide government-authorized e-stamp papers.",
-      },
-      {
-        title: "E-Signature",
-        desc: "Quick and convenient digital signature options.",
-      },
-      {
-        title: "Secure Record-Keeping",
-        desc: "Safeguard your documents for future use.",
-      },
-      {
-        title: "Fast Delivery",
-        desc: "Digital delivery within minutes and physical copies to your doorstep.",
-      },
-      {
-        title: "Expert Legal Support",
-        desc: "Our team ensures accuracy and legal compliance.",
+        description: "Receive your affidavit digitally within minutes and get physical copies delivered to your doorstep within a few working days.",
       },
     ],
     whyChooseUs: [
@@ -905,7 +886,7 @@ export const Affidavits = {
       },
       {
         title: "E-Stamping",
-        desc: "We provide government-authorized e-stamp papers.",
+        desc: "Government-authorized e-stamp papers included.",
       },
       {
         title: "E-Signature",
@@ -926,16 +907,52 @@ export const Affidavits = {
     ],
     faqs: [
       {
-        question: "Is equipment insurance required?",
+        question: "What documents are required for this affidavit?",
         answer:
-          "Most equipment rentals require insurance coverage for damage protection.",
+          "You typically need a valid ID proof, marriage certificate, and any supporting documents for the name change.",
       },
       {
-        question: "What about maintenance?",
+        question: "Can I use this affidavit for updating my passport and other government IDs?",
         answer:
-          "The agreement specifies maintenance responsibilities and procedures.",
+          "Yes, this affidavit is legally valid for updating your name on passports, Aadhaar, PAN, and voter IDs.",
+      },
+      {
+        question: "Is e-signature legally valid?",
+        answer:
+          "Yes, e-signatures are recognized under the IT Act, 2000, and are legally binding.",
+      },
+      {
+        question: "How long does it take to create and deliver the affidavit?",
+        answer:
+          "You can receive a digital copy within minutes, and physical delivery is completed within a few working days.",
+      },
+      {
+        question: "Is legal consultation included in the service?",
+        answer:
+          "Yes, our service includes expert legal consultation to ensure your affidavit meets all legal requirements.",
+      },
+      {
+        question: "Can I track my physical delivery?",
+        answer:
+          "Yes, we offer tracking options for your physical document delivery.",
+      },
+      {
+        question: "What if I need revisions?",
+        answer:
+          "You can request revisions before finalizing your affidavit. Our team is here to assist.",
+      },
+      {
+        question: "Is my personal information secure?",
+        answer:
+          "Absolutely. We use advanced encryption to protect your data and ensure privacy.",
+      },
+      {
+        question: "Can I customize the affidavit for special requirements?",
+        answer:
+          "Yes, our platform provides extensive customization options to meet your specific needs.",
       },
     ],
+
   },
 
   AffidavitChangeSignature: {
@@ -943,13 +960,15 @@ export const Affidavits = {
     hero: {
       title: "Welcome to",
       subtitle:
-        "your trusted partner for all legal documentation needs. We make it simple and hassle-free to create an Affidavit for Change of Name after Marriage, a crucial document for legally adopting your new name post-marriage.",
+        "MyLegalInstant.com",
+      description: "Need a Affidavit ForChange? MyLegalInstant.com provides expertly crafted Commercial Lease Agreements that are legally sound, customizable, and hassle-free.",
       buttonText: "Create Agreement Now",
       buttonLink: "/create-agreement",
       trustIndicators: ["Legally Verified", "Instant Download", "24/7 Support"],
     },
     whatIs: {
       title: " What is an Affidavit For Change Of Signature?",
+      subtitle: "Affidavit For Change Of Signature",
       description:
         "An Affidavit for Change of   Signature is a legal declaration that formalizes your decision to change your name after marriage. This document is often required for updating records and ensuring that your new name is legally recognized across various platforms.",
       image: "https://images.unsplash.com/photo-1649653084130-06638e40ca25?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
@@ -958,18 +977,18 @@ export const Affidavits = {
       {
         icon: "DollarSign",
         title: "Legal Recognition",
-        description: "Establishes your new name legally.",
+        desc: "Establishes your new name legally.",
       },
       {
         icon: "Calendar",
         title: "Document Updates",
-        description:
+        desc:
           "Ensures your name is updated on IDs, bank accounts, and other official records.",
       },
       {
         icon: "Shield",
         title: "Avoiding Discrepancies",
-        description:
+        desc:
           "Prevents inconsistencies across personal and professional documentation.",
       },
     ],
@@ -1108,13 +1127,14 @@ export const Affidavits = {
       title: "Welcome to",
       subtitle: "MyLegalInstant.com",
       description:
-        "your trusted partner for quick and reliable legal documentation. We make it easy to create an Affidavit for Duplicate License, a crucial document required for obtaining a duplicate of your lost, stolen, or damaged license.",
+        "We make it easy to create an Affidavit for Duplicate License, a crucial document required for obtaining a duplicate of your lost, stolen, or damaged license.",
       buttonText: "Create Agreement Now",
       buttonLink: "/create-agreement",
       trustIndicators: ["Legally Verified", "Instant Download", "24/7 Support"],
     },
     whatIs: {
       title: "What is an Affidavit for Duplicate License?",
+      subtitle: "An Affidavit for Duplicate License",
       description:
         "An Affidavit for Duplicate License is a legal declaration that confirms the loss, theft, or damage of your original license. This affidavit is often required by government authorities or licensing agencies to issue a duplicate license.",
       image: "https://images.unsplash.com/photo-1674919768570-076927525118?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
@@ -1123,19 +1143,19 @@ export const Affidavits = {
       {
         icon: "DollarSign",
         title: "Legal Declaration",
-        description:
+        desc:
           "Officially states the circumstances of the loss or damage.",
       },
       {
         icon: "Clock",
         title: "Application Process",
-        description:
+        desc:
           "Required to apply for a duplicate license with the relevant authority.",
       },
       {
         icon: "Shield",
         title: "Avoiding Misuse",
-        description: "Prevents unauthorized use of the lost or stolen license.",
+        desc: "Prevents unauthorized use of the lost or stolen license.",
       },
     ],
     whyNeedAgreement: [
@@ -1152,16 +1172,16 @@ export const Affidavits = {
         desc: "To provide a legally valid declaration in case of lost or stolen ID-based licenses.",
       },
     ],
-    legalFramework: [
-      {
-        title: "Motor Vehicle Act",
-        desc: "Compliance with vehicle leasing regulations.",
-      },
-      {
-        title: "Insurance Requirements",
-        desc: "Mandatory insurance coverage terms.",
-      },
-    ],
+    // legalFramework: [
+    //   {
+    //     title: "Motor Vehicle Act",
+    //     desc: "Compliance with vehicle leasing regulations.",
+    //   },
+    //   {
+    //     title: "Insurance Requirements",
+    //     desc: "Mandatory insurance coverage terms.",
+    //   },
+    // ],
     steps: [
       {
         title: "Click on 'Create Now':",
@@ -1172,7 +1192,7 @@ export const Affidavits = {
         desc: "Choose the 'Affidavit for Duplicate License' option.",
       },
       {
-        title: "Provide Details",
+        title: "Provide Details Type",
         desc: "Enter your license details, the circumstances of loss/damage, and your personal information.",
       },
       {
@@ -1280,13 +1300,14 @@ export const Affidavits = {
       title: "Welcome to",
       subtitle: "MyLegalInstant.com",
       description:
-        "Need a vehicle lease? MyLegalInstant.com provides expertly crafted Vehicle Lease Agreements that are legally sound, customizable, and hassle-free.",
+        "We simplify the process of creating an Affidavit for Claim Settlement in Bank, ensuring a smooth and legally valid process for claiming funds or assets from a bank.",
       buttonText: "Create Agreement Now",
       buttonLink: "/create-agreement",
       trustIndicators: ["Legally Verified", "Instant Download", "24/7 Support"],
     },
     whatIs: {
       title: "What is an Affidavit for Claim Settlement in Bank?",
+      subtitle: "An Affidavit for Claim Settlement in Bank",
       description:
         "An Affidavit for Claim Settlement in Bank is a legal document used to declare and affirm your right to claim funds, assets, or benefits from a bank account, often in the event of the account holder’s demise or other specific situations. This affidavit serves as a formal declaration of your entitlement and facilitates the settlement process.",
       image: "https://plus.unsplash.com/premium_photo-1694088516834-6fa55faab454?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
@@ -1454,13 +1475,14 @@ export const Affidavits = {
       title: "Welcome to",
       subtitle: "MyLegalInstant.com",
       description:
-        "your trusted partner for quick and reliable legal documentation. We make it easy to create an Affidavit for Duplicate Mark Sheet/Certificate, a crucial document required for obtaining a duplicate of your lost, stolen, or damaged educational certificates or mark sheets.",
+        "We make it easy to create an Affidavit for Duplicate Mark Sheet/Certificate, a crucial document required for obtaining a duplicate of your lost, stolen, or damaged educational certificates or mark sheets.",
       buttonText: "Create Agreement Now",
       buttonLink: "/create-agreement",
       trustIndicators: ["Legally Verified", "Instant Download", "24/7 Support"],
     },
     whatIs: {
       title: "What is an Affidavit for Duplicate Mark Sheet/Certificate?",
+      subtitle: " Duplicate Mark Sheet/Certificate",
       description:
         "An Affidavit for Duplicate Mark Sheet/Certificate is a legal declaration that confirms the loss, theft, or damage of your original educational documents. This affidavit is often required by educational institutions or examination boards to issue duplicate certificates or mark sheets.",
       image: "https://plus.unsplash.com/premium_photo-1661559051049-f9e147c7a90b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
@@ -1468,19 +1490,24 @@ export const Affidavits = {
     features: [
       {
         icon: "DollarSign",
-        title: "Legal Declaration",
-        desc: "Officially states the circumstances of the loss or damage.",
+        title: "Educational Institutions",
+        desc: "To obtain duplicate mark sheets or certificates from schools, colleges, or universities.",
       },
       {
         icon: "Clock",
-        title: "Application Process",
-        desc: "Required to apply for a duplicate document with the relevant institution.",
+        title: "Examination Boards",
+        desc: "For reissuing documents like board exam certificates or transcripts.",
       },
       {
         icon: "Shield",
-        title: "Preventing Misuse",
-        desc: "Prevents unauthorized use of the lost or stolen document.",
+        title: "Professional Applications",
+        desc: "To provide proof of education when applying for jobs or higher studies.",
       },
+      {
+        icon: "Users",
+        title: "Immigration Processes",
+        desc: "To meet documentation requirements for visa or immigration purposes.",
+      }
     ],
     whyNeedAgreement: [
       {
@@ -1510,10 +1537,38 @@ export const Affidavits = {
         desc: "Mandatory insurance coverage terms.",
       },
     ],
+    whyChooseUs: [
+      {
+        title: "Extensive Customization Options",
+        desc: "Personalize your affidavit to meet specific requirements.",
+      },
+      {
+        title: "E-Stamping",
+        desc: "Government-authorized e-stamp papers included.",
+      },
+      {
+        title: "E-Signature",
+        desc: "Quick and legally valid digital signature options.",
+      },
+      {
+        title: "Secure Record-Keeping",
+        desc: "Safeguard your documents for future use.",
+      },
+      {
+        title: "Fast Delivery",
+        desc: "Digital delivery within minutes and doorstep delivery of physical copies.",
+      },
+      {
+        title: "Expert Legal Support",
+        desc: "Ensure accuracy and compliance with legal standards.",
+      },
+    ],
+
+
     steps: [
       {
         title: "Click on 'Create Now'",
-        desc: "Start by clicking the 'Create Now' button on our website.",
+        desc: "Start by clicking the 'Create Now' button.",
       },
       {
         title: "Select Affidavit Type",
@@ -1546,40 +1601,6 @@ export const Affidavits = {
       {
         title: "Delivery",
         desc: "Receive your affidavit digitally within minutes and get physical copies delivered to your doorstep within a few working days.",
-      },
-      {
-        title: "Select Affidavit Type",
-        desc: "Choose the 'Affidavit for Claim Settlement in Bank' option.",
-      },
-      {
-        title: "Provide Details",
-        desc: "Fill in your old and new signature details along with relevant personal information.",
-      },
-    ],
-    whyChooseUs: [
-      {
-        title: "Extensive Customization Options",
-        desc: "Personalize your affidavit to meet specific requirements.",
-      },
-      {
-        title: "E-Stamping",
-        desc: "Government-authorized e-stamp papers included.",
-      },
-      {
-        title: "E-Signature",
-        desc: "Quick and legally valid digital signature options.",
-      },
-      {
-        title: "Secure Record-Keeping",
-        desc: "Safeguard your documents for future use.",
-      },
-      {
-        title: "Fast Delivery",
-        desc: "Digital delivery within minutes and doorstep delivery of physical copies.",
-      },
-      {
-        title: "Expert Legal Support",
-        desc: "Ensure accuracy and compliance with legal standards.",
       },
     ],
     faqs: [
@@ -1638,13 +1659,14 @@ export const Affidavits = {
       title: "Welcome to",
       subtitle: "MyLegalInstant.com",
       description:
-        " your trusted partner for quick and reliable legal documentation. We make it easy to create an Affidavit for Education Loan, a vital document required for availing financial assistance for your academic journey.",
+        "We make it easy to create an Affidavit for Education Loan, a vital document required for availing financial assistance for your academic journey.",
       buttonText: "Create Agreement Now",
       buttonLink: "/create-agreement",
       trustIndicators: ["Legally Verified", "Instant Download", "24/7 Support"],
     },
     whatIs: {
       title: "What is an Affidavit for Education Loan?",
+      subtitle: " Education Loan",
       description:
         "An Affidavit for Education Loan is a legal declaration that certifies specific details about the applicant, such as financial status, family income, and intent to utilize the loan exclusively for educational purposes. This affidavit is often required by banks or financial institutions during the loan application process.",
       image: "https://plus.unsplash.com/premium_photo-1661315458660-6aa08c1ddf38?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
@@ -1684,16 +1706,16 @@ export const Affidavits = {
         desc: "For securing loans intended for international education.",
       },
     ],
-    legalFramework: [
-      {
-        title: "Motor Vehicle Act",
-        desc: "Compliance with vehicle leasing regulations.",
-      },
-      {
-        title: "Insurance Requirements",
-        desc: "Mandatory insurance coverage terms.",
-      },
-    ],
+    // legalFramework: [
+    //   {
+    //     title: "Motor Vehicle Act",
+    //     desc: "Compliance with vehicle leasing regulations.",
+    //   },
+    //   {
+    //     title: "Insurance Requirements",
+    //     desc: "Mandatory insurance coverage terms.",
+    //   },
+    // ],
     steps: [
       {
         title: "Click on 'Create Now'",
@@ -1814,7 +1836,7 @@ export const Affidavits = {
       title: "Welcome to",
       subtitle: "MyLegalInstant.com",
       description:
-        "Need to register your marriage? MyLegalInstant.com makes it easy to create an Affidavit for Marriage Registration by Joint Applicants, legally sound, customizable, and quick.",
+        "We make it easy to create an Affidavit for Marriage Registration by Joint Applicants, a vital document required for registering your marriage under the law.",
       buttonText: "Create Affidavit Now",
       buttonLink: "/create-affidavit",
       trustIndicators: ["Legally Verified", "Instant Download", "24/7 Support"],
@@ -1822,6 +1844,7 @@ export const Affidavits = {
     whatIs: {
       title:
         "What is an Affidavit for Marriage Registration by Joint Applicants?",
+      subtitle: "Marriage Registration by Joint Applicants",
       description:
         "An Affidavit for Marriage Registration by Joint Applicants is a legal declaration jointly made by both parties of the marriage. It certifies the authenticity of their marriage and includes essential details such as names, dates, and consent. This affidavit is required by marriage registration authorities to validate the application.",
       image: "https://plus.unsplash.com/premium_photo-1694476607274-003dd175d073?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
@@ -1861,52 +1884,52 @@ export const Affidavits = {
         desc: "To access government schemes or benefits available to married couples.",
       },
     ],
-    legalFramework: [
-      {
-        title: "The Indian Contract Act, 1872",
-        desc: "Establishes the legality of contracts and obligations between parties.",
-      },
-      {
-        title: "Rent Control Act",
-        desc: "Governs the relationship between landlords and tenants.",
-      },
-    ],
+    // legalFramework: [
+    //   {
+    //     title: "The Indian Contract Act, 1872",
+    //     desc: "Establishes the legality of contracts and obligations between parties.",
+    //   },
+    //   {
+    //     title: "Rent Control Act",
+    //     desc: "Governs the relationship between landlords and tenants.",
+    //   },
+    // ],
     steps: [
       {
         title: "Click on 'Create Now'",
-        desc: "Start by clicking the 'Create Now' button on our website.",
+        description: "Start by clicking the 'Create Now' button.",
       },
       {
         title: "Select Affidavit Type",
-        desc: "Choose the 'Marriage Registration Affidavit' option.",
+        description: "Choose the 'Marriage Registration Affidavit' option.",
       },
       {
         title: "Provide Details",
-        desc: "Enter your personal information, marriage details, and required documents.",
+        description: "Enter your marriage details, spouse’s information, and personal information.",
       },
       {
         title: "Customization Options",
-        desc: "Tailor your affidavit with our extensive customization features.",
+        description: "Tailor your affidavit with our extensive customization features.",
       },
       {
         title: "Review & Finalize",
-        desc: "Carefully review your affidavit and finalize it.",
+        description: "Carefully review your affidavit and finalize it.",
       },
       {
         title: "Choose Stamp Paper",
-        desc: "Select the appropriate stamp paper; we’ll attach an e-stamp for you.",
+        description: "Select the appropriate stamp paper; we’ll attach an e-stamp for you.",
       },
       {
         title: "E-Sign",
-        desc: "Opt for an e-signature for convenience.",
+        description: "Opt for an Aadhaar-based e-signature for added convenience.",
       },
       {
         title: "Legal Consultation",
-        desc: "Benefit from expert legal guidance throughout the process.",
+        description: "Benefit from expert legal guidance throughout the process.",
       },
       {
         title: "Delivery",
-        desc: "Receive your affidavit digitally within minutes and get physical copies delivered to your doorstep within a few working days.",
+        description: "Receive your affidavit digitally within minutes and get physical copies delivered to your doorstep within a few working days.",
       },
     ],
     whyChooseUs: [
@@ -1989,10 +2012,9 @@ export const Affidavits = {
     id: "AffidavitForMarriageRegistrationBySingleApplicant",
     hero: {
       title: "Welcome to MyLegalInstant.com",
-      subtitle:
-        "Need an Affidavit for Marriage Registration by Single Applicant?",
+      subtitle: "MyLegalInstant.com",
       description:
-        "We make it easy to create an Affidavit for Marriage Registration when only one party is available to apply. Legally binding, customizable, and hassle-free.",
+        "We make it easy to create an Affidavit for Marriage Registration by Single Applicant, a crucial document required when only one party is available to apply for marriage registration.",
       buttonText: "Create Now",
       buttonLink: "/create-affidavit-marriage-registration",
       trustIndicators: ["Legally Verified", "Instant Delivery", "24/7 Support"],
@@ -2000,6 +2022,7 @@ export const Affidavits = {
     whatIs: {
       title:
         "What is an Affidavit for Marriage Registration by Single Applicant?",
+      subtitle: "Marriage Registration by Single Applicant",
       description:
         "An Affidavit for Marriage Registration by Single Applicant is a legal declaration made by one party to a marriage, certifying the authenticity of the marriage and providing all necessary details like the spouse's name, date of marriage, and location. It's often required when only one spouse can apply for registration.",
       image: "https://plus.unsplash.com/premium_photo-1661371722601-649566b65add?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
@@ -2012,7 +2035,7 @@ export const Affidavits = {
       },
       {
         icon: "Document",
-        title: "Official Registration",
+        title: "Official Records",
         desc: "Ensures the marriage is registered under the law.",
       },
       {
@@ -2039,16 +2062,16 @@ export const Affidavits = {
         desc: "To access government schemes or benefits available to married couples.",
       },
     ],
-    legalFramework: [
-      {
-        title: "Motor Vehicle Act",
-        desc: "Compliance with vehicle leasing regulations.",
-      },
-      {
-        title: "Insurance Requirements",
-        desc: "Mandatory insurance coverage terms.",
-      },
-    ],
+    // legalFramework: [
+    //   {
+    //     title: "Motor Vehicle Act",
+    //     desc: "Compliance with vehicle leasing regulations.",
+    //   },
+    //   {
+    //     title: "Insurance Requirements",
+    //     desc: "Mandatory insurance coverage terms.",
+    //   },
+    // ],
     steps: [
       {
         title: "Click on 'Create Now'",
@@ -2117,13 +2140,12 @@ export const Affidavits = {
       {
         question: "What documents are required for this affidavit?",
         answer:
-          "You typically need a valid ID proof, the marriage certificate, and relevant personal information.",
+          "You typically need valid ID proofs of both parties, marriage invitation card (if available), and other documents as per the registrar’s requirements.",
       },
       {
-        question:
-          "Can this affidavit be used for marriages under the Special Marriage Act?",
+        question: "Can this affidavit be used for all types of marriage registrations?",
         answer:
-          "Yes, it is valid for both Hindu and Special Marriage Act registrations.",
+          "Yes, it is applicable for marriages under various acts, including the Hindu Marriage Act and the Special Marriage Act.",
       },
       {
         question: "Is e-signature legally valid?",
@@ -2145,14 +2167,29 @@ export const Affidavits = {
         answer:
           "Yes, we offer tracking options for your physical document delivery.",
       },
+      {
+        question: "What if I need revisions?",
+        answer:
+          "You can request revisions before finalizing your affidavit. Our team is here to assist.",
+      },
+      {
+        question: "Is my personal information secure?",
+        answer:
+          "Absolutely. We use advanced encryption to protect your data and ensure privacy.",
+      },
+      {
+        question: "Can I customize the affidavit for specific requirements?",
+        answer:
+          "Yes, our platform provides extensive customization options to meet your specific needs.",
+      },
     ],
   },
 
   AffidavitForProofOfDateOfBirth: {
     id: "AffidavitForProofOfDateOfBirth",
     hero: {
-      title: "Welcome to MyLegalInstant.com",
-      subtitle: "Need an Affidavit for Proof of Date of Birth?",
+      title: "Welcome to",
+      subtitle: " MyLegalInstant.com",
       description:
         "We make it easy to create an Affidavit for Proof of Date of Birth, a crucial document for validating your birth date when standard proofs are unavailable or inadequate.",
       buttonText: "Create Now",
@@ -2161,6 +2198,7 @@ export const Affidavits = {
     },
     whatIs: {
       title: "What is an Affidavit for Proof of Date of Birth?",
+      subtitle: "An Affidavit for Proof of Date of Birth",
       description:
         "An Affidavit for Proof of Date of Birth is a sworn legal statement affirming an individual's date of birth. This document is often required when conventional birth certificates or other official records are missing, lost, or contain errors.",
       image: "https://plus.unsplash.com/premium_photo-1664301588974-e45a48b06a7a?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fGxhd3llcnxlbnwwfHwwfHx8MA%3D%3D",
@@ -2334,8 +2372,8 @@ export const Affidavits = {
   AffidavitForProofOfIncome: {
     id: "AffidavitForProofOfIncome",
     hero: {
-      title: "Welcome to MyLegalInstant.com",
-      subtitle: "Need an Affidavit for Proof of Income?",
+      title: "Welcome to",
+      subtitle: " MyLegalInstant.com",
       description:
         "We make it easy to create an Affidavit for Proof of Income, a crucial document for validating your income details when traditional proofs are unavailable or insufficient.",
       buttonText: "Create Now",
@@ -2344,6 +2382,7 @@ export const Affidavits = {
     },
     whatIs: {
       title: "What is an Affidavit for Proof of Income?",
+      subtitle: "An Affidavit for Proof of Income",
       description:
         "An Affidavit for Proof of Income is a legal declaration made by an individual affirming their income details. This document is often required when traditional income proofs like salary slips or income certificates are unavailable or insufficient.",
       image: "https://plus.unsplash.com/premium_photo-1661508962936-29c949feb569?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE2fHxsYXd5ZXJ8ZW58MHx8MHx8fDA%3D",
@@ -2507,8 +2546,8 @@ export const Affidavits = {
   AffidavitForPFCumIndemnityBond: {
     id: "AffidavitForPFCumIndemnityBond",
     hero: {
-      title: "Welcome to MyLegalInstant.com",
-      subtitle: "Need an Affidavit for PF cum Indemnity Bond?",
+      title: "Welcome to",
+      subtitle: " MyLegalInstant.com",
       description:
         "Our platform simplifies the creation of a PF cum Indemnity Bond, an essential document for withdrawing Provident Fund (PF) amounts in specific circumstances.",
       buttonText: "Create Now",
@@ -2685,8 +2724,8 @@ export const Affidavits = {
   AffidavitForOneAndTheSamePerson: {
     id: "AffidavitForOneAndTheSamePerson",
     hero: {
-      title: "Welcome to MyLegalInstant.com",
-      subtitle: "Need an Affidavit for One and the Same Person?",
+      title: "Welcome to ",
+      subtitle: "MyLegalInstant.com",
       description:
         "We make it easy to create an Affidavit for One and the Same Person, a vital document used to clarify identity discrepancies across various documents.",
       buttonText: "Create Now",
@@ -2695,6 +2734,7 @@ export const Affidavits = {
     },
     whatIs: {
       title: "What is an Affidavit for One and the Same Person?",
+      subtitle: "Affidavit for One and the Same Person",
       description:
         "An Affidavit for One and the Same Person is a legal declaration affirming that different names or variations of a name appearing on different documents belong to the same individual. This affidavit is essential for rectifying identity issues in official records.",
       image: "https://images.unsplash.com/photo-1604783125462-37d81c7385e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU0fHxsYXd5ZXJ8ZW58MHx8MHx8fDA%3D",
@@ -2738,16 +2778,16 @@ export const Affidavits = {
         desc: "To validate ownership or identity in property dealings.",
       },
     ],
-    legalFramework: [
-      {
-        title: "Motor Vehicle Act",
-        desc: "Compliance with vehicle leasing regulations.",
-      },
-      {
-        title: "Insurance Requirements",
-        desc: "Mandatory insurance coverage terms.",
-      },
-    ],
+    // legalFramework: [
+    //   {
+    //     title: "Motor Vehicle Act",
+    //     desc: "Compliance with vehicle leasing regulations.",
+    //   },
+    //   {
+    //     title: "Insurance Requirements",
+    //     desc: "Mandatory insurance coverage terms.",
+    //   },
+    // ],
     steps: [
       {
         title: "Click on 'Create Now'",
@@ -7694,19 +7734,21 @@ export const commercial = {
 };
 
 export const commercialEst = {
+
   Shopoutlet: {
     id: "Shopoutlet",
     hero: {
-      title: "Welcome to MyLegalInstant.com",
-      subtitle: "Need a Shop/Outlet Lease Agreement?",
+      title: "Welcome to",
+      subtitle: " MyLegalInstant.com",
       description:
-        "Are you a business owner looking to lease a shop or retail outlet? At MyLegalinstant.com, we understand the importance of having a solid legal foundation for your business operations. Our Shop/Outlet Lease Agreement service provides you with customizable, legally sound agreements tailored to meet your specific needs, ensuring a smooth leasing process.",
+        "At MyLegalinstant.com, we understand the importance of having a solid legal foundation for your business operations. Our Shop/Outlet Lease Agreement service provides you with customizable, legally sound agreements tailored to meet your specific needs, ensuring a smooth leasing process.",
       buttonText: "Create Now",
       buttonLink: "/create-shop-outlet-lease-agreement",
       trustIndicators: ["Legally Verified", "Instant Delivery", "24/7 Support"],
     },
     whatIs: {
       title: "What is a Shop/Outlet Lease Agreement?",
+      subtitle: "Shop/Outlet Lease Agreement",
       description:
         "A Shop/Outlet Lease Agreement is a legally binding contract between a landlord (lessor) and a tenant (lessee) that outlines the terms and conditions under which commercial property is rented for retail purposes. This agreement serves as a vital document that protects the interests of both parties, detailing aspects such as rental terms, property specifics, duration of the lease, and obligations related to maintenance and repairs.",
       image: "/api/placeholder/400/300",
@@ -7745,62 +7787,228 @@ export const commercialEst = {
     ],
     whyNeedAgreement: [
       {
-        title: "Legal Protection",
-        desc: "Safeguards both parties' rights and obligations under the law.",
+        title: "Tailored Agreements",
+        desc: "Comprehensive customization options to address your specific business needs.",
       },
       {
-        title: "Clear Expectations",
-        desc: "Sets clear guidelines for property usage and maintenance.",
+        title: "Legally Compliant",
+        desc: "Agreements are fully compliant with Indian laws, including state-specific regulations.",
       },
       {
-        title: "Dispute Prevention",
-        desc: "Minimizes potential conflicts by documenting all terms clearly.",
+        title: "Hassle-Free E-Stamping",
+        desc: "Save time with integrated e-stamp paper solutions.",
+      },
+      {
+        title: "Secure E-Signatures",
+        desc: "Aadhaar-based e-signatures ensure validity and convenience.",
+      },
+      {
+        title: "Expert Guidance",
+        desc: "Access legal professionals for clarity and assurance.",
+      },
+      {
+        title: "Time-Saving Platform",
+        desc: "Simplify the agreement process and get it done within minutes.",
+      },
+      {
+        title: "Physical and Digital Delivery",
+        desc: "Receive both digital and hard copies for your records.",
+      },
+      {
+        title: "Safe and Secure",
+        desc: "Your data and documents are handled with utmost confidentiality.",
+      },
+      {
+        title: "Affordable Pricing",
+        desc: "Cost-effective solutions for businesses of all sizes.",
+      },
+      {
+        title: "User-Friendly Interface",
+        desc: "Intuitive platform for a seamless experience.",
+      },
+      {
+        title: "Long-Term Support",
+        desc: "Secure record-keeping and easy access to your agreements whenever needed.",
       },
     ],
     legalFramework: [
       {
-        title: "Legal Framework in India",
-        desc: "The Shop/Outlet Lease Agreement is governed by the Indian Contract Act, 1872, the Transfer of Property Act, 1882, state-specific Rent Control Acts, and the Registration Act, 1908.",
+        title: "The Indian Contract Act, 1872",
+        desc: "Regulates the formation and enforceability of contracts, ensuring all lease agreements are legally sound.",
       },
       {
-        title: "Key Components",
-        desc: "Includes identification of parties, property description, lease duration, rent details, security deposit, permitted use, maintenance responsibilities, renewal terms, and subletting restrictions.",
+        title: "The Transfer of Property Act, 1882",
+        desc: "Covers the lease of immovable property, outlining the rights and obligations of both the landlord and tenant.",
+      },
+      {
+        title: "State-Specific Rent Control Acts",
+        desc: "Ensure fair rental practices and regulate lease agreements according to individual state policies.",
+      },
+      {
+        title: "The Registration Act, 1908",
+        desc: "Mandates registration of lease agreements that exceed a specified duration (typically 11 months).",
+      },
+      {
+        title: "Parties Involved",
+        desc: "Identification of both landlord and tenant, including full names and addresses.",
+      },
+      {
+        title: "Property Description",
+        desc: "Detailed information about the leased property, including location, size, and layout.",
+      },
+      {
+        title: "Lease Duration",
+        desc: "Specifies the length of the lease, usually ranging from three to nine years.",
+      },
+      {
+        title: "Rent Terms",
+        desc: "Clearly outlines the rental amount, payment schedule, mode of payment, and increment conditions.",
+      },
+      {
+        title: "Use of Property",
+        desc: "Defines permitted uses of the property and highlights any usage restrictions.",
+      },
+      {
+        title: "Maintenance Responsibilities",
+        desc: "Details responsibilities for property maintenance, repairs, and upkeep.",
+      },
+      {
+        title: "Termination Clauses",
+        desc: "States the conditions under which the lease can be terminated, including notice periods and penalties.",
+      },
+      {
+        title: "Renewal Options",
+        desc: "Outlines terms for renewing the lease, including changes to rent or conditions.",
       },
     ],
     steps: [
       {
-        title: "Fill Details",
-        desc: "Enter all required information about the property and parties involved.",
+        title: "Start the Process",
+        desc: "Click the “Create Now” button to begin.",
       },
       {
-        title: "Review Terms",
-        desc: "Carefully review all terms and conditions of the agreement.",
+        title: "Choose Your Agreement Type",
+        desc: "Select Shop/Outlet Lease Agreement from our range of options.",
       },
       {
-        title: "Generate & Download",
-        desc: "Get your legally-verified agreement instantly.",
+        title: "Provide Property Details",
+        desc: "Enter the location, size, and specific details of the shop or outlet.",
+      },
+      {
+        title: "Specify Lease Terms",
+        desc: "Define rent, duration, renewal terms, and other key conditions.",
+      },
+      {
+        title: "Customize Your Agreement",
+        desc: "Add clauses like maintenance responsibilities, subleasing permissions, or parking rights.",
+      },
+      {
+        title: "Review the Agreement",
+        desc: "Check for accuracy and completeness.",
+      },
+      {
+        title: "E-Stamp Integration",
+        desc: "Use our platform to seamlessly integrate e-stamp paper for legal compliance.",
+      },
+      {
+        title: "E-Signature Options",
+        desc: "Utilize Aadhaar-based e-signatures for a secure and legally valid signing process.",
+      },
+      {
+        title: "Expert Legal Advice",
+        desc: "Consult our legal experts for guidance.",
+      },
+      {
+        title: "Delivery Options",
+        desc: "Digital Copy: Available instantly for download. Hard Copy: Delivered to your address within a few working days.",
       },
     ],
     whyChooseUs: [
       {
-        title: "Expert Legal Team",
-        desc: "Agreements crafted by experienced legal professionals.",
+        title: "Comprehensive Customization",
+        desc: "Tailor agreements to meet specific business requirements.",
       },
       {
-        title: "Quick & Easy",
-        desc: "Generate your agreement in minutes, not days.",
+        title: "Legal Compliance",
+        desc: "Fully compliant with Indian legal standards, including state-specific laws.",
+      },
+      {
+        title: "Integrated E-Stamping",
+        desc: "Save time with hassle-free e-stamp solutions.",
+      },
+      {
+        title: "Secure E-Signatures",
+        desc: "Aadhaar-based digital signatures ensure legal validity.",
+      },
+      {
+        title: "Expert Support",
+        desc: "Access legal consultation for added confidence.",
+      },
+      {
+        title: "Time Efficiency",
+        desc: "Complete your agreement in minutes with our intuitive platform.",
+      },
+      {
+        title: "Convenient Delivery",
+        desc: "Receive digital and physical copies as per your preference.",
+      },
+      {
+        title: "Secure Storage",
+        desc: "Keep your documents safe and accessible with our secure storage solutions.",
+      },
+      {
+        title: "Cost-Effective",
+        desc: "Affordable pricing without compromising on quality.",
+      },
+      {
+        title: "User-Friendly Platform",
+        desc: "Easy navigation and step-by-step guidance.",
+      },
+      {
+        title: "Ongoing Support",
+        desc: "Assistance available for renewals, amendments, or other needs.",
       },
     ],
     faqs: [
       {
-        question: "Is a residential lease agreement mandatory?",
-        answer:
-          "While not legally mandatory, it's highly recommended to protect both parties' interests and prevent future disputes.",
+        question: "How is a lease agreement different from a leave and licence agreement?",
+        answer: "A lease agreement creates a legal interest in the property for the lessee, while a leave and licence agreement only grants permission to use the property without creating tenancy rights.",
       },
       {
-        question: "What should be included in the agreement?",
-        answer:
-          "Key elements include rent amount, security deposit, duration, maintenance responsibilities, and terms of use.",
+        question: "What distinguishes a shop lease from other commercial leases?",
+        answer: "A shop lease is specifically tailored for retail spaces and includes terms that cater to retail operations, whereas other commercial leases may cover offices, warehouses, or other types of properties.",
+      },
+      {
+        question: "Is registration of a shop lease agreement mandatory?",
+        answer: "Yes, lease agreements exceeding 11 months must be registered under the Registration Act, 1908.",
+      },
+      {
+        question: "Can I customize the agreement to include exclusive usage rights?",
+        answer: "Absolutely! Our platform offers extensive customization to suit your unique business needs.",
+      },
+      {
+        question: "Are e-stamped and e-signed agreements valid in India?",
+        answer: "Yes, both e-stamped and Aadhaar-based e-signed agreements are legally valid under Indian law.",
+      },
+      {
+        question: "What if I need to terminate the lease early?",
+        answer: "Termination clauses can be included in the agreement to define the conditions and process for early termination.",
+      },
+      {
+        question: "Is an e-stamped shop lease legally valid?",
+        answer: "Yes, e-stamped agreements are recognized as legally valid under Indian law.",
+      },
+      {
+        question: "Can I negotiate terms within my shop lease?",
+        answer: "Yes! You can tailor your agreement according to your specific requirements with our customizable platform.",
+      },
+      {
+        question: "How quickly can I expect my agreement?",
+        answer: "You’ll receive a digital copy instantly, and a physical hard copy will be delivered within a few working days.",
+      },
+      {
+        question: "Can I seek legal advice during the process?",
+        answer: "Yes, our legal experts are available to guide you every step of the way.",
       },
     ],
   },
@@ -7818,34 +8026,53 @@ export const commercialEst = {
     },
     whatIs: {
       title: "What is a Shop/Outlet Leave and License Agreement?",
+      subtitle: "Shop/Outlet Leave and License Agreement",
       description:
         "A Shop/Outlet Leave and License Agreement is a legal document that allows a licensee to occupy and use a commercial property (like a shop or outlet) owned by a licensor for a specified period, without transferring any ownership rights.",
       image: "/api/placeholder/400/300",
     },
     features: [
       {
+        icon: "Shield",
         title: "Legal Protection",
-        desc: "Clearly outlines the terms, preventing disputes between licensor and licensee.",
+        desc:
+          "Clearly outlines the terms, preventing disputes between licensor and licensee.",
       },
       {
+        icon: "Repeat",
         title: "Flexibility",
-        desc: "Allows businesses to operate in prime locations without long-term commitments.",
+        desc:
+          "Offers an arrangement without conferring tenancy rights, allowing businesses to operate in prime locations without long-term commitments and easy termination as per agreed terms.",
       },
       {
+        icon: "FileText",
         title: "Compliance",
-        desc: "Ensures adherence to Indian laws governing commercial agreements.",
+        desc:
+          "Ensures adherence to Indian laws governing commercial agreements, avoiding penalties and legal complications.",
       },
       {
+        icon: "UserCheck",
         title: "Clarity of Roles",
-        desc: "Defines the rights, duties, and liabilities of both parties.",
+        desc:
+          "Clearly defines the rights, duties, and liabilities of both the licensor and licensee, reducing ambiguities.",
       },
       {
+        icon: "DollarSign",
         title: "Cost Efficiency",
-        desc: "Avoids long-term financial commitments associated with leasing.",
+        desc:
+          "Avoids long-term financial commitments associated with leasing, making it an economical option for temporary arrangements.",
       },
       {
+        icon: "CheckCircle",
         title: "Ease of Enforcement",
-        desc: "Provides a legal framework for resolving disputes.",
+        desc:
+          "Provides a straightforward legal framework for resolving disputes or addressing breaches of agreement.",
+      },
+      {
+        icon: "Lock",
+        title: "Enhanced Security",
+        desc:
+          "Protects the licensor’s ownership rights while granting controlled access to the licensee for specific purposes.",
       },
     ],
     whyNeedAgreement: [
@@ -8024,13 +8251,14 @@ export const commercialEst = {
       title: "Welcome to",
       subtitle: "MyLegalInstant.com",
       description:
-        "Looking to formalize your office space agreement? MyLegalInstant.com provides expertly crafted Office/Company/Entity Leave and Licence Agreements that are legally sound, customizable, and hassle-free.",
+        "At MyLegalInstant.com, we specialize in creating tailored legal documents, including Office/Company/Entity Leave and Licence Agreements, under our Commercial Establishment Agreements segment. Our service ensures that your agreements are legally sound, customizable, and hassle-free.",
       buttonText: "Create Agreement Now",
       buttonLink: "/create-agreement",
       trustIndicators: ["Legally Verified", "Instant Download", "24/7 Support"],
     },
     whatIs: {
       title: "What is an Office/Company/Entity Leave and Licence Agreement?",
+      subtitle: "an Office/Company/Entity Leave and Licence Agreement",
       description:
         "An Office/Company/Entity Leave and Licence Agreement is a legal document that allows a licensor (property owner) to grant permission to a licensee (company or business entity) to use commercial office space for a specific purpose and duration, without transferring ownership or tenancy rights.",
       image: "/api/placeholder/400/300",
@@ -8039,34 +8267,59 @@ export const commercialEst = {
       {
         icon: "Shield",
         title: "Legal Protection",
-        description:
-          "Safeguards the interests of both licensor and licensee, reducing potential disputes.",
+        desc:
+          "Safeguards the interests of both the licensor and licensee, reducing the potential for disputes.",
       },
       {
-        icon: "Clock",
+        icon: "Repeat",
         title: "Flexibility",
-        description:
+        desc:
           "Provides a temporary arrangement that can be easily terminated, without conferring tenancy rights.",
       },
       {
         icon: "FileText",
         title: "Compliance",
-        description:
-          "Ensures compliance with Indian laws governing commercial agreements.",
+        desc:
+          "Ensures compliance with Indian laws governing commercial agreements, protecting you from legal issues.",
       },
+      {
+        icon: "UserCheck",
+        title: "Clarity of Roles",
+        desc:
+          "Clearly outlines the roles, duties, and obligations of both parties, minimizing misunderstandings.",
+      },
+      {
+        icon: "DollarSign",
+        title: "Cost Efficiency",
+        desc:
+          "More affordable than long-term leasing options, making it an ideal choice for businesses seeking temporary office space.",
+      },
+      {
+        icon: "CheckCircle",
+        title: "Enforceability",
+        desc:
+          "Establishes a clear legal framework to address any disputes or breaches of the agreement.",
+      },
+      {
+        icon: "Lock",
+        title: "Enhanced Security",
+        desc:
+          "Maintains control over the property while allowing the licensee to use it for specified purposes.",
+      },
+
     ],
     whyNeedAgreement: [
       {
-        title: "Clarity of Roles",
-        desc: "Clearly outlines the roles, duties, and obligations of both parties.",
+        title: "Lease vs Licence",
+        desc: "A leave and licence agreement is distinct from a lease agreement in that it does not confer the same rights of possession to the licensee as a lease would.",
       },
       {
-        title: "Cost Efficiency",
-        desc: "More affordable than long-term leasing options.",
+        title: "Security Deposit",
+        desc: "The agreement may specify a security deposit amount that is refundable at the end of the term, subject to conditions.",
       },
       {
-        title: "Enhanced Security",
-        desc: "Maintains control over the property while allowing usage for specified purposes.",
+        title: "Termination Clause",
+        desc: "Clear guidelines on the notice period and conditions under which either party can terminate the agreement.",
       },
     ],
     legalFramework: [
@@ -8089,199 +8342,411 @@ export const commercialEst = {
     ],
     steps: [
       {
-        title: "Fill in Details",
-        desc: "Provide office address, licensee information, fees, and duration.",
+        title: "Click on the \"Create Now\" Button",
+        desc: "Begin your journey with just one click.",
       },
       {
-        title: "Customize Agreement",
-        desc: "Add clauses specific to service charges, maintenance, or operating hours.",
+        title: "Select Your Agreement",
+        desc: "Choose from our wide range of customizable Leave and Licence Agreements tailored to office spaces.",
       },
       {
-        title: "E-Stamp and E-Sign",
-        desc: "Integrate e-stamp paper and Aadhaar-based e-signatures for legal validity.",
+        title: "Fill in the Details",
+        desc: "Provide essential details such as office address, licensee (company/entity) information, fees, and duration.",
+      },
+      {
+        title: "Customize Your Agreement",
+        desc: "Add clauses specific to your requirements, such as service charges, maintenance, or operating hours.",
+      },
+      {
+        title: "Review and Finalize",
+        desc: "Ensure all details are accurate and complete.",
+      },
+      {
+        title: "E-Stamp Paper Integration",
+        desc: "Our platform integrates e-stamp paper, ensuring your agreement complies with Indian legal requirements and is valid for all purposes.",
+      },
+      {
+        title: "E-Signature Options",
+        desc: "We offer secure e-signature options using Aadhaar-based authentication, ensuring your agreement is legally valid and compliant with Indian laws.",
+      },
+      {
+        title: "Legal Consultation",
+        desc: "Get expert legal advice for added peace of mind.",
       },
       {
         title: "Delivery",
-        desc: "Receive a digital copy instantly and a physical copy within a few working days.",
+        desc: "Receive a digital copy within minutes and physical copies delivered to your doorstep within a few working days.",
       },
     ],
     whyChooseUs: [
       {
         title: "Extensive Customization",
-        desc: "Tailor your agreement with various clauses and specifications.",
+        desc: "Customize your agreement with a variety of clauses, from service charges to specific operational requirements.",
       },
       {
         title: "Legally Valid E-Stamping",
-        desc: "Ensures compliance with Indian legal requirements.",
+        desc: "Complies with Indian legal requirements, ensuring your agreement is enforceable.",
+      },
+      {
+        title: "Aadhaar-Based E-Signatures",
+        desc: "Provides legally valid and secure digital signing options.",
       },
       {
         title: "Expert Legal Guidance",
-        desc: "Get professional legal advice for peace of mind.",
+        desc: "Access professional legal advice to ensure your agreement is accurate and fully compliant.",
+      },
+      {
+        title: "Fast Digital Delivery",
+        desc: "Get your agreement in digital format within minutes.",
+      },
+      {
+        title: "Physical Delivery",
+        desc: "Receive hard copies at your address within a few working days.",
+      },
+      {
+        title: "Secure Record Keeping",
+        desc: "Benefit from safe and accessible storage for all your legal documents.",
+      },
+      {
+        title: "User-Friendly Platform",
+        desc: "Complete agreements quickly with our intuitive, easy-to-navigate interface.",
+      },
+      {
+        title: "Time Efficiency",
+        desc: "Save time on paperwork, with agreements ready in minutes.",
+      },
+      {
+        title: "Cost-Effective",
+        desc: "Affordable pricing ensures you get maximum value.",
+      },
+      {
+        title: "Comprehensive Documentation Portal",
+        desc: "The most extensive and customizable legal documentation portal to meet your specific business needs.",
       },
     ],
     faqs: [
       {
-        question:
-          "What is the difference between a lease and a leave and licence agreement?",
+        question: "What is the difference between a lease and a leave and licence agreement?",
         answer:
-          "A lease grants tenancy rights, while a leave and licence agreement allows property usage without conferring tenancy rights.",
+          "A lease grants a legal interest in the property to the lessee, while a leave and licence agreement allows the licensee to use the property without creating tenancy rights.",
       },
       {
         question: "Is an e-stamped agreement legally valid in India?",
         answer:
-          "Yes, e-stamped agreements are legally valid and enforceable under Indian law.",
+          "Yes, e-stamped agreements are legally valid and enforceable under Indian law. You can verify the validity of the e-stamp paper on the official portal of Stock Holding Corporation of India and respective state government portals.",
       },
       {
-        question: "Can I customize my agreement on MyLegalInstant.com?",
-        answer: "Yes, our platform allows extensive customization options.",
+        question: "Can I customize my agreement on MyLegalinstant.com?",
+        answer:
+          "Yes, our platform offers extensive customization options to tailor your agreement to your exact requirements.",
       },
       {
         question: "How soon will I receive my agreement?",
         answer:
-          "You’ll receive a digital copy within minutes and a physical copy within a few working days.",
+          "You’ll receive a digital copy within minutes, and physical copy will be delivered to your address within a few working days.",
       },
       {
         question: "Is registration mandatory?",
         answer:
-          "Yes, registering the agreement is essential for legal enforceability.",
+          "Yes, registering the agreement is essential for it to be legally enforceable.",
+      },
+      {
+        question: "What documents are required for registration?",
+        answer:
+          "Identification proof, proof of address, and other relevant documents as specified by local authorities.",
+      },
+      {
+        question: "Can I modify the agreement after it is created?",
+        answer:
+          "Yes, you can do modifications to the agreement before you finally submit it.",
+      },
+      {
+        question: "What is the validity of an e-signature?",
+        answer:
+          "E-signatures are legally valid in India when using Aadhaar-based authentication, ensuring compliance with the Indian Information Technology Act, 2000.",
+      },
+      {
+        question: "How secure is the platform?",
+        answer:
+          "MyLegalinstant.com ensures top-tier security protocols to protect your data and documents, fully complying with privacy laws.",
+      },
+      {
+        question: "Is MyLegalinstant.com cost-effective?",
+        answer:
+          "Yes, we offer affordable pricing, making it a cost-effective choice for businesses needing legal documentation.",
       },
     ],
   },
 
-  CommercialLease: {
-    id: "CommercialLease",
+  Commercial: {
+    id: "Commercial",
     hero: {
       title: "Welcome to",
       subtitle: "MyLegalInstant.com",
       description:
-        "Looking to formalize your office space agreement? MyLegalInstant.com provides expertly crafted Office/Company/Entity Leave and Licence Agreements that are legally sound, customizable, and hassle-free.",
+        "we specialize in creating comprehensive Commercial Lease Agreements that cater to your specific needs, ensuring a smooth and legally sound leasing process. Our user-friendly platform makes it easy to draft, customize, and finalize your lease agreement efficiently.",
       buttonText: "Create Agreement Now",
       buttonLink: "/create-agreement",
       trustIndicators: ["Legally Verified", "Instant Download", "24/7 Support"],
     },
     whatIs: {
       title: "What is a Commercial Lease Agreement?",
+      subtitle: "a Commercial Lease Agreement",
       description:
         "A Commercial Lease Agreement is a legally binding contract between a landlord (lessor) and a tenant (lessee) that outlines the terms and conditions for renting commercial property. This type of agreement is essential for businesses seeking office spaces, retail locations, warehouses, or any other commercial facilities. It covers key aspects like rent, duration, usage, rights, responsibilities, and obligations of both parties, providing clarity and protection throughout the lease term.",
       image: "/api/placeholder/400/300",
     },
     features: [
       {
-        icon: "Shield",
-        title: "Legal Protection",
-        description:
-          "Safeguards the interests of both licensor and licensee, reducing potential disputes.",
+        icon: "Edit",
+        title: "Tailored Agreements",
+        desc: "Comprehensive customization options to address your specific business needs.",
+      },
+      {
+        icon: "Scale",
+        title: "Legally Compliant",
+        desc: "Agreements are fully compliant with Indian laws, including state-specific regulations.",
+      },
+      {
+        icon: "FilePlus",
+        title: "Hassle-Free E-Stamping",
+        desc: "Save time with integrated e-stamp paper solutions.",
+      },
+      {
+        icon: "PenTool",
+        title: "Secure E-Signatures",
+        desc: "Aadhaar-based e-signatures ensure validity and convenience.",
+      },
+      {
+        icon: "UserCheck",
+        title: "Expert Guidance",
+        desc: "Access legal professionals for clarity and assurance.",
       },
       {
         icon: "Clock",
-        title: "Flexibility",
-        description:
-          "Provides a temporary arrangement that can be easily terminated, without conferring tenancy rights.",
+        title: "Time-Saving Platform",
+        desc: "Simplify the agreement process and get it done within minutes.",
       },
       {
-        icon: "FileText",
-        title: "Compliance",
-        description:
-          "Ensures compliance with Indian laws governing commercial agreements.",
+        icon: "Printer",
+        title: "Physical and Digital Delivery",
+        desc: "Receive both digital and hard copies for your records.",
+      },
+      {
+        icon: "ShieldCheck",
+        title: "Safe and Secure",
+        desc: "Your data and documents are handled with utmost confidentiality.",
+      },
+      {
+        icon: "BadgeIndianRupee",
+        title: "Affordable Pricing",
+        desc: "Cost-effective solutions for businesses of all sizes.",
+      },
+      {
+        icon: "LayoutDashboard",
+        title: "User-Friendly Interface",
+        desc: "Intuitive platform for a seamless experience.",
+      },
+      {
+        icon: "Archive",
+        title: "Long-Term Support",
+        desc: "Secure record-keeping and easy access to your agreements whenever needed.",
       },
     ],
+
     whyNeedAgreement: [
       {
-        title: "Clarity and Transparency",
-        desc: "Clearly defines expectations and responsibilities, reducing the potential for disputes.",
-      },
-      {
         title: "Legal Protection",
-        desc: "Safeguards the interests of both parties and ensures compliance with relevant laws.",
+        desc: "Safeguards both parties' rights and obligations under the law.",
       },
       {
-        title: "Stability for Business Operations",
-        desc: "Secures a location for your business, allowing you to operate without the fear of sudden eviction or rent escalation.",
+        title: "Clear Expectations",
+        desc: "Sets clear guidelines for property usage and maintenance.",
+      },
+      {
+        title: "Dispute Prevention",
+        desc: "Minimizes potential conflicts by documenting all terms clearly.",
       },
     ],
     legalFramework: [
       {
-        title: "Indian Contract Act, 1872",
-        desc: "Regulates the formation and enforceability of contracts.",
+        title: "The Indian Contract Act, 1872",
+        desc: "Regulates the formation and enforceability of contracts, ensuring all lease agreements are legally sound.",
       },
       {
-        title: "Transfer of Property Act, 1882",
-        desc: "Covers the lease of immovable property, detailing the rights and obligations of both parties.",
+        title: "The Transfer of Property Act, 1882",
+        desc: "Covers the lease of immovable property, outlining the rights and obligations of both the landlord and tenant.",
       },
       {
         title: "State-Specific Rent Control Acts",
-        desc: "Regulate rental agreements in specific states, ensuring fair practices.",
+        desc: "Ensure fair rental practices and regulate lease agreements according to individual state policies.",
       },
       {
-        title: "Registration Act, 1908",
-        desc: "Mandates the registration of lease agreements exceeding a specified duration (usually 11 months).",
+        title: "The Registration Act, 1908",
+        desc: "Mandates registration of lease agreements that exceed a specified duration (typically 11 months).",
+      },
+      {
+        title: "Parties Involved",
+        desc: "Identification of both landlord and tenant, including full names and addresses.",
+      },
+      {
+        title: "Property Description",
+        desc: "Detailed information about the leased property, including location, size, and layout.",
+      },
+      {
+        title: "Lease Duration",
+        desc: "Specifies the length of the lease, usually ranging from three to nine years.",
+      },
+      {
+        title: "Rent Terms",
+        desc: "Clearly outlines the rental amount, payment schedule, mode of payment, and increment conditions.",
+      },
+      {
+        title: "Use of Property",
+        desc: "Defines permitted uses of the property and highlights any usage restrictions.",
+      },
+      {
+        title: "Maintenance Responsibilities",
+        desc: "Details responsibilities for property maintenance, repairs, and upkeep.",
+      },
+      {
+        title: "Termination Clauses",
+        desc: "States the conditions under which the lease can be terminated, including notice periods and penalties.",
+      },
+      {
+        title: "Renewal Options",
+        desc: "Outlines terms for renewing the lease, including changes to rent or conditions.",
       },
     ],
     steps: [
       {
         title: "Get Started",
-        desc: "Click the 'Create Now' button to initiate the process.",
+        desc: "Click the “Create Now” button to initiate the process.",
       },
       {
         title: "Choose Your Agreement Type",
-        desc: "Select Commercial Lease Agreement from our extensive range of options.",
+        desc: "Select 'Commercial Lease Agreement' from our extensive range of options.",
       },
       {
         title: "Provide Property Details",
-        desc: "Enter the property address, type, and usage details.",
+        desc: "Enter the property address, type, and usage details accurately.",
       },
       {
         title: "Specify Lease Terms",
-        desc: "Include rental amount, duration, renewal terms, and other key provisions.",
+        desc: "Include rental amount, lease duration, renewal options, and other essential terms.",
       },
       {
         title: "Customize Clauses",
-        desc: "Add specific clauses such as exclusivity, maintenance responsibilities, or parking rights.",
+        desc: "Add specific clauses such as exclusivity rights, maintenance responsibilities, or parking privileges.",
       },
       {
         title: "Review Your Agreement",
-        desc: "Check for accuracy and completeness before finalizing.",
+        desc: "Ensure all details are correct and complete before finalizing the document.",
       },
       {
         title: "E-Stamp Paper Integration",
-        desc: "Seamlessly integrate e-stamp paper for legal compliance across Indian states.",
+        desc: "Seamlessly attach legally compliant e-stamp papers across Indian states.",
       },
       {
         title: "E-Signature Options",
-        desc: "Use Aadhaar-based e-signatures for a secure and legally valid signing process.",
+        desc: "Use Aadhaar-based e-signatures for secure and legally recognized signing.",
       },
       {
         title: "Expert Consultation",
-        desc: "Get advice from legal experts to ensure your agreement meets all requirements.",
+        desc: "Consult our legal experts to ensure your agreement is fully compliant and tailored to your needs.",
       },
       {
         title: "Delivery",
-        desc: "Receive a digital copy instantly and a hard copy within a few working days.",
+        desc: "Receive your agreement instantly as a digital copy and within a few days as a hard copy at your doorstep.",
+      },
+    ],
+    whyChooseUs: [
+      {
+        title: "Tailored Agreements",
+        desc: "Comprehensive customization options to address your specific business needs.",
+      },
+      {
+        title: "Legally Compliant",
+        desc: "Agreements are fully compliant with Indian laws, including state-specific regulations.",
+      },
+      {
+        title: "Hassle-Free E-Stamping",
+        desc: "Save time with integrated e-stamp paper solutions.",
+      },
+      {
+        title: "Secure E-Signatures",
+        desc: "Aadhaar-based e-signatures ensure validity and convenience.",
+      },
+      {
+        title: "Expert Guidance",
+        desc: "Access legal professionals for clarity and assurance.",
+      },
+      {
+        title: "Time-Saving Platform",
+        desc: "Simplify the agreement process and get it done within minutes.",
+      },
+      {
+        title: "Physical and Digital Delivery",
+        desc: "Receive both digital and hard copies for your records.",
+      },
+      {
+        title: "Safe and Secure",
+        desc: "Your data and documents are handled with utmost confidentiality.",
+      },
+      {
+        title: "Affordable Pricing",
+        desc: "Cost-effective solutions for businesses of all sizes.",
+      },
+      {
+        title: "User-Friendly Interface",
+        desc: "Intuitive platform for a seamless experience.",
+      },
+      {
+        title: "Long-Term Support",
+        desc: "Secure record-keeping and easy access to your agreements whenever needed.",
       },
     ],
     faqs: [
       {
-        question:
-          "What is the difference between a residential and a commercial lease agreement?",
-        answer:
-          "A residential lease agreement pertains to renting property for residential purposes, while a commercial lease agreement is specifically for business or commercial use.",
+        question: "What is the difference between a residential and a commercial lease agreement?",
+        answer: "A residential lease agreement pertains to renting property for residential purposes, while a commercial lease agreement is specifically for business or commercial use."
       },
       {
         question: "Is registration of a commercial lease agreement mandatory?",
-        answer:
-          "Yes, for agreements exceeding 11 months, registration is mandatory under the Registration Act, 1908.",
+        answer: "Yes, for agreements exceeding 11 months, registration is mandatory under the Registration Act, 1908."
       },
       {
-        question:
-          "How secure is MyLegalinstant.com for sensitive business information?",
-        answer:
-          "We use advanced encryption and security protocols to ensure your data remains confidential and secure.",
+        question: "How secure is MyLegalinstant.com for sensitive business information?",
+        answer: "We use advanced encryption and security protocols to ensure your data remains confidential and secure."
       },
       {
         question: "Can I negotiate terms within my commercial lease?",
-        answer:
-          "Absolutely! Our platform allows for extensive customization to tailor your agreement according to your business needs.",
+        answer: "Absolutely! Our platform allows for extensive customization to tailor your agreement according to your business needs."
       },
+      {
+        question: "What customization options are available?",
+        answer: "You can add clauses for exclusivity, subleasing, waiver, maintenance, termination, dispute resolution, and many more."
+      },
+      {
+        question: "Is an e-stamped commercial lease legally valid?",
+        answer: "Yes, e-stamped agreements are recognized as legally valid under Indian law."
+      },
+      {
+        question: "Can I include renewal terms in my agreement?",
+        answer: "Absolutely! Our platform allows you to include renewal and escalation clauses for long-term flexibility."
+      },
+      {
+        question: "Are e-stamped and e-signed agreements legally valid in India?",
+        answer: "Yes, both e-stamped and Aadhaar-based e-signed agreements are legally valid under Indian law."
+      },
+      {
+        question: "How quickly will I receive my agreement?",
+        answer: "You’ll get a digital copy instantly, and a hard copy will be delivered within a few working days."
+      },
+      {
+        question: "Can I seek legal advice during the process?",
+        answer: "Yes, expert legal consultation is available to guide you through every step."
+      }
     ],
   },
 
@@ -8291,13 +8756,14 @@ export const commercialEst = {
       title: "Welcome to",
       subtitle: "MyLegalInstant.com",
       description:
-        "Are you a business entity or institution in need of a reliable and legally sound lease agreement for your commercial property? At MyLegalinstant.com, we specialize in creating comprehensive Commercial/Institutional Lease Deeds that cater to your specific requirements, ensuring a seamless leasing experience. Our platform simplifies the process of drafting, customizing, and finalizing your lease deed, providing you with peace of mind as you secure your business location.",
+        "Awe specialize in creating comprehensive Commercial/Institutional Lease Deeds that cater to your specific requirements, ensuring a seamless leasing experience. Our platform simplifies the process of drafting, customizing, and finalizing your lease deed, providing you with peace of mind as you secure your business location.",
       buttonText: "Create Agreement Now",
       buttonLink: "/create-agreement",
       trustIndicators: ["Legally Verified", "Instant Download", "24/7 Support"],
     },
     whatIs: {
       title: "What is a Commercial/Institutional Lease Deed?",
+      subtitle: "A Commercial/Institutional Lease Deed",
       description:
         "A Commercial/Institutional Lease Deed is a formal legal document that outlines the terms and conditions under which a lessor (property owner) and a lessee (tenant) for commercial or institutional use. This type of lease deed is essential for businesses, educational institutions, healthcare facilities, and other organizations to formalize their occupancy arrangements.",
       image: "/api/placeholder/400/300",
@@ -8306,21 +8772,39 @@ export const commercialEst = {
       {
         icon: "Shield",
         title: "Legal Clarity",
-        description:
+        desc:
           "Establishes clear rights and obligations for both parties, reducing ambiguities and potential conflicts.",
       },
       {
         icon: "Building",
         title: "Operational Security",
-        description:
+        desc:
           "Secures a designated space for your business or institution, allowing for uninterrupted operations.",
       },
       {
         icon: "FileText",
         title: "Customizable Terms",
-        description:
+        desc:
           "Tailor the lease deed to fit your specific needs, including duration, rent, maintenance responsibilities, and permitted uses.",
       },
+      {
+        icon: "Rupee",
+        title: "Financial Security",
+        desc:
+          "Clearly outlines rental amounts and payment schedules, helping you manage your budget effectively.",
+      },
+      {
+        icon: "Gavel",
+        title: "Dispute Resolution",
+        desc:
+          "Offers a clear legal pathway for resolving disagreements and avoiding unnecessary litigation.",
+      },
+      {
+        icon: "CheckCircle",
+        title: "Compliance Assurance",
+        desc:
+          "Ensures adherence to local laws and regulations governing commercial leases in India.",
+      }
     ],
     whyNeedAgreement: [
       {
@@ -8339,21 +8823,65 @@ export const commercialEst = {
     legalFramework: [
       {
         title: "The Indian Contract Act, 1872",
-        desc: "Establishes the legality of contracts and obligations.",
+        desc: "Establishes the legality of contracts and obligations, forming the foundation for lease agreements.",
       },
       {
         title: "The Transfer of Property Act, 1882",
-        desc: "Governs the lease of immovable property and defines the rights of lessors and lessees.",
+        desc: "Governs the lease of immovable property and defines the rights and duties of lessors and lessees.",
       },
       {
         title: "The Registration Act, 1908",
-        desc: "Mandates the registration of lease agreements exceeding a specific duration (typically 11 months).",
+        desc: "Mandates the registration of lease agreements exceeding a specific duration (typically 11 months) to ensure legal enforceability.",
+      },
+      {
+        title: "State-Specific Rent Control Acts",
+        desc: "Regulate leasing terms, especially in commercial hubs, offering protections and guidelines for both parties.",
+      },
+      {
+        title: "Parties Involved",
+        desc: "Detailed identification of the landlord and tenant, including legal names and contact information.",
+      },
+      {
+        title: "Property Description",
+        desc: "Comprehensive details about the leased property, including location, boundaries, and relevant features.",
+      },
+      {
+        title: "Lease Term",
+        desc: "Specifies the lease duration, including start and end dates, and provisions for renewal.",
+      },
+      {
+        title: "Rent Structure",
+        desc: "Outlines rental amount, payment frequency, and any additional charges like maintenance or utilities.",
+      },
+      {
+        title: "Security Deposit",
+        desc: "States the required deposit and conditions for its return after lease termination.",
+      },
+      {
+        title: "Permitted Use",
+        desc: "Defines allowed usage of the property, ensuring it aligns with zoning laws and activity restrictions.",
+      },
+      {
+        title: "Maintenance Responsibilities",
+        desc: "Clarifies maintenance and repair duties assigned to either party during the lease period.",
+      },
+      {
+        title: "Termination Clauses",
+        desc: "Lists conditions for early termination, including notice periods and applicable penalties.",
+      },
+      {
+        title: "Dispute Resolution Mechanism",
+        desc: "Outlines procedures for resolving any conflicts that may arise during the lease term.",
       },
     ],
     steps: [
       {
         title: "Begin the Process",
-        desc: "Click the ‘Create Now’ button to start.",
+        desc: "Click the “Create Now” button to start.",
+      },
+      {
+        title: "Select Agreement Type",
+        desc: "Choose Commercial/Institutional Lease Deed from our list of agreements.",
       },
       {
         title: "Provide Property Details",
@@ -8368,8 +8896,24 @@ export const commercialEst = {
         desc: "Add clauses for maintenance, utilities, subleasing, or exclusive rights.",
       },
       {
-        title: "Review and Finalize",
+        title: "Review the Draft",
         desc: "Ensure all details are accurate and meet your expectations.",
+      },
+      {
+        title: "E-Stamp Paper Integration",
+        desc: "Easily include legally valid e-stamp paper for your agreement.",
+      },
+      {
+        title: "E-Signature Options",
+        desc: "Use Aadhaar-based e-signatures for a secure and convenient signing process.",
+      },
+      {
+        title: "Expert Consultation",
+        desc: "Access legal advice to ensure your deed is comprehensive and compliant.",
+      },
+      {
+        title: "Delivery Options",
+        desc: "Instantly download a digital copy or receive a hard copy at your address within a few working days.",
       },
     ],
     whyChooseUs: [
@@ -8382,32 +8926,83 @@ export const commercialEst = {
         desc: "Fully aligned with Indian laws and state-specific regulations.",
       },
       {
+        title: "Integrated E-Stamping",
+        desc: "Simplifies the process of legal stamping for your agreement.",
+      },
+      {
         title: "Secure E-Signatures",
         desc: "Aadhaar-based signatures ensure legal validity and ease of execution.",
+      },
+      {
+        title: "Expert Support",
+        desc: "Benefit from professional legal consultation for added assurance.",
+      },
+      {
+        title: "Quick and Efficient",
+        desc: "Complete your lease deed in minutes with our intuitive platform.",
+      },
+      {
+        title: "Convenient Delivery",
+        desc: "Receive digital copies instantly and hard copies at your doorstep.",
+      },
+      {
+        title: "Secure Storage",
+        desc: "Safeguard your agreements with secure and accessible document storage.",
+      },
+      {
+        title: "Affordable Solutions",
+        desc: "High-quality services at cost-effective prices.",
+      },
+      {
+        title: "User-Friendly Platform",
+        desc: "Simplified processes for a seamless experience.",
+      },
+      {
+        title: "Long-Term Assistance",
+        desc: "Support for renewals, amendments, and future needs.",
       },
     ],
     faqs: [
       {
-        question:
-          "What distinguishes a commercial/institutional lease from other types of leases?",
-        answer:
-          "Commercial/institutional lease is specifically designed for business operations or institutional use, featuring terms tailored to those needs compared to residential leases.",
-      },
-      {
-        question: "Is registration of a lease deed mandatory?",
-        answer:
-          "Yes, lease deeds exceeding 11 months must be registered under the Registration Act, 1908.",
-      },
-      {
-        question: "Are e-stamped and e-signed deeds legally valid in India?",
-        answer:
-          "Yes, e-stamped and Aadhaar-based e-signed deeds are legally recognized under Indian law.",
-      },
-      {
-        question: "Can I negotiate terms within my lease deed?",
-        answer:
-          "Absolutely! Our platform allows extensive customization so you can tailor your agreement according to your specific requirements.",
-      },
+    question: "What distinguishes a commercial/institutional lease from other types of leases?",
+    answer:
+      "A commercial/institutional lease is specifically designed for business operations or institutional use, featuring terms tailored to those needs compared to residential leases.",
+  },
+  {
+    question: "Is registration of a lease deed mandatory?",
+    answer:
+      "Yes, lease deeds exceeding 11 months must be registered under the Registration Act, 1908.",
+  },
+  {
+    question: "Are e-stamped and e-signed deeds legally valid in India?",
+    answer:
+      "Yes, e-stamped and Aadhaar-based e-signed deeds are legally recognized under Indian law.",
+  },
+  {
+    question: "Can I negotiate terms within my lease deed?",
+    answer:
+      "Absolutely! Our platform allows extensive customization so you can tailor your agreement according to your specific requirements.",
+  },
+  {
+    question: "Can I include clauses for specific institutional needs?",
+    answer:
+      "Yes, our platform allows you to customize clauses for specific requirements, such as exclusive usage rights or compliance with institutional standards.",
+  },
+  {
+    question: "Can I terminate the lease before the agreed duration?",
+    answer:
+      "Termination clauses can be included to outline conditions and procedures for early termination.",
+  },
+  {
+    question: "How soon will I receive my lease deed?",
+    answer:
+      "A digital copy will be delivered instantly, and hard copies are sent within a few working days.",
+  },
+  {
+    question: "Is legal advice included in the process?",
+    answer:
+      "Yes, our legal experts are available to guide you through the process.",
+  },
     ],
   },
 
@@ -8575,190 +9170,198 @@ export const commercialEst = {
       title: "Welcome to",
       subtitle: "MyLegalInstant.com",
       description:
-        "Renting equipment? MyLegalInstant.com provides expertly crafted Equipment Rental Agreements that are legally sound, customizable, and hassle-free.",
+        "we specialize in creating tailored Distribution Agreements that protect your business interests while ensuring compliance with Indian laws. Whether you’re a manufacturer, supplier, or distributor, our platform provides you with a legally sound and fully customizable agreement to establish clear terms and a strong foundation for your partnership. ",
       buttonText: "Create Agreement Now",
       buttonLink: "/create-agreement",
       trustIndicators: ["Legally Verified", "Instant Download", "24/7 Support"],
     },
     whatIs: {
-      title: "What is a Dealership / Distribution agreement  ?",
+      title: "What is a Distribution agreement  ?",
+      subtitle:"A Distribution agreement",
       description:
-        "An Equipment Rental Agreement is a contract that outlines the terms for renting machinery, tools, or other equipment. It specifies usage conditions, maintenance responsibilities, and return requirements.",
+        "A Distribution Agreement is a legally binding contract between a supplier or manufacturer and a distributor. It sets out the terms and conditions under which the distributor will market, sell, and distribute the supplier’s products. These agreements help both parties clearly define their roles, responsibilities, and expectations to avoid misunderstandings and disputes. ",
       image: "/api/placeholder/400/300",
     },
     features: [
       {
-        icon: "DollarSign",
-        title: "Rental Rates",
-        description: "Clear pricing structure for equipment rental.",
-      },
-      {
-        icon: "Calendar",
-        title: "Usage Period",
-        description: "Defined rental duration and extension terms.",
-      },
-      {
-        icon: "Shield",
-        title: "Equipment Protection",
-        description: "Maintenance and damage liability terms.",
-      },
+    icon: "UserCheck",
+    title: "Clear Roles and Responsibilities",
+    description: "Avoid confusion by defining the duties of both parties.",
+  },
+  {
+    icon: "ShieldCheck",
+    title: "Legal Protection",
+    description: "Safeguard your business interests and minimize risks.",
+  },
+  {
+    icon: "Gavel",
+    title: "Dispute Resolution",
+    description: "Provide a clear framework for handling disagreements.",
+  },
+  {
+    icon: "MapPin",
+    title: "Territorial Exclusivity",
+    description: "Clearly define geographic areas or product categories for distribution.",
+  },
+  {
+    icon: "Lock",
+    title: "Confidentiality and IP Protection",
+    description: "Secure sensitive business information and intellectual property rights.",
+  },
+  {
+    icon: "Scale",
+    title: "Compliance",
+    description: "Ensure adherence to Indian laws governing commercial transactions.",
+  },
+  {
+    icon: "Settings",
+    title: "Customizable Terms",
+    description: "Tailor the agreement to suit your unique business model and goals.",
+  },
     ],
     whyNeedAgreement: [
       {
-        title: "Equipment Safety",
-        desc: "Ensures proper handling and usage of equipment.",
-      },
-      {
-        title: "Damage Protection",
-        desc: "Clear terms for damage liability and insurance.",
-      },
-      {
-        title: "Usage Guidelines",
-        desc: "Specific instructions for equipment operation.",
-      },
+    title: "The Indian Contract Act, 1872",
+    desc: "Establishes the legality of contracts and obligations.",
+  },
+  {
+    title: "The Sale of Goods Act, 1930",
+    desc: "Regulates the sale and distribution of goods.",
+  },
+  {
+    title: "The Competition Act, 2000",
+    desc: "Ensures fair trade practices and prevents anti-competitive agreements.",
+  },
+  {
+    title: "Intellectual Property Laws",
+    desc: "Protects trademarks, patents, and copyrights involved in the agreement.",
+  },
     ],
     legalFramework: [
-      {
-        title: "Equipment Safety Laws",
-        desc: "Compliance with equipment safety regulations.",
-      },
-      {
-        title: "Rental Regulations",
-        desc: "Legal requirements for equipment rental.",
-      },
+     {
+    title: "The Indian Contract Act, 1872",
+    desc: "Establishes the legality of contracts and obligations.",
+  },
+  {
+    title: "The Sale of Goods Act, 1930",
+    desc: "Regulates the sale and distribution of goods.",
+  },
+  {
+    title: "The Competition Act, 2000",
+    desc: "Ensures fair trade practices and prevents anti-competitive agreements.",
+  },
+  {
+    title: "Intellectual Property Laws",
+    desc: "Protects trademarks, patents, and copyrights involved in the agreement.",
+  },
     ],
     steps: [
-      {
-        title: "Equipment Details",
-        desc: "Specify equipment information and condition.",
-      },
-      {
-        title: "Rental Terms",
-        desc: "Set rental duration and conditions.",
-      },
-      {
-        title: "Complete Agreement",
-        desc: "Generate your equipment rental agreement.",
-      },
+     {
+    title: "Click the “Create Now”",
+    desc: "Start by clicking on the \"Create Now\" button on this page.",
+  },
+  {
+    title: "Submit Your Query",
+    desc: "Share your specific requirements with us.",
+  },
+  {
+    title: "Legal Consultation and Expertise",
+    desc: "Our experts will provide consultation and guidance to ensure your Distribution Agreement meets all legal and professional standards.",
+  },
+  {
+    title: "Customized Drafting",
+    desc: "We gather the necessary details, incorporate your unique clauses, and draft a Distribution Agreement tailored for your needs.",
+  },
+  {
+    title: "Review and Approve",
+    desc: "We send the draft for your review and make changes if necessary.",
+  },
+  {
+    title: "Quick Delivery",
+    desc: "Once approved, your Distribution Agreement is ready to get delivered digitally or via doorstep delivery.",
+  },
     ],
     whyChooseUs: [
       {
-        title: "Equipment Expertise",
-        desc: "Specialized in equipment rental agreements.",
-      },
-      {
-        title: "Complete Protection",
-        desc: "Comprehensive terms for equipment safety.",
-      },
+    title: "Legally Compliant",
+    desc: "Ensure full compliance with Indian legal standards.",
+  },
+  {
+    title: "Integrated E-Stamping",
+    desc: "Simplifies the process of legal stamping for your agreement.",
+  },
+  {
+    title: "Secure E-Signatures",
+    desc: "Aadhaar-based signatures for hassle-free and valid execution.",
+  },
+  {
+    title: "Expert Support",
+    desc: "Access professional legal consultation for added confidence.",
+  },
+  {
+    title: "Time-Saving",
+    desc: "Complete your agreement quickly and efficiently.",
+  },
+  {
+    title: "Convenient Delivery",
+    desc: "Get digital copies instantly and hard copies delivered to your doorstep.",
+  },
+  {
+    title: "Secure Document Storage",
+    desc: "Keep your agreements safe and easily accessible.",
+  },
+  {
+    title: "Affordable Pricing",
+    desc: "High-quality services at cost-effective rates.",
+  },
+  {
+    title: "User-Friendly Platform",
+    desc: "Navigate through the process effortlessly with our intuitive interface.",
+  },
+  {
+    title: "Ongoing Support",
+    desc: "Assistance available for amendments, renewals, or additional agreements.",
+  },
     ],
     faqs: [
       {
-        question: "Is equipment insurance required?",
-        answer:
-          "Most equipment rentals require insurance coverage for damage protection.",
-      },
-      {
-        question: "What about maintenance?",
-        answer:
-          "The agreement specifies maintenance responsibilities and procedures.",
-      },
+    question: "What is the difference between an exclusive and a non-exclusive distribution agreement?",
+    answer:
+      "An exclusive agreement grants the distributor sole rights to distribute the product in a specific territory, while a non-exclusive agreement allows multiple distributors in the same area.",
+  },
+  {
+    question: "Is a distribution agreement legally enforceable in India?",
+    answer:
+      "Yes, when properly drafted, stamped, and signed, a distribution agreement is legally enforceable under Indian law.",
+  },
+  {
+    question: "Can I include performance targets in the agreement?",
+    answer:
+      "Absolutely! You can customize your agreement to include sales targets, marketing responsibilities, and other performance metrics.",
+  },
+  {
+    question: "Are e-stamped and e-signed agreements valid?",
+    answer:
+      "Yes, both e-stamped and Aadhaar-based e-signed agreements are legally recognized in India.",
+  },
+  {
+    question: "How soon will I receive my agreement?",
+    answer:
+      "Digital copies are available instantly as soon as you approve the draft, and hard copies are delivered within a few working days.",
+  },
+  {
+    question: "Can I terminate the agreement before the specified duration?",
+    answer:
+      "Termination clauses can be included to outline conditions for early termination.",
+  },
+  {
+    question: "Is legal advice included in the process?",
+    answer:
+      "Yes, our legal experts are available to guide you through the process and ensure compliance.",
+  },
     ],
   },
-  Commercial: {
-    id: "Commercial",
-    hero: {
-      title: "Welcome to",
-      subtitle: "MyLegalInstant.com",
-      description:
-        "Need a vehicle lease? MyLegalInstant.com provides expertly crafted Vehicle Lease Agreements that are legally sound, customizable, and hassle-free.",
-      buttonText: "Create Agreement Now",
-      buttonLink: "/create-agreement",
-      trustIndicators: ["Legally Verified", "Instant Download", "24/7 Support"],
-    },
-    whatIs: {
-      title: "What is a Commercial Lease Agreement?",
-      description:
-        "A Vehicle Lease Agreement is a contract that details the terms for leasing a vehicle, including usage rights, maintenance responsibilities, and return conditions.",
-      image: "/api/placeholder/400/300",
-    },
-    features: [
-      {
-        icon: "DollarSign",
-        title: "Lease Payments",
-        description: "Monthly payment terms and security deposit.",
-      },
-      {
-        icon: "Clock",
-        title: "Lease Duration",
-        description: "Specified lease term and mileage limits.",
-      },
-      {
-        icon: "Shield",
-        title: "Vehicle Protection",
-        description: "Insurance and maintenance requirements.",
-      },
-    ],
-    whyNeedAgreement: [
-      {
-        title: "Vehicle Protection",
-        desc: "Safeguards against improper use and damage.",
-      },
-      {
-        title: "Clear Terms",
-        desc: "Defined usage limits and maintenance requirements.",
-      },
-      {
-        title: "Legal Compliance",
-        desc: "Ensures adherence to vehicle leasing laws.",
-      },
-    ],
-    legalFramework: [
-      {
-        title: "Motor Vehicle Act",
-        desc: "Compliance with vehicle leasing regulations.",
-      },
-      {
-        title: "Insurance Requirements",
-        desc: "Mandatory insurance coverage terms.",
-      },
-    ],
-    steps: [
-      {
-        title: "Vehicle Information",
-        desc: "Enter vehicle details and condition.",
-      },
-      {
-        title: "Lease Terms",
-        desc: "Specify lease duration and conditions.",
-      },
-      {
-        title: "Complete Lease",
-        desc: "Generate your vehicle lease agreement.",
-      },
-    ],
-    whyChooseUs: [
-      {
-        title: "Vehicle Expertise",
-        desc: "Specialized in vehicle lease agreements.",
-      },
-      {
-        title: "Comprehensive Coverage",
-        desc: "Complete protection for your vehicle lease.",
-      },
-    ],
-    faqs: [
-      {
-        question: "What about mileage limits?",
-        answer:
-          "The agreement specifies annual mileage limits and excess charges.",
-      },
-      {
-        question: "Who handles maintenance?",
-        answer:
-          "Maintenance responsibilities are clearly defined in the agreement.",
-      },
-    ],
-  },
+
 };
 
 export const ecommerce = {
@@ -12023,7 +12626,7 @@ export const PowerAttorney = {
 };
 
 export const postContractual = {
-  VariationAmendment : {
+  VariationAmendment: {
     id: "VariationAmendment",
     hero: {
       title: "Welcome to",

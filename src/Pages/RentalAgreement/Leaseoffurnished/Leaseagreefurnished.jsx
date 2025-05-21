@@ -49,68 +49,66 @@ const Leaseagreefurnished = () => {
   const [isOpen, setIsOpen] = useState(null);
   const [currentFeatureSlide, setCurrentFeatureSlide] = useState(0);
 
-  const features = [
-    {
-      icon: DollarSign,
-      title: "Financial Terms",
-      description: "Specifies rent, security deposit, and payment terms.",
-    },
-    {
-      icon: Calendar,
-      title: "furniture Duration",
-      description:
-        "Details the condition and inventory of furniture and appliances.",
-    },
-    {
-      icon: Wrench,
-      title: "Maintenance Details",
-      description:
-        "Defines maintenance responsibilities for both the landlord and tenant.",
-    },
-    {
-      icon: Scale,
-      title: "Legal Framework",
-      description:
-        "Includes provisions for damages, replacements, and repair costs.",
-    },
-    {
-      icon: FileCheck,
-      title: "Rights Protection",
-      description:
-        "Outlines terms for termination, renewal, and dispute resolution.",
-    },
-  ];
+ const features = [
+  {
+    icon: DollarSign,
+    title: "Payment Terms",
+    description: "Details the rental amount, payment schedule, and security deposit.",
+  },
+  {
+    icon: Calendar,
+    title: "Furnishing Inventory",
+    description: "Specifies the inventory of furnishings and appliances provided.",
+  },
+  {
+    icon: Wrench,
+    title: "Maintenance Responsibilities",
+    description: "Outlines maintenance and repair responsibilities for furniture and equipment.",
+  },
+  {
+    icon: Scale,
+    title: "Lease Terms",
+    description: "Includes clauses for lease duration, renewal, termination, and dispute resolution.",
+  },
+  {
+    icon: FileCheck,
+    title: "Rights Protection",
+    description: "Protects the rights of both the Lessor and Lessee.",
+  },
+];
 
-  const whyNeedAgreement = [
-    {
-      title: "Clarity and Transparency",
-      desc: "Clearly defines the terms of renting a furnished property, including inventory details.",
-    },
-    {
-      title: "Legal Protection",
-      desc: "Safeguards the rights of both landlords and tenants against potential disputes, especially concerning the furnishings, property usage or damages.",
-    },
-    {
-      title: "Dispute Resolution",
-      desc: "Establishes a framework for addressing any issues or breaches of contract regarding the property or furnishings.",
-    },
-    {
-      title: "Inventory Management",
-      desc: "Documents the condition and value of furnishings to prevent disagreements.",
-    },
-    {
-      title: "Compliance",
-      desc: "Ensures adherence to Indian rental laws, offering legal validity to the arrangement.",
-    },
-    {
-      title: "Flexibility",
-      desc: "Allows customization to suit the specific needs of both parties.",
-    },
-    {
-      title: "Security of Tenure",
-      desc: "Protect tenants from unlawful eviction and landlords from property misuse or non-payment. ",
-    },
-  ];
+
+ const whyNeedAgreement = [
+  {
+    title: "Clear Inventory Management",
+    desc: "Lists all furnishings and appliances, avoiding disputes about property conditions.",
+  },
+  {
+    title: "Legal Protection",
+    desc: "Safeguards the rights of both parties, ensuring accountability for the care of provided items.",
+  },
+  {
+    title: "Defined Responsibilities",
+    desc: "Clarifies maintenance and repair obligations for the property and furnishings.",
+  },
+  {
+    title: "Dispute Resolution",
+    desc: "Ensures adherence to applicable rental laws in India, particularly those governing long-term leases.",
+  },
+  {
+    title: "Compliance",
+    desc: "Ensures adherence to applicable rental laws in India, particularly those governing long-term leases.",
+  },
+  {
+    title: "Flexibility",
+    desc: "Allows customization based on specific needs, such as pet policies or subletting options.",
+  },
+  {
+    title: "Simplicity",
+    desc: "Streamlined process makes it easy for both parties to understand and agree on terms.",
+  },
+];
+
 
   const legalFramework = [
     {
@@ -123,128 +121,145 @@ const Leaseagreefurnished = () => {
     },
     {
       title: "State-Specific Rent Control Acts",
-      desc: "For instance, the Karnataka Rent Act, 1999, which regulates rentals in Karnataka.",
+      desc: "Ensure compliance with local regulations regarding rental agreements. ",
     },
   ];
 
-  const faqs = [
-    {
-      question: "What is the purpose of a Residential Lease Agreement? ",
-      answer:
-        "It ensures clarity about the use and maintenance of furnishings, preventing disputes over damages or misuse",
-    },
-    {
-      question: "Is a lease agreement mandatory in India? ",
-      answer:
-        "Yes, e-stamped and Aadhaar-based e-signed agreements are recognized as legally binding under Indian law.",
-    },
-    {
-      question: " Can I customize my lease agreement?",
-      answer:
-        " Yes, they are legally recognized and enforceable under Indian law.",
-    },
-    {
-      question: "How does the inventory list work?",
-      answer:
-        "The agreement includes a detailed inventory list of all furnishings and their conditions, ensuring transparency.",
-    },
-    {
-      question: "How soon can I receive my rental agreement?",
-      answer:
-        "Digital copies are available instantly after creation, while hard copies are typically delivered within a few working days.",
-    },
-    {
-      question: "What happens if I do not pay rent on time?",
-      answer:
-        "The rental agreement will outline the consequences of late payment, which may include late fees or potential eviction procedures as per the terms agreed upon.",
-    },
-  ];
+ const faqs = [
+  {
+    question: "What makes a furnished house lease agreement different from a standard lease?",
+    answer: "It includes an inventory of furnishings and specifies responsibilities for their care and maintenance.",
+  },
+  {
+    question: "Is a furnished house lease agreement legally mandatory?",
+    answer: "While not legally mandatory for short-term rentals (less than 12 months), having a lease agreement is highly advisable for long-term arrangements to prevent disputes.",
+  },
+  {
+    question: "Can I customize the agreement to include specific furnishings?",
+    answer: "Yes, you can include or exclude specific items and define their condition in the agreement.",
+  },
+  {
+    question: "How soon can I receive my furnished house residential lease agreement?",
+    answer: "Digital copies are available instantly after creation, while hard copies are typically delivered within a few working days.",
+  },
+  {
+    question: "What happens if a lessee damages the furniture?",
+    answer: "The agreement will outline repair obligations and deductions from the security deposit for damages.",
+  },
+  {
+    question: "Can I include a pet policy in the agreement?",
+    answer: "Yes, you can specify terms regarding pets in the property.",
+  },
+  {
+    question: "Does the agreement cover maintenance responsibilities for appliances?",
+    answer: "Yes, the agreement defines maintenance obligations for all provided furnishings and appliances.",
+  },
+  {
+    question: "Is legal consultation included in your services?",
+    answer: "Yes, our legal experts are available to assist you throughout the process.",
+  },
+  {
+    question: "Can the agreement be renewed?",
+    answer: "Renewal terms can be included in the agreement for seamless continuation of the lease.",
+  },
+];
 
-  const rentalSteps = [
-    {
-      title: "Start the Process",
-      desc: "Click the “Create Now” button to begin your agreement creation",
-    },
-    {
-      title: "Choose Agreement Type",
-      desc: "Choose Furnished Flat Rent Agreement from our comprehensive rental agreements segment.",
-    },
-    {
-      title: "Provide Property Details",
-      desc: "Enter essential information such as address, property type, and rental specifics",
-    },
-    {
-      title: "Define Terms",
-      desc: "Specify rent amount, payment schedule, security deposit, and duration of tenancy",
-    },
-    {
-      title: "Customize Clauses",
-      desc: "Add provisions related to maintenance responsibilities, subletting options, pet policies, and more",
-    },
-    {
-      title: "Review the Draft",
-      desc: "Carefully verify all terms for accuracy before finalizing",
-    },
-    {
-      title: "E-Stamp Integration",
-      desc: "Seamlessly include legally valid e-stamp paper for your agreement",
-    },
-    {
-      title: "E-Signature",
-      desc: "Utilize Aadhaar-based e-signatures for secure and legally recognized signing",
-    },
-    {
-      title: "Expert Consultation",
-      desc: "Access professional legal advice for added confidence",
-    },
-    {
-      title: "Delivery Options",
-      desc: "Get digital copies instantly or hard copies delivered to your address",
-    },
-  ];
+
+const rentalSteps = [
+  {
+    title: "Start the Process",
+    desc: "Click the “Create Now” button to begin your agreement creation.",
+  },
+  {
+    title: "Choose Agreement Type",
+    desc: "Select Furnished House Residential Lease Agreement from our list of comprehensive rental agreements.",
+  },
+  {
+    title: "Provide Basic Details",
+    desc: "Enter essential information such as names, addresses, property details, rental amount, security deposit, duration, and an inventory list of furnishings included.",
+  },
+  {
+    title: "Define Lease Terms",
+    desc: "Specify rent, lease duration, security deposit, and payment schedule.",
+  },
+  {
+    title: "Inventory Management",
+    desc: "Upload or select a detailed list of furnishings and appliances included in the lease.",
+  },
+  {
+    title: "Add Custom Clauses",
+    desc: "Specify any additional terms you wish to include regarding maintenance responsibilities, shared facilities, subletting, pet policies, and more.",
+  },
+  {
+    title: "Review the Draft",
+    desc: "Quickly verify all terms for accuracy before finalizing.",
+  },
+  {
+    title: "E-Stamp Integration",
+    desc: "Include legally valid e-stamp paper for compliance.",
+  },
+  {
+    title: "E-Signature",
+    desc: "Utilize Aadhaar-based e-signatures for secure and recognized execution.",
+  },
+  {
+    title: "Expert Consultation",
+    desc: "Access professional legal advice if needed.",
+  },
+  {
+    title: "Delivery Options",
+    desc: "Digital Copy: Instantly available for download upon completion. Hard Copy: Delivered to your address within a few working days.",
+  },
+];
+
 
   const whyChooseUsflat = [
-    {
-      title: "Customizable Agreements",
-      desc: "Tailor agreements specifically to your requirements",
-    },
-    {
-      title: "Legally Compliant Solutions",
-      desc: "Ensure all agreements adhere to Indian rental laws",
-    },
-    {
-      title: "Integrated E-Stamping Services",
-      desc: "Simplifies the legal stamping process for your convenience",
-    },
-    {
-      title: "Secure E-Signatures",
-      desc: "Aadhaar-based signing ensures hassle-free execution of agreements",
-    },
-    {
-      title: "Expert Guidance",
-      desc: "Our legal professionals are available to assist you throughout the process",
-    },
-    {
-      title: "Time-Saving",
-      desc: "Create and finalize agreements quickly and efficiently",
-    },
-    {
-      title: "Convenient Delivery Options",
-      desc: "Receive digital copies instantly, hard copies delivered directly",
-    },
-    {
-      title: "Affordable Pricing",
-      desc: "Access high-quality services at competitive rates without hidden fees",
-    },
-    {
-      title: "Secure Document Storage",
-      desc: "Keep your agreements safe and easily accessible online",
-    },
-    {
-      title: "User-Friendly Platform",
-      desc: "Navigate through the process with ease and efficiency",
-    },
-  ];
+  {
+    title: "Comprehensive Inventory Management",
+    desc: "Ensure clarity with a detailed list of furnishings.",
+  },
+  {
+    title: "Customizable Agreements",
+    desc: "Tailor terms and conditions to suit your unique requirements.",
+  },
+  {
+    title: "Legally Compliant",
+    desc: "Ensure all agreements adhere to Indian rental laws applicable to furnished houses.",
+  },
+  {
+    title: "Integrated E-Stamping",
+    desc: "Simplifies the legal stamping process for your convenience.",
+  },
+  {
+    title: "Secure E-Signatures",
+    desc: "Aadhaar-based signing ensures hassle-free execution of agreements.",
+  },
+  {
+    title: "Expert Assistance",
+    desc: "Access professional legal guidance at every step.",
+  },
+  {
+    title: "Quick and Efficient",
+    desc: "Finalize agreements in minutes.",
+  },
+  {
+    title: "Affordable Pricing",
+    desc: "Access high-quality services at competitive rates without hidden fees.",
+  },
+  {
+    title: "Convenient Delivery",
+    desc: "Get instant digital access or hard-copy delivery to your doorstep.",
+  },
+  {
+    title: "Safe Document Storage",
+    desc: "Securely store and retrieve your agreements anytime.",
+  },
+  {
+    title: "User-Friendly Platform",
+    desc: "Navigate through our services with ease and efficiency.",
+  },
+];
+
 
   const duplicatedItems = [...whyNeedAgreement, ...whyNeedAgreement];
 
@@ -295,7 +310,8 @@ const Leaseagreefurnished = () => {
       <HeroSection
         title="Welcome to"
         subtitle="MyLegalInstant.com"
-        description="Are you a property owner leasing out your residential space or a tenant looking to secure a home with confidence? At MyLegalinstant.com, we specialize in crafting legally sound and customizable Residential Lease Agreements that safeguard the interests of both landlords and tenants. Enjoy a seamless process, expert guidance, and peace of mind with our comprehensive solutions."
+        question={"Looking to lease a fully furnished home or rent one with all the essentials included?"}
+        description=" At MyLegalinstant.com, we specialize in creating comprehensive Furnished House Residential Lease Agreements that protect the interests of both landlords and tenants. Whether you're renting out a luxurious villa or moving into a cozy, furnished house, our agreements are legally sound, customizable, and tailored to your needs. "
         buttonText="Create Agreement Now"
         buttonLink="/create-agreement"
         trustIndicators={[
@@ -311,15 +327,10 @@ const Leaseagreefurnished = () => {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="flex-1 z-10">
               <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 mb-8">
-                What is a Residential Lease Agreement?
+                What is a Furnished House Residential Lease Agreement? 
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                A Residential Lease Agreement is a legally binding document
-                between a landlord (property owner) and a tenant (occupant) that
-                outlines the terms and conditions of renting a residential
-                property. This agreement ensures clarity and protects the
-                interests of both parties by defining their rights and
-                responsibilities regarding the leased property.
+                A Furnished House Residential Lease Agreement is a legally binding document between the Lessor (property owner) and the Lessee (occupant) that outlines the terms and conditions of renting a furnished residential property. This agreement defines the terms of the lease, including the use, care, and responsibility for the furniture and appliances provided.
               </p>
             </div>
 
@@ -386,7 +397,7 @@ const Leaseagreefurnished = () => {
       {/* Why Need Agreement */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 overflow-hidden">
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-        Why Do You Need a Residential Lease Agreement? 
+        Why Do You Need a Furnished House Residential Lease Agreement? 
         </h2>
 
         {/* First row - Left to Right */}
@@ -446,7 +457,7 @@ const Leaseagreefurnished = () => {
 
       {/* steps */}
       <ChainSteps
-        title="How to Create a Residential Lease Agreement with MyLegalinstant.com"
+        title="How to Create a Furnished House Residential Lease Agreement?"
         steps={rentalSteps}
       />
 
@@ -464,9 +475,8 @@ const Leaseagreefurnished = () => {
             Get Started Today!
           </h2>
           <p className="text-purple-100 mb-8 text-lg max-w-3xl mx-auto">
-            Secure your house rental arrangement with a professionally drafted
-            agreement tailored to your needs. Simplify the process today and
-            ensure peace of mind!
+            Protect your interests and enjoy a smooth leasing experience with a professionally drafted Furnished House Residential Lease Agreement. Simplify the leasing process and ensure peace of mind! 
+
           </p>
           <button className="bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-50 transition-all transform hover:scale-105 shadow-lg">
             Create Agreement Now
@@ -477,7 +487,7 @@ const Leaseagreefurnished = () => {
       {/* FAQ Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-          Benefits of E-Contracts
+          Frequently Asked Questions
         </h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (

@@ -127,38 +127,54 @@ const flatRentalPage = () => {
     },
   ];
 
-  const faqs = [
-    {
-      question: "Is a flat rent agreement mandatory?",
-      answer:
-        "It ensures clarity about the use and maintenance of furnishings, preventing disputes over damages or misuse",
-    },
-    {
-      question: "Are e-stamped and e-signed agreements legally valid?",
-      answer:
-        "Yes, e-stamped and Aadhaar-based e-signed agreements are recognized as legally binding under Indian law.",
-    },
-    {
-      question: "What is a security deposit, and how is it handled?",
-      answer:
-        " Yes, they are legally recognized and enforceable under Indian law.",
-    },
-    {
-      question: "How does the inventory list work?",
-      answer:
-        "The agreement includes a detailed inventory list of all furnishings and their conditions, ensuring transparency.",
-    },
-    {
-      question: "How soon can I receive my rental agreement?",
-      answer:
-        "Digital copies are available instantly after creation, while hard copies are typically delivered within a few working days.",
-    },
-    {
-      question: "What happens if I do not pay rent on time?",
-      answer:
-        "The rental agreement will outline the consequences of late payment, which may include late fees or potential eviction procedures as per the terms agreed upon.",
-    },
-  ];
+ const faqs = [
+  {
+    question: "Why is a Furnished House Rent Agreement important?",
+    answer:
+      "It ensures clarity about the use and maintenance of furnishings, preventing disputes over damages or misuse.",
+  },
+  {
+    question: "Are e-stamped and e-signed agreements valid?",
+    answer:
+      "Yes, they are legally recognized and enforceable under Indian law.",
+  },
+  {
+    question: "How does the inventory list work?",
+    answer:
+      "The agreement includes a detailed inventory list of all furnishings and their conditions, ensuring transparency.",
+  },
+  {
+    question: "Can I customize clauses related to furnishings?",
+    answer:
+      "Yes, you can specify terms for maintenance, damages, and replacements.",
+  },
+  {
+    question: "How soon can I get my agreement?",
+    answer:
+      "Digital copies are available instantly, while hard copies are delivered within a few working days.",
+  },
+  {
+    question: "How do I handle damages to furniture or fixtures?",
+    answer:
+      "The rental agreement should specify responsibilities for repairs or damages caused during tenancy; typically, tenants are responsible unless due to normal wear and tear.",
+  },
+  {
+    question: "Can I renew the agreement?",
+    answer:
+      "Yes, renewal terms can be included for extending the tenancy.",
+  },
+  {
+    question: "Can I include an early termination clause?",
+    answer:
+      "Yes, you can customize your agreement to include terms regarding early termination.",
+  },
+  {
+    question: "Is legal consultation included?",
+    answer:
+      "Yes, our legal experts are available to assist you throughout the process.",
+  },
+];
+
 
   const rentalSteps = [
     {
@@ -299,7 +315,8 @@ const flatRentalPage = () => {
       <HeroSection
         title="Welcome to"
         subtitle="MyLegalInstant.com"
-        description="Are you renting out or moving into a fully furnished house? Simplify the process with MyLegalInstant.com, where we specialize in creating comprehensive Furnished House Rent Agreements. Our platform ensures your agreements are legally compliant, customizable, and easy to execute, giving you peace of mind in managing your rental arrangement."
+        question={"Are you renting out or moving into a fully furnished house?"}
+        description=" Simplify the process with MyLegalInstant.com, where we specialize in creating comprehensive Furnished House Rent Agreements. Our platform ensures your agreements are legally compliant, customizable, and easy to execute, giving you peace of mind in managing your rental arrangement."
         buttonText="Create Agreement Now"
         buttonLink="/create-agreement"
         trustIndicators={[
@@ -481,7 +498,7 @@ const flatRentalPage = () => {
       {/* FAQ Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-          Benefits of E-Contracts
+          Frequently Asked Questions
         </h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (

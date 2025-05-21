@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   Gavel,
   DollarSign,
@@ -19,7 +19,7 @@ import FAQItem from "../FAQItem";
 const FeatureCard = ({ icon: Icon, title, description }) => (
   <div className="relative group">
     <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300" />
-    
+
     <div className="relative bg-white rounded-2xl p-8 pt-12 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 h-64 flex flex-col hover:border-transparent overflow-hidden">
       {Icon && (
         <div className="flex justify-end">
@@ -31,14 +31,14 @@ const FeatureCard = ({ icon: Icon, title, description }) => (
           </div>
         </div>
       )}
-      
+
       <div className="mt-6 text-left overflow-y-auto pr-1 flex-grow">
         <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 mb-3">
           {title}
         </h3>
         <p className="text-gray-600 leading-relaxed line-clamp-4">{description}</p>
       </div>
-      
+
       <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 w-0 group-hover:w-full transition-all duration-500 rounded-b-2xl" />
     </div>
   </div>
@@ -130,37 +130,48 @@ const flatRentalPage = () => {
   ];
 
   const faqs = [
-    {
-      question: "Is a flat rent agreement mandatory?",
-      answer:
-        "It ensures clarity about the use and maintenance of furnishings, preventing disputes over damages or misuse",
-    },
-    {
-      question: "Are e-stamped and e-signed agreements legally valid?",
-      answer:
-        "Yes, e-stamped and Aadhaar-based e-signed agreements are recognized as legally binding under Indian law.",
-    },
-    {
-      question: "What is a security deposit, and how is it handled?",
-      answer:
-        " Yes, they are legally recognized and enforceable under Indian law.",
-    },
-    {
-      question: "How does the inventory list work?",
-      answer:
-        "The agreement includes a detailed inventory list of all furnishings and their conditions, ensuring transparency.",
-    },
-    {
-      question: "How soon can I receive my rental agreement?",
-      answer:
-        "Digital copies are available instantly after creation, while hard copies are typically delivered within a few working days.",
-    },
-    {
-      question: "What happens if I do not pay rent on time?",
-      answer:
-        "The rental agreement will outline the consequences of late payment, which may include late fees or potential eviction procedures as per the terms agreed upon.",
-    },
-  ];
+  {
+    question: "Is a flat rent agreement mandatory?",
+    answer:
+      "While not legally mandatory, having a rent agreement is highly recommended to avoid disputes and protect the rights of both parties.",
+  },
+  {
+    question: "Are e-stamped and e-signed agreements valid?",
+    answer:
+      "Yes, e-stamped and Aadhaar-based e-signed agreements are legally binding under Indian law.",
+  },
+  {
+    question: "Can I include specific clauses in my agreement?",
+    answer:
+      "Absolutely! You can customize clauses related to maintenance, subletting, pets, and more.",
+  },
+  {
+    question: "How quickly can I get my agreement?",
+    answer:
+      "Digital copies are available instantly, and hard copies are delivered within a few working days.",
+  },
+  {
+    question: "What if there is a dispute over rent or damages?",
+    answer:
+      "The agreement includes provisions for dispute resolution to address such issues.",
+  },
+  {
+    question: "Can I include early termination terms?",
+    answer:
+      "Yes, early termination clauses can be added to your agreement.",
+  },
+  {
+    question: "Does the agreement comply with local laws?",
+    answer:
+      "Yes, our agreements are designed to adhere to state-specific rental laws.",
+  },
+  {
+    question: "Is legal consultation included?",
+    answer:
+      "Yes, our legal experts are available to assist you throughout the process.",
+  },
+];
+
 
   const rentalSteps = [
     {
@@ -261,7 +272,7 @@ const flatRentalPage = () => {
         const newPosition = prev + 1;
         return newPosition >= whyNeedAgreement.length * 300 ? 0 : newPosition;
       });
-      
+
       setScrollPosition2((prev) => {
         const newPosition = prev + 1;
         return newPosition >= whyNeedAgreement.length * 300 ? 0 : newPosition;
@@ -271,7 +282,7 @@ const flatRentalPage = () => {
     return () => clearInterval(scrollInterval);
   }, [whyNeedAgreement.length]);
 
-  
+
 
   const featuresPerPage = 3;
   const visibleFeatures = features.slice(
@@ -300,13 +311,18 @@ const flatRentalPage = () => {
     <div className=" w-full">
       {/* Hero Section */}
       <HeroSection
-      title="Welcome to"
-      subtitle="MyLegalInstant.com"
-      description="Looking to rent out your flat or move into a new one? MyLegalInstant.com provides expertly crafted Flat Rent Agreements that are legally sound, customizable, and hassle-free."
-      buttonText="Create Agreement Now"
-      buttonLink="/create-agreement"
-      trustIndicators={["Legally Verified", "Instant Download", "24/7 Support"]}
-    />
+        title="Welcome to"
+        subtitle="MyLegalInstant.com"
+        question={"Looking to rent out your flat or move into a new one?"}
+        description=" MyLegalInstant.com is here to provide
+you with expertly crafted Flat Rent Agreement that are legally sound, customizable, and
+hassle-free. Whether you're a landlord or a tenant, our platform ensures a seamless
+experience in formalizing your rental arrangement.
+"
+        buttonText="Create Agreement Now"
+        buttonLink="/create-agreement"
+        trustIndicators={["Legally Verified", "Instant Download", "24/7 Support"]}
+      />
 
       {/* What is Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -351,30 +367,28 @@ const flatRentalPage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-4xl font-bold">Key Features</h2>
-          
+
           <div className="flex gap-2">
-            <button 
+            <button
               onClick={prevFeatureSlide}
-              className={`p-3 rounded-full transition-colors ${
-                isFeaturesAtStart 
-                ? "border border-gray-200 hover:bg-gray-50" 
-                : " bg-gray-900 text-white hover:bg-gray-800"
-              }`}
+              className={`p-3 rounded-full transition-colors ${isFeaturesAtStart
+                  ? "border border-gray-200 hover:bg-gray-50"
+                  : " bg-gray-900 text-white hover:bg-gray-800"
+                }`}
               disabled={isFeaturesAtStart}
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
-            <button 
+            <button
               onClick={nextFeatureSlide}
-              className={`p-3 rounded-full transition-colors flex items-center gap-2 ${
-                isFeaturesAtEnd
-                ? "border border-gray-200 hover:bg-gray-50"
-                : " bg-gray-900 text-white hover:bg-gray-800"
-              }`}
+              className={`p-3 rounded-full transition-colors flex items-center gap-2 ${isFeaturesAtEnd
+                  ? "border border-gray-200 hover:bg-gray-50"
+                  : " bg-gray-900 text-white hover:bg-gray-800"
+                }`}
               disabled={isFeaturesAtEnd}
             >
               <ChevronRight className="w-5 h-5" />
-             
+
             </button>
           </div>
         </div>
@@ -385,57 +399,57 @@ const flatRentalPage = () => {
           ))}
         </div>
       </div>
-   
+
 
       {/* Why Need Agreement */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 overflow-hidden">
-      <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-        Why Do You Need a Flat Rent Agreement?
-      </h2>
-      
-      {/* First row - Left to Right */}
-      <div className="relative mb-8 overflow-hidden" >
-        <div 
-          className="flex"
-          style={{
-            transform: `translateX(-${scrollPosition1}px)`,
-            transition: 'transform 0.03s linear',
-            width: `${duplicatedItems.length * 300}px`
-          }}
-        >
-          {duplicatedItems.map((item, index) => (
-            <div key={`row1-${index}`} className="w-[400px] p-4">
-              <FeatureCard
-                title={item.title}
-                description={item.desc}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+        <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+          Why Do You Need a Flat Rent Agreement?
+        </h2>
 
-      {/* Second row - Right to Left */}
-      <div className="relative overflow-hidden">
-        <div 
-          className="flex"
-          style={{
-            transform: `translateX(${scrollPosition2}px)`,
-            transition: 'transform 0.03s linear',
-            width: `${duplicatedItems.length * 300}px`,
-            marginLeft: `-${duplicatedItems.length * 300}px`
-          }}
-        >
-          {duplicatedItems.map((item, index) => (
-            <div key={`row2-${index}`} className="w-[300px] p-4">
-              <FeatureCard
-                title={item.title}
-                description={item.desc}
-              />
-            </div>
-          ))}
+        {/* First row - Left to Right */}
+        <div className="relative mb-8 overflow-hidden" >
+          <div
+            className="flex"
+            style={{
+              transform: `translateX(-${scrollPosition1}px)`,
+              transition: 'transform 0.03s linear',
+              width: `${duplicatedItems.length * 300}px`
+            }}
+          >
+            {duplicatedItems.map((item, index) => (
+              <div key={`row1-${index}`} className="w-[400px] p-4">
+                <FeatureCard
+                  title={item.title}
+                  description={item.desc}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Second row - Right to Left */}
+        <div className="relative overflow-hidden">
+          <div
+            className="flex"
+            style={{
+              transform: `translateX(${scrollPosition2}px)`,
+              transition: 'transform 0.03s linear',
+              width: `${duplicatedItems.length * 300}px`,
+              marginLeft: `-${duplicatedItems.length * 300}px`
+            }}
+          >
+            {duplicatedItems.map((item, index) => (
+              <div key={`row2-${index}`} className="w-[300px] p-4">
+                <FeatureCard
+                  title={item.title}
+                  description={item.desc}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
 
       {/* Legal Framework */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -456,16 +470,16 @@ const flatRentalPage = () => {
 
       {/* steps */}
       <ChainSteps
-      title="How to Create a Flat Rent Agreement"
-      steps={rentalSteps}
-    />
+        title="How to Create a Flat Rent Agreement"
+        steps={rentalSteps}
+      />
 
       {/* Why Choose Us */}
       <Slider
-    title="Why Choose Us?"
-    description="Discover the benefits of our services."
-    data={whyChooseUsflat}
-  />
+        title="Why Choose Us?"
+        description="Discover the benefits of our services."
+        data={whyChooseUsflat}
+      />
 
       {/* CTA Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -486,21 +500,21 @@ const flatRentalPage = () => {
 
       {/* FAQ Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-        Benefits of E-Contracts
-      </h2>
-      <div className="space-y-4">
-        {faqs.map((faq, index) => (
-          <FAQItem
-            key={index}
-            question={faq.question}
-            answer={faq.answer}
-            isOpen={isOpen === index}
-            onToggle={() => setIsOpen(isOpen === index ? null : index)}
-          />
-        ))}
+        <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-4">
+          {faqs.map((faq, index) => (
+            <FAQItem
+              key={index}
+              question={faq.question}
+              answer={faq.answer}
+              isOpen={isOpen === index}
+              onToggle={() => setIsOpen(isOpen === index ? null : index)}
+            />
+          ))}
+        </div>
       </div>
-    </div>
     </div>
   );
 };

@@ -48,37 +48,33 @@ const flatRentalPage = () => {
   const [isOpen, setIsOpen] = useState(null);
   const [currentFeatureSlide, setCurrentFeatureSlide] = useState(0);
 
-  const features = [
-    {
-      icon: DollarSign,
-      title: "Financial Terms",
-      description: "Clearly defines rent, deposit, and payment terms. ",
-    },
-    {
-      icon: Calendar,
-      title: "Guest  Duration",
-      description:
-        "Outlines shared facilities such as kitchens, bathrooms, and living spaces and services provided by the host.",
-    },
-    {
-      icon: Wrench,
-      title: "Maintenance Details",
-      description:
-        "Specifies house rules, guest policies, and usage restrictions.",
-    },
-    {
-      icon: Scale,
-      title: "Legal Framework",
-      description:
-        "Includes provisions for termination, renewal, and dispute resolution",
-    },
-    {
-      icon: FileCheck,
-      title: "Rights Protection",
-      description:
-        "Legally compliant with Indian laws governing such arrangements.",
-    },
-  ];
+ const features = [
+  {
+    icon: DollarSign,
+    description: "Clearly defines rent, deposit, and payment terms.",
+  },
+  {
+    icon: Calendar,
+    description:
+      "Outlines shared facilities such as kitchens, bathrooms, and living spaces and services provided by the host.",
+  },
+  {
+    icon: Wrench,
+    description:
+      "Specifies house rules, guest policies, and usage restrictions.",
+  },
+  {
+    icon: Scale,
+    description:
+      "Includes provisions for termination, renewal, and dispute resolution.",
+  },
+  {
+    icon: FileCheck,
+    description:
+      "Legally compliant with Indian laws governing such arrangements.",
+  },
+];
+
 
   const whyNeedAgreement = [
     {
@@ -118,124 +114,133 @@ const flatRentalPage = () => {
     },
   ];
 
+
   const faqs = [
-    {
-      question: "What is a Paying Guest Agreement?",
-      answer:
-        "t is a legal document that outlines the terms and conditions for accommodating a paying guest, ensuring clarity and legal protection for both parties.",
-    },
-    {
-      question: "Is the Paying Guest Agreement legally valid in India?",
-      answer:
-       "  Yes, our agreements are legally compliant and include e-stamping and Aadhaar-based e-signatures for validity.",
-    },
-    {
-      question: " Can I customize the agreement?",
-      answer:
-        "Absolutely! You can add specific clauses like house rules, curfew timings, or meal provisions.",
-    },
-    {
-      question: "How soon can I get my agreement?",
-      answer:
-        "The agreement includes a detailed inventory list of all furnishings and their conditions, ensuring transparency.",
-    },
-    {
-      question: "How soon can I receive my rental agreement?",
-      answer:
-        "Digital copies are available instantly after creation, while hard copies are typically delivered within a few working days.",
-    },
-    {
-      question: "What happens if I do not pay rent on time?",
-      answer:
-        "The rental agreement will outline the consequences of late payment, which may include late fees or potential eviction procedures as per the terms agreed upon.",
-    },
-  ];
+  {
+    question: "What is a Paying Guest Agreement?",
+    answer: "It is a legal document that outlines the terms and conditions for accommodating a paying guest, ensuring clarity and legal protection for both parties.",
+  },
+  {
+    question: "Is the Paying Guest Agreement legally valid in India?",
+    answer: "Yes, our agreements are legally compliant and include e-stamping and Aadhaar-based e-signatures for validity.",
+  },
+  {
+    question: "Can I customize the agreement?",
+    answer: "Absolutely! You can add specific clauses like house rules, curfew timings, or meal provisions.",
+  },
+  {
+    question: "How soon can I get my agreement?",
+    answer: "Digital copies are available instantly after creation, and hard copies are delivered within a few working days.",
+  },
+  {
+    question: "Does the agreement cover house rules?",
+    answer: "Yes, you can include detailed house rules, guest policies, and other living arrangement specifics.",
+  },
+  {
+    question: "Can I terminate the agreement early?",
+    answer: "The agreement can include terms for early termination, ensuring clarity on notice periods and penalties.",
+  },
+  {
+    question: "What if there are damages to the property?",
+    answer: "The agreement can specify responsibilities for damages and deductions from the security deposit.",
+  },
+  {
+    question: "Do you offer legal consultation?",
+    answer: "Yes, our legal experts are available to assist you throughout the process.",
+  },
+  {
+    question: "Does the agreement specify utility contributions?",
+    answer: "Yes, you can include terms for utility charges and shared expenses.",
+  },
+];
+
+
+ 
 
   const rentalSteps = [
-    {
-      title: "Start the Process",
-      desc: "Click the “Create Now” button to begin your agreement creation",
-    },
-    {
-      title: "Choose Agreement Type",
-      desc: "Choose Furnished Flat Rent Agreement from our comprehensive rental agreements segment.",
-    },
-    {
-      title: "Provide Property Details",
-      desc: "Enter essential information such as address, property type, and rental specifics",
-    },
-    {
-      title: "Define Terms",
-      desc: "Specify rent amount, payment schedule, security deposit, and duration of tenancy",
-    },
-    {
-      title: "Customize Clauses",
-      desc: "Add provisions related to maintenance responsibilities, subletting options, pet policies, and more",
-    },
-    {
-      title: "Review the Draft",
-      desc: "Carefully verify all terms for accuracy before finalizing",
-    },
-    {
-      title: "E-Stamp Integration",
-      desc: "Seamlessly include legally valid e-stamp paper for your agreement",
-    },
-    {
-      title: "E-Signature",
-      desc: "Utilize Aadhaar-based e-signatures for secure and legally recognized signing",
-    },
-    {
-      title: "Expert Consultation",
-      desc: "Access professional legal advice for added confidence",
-    },
-    {
-      title: "Delivery Options",
-      desc: "Get digital copies instantly or hard copies delivered to your address",
-    },
-  ];
+  {
+    title: "Start the Process",
+    desc: "Click the “Create Now” button to begin your agreement creation journey effortlessly.",
+  },
+  {
+    title: "Choose Agreement Type",
+    desc: "Select 'Paying Guest Agreement' from our curated list of rental agreement templates.",
+  },
+  {
+    title: "Provide Basic Details",
+    desc: "Enter key information such as tenant and owner names, property address, rent amount, deposit, and duration.",
+  },
+  {
+    title: "Define Terms",
+    desc: "Specify additional clauses like shared utilities, responsibilities, or facility usage to suit your needs.",
+  },
+  {
+    title: "Add Custom Clauses",
+    desc: "Insert specific rules including curfew timings, guest limitations, or meal arrangements.",
+  },
+  {
+    title: "Review the Draft",
+    desc: "Carefully review all filled details and clauses to ensure everything is accurate before submission.",
+  },
+  {
+    title: "E-Stamp Integration",
+    desc: "Opt for legally recognized e-stamping to enhance the document’s legal validity.",
+  },
+  {
+    title: "E-Signature",
+    desc: "Use Aadhaar-based e-signatures for a quick, secure, and paperless signing process.",
+  },
+  {
+    title: "Expert Consultation",
+    desc: "Seek assistance from our legal experts at any step to resolve doubts or refine clauses.",
+  },
+  {
+    title: "Delivery Options",
+    desc: "Choose between an instant downloadable digital copy or a hard copy delivered to your doorstep.",
+  },
+];
+
+
 
   const whyChooseUsflat = [
-    {
-      title: "Customizable Agreements",
-      desc: "Tailor agreements specifically to your requirements",
-    },
-    {
-      title: "Legally Compliant Solutions",
-      desc: "Ensure all agreements adhere to Indian rental laws",
-    },
-    {
-      title: "Integrated E-Stamping Services",
-      desc: "Simplifies the legal stamping process for your convenience",
-    },
-    {
-      title: "Secure E-Signatures",
-      desc: "Aadhaar-based signing ensures hassle-free execution of agreements",
-    },
-    {
-      title: "Expert Guidance",
-      desc: "Our legal professionals are available to assist you throughout the process",
-    },
-    {
-      title: "Time-Saving",
-      desc: "Create and finalize agreements quickly and efficiently",
-    },
-    {
-      title: "Convenient Delivery Options",
-      desc: "Receive digital copies instantly, hard copies delivered directly",
-    },
-    {
-      title: "Affordable Pricing",
-      desc: "Access high-quality services at competitive rates without hidden fees",
-    },
-    {
-      title: "Secure Document Storage",
-      desc: "Keep your agreements safe and easily accessible online",
-    },
-    {
-      title: "User-Friendly Platform",
-      desc: "Navigate through the process with ease and efficiency",
-    },
-  ];
+  {
+    title: "Customizable Agreements",
+    desc: "Tailor every clause to suit your specific living arrangement and personal preferences.",
+  },
+  {
+    title: "Legally Compliant",
+    desc: "Every agreement is drafted in accordance with Indian laws governing paying guest accommodations.",
+  },
+  {
+    title: "Integrated E-Stamping",
+    desc: "Easily include legally recognized e-stamp papers without visiting government offices.",
+  },
+  {
+    title: "Secure E-Signatures",
+    desc: "Aadhaar-based digital signing ensures legally valid and hassle-free execution.",
+  },
+  {
+    title: "Expert Assistance",
+    desc: "Professional legal experts are available to support you at every step of the process.",
+  },
+  {
+    title: "Quick and Efficient",
+    desc: "Complete your agreement draft and finalization process within minutes.",
+  },
+  {
+    title: "Affordable Services",
+    desc: "Get access to premium-quality agreements at transparent and budget-friendly pricing.",
+  },
+  {
+    title: "Convenient Delivery",
+    desc: "Receive instant digital copies or opt for hard-copy delivery right at your doorstep.",
+  },
+  {
+    title: "User-Friendly Platform",
+    desc: "Our intuitive interface makes agreement creation simple, fast, and stress-free.",
+  },
+];
+
 
   const duplicatedItems = [...whyNeedAgreement, ...whyNeedAgreement];
 
@@ -286,7 +291,8 @@ const flatRentalPage = () => {
       <HeroSection
         title="Welcome to"
         subtitle="MyLegalInstant.com"
-        description="Are you a homeowner hosting paying guests or an individual seeking accommodation as a paying guest? At MyLegalinstant.com, we simplify the process of creating a legally sound and tailored Paying Guest Agreement. Protect your rights, clarify responsibilities, and ensure a smooth living arrangement with our expert services. "
+        question={"Are you a homeowner hosting paying guests or an individual seeking accommodation as a paying guest? "}
+        description="At MyLegalinstant.com, we simplify the process of creating a legally sound and tailored Paying Guest Agreement. Protect your rights, clarify responsibilities, and ensure a smooth living arrangement with our expert services. "
         buttonText="Create Agreement Now"
         buttonLink="/create-agreement"
         trustIndicators={[
@@ -454,9 +460,7 @@ const flatRentalPage = () => {
             Get Started Today!
           </h2>
           <p className="text-purple-100 mb-8 text-lg max-w-3xl mx-auto">
-            Secure your house rental arrangement with a professionally drafted
-            agreement tailored to your needs. Simplify the process today and
-            ensure peace of mind!
+         Secure your paying guest arrangement with a professionally drafted Paying Guest Agreement tailored to your needs.Simplify the process today and ensure peace of mind!
           </p>
           <button className="bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-50 transition-all transform hover:scale-105 shadow-lg">
             Create Agreement Now
@@ -467,7 +471,7 @@ const flatRentalPage = () => {
       {/* FAQ Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-          Frequently Asked Questions (FAQs)
+          Frequently Asked Questions 
         </h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (

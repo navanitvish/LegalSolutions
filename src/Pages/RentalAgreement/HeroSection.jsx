@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const HeroSection = ({ title, subtitle, buttonText, buttonLink, bgGradient, description, trustIndicators }) => {
+const HeroSection = ({ title, subtitle,question, buttonText, buttonLink, bgGradient, description, trustIndicators }) => {
   return (
-    <div className={`relative min-h-screen ${bgGradient || 'bg-gradient-to-b from-white to-purple-50'}`}>
+    <div className={`relative  ${bgGradient || 'bg-gradient-to-b from-white to-purple-50'}`}>
       {/* Abstract Background Shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-purple-100 rounded-full blur-3xl opacity-50"></div>
@@ -11,17 +11,18 @@ const HeroSection = ({ title, subtitle, buttonText, buttonLink, bgGradient, desc
       </div>
 
       {/* Main Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="pt-20 pb-16 text-center lg:pt-28">
           {/* Heading */}
-          <h1 className="mb-8 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
+          <h1 className="mb-8 text-4xl  font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
             {title} <br />
-            <span className="inline-block bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="inline-block py-4 bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
               {subtitle}
             </span>
           </h1>
 
           {/* Description */}
+          <h2 className='mt-4 text-2xl font-bold text-center text-gray-600'>{question}</h2>
           <p className="mx-auto max-w-6xl text-lg text-gray-600 sm:text-xl lg:text-2xl leading-relaxed">
             {description}
           </p>

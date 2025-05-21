@@ -73,7 +73,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="hero-section relative w-full bg-white flex flex-col items-center justify-center px-4 py-16 sm:py-16 lg:py-32 overflow-hidden">
+    <div className="h-screen relative w-full bg-white flex flex-col items-center justify-center px-4 py-16 sm:py-16 lg:py-32 overflow-hidden">
       {/* Background beams */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(6)].map((_, i) => (

@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   Gavel,
   DollarSign,
@@ -19,7 +19,7 @@ import FAQItem from "../FAQItem";
 const FeatureCard = ({ icon: Icon, title, description }) => (
   <div className="relative group">
     <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300" />
-    
+
     <div className="relative bg-white rounded-2xl p-8 pt-12 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 h-64 flex flex-col hover:border-transparent overflow-hidden">
       {Icon && (
         <div className="flex justify-end">
@@ -31,14 +31,14 @@ const FeatureCard = ({ icon: Icon, title, description }) => (
           </div>
         </div>
       )}
-      
+
       <div className="mt-6 text-left overflow-y-auto pr-1 flex-grow">
         <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 mb-3">
           {title}
         </h3>
         <p className="text-gray-600 leading-relaxed line-clamp-4">{description}</p>
       </div>
-      
+
       <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 w-0 group-hover:w-full transition-all duration-500 rounded-b-2xl" />
     </div>
   </div>
@@ -55,62 +55,62 @@ const flatRentalPage = () => {
     {
       icon: DollarSign,
       title: "Financial Terms",
-      description: "Specifies rent, security deposit, and payment terms.",
+      description: "Specifies the lease term, rent amount, and payment schedule.",
     },
     {
       icon: Calendar,
       title: "furniture Duration",
       description:
-        "Details the condition and inventory of furniture and appliances.",
+        "Outlines security deposit terms and refund policies.",
     },
     {
       icon: Wrench,
       title: "Maintenance Details",
       description:
-        "Defines maintenance responsibilities for both the landlord and tenant.",
+        "Includes maintenance responsibilities and repair obligations. ",
     },
     {
       icon: Scale,
       title: "Legal Framework",
       description:
-        "Includes provisions for damages, replacements, and repair costs.",
+        "Provides provisions for renewal, termination, and dispute resolution.",
     },
     {
       icon: FileCheck,
       title: "Rights Protection",
       description:
-        "Outlines terms for termination, renewal, and dispute resolution.",
+        "Protects the legal rights of both the landlord and tenant.",
     },
   ];
 
   const whyNeedAgreement = [
     {
       title: "Clarity and Transparency",
-      desc: "Clearly defines the terms of renting a furnished property, including inventory details.",
+      desc: "Clearly defines the terms of the rental arrangement, preventing misunderstandings about rent, security deposits, and responsibilities.",
     },
     {
       title: "Legal Protection",
-      desc: "Safeguards the rights of both landlords and tenants against potential disputes, especially concerning the furnishings, property usage or damages.",
+      desc: "Safeguards the rights of both landlords and tenants against potential disputes related to property usage or damages.",
     },
     {
       title: "Dispute Resolution",
       desc: "Establishes a framework for addressing any issues or breaches of contract regarding the property or furnishings.",
     },
     {
-      title: "Inventory Management",
-      desc: "Documents the condition and value of furnishings to prevent disagreements.",
+      title: "Compliance:",
+      desc: "Ensures adherence to applicable rental laws in India, particularly those governing long-term leases.",
     },
     {
-      title: "Compliance",
-      desc: "Ensures adherence to Indian rental laws, offering legal validity to the arrangement.",
+      title: "Defined Responsibilities",
+      desc: "Specifies obligations for property maintenance, utility payments, and more. ",
     },
     {
       title: "Flexibility",
-      desc: "Allows customization to suit the specific needs of both parties.",
+      desc: "Allows for customization based on specific needs, such as pet policies or shared spaces.  ",
     },
     {
-      title: "Security of Tenure",
-      desc: "Protect tenants from unlawful eviction and landlords from property misuse or non-payment. ",
+      title: "Simplicity",
+      desc: "Streamlined process makes it easy for both parties to understand and agree on terms.",
     },
   ];
 
@@ -129,125 +129,148 @@ const flatRentalPage = () => {
     },
   ];
 
-  const faqs = [
-    {
-      question: "Is a flat rent agreement mandatory?",
-      answer:
-        "It ensures clarity about the use and maintenance of furnishings, preventing disputes over damages or misuse",
-    },
-    {
-      question: "Are e-stamped and e-signed agreements legally valid?",
-      answer:
-        "Yes, e-stamped and Aadhaar-based e-signed agreements are recognized as legally binding under Indian law.",
-    },
-    {
-      question: "What is a security deposit, and how is it handled?",
-      answer:
-        " Yes, they are legally recognized and enforceable under Indian law.",
-    },
-    {
-      question: "How does the inventory list work?",
-      answer:
-        "The agreement includes a detailed inventory list of all furnishings and their conditions, ensuring transparency.",
-    },
-    {
-      question: "How soon can I receive my rental agreement?",
-      answer:
-        "Digital copies are available instantly after creation, while hard copies are typically delivered within a few working days.",
-    },
-    {
-      question: "What happens if I do not pay rent on time?",
-      answer:
-        "The rental agreement will outline the consequences of late payment, which may include late fees or potential eviction procedures as per the terms agreed upon.",
-    },
-  ];
+ const faqs = [
+  {
+    question: "What is the purpose of a Residential Lease Agreement?",
+    answer:
+      "It ensures clarity, protects legal rights, and provides a framework for the rental arrangement between landlords and tenants.",
+  },
+  {
+    question: "Is a lease agreement mandatory in India?",
+    answer:
+      "While not legally mandatory for short-term rentals (less than 12 months), having a residential lease agreement is highly advisable for long-term arrangements to prevent disputes.",
+  },
+  {
+    question: "Can I customize my lease agreement?",
+    answer:
+      "Yes, you can include specific clauses such as pet policies, maintenance responsibilities, and subletting terms.",
+  },
+  {
+    question: "Are e-stamped and e-signed agreements valid in India?",
+    answer:
+      "Yes, e-stamped and Aadhaar-based e-signed agreements are legally binding under Indian law.",
+  },
+  {
+    question: "How soon can I receive my agreement?",
+    answer:
+      "Digital copies are available instantly, while hard copies are delivered within a few working days.",
+  },
+  {
+    question: "Can the lease agreement be terminated early?",
+    answer:
+      "Yes, early termination terms can be included in the agreement.",
+  },
+  {
+    question: "Does the agreement include utility payment terms?",
+    answer:
+      "Yes, utility payment responsibilities can be clearly defined in the agreement.",
+  },
+  {
+    question: "What if the tenant damages the property?",
+    answer:
+      "The agreement will specify repair obligations and deductions from the security deposit for damages.",
+  },
+  {
+    question: "Is legal consultation included in your services?",
+    answer:
+      "Yes, our legal experts are available to assist you throughout the process.",
+  },
+  {
+    question: "Can the agreement be renewed?",
+    answer:
+      "Renewal terms can be included in the agreement to ensure a seamless continuation of tenancy.",
+  },
+];
 
-  const rentalSteps = [
-    {
-      title: "Start the Process",
-      desc: "Click the “Create Now” button to begin your agreement creation",
-    },
-    {
-      title: "Choose Agreement Type",
-      desc: "Choose Furnished Flat Rent Agreement from our comprehensive rental agreements segment.",
-    },
-    {
-      title: "Provide Property Details",
-      desc: "Enter essential information such as address, property type, and rental specifics",
-    },
-    {
-      title: "Define Terms",
-      desc: "Specify rent amount, payment schedule, security deposit, and duration of tenancy",
-    },
-    {
-      title: "Customize Clauses",
-      desc: "Add provisions related to maintenance responsibilities, subletting options, pet policies, and more",
-    },
-    {
-      title: "Review the Draft",
-      desc: "Carefully verify all terms for accuracy before finalizing",
-    },
-    {
-      title: "E-Stamp Integration",
-      desc: "Seamlessly include legally valid e-stamp paper for your agreement",
-    },
-    {
-      title: "E-Signature",
-      desc: "Utilize Aadhaar-based e-signatures for secure and legally recognized signing",
-    },
-    {
-      title: "Expert Consultation",
-      desc: "Access professional legal advice for added confidence",
-    },
-    {
-      title: "Delivery Options",
-      desc: "Get digital copies instantly or hard copies delivered to your address",
-    },
-  ];
+
+const rentalSteps = [
+  {
+    title: "Start the Process",
+    desc: "Click the “Create Now” button to begin your agreement creation.",
+  },
+  {
+    title: "Choose Agreement Type",
+    desc: "Select Residential Lease Agreement from our list of comprehensive rental agreements.",
+  },
+  {
+    title: "Provide Basic Details",
+    desc: "Enter essential information such as names, addresses, property details, rental amount, security deposit, and duration.",
+  },
+  {
+    title: "Define Lease Terms",
+    desc: "Specify rent, lease duration, security deposit, and payment schedule.",
+  },
+  {
+    title: "Add Custom Clauses",
+    desc: "Specify any additional terms you wish to include regarding maintenance responsibilities, shared facilities, subletting, pet policies, or any other specific requirements.",
+  },
+  {
+    title: "Review the Draft",
+    desc: "Quickly verify all terms for accuracy before finalizing.",
+  },
+  {
+    title: "E-Stamp Integration",
+    desc: "Seamlessly include legally valid e-stamping.",
+  },
+  {
+    title: "E-Signature",
+    desc: "Use Aadhaar-based e-signatures for secure and legally recognized execution.",
+  },
+  {
+    title: "Expert Consultation",
+    desc: "Access professional legal advice if needed.",
+  },
+  {
+    title:"Quick Delivery",
+    desc:"Get your Residential Lease Agreement ready in minutes without unnecessary delays.",
+  }
+];
+
 
 
   const whyChooseUsflat = [
-    {
-      title: "Customizable Agreements",
-      desc: "Tailor agreements specifically to your requirements",
-    },
-    {
-      title: "Legally Compliant Solutions",
-      desc: "Ensure all agreements adhere to Indian rental laws",
-    },
-    {
-      title: "Integrated E-Stamping Services",
-      desc: "Simplifies the legal stamping process for your convenience",
-    },
-    {
-      title: "Secure E-Signatures",
-      desc: "Aadhaar-based signing ensures hassle-free execution of agreements",
-    },
-    {
-      title: "Expert Guidance",
-      desc: "Our legal professionals are available to assist you throughout the process",
-    },
-    {
-      title: "Time-Saving",
-      desc: "Create and finalize agreements quickly and efficiently",
-    },
-    {
-      title: "Convenient Delivery Options",
-      desc: "Receive digital copies instantly, hard copies delivered directly",
-    },
-    {
-      title: "Affordable Pricing",
-      desc: "Access high-quality services at competitive rates without hidden fees",
-    },
-    {
-      title: "Secure Document Storage",
-      desc: "Keep your agreements safe and easily accessible online",
-    },
-    {
-      title: "User-Friendly Platform",
-      desc: "Navigate through the process with ease and efficiency",
-    },
-  ];
+  {
+    title: "Customizable Agreements",
+    desc: "Tailor agreements specifically to your requirements regarding residential properties.",
+  },
+  {
+    title: "Legally Compliant",
+    desc: "Ensure all agreements adhere to Indian rental laws applicable to residential leases.",
+  },
+  {
+    title: "Integrated E-Stamping",
+    desc: "Simplifies the legal stamping process for your convenience.",
+  },
+  {
+    title: "Secure E-Signatures",
+    desc: "Aadhaar-based signing for hassle-free execution.",
+  },
+  {
+    title: "Expert Guidance",
+    desc: "Access professional legal assistance at every step.",
+  },
+  {
+    title: "Quick and Efficient",
+    desc: "Get your Residential Lease Agreement ready in minutes without unnecessary delays.",
+  },
+  {
+    title: "Affordable Services",
+    desc: "Access high-quality services at competitive rates without hidden fees.",
+  },
+  {
+    title: "Convenient Delivery",
+    desc: "Instant digital access or hard-copy delivery to your doorstep.",
+  },
+  {
+    title: "User-Friendly Platform",
+    desc: "Navigate and complete the process effortlessly.",
+  },
+  {
+    title: "Safe Document Storage",
+    desc: "Securely store and access your agreements anytime.",
+  },
+];
+
 
 
   const duplicatedItems = [...whyNeedAgreement, ...whyNeedAgreement];
@@ -261,7 +284,7 @@ const flatRentalPage = () => {
         const newPosition = prev + 1;
         return newPosition >= whyNeedAgreement.length * 300 ? 0 : newPosition;
       });
-      
+
       setScrollPosition2((prev) => {
         const newPosition = prev + 1;
         return newPosition >= whyNeedAgreement.length * 300 ? 0 : newPosition;
@@ -271,7 +294,7 @@ const flatRentalPage = () => {
     return () => clearInterval(scrollInterval);
   }, [whyNeedAgreement.length]);
 
-  
+
 
   const featuresPerPage = 3;
   const visibleFeatures = features.slice(
@@ -300,13 +323,14 @@ const flatRentalPage = () => {
     <div className=" w-full">
       {/* Hero Section */}
       <HeroSection
-      title="Welcome to"
-      subtitle="MyLegalInstant.com"
-      description="Looking to rent out your flat or move into a new one? MyLegalInstant.com provides expertly crafted Flat Rent Agreements that are legally sound, customizable, and hassle-free."
-      buttonText="Create Agreement Now"
-      buttonLink="/create-agreement"
-      trustIndicators={["Legally Verified", "Instant Download", "24/7 Support"]}
-    />
+        title="Welcome to"
+        subtitle="MyLegalInstant.com"
+        question={"Are you a property owner leasing out your residential space or a tenant looking to secure a home?"}
+        description=" At MyLegalinstant.com, we specialize in crafting legally sound and customizable Residential Lease Agreements that safeguard the interests of both landlords and tenants. Enjoy a seamless process, expert guidance, and peace of mind with our comprehensive solutions. "
+        buttonText="Create Agreement Now"
+        buttonLink="/create-agreement"
+        trustIndicators={["Legally Verified", "Instant Download", "24/7 Support"]}
+      />
 
       {/* What is Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -314,14 +338,11 @@ const flatRentalPage = () => {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="flex-1 z-10">
               <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 mb-8">
-                What is a Flat Rent Agreement?
+                What is a Residential Lease Agreement?
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                A Flat Rent Agreement is a legally binding document between a
-                landlord (flat owner) and a tenant that outlines the terms and
-                conditions for renting a residential flat. It protects the
-                interests of both parties by defining their roles, rights, and
-                responsibilities while ensuring compliance with applicable laws.
+                A Residential Lease Agreement is a legally binding document between a landlord (property owner) and a tenant (occupant) that outlines the terms and conditions of renting a residential property. This agreement ensures clarity and protects the interests of both parties by defining their rights and responsibilities regarding the leased property.
+
               </p>
             </div>
 
@@ -351,30 +372,28 @@ const flatRentalPage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-4xl font-bold">Key Features</h2>
-          
+
           <div className="flex gap-2">
-            <button 
+            <button
               onClick={prevFeatureSlide}
-              className={`p-3 rounded-full transition-colors ${
-                isFeaturesAtStart 
-                ? "border border-gray-200 hover:bg-gray-50" 
-                : " bg-gray-900 text-white hover:bg-gray-800"
-              }`}
+              className={`p-3 rounded-full transition-colors ${isFeaturesAtStart
+                  ? "border border-gray-200 hover:bg-gray-50"
+                  : " bg-gray-900 text-white hover:bg-gray-800"
+                }`}
               disabled={isFeaturesAtStart}
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
-            <button 
+            <button
               onClick={nextFeatureSlide}
-              className={`p-3 rounded-full transition-colors flex items-center gap-2 ${
-                isFeaturesAtEnd
-                ? "border border-gray-200 hover:bg-gray-50"
-                : " bg-gray-900 text-white hover:bg-gray-800"
-              }`}
+              className={`p-3 rounded-full transition-colors flex items-center gap-2 ${isFeaturesAtEnd
+                  ? "border border-gray-200 hover:bg-gray-50"
+                  : " bg-gray-900 text-white hover:bg-gray-800"
+                }`}
               disabled={isFeaturesAtEnd}
             >
               <ChevronRight className="w-5 h-5" />
-             
+
             </button>
           </div>
         </div>
@@ -385,57 +404,57 @@ const flatRentalPage = () => {
           ))}
         </div>
       </div>
-   
+
 
       {/* Why Need Agreement */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 overflow-hidden">
-      <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-        Why Do You Need a Flat Rent Agreement?
-      </h2>
-      
-      {/* First row - Left to Right */}
-      <div className="relative mb-8 overflow-hidden">
-        <div 
-          className="flex"
-          style={{
-            transform: `translateX(-${scrollPosition1}px)`,
-            transition: 'transform 0.03s linear',
-            width: `${duplicatedItems.length * 300}px`
-          }}
-        >
-          {duplicatedItems.map((item, index) => (
-            <div key={`row1-${index}`} className="w-[300px] p-4">
-              <FeatureCard
-                title={item.title}
-                description={item.desc}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+        <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+          Why Do You Need a Residential Lease Agreement?
+        </h2>
 
-      {/* Second row - Right to Left */}
-      <div className="relative overflow-hidden">
-        <div 
-          className="flex"
-          style={{
-            transform: `translateX(${scrollPosition2}px)`,
-            transition: 'transform 0.03s linear',
-            width: `${duplicatedItems.length * 300}px`,
-            marginLeft: `-${duplicatedItems.length * 300}px`
-          }}
-        >
-          {duplicatedItems.map((item, index) => (
-            <div key={`row2-${index}`} className="w-[300px] p-4">
-              <FeatureCard
-                title={item.title}
-                description={item.desc}
-              />
-            </div>
-          ))}
+        {/* First row - Left to Right */}
+        <div className="relative mb-8 overflow-hidden">
+          <div
+            className="flex"
+            style={{
+              transform: `translateX(-${scrollPosition1}px)`,
+              transition: 'transform 0.03s linear',
+              width: `${duplicatedItems.length * 300}px`
+            }}
+          >
+            {duplicatedItems.map((item, index) => (
+              <div key={`row1-${index}`} className="w-[300px] p-4">
+                <FeatureCard
+                  title={item.title}
+                  description={item.desc}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Second row - Right to Left */}
+        <div className="relative overflow-hidden">
+          <div
+            className="flex"
+            style={{
+              transform: `translateX(${scrollPosition2}px)`,
+              transition: 'transform 0.03s linear',
+              width: `${duplicatedItems.length * 300}px`,
+              marginLeft: `-${duplicatedItems.length * 300}px`
+            }}
+          >
+            {duplicatedItems.map((item, index) => (
+              <div key={`row2-${index}`} className="w-[300px] p-4">
+                <FeatureCard
+                  title={item.title}
+                  description={item.desc}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
 
       {/* Legal Framework */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -456,16 +475,16 @@ const flatRentalPage = () => {
 
       {/* steps */}
       <ChainSteps
-      title="How to Create a Flat Rent Agreement"
-      steps={rentalSteps}
-    />
+        title="How to Create a Residential Lease Agreement"
+        steps={rentalSteps}
+      />
 
       {/* Why Choose Us */}
       <Slider
-    title="Why Choose Us?"
-    description="Discover the benefits of our services."
-    data={whyChooseUsflat}
-  />
+        title="Why Choose Us?"
+        description="Discover the benefits of our services."
+        data={whyChooseUsflat}
+      />
 
       {/* CTA Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -474,7 +493,7 @@ const flatRentalPage = () => {
             Get Started Today!
           </h2>
           <p className="text-purple-100 mb-8 text-lg max-w-3xl mx-auto">
-            Secure your house rental arrangement with a professionally drafted
+            Secure your Residential Lease Agreement with a professionally drafted
             agreement tailored to your needs. Simplify the process today and
             ensure peace of mind!
           </p>
@@ -486,21 +505,21 @@ const flatRentalPage = () => {
 
       {/* FAQ Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-        Benefits of E-Contracts
-      </h2>
-      <div className="space-y-4">
-        {faqs.map((faq, index) => (
-          <FAQItem
-            key={index}
-            question={faq.question}
-            answer={faq.answer}
-            isOpen={isOpen === index}
-            onToggle={() => setIsOpen(isOpen === index ? null : index)}
-          />
-        ))}
+        <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-4">
+          {faqs.map((faq, index) => (
+            <FAQItem
+              key={index}
+              question={faq.question}
+              answer={faq.answer}
+              isOpen={isOpen === index}
+              onToggle={() => setIsOpen(isOpen === index ? null : index)}
+            />
+          ))}
+        </div>
       </div>
-    </div>
     </div>
   );
 };
