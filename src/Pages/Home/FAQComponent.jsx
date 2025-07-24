@@ -135,76 +135,76 @@ const FAQComponent = () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-purple-50 py-20 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-white to-purple-50 py-10 sm:py-20 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center gap-2 bg-purple-100 text-purple-600 px-4 py-2 rounded-full mb-6">
-            <HelpCircle size={20} />
+        <div className="text-center mb-10 sm:mb-16">
+          <div className="inline-flex items-center justify-center gap-2 bg-purple-100 text-purple-600 px-3 py-1 sm:px-4 sm:py-2 rounded-full mb-4 sm:mb-6 text-sm sm:text-base">
+            <HelpCircle size={18} className="sm:w-5 sm:h-5" />
             <span className="font-medium">FAQ Section</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
             Find answers to common questions about e-documentation and our services
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          <div className="bg-white h-[470px] rounded-2xl p-8 shadow-xl border border-purple-100">
-            <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-xl p-6 text-white mb-6 mt-6">
-              <div className="flex items-center gap-3 mb-4">
-                <MessageCircle size={24} />
-                <h3 className="text-xl font-semibold">Need More Help?</h3>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-start">
+          <div className="bg-white rounded-2xl p-5 sm:p-8 shadow-xl border border-purple-100">
+            <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-xl p-4 sm:p-6 text-white mb-4 sm:mb-6 mt-0 sm:mt-6">
+              <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+                <MessageCircle size={20} className="sm:w-6 sm:h-6" />
+                <h3 className="text-lg sm:text-xl font-semibold">Need More Help?</h3>
               </div>
-              <p className="text-purple-100 mb-6">
+              <p className="text-purple-100 mb-4 sm:mb-6 text-sm sm:text-base">
                 Can't find what you're looking for? Our support team is here to assist you with any questions.
               </p>
-              <button className="bg-white text-purple-600 px-6 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors">
+              <button className="bg-white text-purple-600 px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors text-sm sm:text-base">
                 Contact Support
               </button>
             </div>
 
-            <div className="space-y-6 h-auto  w-full">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="space-y-4 sm:space-y-6 w-full mt-6">
+              <div className="flex items-center gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-medium text-gray-900">Quick Resolution</h4>
-                  <p className="text-gray-600 text-sm">Get answers within 24 hours</p>
+                  <h4 className="font-medium text-gray-900 text-sm sm:text-base">Quick Resolution</h4>
+                  <p className="text-gray-600 text-xs sm:text-sm">Get answers within 24 hours</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="flex items-center gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-medium text-gray-900">Detailed Support</h4>
-                  <p className="text-gray-600 text-sm">Comprehensive documentation</p>
+                  <h4 className="font-medium text-gray-900 text-sm sm:text-base">Detailed Support</h4>
+                  <p className="text-gray-600 text-xs sm:text-sm">Comprehensive documentation</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 ">
-                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="flex items-center gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div>
-                  <Link to="https://x.com/mylegalinstant" className="font-medium text-gray-900">Join Our Community</Link>
-                  <p className="text-gray-600 text-sm">Connect with our community</p>
+                  <Link to="https://x.com/mylegalinstant" className="font-medium text-gray-900 text-sm sm:text-base hover:text-purple-600">Join Our Community</Link>
+                  <p className="text-gray-600 text-xs sm:text-sm">Connect with our community</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="lg:h-[600px] overflow-y-auto pr-4 space-y-4">
+          <div className="lg:h-[600px] overflow-y-auto pr-2 sm:pr-4 space-y-3 sm:space-y-4">
             {faqItems.map((item, index) => (
               <FAQItem
                 key={index}

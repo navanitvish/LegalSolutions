@@ -24,10 +24,7 @@ const Home = () => {
       <ProductCardSlider />
   
       <ProductsFeaturesSection />
-      <HowItsworks />
-
-    
-
+      <HowItsworks />     
       {/* <Favoratetools/> */}
       <Products10 />
       <HeroSection />
