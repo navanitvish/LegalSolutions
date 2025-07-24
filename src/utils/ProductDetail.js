@@ -241,7 +241,7 @@ export const productsData = {
         title: "Consultation",
         description:
           "Start with a personalized consultation to understand your firm's specific legal requirements. Our experts will assess your needs and provide a customized roadmap on how our services can best support your operations.",
-        image: C1,
+        image: C2,
       },
       {
         title: "Tailored Legal Management",
