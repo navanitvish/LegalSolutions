@@ -84,7 +84,7 @@ function App() {
           <Route path="/commercial-documents/:id" element={<Commercialdoc />} />
           <Route path="/Corporate-Agreement/:id" element={<Corporate />} />
           <Route path="/commercial-establishments/:id" element={<Commercialest />} />
-          <Route path="/ip-agreements/:id" element={<Intellectual />} />
+          {/* <Route path="/ip-agreements/:id" element={<Inte />} /> */}
           <Route path="/e-commerce/:id" element={<EcommerseContract />} />
           <Route path="/notices/:id" element={<Notice />} />
           <Route path="/power-of-attorney/:id" element={<Powerofattorney />} />
