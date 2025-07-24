@@ -28,30 +28,7 @@ function CustomerStories() {
       metric: "100%",
       description: "Compliance with regulatory requirements"
     },
-    {
-      clientName: "David Rodriguez",
-      position: "Legal Operations Manager",
-      company: "EcoVenture Capital",
-      quote: "The platform's intuitive interface made legal document generation accessible to our entire team, not just legal experts.",
-      metric: "3x",
-      description: "Faster document creation process"
-    },
-    {
-      clientName: "Emma Williams",
-      position: "IP Strategy Lead",
-      company: "CreativeWorks Agency",
-      quote: "MyLegalInstant helped us protect our intellectual property across multiple projects and client engagements.",
-      metric: "90%",
-      description: "Reduction in IP-related disputes"
-    },
-    {
-      clientName: "James Taylor",
-      position: "CEO",
-      company: "Manufacturing Excellence",
-      quote: "Their support team is outstanding. Any legal question we have is answered within hours, not days.",
-      metric: "4h",
-      description: "Average response time for legal queries"
-    }
+    
   ];
 
   return (

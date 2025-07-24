@@ -18,9 +18,9 @@ const Home = () => {
   return (
     <div>
       <Herosection />
-      <div className="bg-gradient-to-br from-indigo-200 to-purple-600">
+      {/* <div className="bg-gradient-to-br from-indigo-200 to-purple-600">
         <Video />
-      </div>
+      </div> */}
       <ProductCardSlider />
   
       <ProductsFeaturesSection />
