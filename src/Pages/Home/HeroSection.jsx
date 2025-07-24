@@ -93,7 +93,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 w-full max-w-5xl mx-auto text-center mb-12 sm:mb-16 lg:mb-20">
+      <div className="relative z-10 w-full max-w-5xl mx-auto text-center mb-12 sm:mb-16 lg:mb-20 mt-10">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl uppercase font-sans font-bold mb-4 sm:mb-6 text-gray-900 leading-tight tracking-tight">
           WELCOME TO THE <br className="hidden sm:inline" /> WORLD OF LEGALINSTANT
         </h1>
