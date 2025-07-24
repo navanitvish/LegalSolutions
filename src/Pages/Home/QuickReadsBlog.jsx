@@ -250,13 +250,13 @@ const QuickReadsBlog = () => {
             <p className="text-gray-600 mb-8">
             Join our network of legal professionals and grow your practice through collaboration
             </p>
-            <div className="flex gap-4 max-w-md mx-auto">
+            <div className="flex flex-wrap gap-4 max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-xl border border-purple-100 focus:outline-none focus:border-purple-500 bg-white"
+                className="flex-1 px-4 py-2 rounded-xl border border-purple-100 focus:outline-none focus:border-purple-500 bg-white"
               />
-              <button className="px-8 py-3 bg-purple-600 text-white rounded-xl hover:bg-purple-700 transition-colors font-medium">
+              <button className="px-8 py-2 bg-purple-600 text-white rounded-xl hover:bg-purple-700 transition-colors font-medium">
               join now
               </button>
             </div>

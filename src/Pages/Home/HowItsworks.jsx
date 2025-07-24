@@ -41,7 +41,7 @@ const HowItWorks = () => {
               </div>
               Simple 4-Step Process
             </h3>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid  grid-cols-1 lg:grid-cols-2 gap-6">
               {[
                 {
                   icon: <UserCheck size={24} />,
