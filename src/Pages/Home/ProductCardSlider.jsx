@@ -50,7 +50,7 @@ const ProductCardSlider = () => {
         <div className="text-center mb-10">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight relative">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-600 bg-size-200 animate-gradient">
-              Services
+              Solutions
             </span>
           </h1>
           <div className="mt-2 w-24 h-1 bg-gradient-to-r from-purple-600 to-indigo-600 mx-auto rounded-full"></div>
