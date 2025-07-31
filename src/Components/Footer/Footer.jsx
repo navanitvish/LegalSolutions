@@ -68,7 +68,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-5 text-purple-800">Our Services</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Legal Content</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">legal consultation</a></li>
               <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Consultation</a></li>
               <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Document Review</a></li>
               <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Contract drafting </a></li>
