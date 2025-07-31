@@ -69,31 +69,22 @@ const FAQComponent = () => {
     {
       question: "What are the Benefits of E- documentation?",
       content: [
-        "Cost and time efficiency",
-        "Reduced paperwork",
-        "Easy storage and retrieval",
-        "Environmentally friendly",
-        "Enhanced safety and compliance",
-        "Improved Accessibility and Better Convenience",
+        "Cost and time efficiency Reduced paperwork Easy storage and retrieval Environmentally friendly Enhanced safety and compliance Improved Accessibility and Better Convenience",
       ],
     },
     {
       question: "What are the limitations of E-documentation?",
       content: [
-        "Dependence on technology",
-        "Potential for cyber threats",
-        "Legal complexities in certain jurisdictions",
-        "Need for digital literacy",
-        "Limited acceptance in some sectors"
+        "Dependence on technology Potential for cyber threats Legal complexities in certain jurisdictions Need for digital literacy Limited acceptance in some sectors",
+        
       ],
     },
     {
       question: "What laws govern e-documentation in India ?",
       content:
         [
-          "Information Technology Act, 2000: Provides the legal framework for electronic recordsand digital signatures.",
-          "Indian Evidence Act, 1872: Recognizes electronic records as admissible evidence.",
-          "Indian Contract Act, 1872: Governs the legality of contracts executed electronically."
+          "Information Technology Act, 2000: Provides the legal framework for electronic recordsand digital signatures Indian Evidence Act, 1872: Recognizes electronic records as admissible evidence Indian Contract Act, 1872: Governs the legality of contracts executed electronically.",
+      
 
         ],
     },

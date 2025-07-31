@@ -58,8 +58,9 @@ export default function Footer() {
               <li><NavLink to="/" className="text-gray-600 hover:text-purple-700 transition-colors">Home</NavLink></li>
               <li><NavLink to="/about" className="text-gray-600 hover:text-purple-700 transition-colors">About Us</NavLink></li>
               <li><NavLink to="/Services" className="text-gray-600 hover:text-purple-700 transition-colors">Services</NavLink></li>
-              <li><NavLink to="/products" className="text-gray-600 hover:text-purple-700 transition-colors">Team</NavLink></li>
-              <li><NavLink to="/lawyer-contact" className="text-gray-600 hover:text-purple-700 transition-colors">Instant vibe</NavLink></li>
+              <li><NavLink to="/products" className="text-gray-600 hover:text-purple-700 transition-colors">Products</NavLink></li>
+              <li><NavLink to="/lawyer-contact" className="text-gray-600 hover:text-purple-700 transition-colors">Lawyer Connect</NavLink></li>
+              <li><NavLink to="/team" className="text-gray-600 hover:text-purple-700 transition-colors">Team</NavLink></li>
             </ul>
           </div>
           
@@ -67,11 +68,12 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-5 text-purple-800">Our Services</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Start up Compliance</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Smart Contracts</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">E-Stamp Paper Delivery</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Legal Research</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Dispute Resolution</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Legal Content</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Consultation</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Document Review</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Contract drafting </a></li>
+              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">Start-up Compliance</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-purple-700 transition-colors">E-stamp paper delivery</a></li>
             </ul>
           </div>
           
