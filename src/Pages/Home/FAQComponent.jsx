@@ -54,7 +54,7 @@ const FAQComponent = () => {
     {
       question: "Can contracts be finalized electronically in India?",
       content:
-        "Yes, contracts can be executed electronically provided they meet the standards of the Indian Contract Act of 1872. The document must be legally enforceable and involve consent from all parties involved."
+        "Yes, contracts can be executed electronically provided they meet the standards of the indian contract Act of 1872. The document must be legally enforceable and involve consent from all parties involved."
     },
     {
       question: "How secure is e-documentation?",
