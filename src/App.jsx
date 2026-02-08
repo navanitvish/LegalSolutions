@@ -62,7 +62,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/signup" element={<LoginPage />} />
+          <Route path="/signin" element={<LoginPage />} />
           <Route path="/login" element={<LoginPages />} />
 
           {/* Rental agreement routes */}
