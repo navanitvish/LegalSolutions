@@ -301,7 +301,7 @@ const flatRentalPage = () => {
         question={"Are you a landlord renting out a room or a tenant looking for a secure rental arrangement?"}
         description=" At MyLegalinstant.com provides a seamless way to create a customized Room Rental Agreement that is legally sound, quick to draft, and easy to execute. Protect your rights and ensure a smooth rental experience with our professional services."
         buttonText="Create Agreement Now"
-        buttonLink="/create-agreement"
+        buttonLink="/create-agreement-room"
         trustIndicators={[
           "Legally Verified",
           "Instant Download",

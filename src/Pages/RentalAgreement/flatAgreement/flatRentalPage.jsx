@@ -320,7 +320,7 @@ hassle-free. Whether you're a landlord or a tenant, our platform ensures a seaml
 experience in formalizing your rental arrangement.
 "
         buttonText="Create Agreement Now"
-        buttonLink="/create-agreement"
+        buttonLink="/create-agreement-flat"
         trustIndicators={["Legally Verified", "Instant Download", "24/7 Support"]}
       />
 

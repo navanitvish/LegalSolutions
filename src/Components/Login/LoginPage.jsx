@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { ChevronRight, Lock, User, Mail, Phone } from 'lucide-react';
+import { ChevronRight, Lock, Mail } from 'lucide-react';
 import { useGoogleLogin } from '@react-oauth/google';
-import { signup, googleLogin, clearError } from '../../redux/slices/authSlice';
+import { login, googleLogin, clearError } from '../../redux/slices/authSlice';
 
-const LoginPage = () => {
+const LoginPages = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
@@ -13,8 +13,6 @@ const LoginPage = () => {
   const { isLoading, error, success, isAuthenticated } = useSelector((state) => state.auth);
 
   const [formData, setFormData] = useState({
-    name: '',
-    number: '',
     email: '',
     password: ''
   });
@@ -23,17 +21,16 @@ const LoginPage = () => {
   // Get the page user was trying to access
   const from = location.state?.from?.pathname || '/';
 
-  // Redirect if already authenticated - NO API CALL
+  // Redirect if already authenticated
   useEffect(() => {
     if (isAuthenticated) {
       navigate(from, { replace: true });
     }
   }, [isAuthenticated, navigate, from]);
 
-  // Handle successful signup/login
+  // Handle successful login
   useEffect(() => {
     if (success && isAuthenticated) {
-      // Navigate to intended page after successful auth
       navigate(from, { replace: true });
     }
   }, [success, isAuthenticated, navigate, from]);
@@ -72,14 +69,6 @@ const LoginPage = () => {
 
   const validateForm = () => {
     const newErrors = {};
-    if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
-    }
-    if (!formData.number.trim()) {
-      newErrors.number = 'Phone number is required';
-    } else if (!/^\d{10}$/.test(formData.number)) {
-      newErrors.number = 'Phone number must be 10 digits';
-    }
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
@@ -103,16 +92,14 @@ const LoginPage = () => {
       return;
     }
 
-    // ONLY make API call when form is valid and submitted
-    const resultAction = await dispatch(signup(formData));
+    // Make API call when form is valid and submitted
+    const resultAction = await dispatch(login(formData));
     
-    // Check if signup was successful
-    if (signup.fulfilled.match(resultAction)) {
-      // Success - will be handled by useEffect above
-      console.log('Signup successful');
+    // Check if login was successful
+    if (login.fulfilled.match(resultAction)) {
+      console.log('Login successful');
     } else {
-      // Error - will be shown in error state
-      console.error('Signup failed:', resultAction.payload);
+      console.error('Login failed:', resultAction.payload);
     }
   };
 
@@ -124,7 +111,7 @@ const LoginPage = () => {
       });
       const userInfo = await userInfoResponse.json();
 
-      // ONLY make API call with Google user data
+      // Make API call with Google user data
       const resultAction = await dispatch(googleLogin({
         name: userInfo.name,
         email: userInfo.email,
@@ -155,7 +142,7 @@ const LoginPage = () => {
           <div className="max-w-md mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-gray-800 mb-3">Welcome Back</h2>
-              <p className="text-gray-600">Start your journey to mindfulness</p>
+              <p className="text-gray-600">Sign in to continue your journey</p>
             </div>
 
             <div className="mb-8">
@@ -188,36 +175,6 @@ const LoginPage = () => {
             )}
 
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="relative">
-                <User className="w-5 h-5 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Full Name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className={`w-full pl-10 pr-4 py-3.5 border ${validationErrors.name ? 'border-red-500' : 'border-purple-100'} rounded-2xl focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all`}
-                />
-                {validationErrors.name && (
-                  <p className="text-red-500 text-sm mt-1 ml-1">{validationErrors.name}</p>
-                )}
-              </div>
-
-              <div className="relative">
-                <Phone className="w-5 h-5 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
-                <input
-                  type="tel"
-                  name="number"
-                  placeholder="Phone Number"
-                  value={formData.number}
-                  onChange={handleChange}
-                  className={`w-full pl-10 pr-4 py-3.5 border ${validationErrors.number ? 'border-red-500' : 'border-purple-100'} rounded-2xl focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all`}
-                />
-                {validationErrors.number && (
-                  <p className="text-red-500 text-sm mt-1 ml-1">{validationErrors.number}</p>
-                )}
-              </div>
-
               <div className="relative">
                 <Mail className="w-5 h-5 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
                 <input
@@ -252,14 +209,13 @@ const LoginPage = () => {
                 <div className="flex items-center gap-2">
                   <input
                     type="checkbox"
-                    id="privacy"
+                    id="terms"
                     className="w-4 h-4 text-purple-600 border-purple-300 rounded focus:ring-purple-500 cursor-pointer"
                   />
-                  <label htmlFor="privacy" className="text-sm text-gray-600 cursor-pointer">
-                    Remember me
+                  <label htmlFor="terms" className="text-sm text-gray-600 cursor-pointer">
+                    I agree to Terms & Conditions
                   </label>
                 </div>
-                <a href="#" className="text-sm text-purple-600 hover:text-purple-700">Forgot password?</a>
               </div>
 
               <button
@@ -284,9 +240,9 @@ const LoginPage = () => {
               </button>
 
               <p className="text-center text-gray-600 text-sm mt-6">
-                Already have an account?{' '}
-                <a href="/login" className="text-purple-600 hover:text-purple-700 font-medium">
-                  Sign in
+                Don't have an account?{' '}
+                <a href="/signup" className="text-purple-600 hover:text-purple-700 font-medium">
+                  Sign up
                 </a>
               </p>
             </form>
@@ -297,12 +253,12 @@ const LoginPage = () => {
           <div className="h-full relative p-12">
             <img
               src="https://images.unsplash.com/photo-1635845080335-dcfe06a0fcf1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE1fHxsYXd5ZXJ8ZW58MHx8MHx8fDA%3D"
-              alt="Mindfulness"
+              alt="Legal Services"
               className="w-full h-full object-cover rounded-3xl shadow-2xl"
             />
             <div className="absolute bottom-24 left-24 bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-xl max-w-sm">
-              <h3 className="text-2xl font-bold text-gray-800 mb-3">Find Your Inner Balance</h3>
-              <p className="text-gray-600 leading-relaxed">Begin your journey to mindfulness and discover a more balanced, harmonious way of living.</p>
+              <h3 className="text-2xl font-bold text-gray-800 mb-3">Join Our Community</h3>
+              <p className="text-gray-600 leading-relaxed">Get access to expert legal services and professional consultations tailored to your needs.</p>
             </div>
           </div>
         </div>
@@ -311,4 +267,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default LoginPages;

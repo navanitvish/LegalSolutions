@@ -313,7 +313,7 @@ const rentalSteps = [
         question={"Looking to lease a fully furnished home or rent one with all the essentials included?"}
         description=" At MyLegalinstant.com, we specialize in creating comprehensive Furnished House Residential Lease Agreements that protect the interests of both landlords and tenants. Whether you're renting out a luxurious villa or moving into a cozy, furnished house, our agreements are legally sound, customizable, and tailored to your needs. "
         buttonText="Create Agreement Now"
-        buttonLink="/create-agreement"
+        buttonLink="/create-agreement-lease"
         trustIndicators={[
           "Legally Verified",
           "Instant Download",

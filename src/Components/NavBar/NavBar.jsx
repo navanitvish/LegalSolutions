@@ -1,18 +1,29 @@
 import React, { useState, useCallback, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 import {
   ChevronDownIcon,
   Bars3Icon,
   XMarkIcon,
+  UserCircleIcon,
+  ArrowRightOnRectangleIcon,
 } from "@heroicons/react/24/solid";
 import { NAV_LINKS } from "/src/utils/Navcontent.js";
 import Logo from "/src/assets/WhatsApp Image 2024-09-04 at 17.21.56_f63b6f4c.jpg";
 import ServicesDropdown from "../NavBar/ServicesDropdown";
+import { logout } from "../../redux/slices/authSlice"; // Adjust path as needed
 
 const NavBar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isNavVisible, setIsNavVisible] = useState(true);
+  const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  
+  // Get user data from Redux store
+  const { user, isAuthenticated } = useSelector((state) => state.auth);
 
   const toggleServicesDropdown = useCallback(() => {
     setIsServicesOpen((prevState) => !prevState);
@@ -21,6 +32,16 @@ const NavBar = () => {
   const toggleMobileMenu = useCallback(() => {
     setIsMobileMenuOpen((prevState) => !prevState);
   }, []);
+
+  const toggleProfileDropdown = useCallback(() => {
+    setIsProfileDropdownOpen((prevState) => !prevState);
+  }, []);
+
+  const handleLogout = () => {
+    dispatch(logout());
+    navigate("/");
+    setIsProfileDropdownOpen(false);
+  };
 
   useEffect(() => {
     let lastScrollTop = 0;
@@ -38,6 +59,18 @@ const NavBar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Close profile dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isProfileDropdownOpen && !event.target.closest('.profile-dropdown')) {
+        setIsProfileDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isProfileDropdownOpen]);
 
   return (
     <nav
@@ -102,11 +135,66 @@ const NavBar = () => {
                 </li>
               </ul>
 
-              {/* Login Button */}
+              {/* Login Button or User Profile */}
               <div className="flex items-center">
-                <Link to="/login" className="bg-white  lg:text-xl text-purple-600 font-semibold px-6 py-2 rounded-full border-2 border-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
-                  Login
-                </Link>
+                {isAuthenticated && user ? (
+                  <div className="relative profile-dropdown">
+                    <button
+                      onClick={toggleProfileDropdown}
+                      className="flex items-center space-x-3 px-4 py-2 rounded-full hover:bg-purple-50 transition-all duration-300"
+                    >
+                      {user.profileImage || user.image || user.avatar ? (
+                        <img
+                          src={user.profileImage || user.image || user.avatar}
+                          alt={user.name || user.username}
+                          className="w-10 h-10 rounded-full object-cover border-2 border-purple-600"
+                        />
+                      ) : (
+                        <UserCircleIcon className="w-10 h-10 text-purple-600" />
+                      )}
+                      <span className="text-gray-700 font-semibold text-lg">
+                        {user.name?.slice(0, 8)  || user.username || user.email?.split('@')[0]}
+                      </span>
+                      <ChevronDownIcon className={`w-5 h-5 text-gray-600 transition-transform duration-200 ${isProfileDropdownOpen ? 'rotate-180' : ''}`} />
+                    </button>
+
+                    {/* Profile Dropdown */}
+                    {isProfileDropdownOpen && (
+                      <div className="absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
+                        <div className="px-4 py-3 border-b border-gray-100">
+                          <p className="text-sm font-semibold text-gray-900">
+                            {user.name || user.username}
+                          </p>
+                          <p className="text-xs text-gray-500 mt-1">
+                            {user.email}
+                          </p>
+                        </div>
+                        <Link
+                          to="/profile"
+                          className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200"
+                          onClick={() => setIsProfileDropdownOpen(false)}
+                        >
+                          <UserCircleIcon className="w-5 h-5 mr-3" />
+                          My Profile
+                        </Link>
+                        <button
+                          onClick={handleLogout}
+                          className="flex items-center w-full px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition-colors duration-200"
+                        >
+                          <ArrowRightOnRectangleIcon className="w-5 h-5 mr-3" />
+                          Logout
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <Link
+                    to="/signin"
+                    className="bg-white lg:text-xl text-purple-600 font-semibold px-6 py-2 rounded-full border-2 border-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                  >
+                    SignUp
+                  </Link>
+                )}
               </div>
             </div>
 
@@ -135,6 +223,29 @@ const NavBar = () => {
           }`}
         >
           <div className="px-4 py-3 space-y-3 bg-white/90 backdrop-blur-md border-t">
+            {/* Mobile User Profile */}
+            {isAuthenticated && user && (
+              <div className="px-4 py-3 bg-purple-50 rounded-lg mb-3">
+                <div className="flex items-center space-x-3">
+                  {user.profileImage || user.image || user.avatar ? (
+                    <img
+                      src={user.profileImage || user.image || user.avatar}
+                      alt={user.name || user.username}
+                      className="w-12 h-12 rounded-full object-cover border-2 border-purple-600"
+                    />
+                  ) : (
+                    <UserCircleIcon className="w-12 h-12 text-purple-600" />
+                  )}
+                  <div>
+                    <p className="text-sm font-semibold text-gray-900">
+                      {user.name || user.username}
+                    </p>
+                    <p className="text-xs text-gray-600">{user.email}</p>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {NAV_LINKS.map((link, index) => (
               <li
                 key={index}
@@ -155,16 +266,42 @@ const NavBar = () => {
                   <Link
                     to={link.path}
                     className="block px-4 py-2 text-sm font-semibold text-gray-700 rounded-lg hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200"
+                    onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {link.name}
                   </Link>
                 )}
               </li>
             ))}
-            <div className="px-4 pt-2">
-              <button className="w-full bg-purple-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors duration-200 shadow-md">
-                Login
-              </button>
+
+            <div className="px-4 pt-2 space-y-2">
+              {isAuthenticated && user ? (
+                <>
+                  <Link
+                    to="/profile"
+                    className="flex items-center justify-center w-full bg-purple-100 text-purple-600 font-semibold px-6 py-2 rounded-lg hover:bg-purple-200 transition-colors duration-200"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    <UserCircleIcon className="w-5 h-5 mr-2" />
+                    My Profile
+                  </Link>
+                  <button
+                    onClick={handleLogout}
+                    className="flex items-center justify-center w-full bg-red-500 text-white font-semibold px-6 py-2 rounded-lg hover:bg-red-600 transition-colors duration-200"
+                  >
+                    <ArrowRightOnRectangleIcon className="w-5 h-5 mr-2" />
+                    Logout
+                  </button>
+                </>
+              ) : (
+                <Link
+                  to="/login"
+                  className="block w-full bg-purple-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors duration-200 shadow-md text-center"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Login
+                </Link>
+              )}
             </div>
           </div>
         </div>

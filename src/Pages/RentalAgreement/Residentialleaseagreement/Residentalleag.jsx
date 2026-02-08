@@ -328,7 +328,7 @@ const rentalSteps = [
         question={"Are you a property owner leasing out your residential space or a tenant looking to secure a home?"}
         description=" At MyLegalinstant.com, we specialize in crafting legally sound and customizable Residential Lease Agreements that safeguard the interests of both landlords and tenants. Enjoy a seamless process, expert guidance, and peace of mind with our comprehensive solutions. "
         buttonText="Create Agreement Now"
-        buttonLink="/create-agreement"
+        buttonLink="/create-agreement-residential"
         trustIndicators={["Legally Verified", "Instant Download", "24/7 Support"]}
       />
 

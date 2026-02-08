@@ -294,7 +294,7 @@ const flatRentalPage = () => {
         question={"Are you a homeowner hosting paying guests or an individual seeking accommodation as a paying guest? "}
         description="At MyLegalinstant.com, we simplify the process of creating a legally sound and tailored Paying Guest Agreement. Protect your rights, clarify responsibilities, and ensure a smooth living arrangement with our expert services. "
         buttonText="Create Agreement Now"
-        buttonLink="/create-agreement"
+        buttonLink="/create-agreement-paying"
         trustIndicators={[
           "Legally Verified",
           "Instant Download",

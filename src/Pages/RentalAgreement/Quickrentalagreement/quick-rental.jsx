@@ -284,7 +284,7 @@ const quickRentalPage = () => {
         question={"Are you a landlord or tenant in need of a swift and efficient way to formalize a rental arrangement? "}
         description="Look no further! At MyLegalInstant.com, we specialize in providing expertly crafted Quick Rental Agreements designed to meet your immediate needs. Our platform ensures that your agreements are legally sound, customizable, and easy to execute, allowing you to focus on what matters most."
         buttonText="Create Agreement Now"
-        buttonLink="/create-agreement"
+        buttonLink="/create-agreement-quick"
         trustIndicators={[
           "Legally Verified",
           "Instant Download",

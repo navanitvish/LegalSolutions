@@ -318,7 +318,7 @@ const flatRentalPage = () => {
         question={"Are you renting out or moving into a fully furnished house?"}
         description=" Simplify the process with MyLegalInstant.com, where we specialize in creating comprehensive Furnished House Rent Agreements. Our platform ensures your agreements are legally compliant, customizable, and easy to execute, giving you peace of mind in managing your rental arrangement."
         buttonText="Create Agreement Now"
-        buttonLink="/create-agreement"
+        buttonLink="/create-agreement-furnished-house"
         trustIndicators={[
           "Legally Verified",
           "Instant Download",

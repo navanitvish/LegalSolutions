@@ -3,6 +3,16 @@ import NavBar from "./Components/NavBar/NavBar";
 import Footer from "./Components/Footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
+import RentAgreementForm from "./Pages/RentalAgreement/agremetForm/RentAgreementForm";
+import FlatAgreementForm from "./Pages/RentalAgreement/flatAgreement/FlatAgreementForm";
+import FurnishAgreementForm from "./Pages/RentalAgreement/Furnishedflatrentalagreement/FurnishAgreementForm";
+import FurnishedHouseAgreementForm from "./Pages/RentalAgreement/Furnishedrentagreement/FurnishedHouseAgreementForm";
+import LeaseAgreementForm from "./Pages/RentalAgreement/Leaseoffurnished/LeaseAgreementForm";
+import QuickAgreementForm from "./Pages/RentalAgreement/Quickrentalagreement/QuckAgreementForm";
+import ResidentAgreementForm from "./Pages/RentalAgreement/Residentialleaseagreement/ResidentAgreementForm";
+import RoomAgreementForm from "./Pages/RentalAgreement/Roomrentalagreement/RoomAgreementForm";
+import PaygusestAgreementForm from "./Pages/RentalAgreement/paying-guest-agreement/PayguestAgreementForm";
+import LoginPages from "./Components/Login/LoginPage";
 
 // Lazy load all route components
 const Home = lazy(() => import("./Pages/Home/Home"));
@@ -44,6 +54,7 @@ const PostContractual = lazy(() => import("./Pages/Servies/Post-contractualcontr
 
 function App() {
   return (
+    
     <Router>
       <NavBar />
 
@@ -51,18 +62,29 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPages />} />
 
           {/* Rental agreement routes */}
           <Route path="/rental-agreements/house-rent-agreement" element={<HouseRentalPage />} />
+          {/* create-agreement form */}
+          <Route path="/create-agreement" element={<RentAgreementForm/>}/>
           <Route path="/rental-agreements/flat-rent-agreement" element={<FlatRentalPag />} />
+          <Route path="/create-agreement-flat" element={<FlatAgreementForm />} />
           <Route path="/rental-agreements/Furnished-rental-agreement" element={<Furnishedflatagree />} />
+          <Route path="/create-agreement-furnished-flat" element={<FurnishAgreementForm />} />
           <Route path="/rental-agreements/furnished-house-rent-agreement" element={<Furnishedhouse />} />
+          <Route path="/create-agreement-furnished-house" element={<FurnishedHouseAgreementForm />} />
           <Route path="/rental-agreements/Lease-furnished-agreement" element={<Leaseagreefurnished />} />
+          <Route path="/create-agreement-lease" element={<LeaseAgreementForm />} />
           <Route path="/rental-agreements/quick-rental-agreement" element={<Quickrental />} />
+          <Route path="/create-agreement-quick" element={<QuickAgreementForm />} />
           <Route path="/rental-agreements/Residential-lease-agreement" element={<Residentalleag />} />
+          <Route path="/create-agreement-residential" element={<ResidentAgreementForm />} />
           <Route path="/rental-agreements/room-rental-agreement" element={<Roomrental />} />
+          <Route path="/create-agreement-room" element={<RoomAgreementForm />} />
           <Route path="/rental-agreements/paying-guest-agreement" element={<PayingGestagree />} />
+          <Route path="/create-agreement-paying" element={<PaygusestAgreementForm />} />
 
           {/* Product routes */}
           <Route path="/products" element={<Products />} />
